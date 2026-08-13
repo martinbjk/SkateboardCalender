@@ -7,7 +7,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   return { title: t('title') };
 }
 
-const REPO_URL = 'https://github.com/your-org/skate-event-calendar';
+ const REPO_URL = 'https://github.com/martinbjk/SkateboardCalender';
 
 export default async function SubmitPage({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
