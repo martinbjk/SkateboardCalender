@@ -1,0 +1,31 @@
+{
+  "slug": "sls-paris-2026",
+  "name": "SLS Paris",
+  "series": "SLS Championship Tour",
+  "category": ["street"],
+  "level": "pro",
+  "startDate": "2026-10-03T11:00:00+02:00",
+  "endDate": "2026-10-03T21:00:00+02:00",
+  "timezone": "Europe/Paris",
+  "location": {
+    "venue": "Stade Roland-Garros",
+    "city": "Paris",
+    "country": "Frankrike",
+    "countryCode": "FR",
+    "continent": "europe",
+    "lat": 48.8470,
+    "lng": 2.2530
+  },
+  "description": {
+    "sv": "SLS återvänder till de ikoniska grusbanorna på Roland-Garros för tredje året i rad — och andra året på just Stade Roland-Garros — i vad som beskrivs som ett av turnéns mest unika stopp.",
+    "en": "SLS returns to the iconic clay courts of Roland-Garros for the third time — and the second year at Stade Roland-Garros specifically — in what's described as one of the tour's most unique stops."
+  },
+  "officialUrl": "https://www.streetleague.com",
+  "organizer": "Street League Skateboarding",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt SLS nyhetsflöde.",
+    "url": "https://www.streetleague.com/blog",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

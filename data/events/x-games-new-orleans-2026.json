@@ -1,0 +1,31 @@
+{
+  "slug": "x-games-new-orleans-2026",
+  "name": "X Games New Orleans",
+  "series": "X Games League (XGL) — Summer Season Final",
+  "category": ["street", "park", "vert"],
+  "level": "pro",
+  "startDate": "2026-07-24T14:00:00-05:00",
+  "endDate": "2026-07-26T22:00:00-05:00",
+  "timezone": "America/Chicago",
+  "location": {
+    "venue": "Caesars Superdome",
+    "city": "New Orleans",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 29.9511,
+    "lng": -90.0812
+  },
+  "description": {
+    "sv": "Finalen på XGL:s sommarsäsong. Klubben med flest poäng efter tre stopp (Sacramento, Chiba, New Orleans) koras som ligans första mästare.",
+    "en": "The finale of the XGL summer season. The club with the most points after three stops (Sacramento, Chiba, New Orleans) is crowned the league's first-ever champion."
+  },
+  "officialUrl": "https://www.xgames.com/events/new-orleans-2026/",
+  "organizer": "X Games",
+  "disciplines": ["Street", "Park", "Vert"],
+  "source": {
+    "note": "Datum enligt X Games officiella sajt; detaljerat program annonseras senare.",
+    "url": "https://www.xgames.com/events/new-orleans-2026/",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

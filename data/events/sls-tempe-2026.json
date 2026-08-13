@@ -1,0 +1,30 @@
+{
+  "slug": "sls-tempe-2026",
+  "name": "SLS Tempe",
+  "series": "SLS Championship Tour",
+  "category": ["street"],
+  "level": "pro",
+  "startDate": "2026-08-29T14:15:00-07:00",
+  "endDate": "2026-08-29T21:00:00-07:00",
+  "timezone": "America/Phoenix",
+  "location": {
+    "venue": "Mullett Arena, Arizona State University",
+    "city": "Tempe",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 33.4255,
+    "lng": -111.9400
+  },
+  "description": {
+    "sv": "SLS tar med sig turnén till Tempe, Arizona, och firar sportens historia, utveckling och framtid på Mullett Arena.",
+    "en": "SLS brings the tour to Tempe, Arizona, celebrating the history, progression, and future of the sport at Mullett Arena."
+  },
+  "organizer": "Street League Skateboarding",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum och tid enligt Mullett Arenas officiella eventsida.",
+    "url": "https://mullettarena.com/event/sls/",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

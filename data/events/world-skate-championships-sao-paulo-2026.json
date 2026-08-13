@@ -1,0 +1,31 @@
+{
+  "slug": "world-skate-championships-sao-paulo-2026",
+  "name": "World Skate Street & Park World Championships",
+  "series": "World Skate",
+  "category": ["street", "park"],
+  "level": "pro",
+  "startDate": "2026-03-01T09:00:00-03:00",
+  "endDate": "2026-03-08T20:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "location": {
+    "venue": "TBD Arena",
+    "city": "São Paulo",
+    "country": "Brasilien",
+    "countryCode": "BR",
+    "continent": "south-america",
+    "lat": -23.5505,
+    "lng": -46.6333
+  },
+  "description": {
+    "sv": "Världsmästerskapen i street- och parkskateboard, arrangerade av World Skate. Ursprungligen planerade till Washington D.C. 2025 men flyttade till São Paulo, med tävlingar 1–8 mars 2026. Ger även kvalpoäng inför internationella mästerskap.",
+    "en": "The World Skateboarding Championships in street and park, organized by World Skate. Originally slated for Washington D.C. in 2025 but relocated to São Paulo, running March 1–8, 2026. Also serves as a qualifying event for international championship rankings."
+  },
+  "officialUrl": "https://www.worldskate.org",
+  "organizer": "World Skate",
+  "disciplines": ["Street", "Park"],
+  "source": {
+    "note": "Datum enligt World Skate / Wikipedia (2025-upplagan sköts fram till mars 2026).",
+    "url": "https://en.wikipedia.org/wiki/World_Skateboarding_Championship",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

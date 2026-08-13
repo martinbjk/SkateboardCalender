@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Anton', Impact, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-concrete-100 text-asphalt-900 dark:bg-asphalt-950 dark:text-chalk-100;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  @apply bg-spray text-asphalt-950;
+}
+
+:focus-visible {
+  outline: 2px solid theme('colors.spray.DEFAULT');
+  outline-offset: 3px;
+}
+
+/* Grip tape-textur: subtil prickmönster som skiftar med tema */
+.grip-texture {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 7px 7px;
+  color: currentColor;
+  opacity: 1;
+}
+
+/* Hazard-stripes — används sparsamt, som live-indikator/divider */
+.hazard-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    theme('colors.hazard.DEFAULT') 0,
+    theme('colors.hazard.DEFAULT') 10px,
+    theme('colors.asphalt.950') 10px,
+    theme('colors.asphalt.950') 20px
+  );
+}
+
+/* Stämpel-look för statusetiketter: lätt rotation + sträv kant via clip-path */
+.stamp {
+  clip-path: polygon(
+    1% 8%, 6% 0%, 94% 2%, 99% 10%,
+    98% 92%, 92% 100%, 4% 98%, 0% 90%
+  );
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+}
+
+.font-mono-tight {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}

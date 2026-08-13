@@ -1,0 +1,30 @@
+{
+  "slug": "world-skate-cup-rome-2026",
+  "name": "World Skate Park & Street World Cup",
+  "series": "World Skate World Cup",
+  "category": ["street", "park"],
+  "level": "open",
+  "startDate": "2026-06-07T09:00:00+02:00",
+  "endDate": "2026-06-21T20:00:00+02:00",
+  "timezone": "Europe/Rome",
+  "location": {
+    "venue": "Skate Park Rom",
+    "city": "Rom",
+    "country": "Italien",
+    "countryCode": "IT",
+    "continent": "europe",
+    "lat": 41.9028,
+    "lng": 12.4964
+  },
+  "description": {
+    "sv": "Två veckor med World Cup-tävlingar i park och street, öppna för både amatörer och proffs som samlar poäng inför World Skateboarding Championship-serien.",
+    "en": "Two weeks of World Cup competition in park and street, open to both amateurs and pros collecting points toward the World Skateboarding Championship series."
+  },
+  "organizer": "World Skate",
+  "disciplines": ["Street", "Park"],
+  "source": {
+    "note": "Datum enligt branschkalender (The Boardr Events Industry List).",
+    "url": "https://theboardr.com/eventsindustry",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

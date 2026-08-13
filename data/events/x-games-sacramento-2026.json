@@ -1,0 +1,31 @@
+{
+  "slug": "x-games-sacramento-2026",
+  "name": "X Games Sacramento",
+  "series": "X Games League (XGL) — Summer Season, Stop 1",
+  "category": ["street", "park", "vert"],
+  "level": "pro",
+  "startDate": "2026-06-26T14:00:00-07:00",
+  "endDate": "2026-06-28T22:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "Cal Expo",
+    "city": "Sacramento",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 38.6014,
+    "lng": -121.4419
+  },
+  "description": {
+    "sv": "Startskottet för den nya X Games League (XGL): ett lagbaserat, årslångt tävlingsformat. Nästan 100 av världens bästa skateboard-, BMX- och Moto X-åkare tävlar i 18 grenar över tre dagar, med lag från Los Angeles, New York, São Paulo och Tokyo.",
+    "en": "The launch of the new X Games League (XGL): a team-based, year-round competition format. Nearly 100 of the world's top skateboard, BMX, and Moto X athletes compete across 18 medal events over three days, representing clubs from Los Angeles, New York, São Paulo, and Tokyo."
+  },
+  "officialUrl": "https://www.xgames.com/events/sacramento-2026/",
+  "organizer": "X Games",
+  "disciplines": ["Street", "Park", "Vert"],
+  "source": {
+    "note": "Schema bekräftat av X Games officiella sajt och ESPN.",
+    "url": "https://www.xgames.com/events/sacramento-2026/",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

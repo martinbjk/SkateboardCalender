@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "siteTitle": "Skate Event Calendar",
+    "siteDescription": "Every major and minor skateboarding competition on Earth — in one place, always current."
+  },
+  "nav": {
+    "home": "Calendar",
+    "submit": "Submit event",
+    "about": "About"
+  },
+  "hero": {
+    "eyebrow": "Live · Global · Community-driven",
+    "title": "Skateboarding contests, the whole world, one feed.",
+    "subtitle": "From SLS and X Games to local jams — filter by country, discipline, and level. Updates automatically via GitHub.",
+    "cta": "Browse all events",
+    "submitCta": "Submit an event"
+  },
+  "status": {
+    "upcoming": "Upcoming",
+    "live": "Live",
+    "finished": "Finished",
+    "cancelled": "Cancelled",
+    "postponed": "Postponed"
+  },
+  "view": {
+    "list": "List",
+    "calendar": "Calendar"
+  },
+  "filters": {
+    "title": "Filter",
+    "search": "Search events, cities, or series...",
+    "category": "Discipline",
+    "level": "Level",
+    "continent": "Region",
+    "dateRange": "Date",
+    "clear": "Clear filters",
+    "noResults": "No events match your filters. Try clearing one.",
+    "resultsCount": "{count, plural, =0 {No events} one {# event} other {# events}}"
+  },
+  "category": {
+    "street": "Street",
+    "park": "Park",
+    "vert": "Vert",
+    "bowl": "Bowl",
+    "freestyle": "Freestyle",
+    "downhill": "Downhill",
+    "demo": "Demo",
+    "contest": "Contest"
+  },
+  "level": {
+    "amateur": "Amateur",
+    "pro": "Pro",
+    "open": "Open",
+    "youth": "Youth"
+  },
+  "continent": {
+    "africa": "Africa",
+    "asia": "Asia",
+    "europe": "Europe",
+    "north-america": "North America",
+    "south-america": "South America",
+    "oceania": "Oceania"
+  },
+  "event": {
+    "officialSite": "Official site",
+    "register": "Register",
+    "tickets": "Tickets",
+    "addToCalendar": "Add to calendar",
+    "addToGoogle": "Google Calendar",
+    "downloadIcs": "Download .ics",
+    "organizer": "Organizer",
+    "disciplines": "Disciplines",
+    "venue": "Venue",
+    "backToCalendar": "Back to calendar",
+    "source": "Source",
+    "sponsoredSlot": "Ad slot (coming soon)"
+  },
+  "submit": {
+    "title": "Submit an event",
+    "intro": "This site updates via GitHub. There are two ways to submit an event:",
+    "issueTitle": "1. Open a GitHub Issue",
+    "issueBody": "Fastest for most people. Fill in our template with the name, date, location, and link — we'll add it to /data/events.",
+    "issueCta": "Open the Issue template",
+    "prTitle": "2. Send a Pull Request",
+    "prBody": "If you're already familiar with the structure: add a new JSON file to /data/events/ following the schema and open a PR. A GitHub Actions job validates the file automatically.",
+    "prCta": "View example JSON on GitHub",
+    "guidelines": "Please make sure dates, timezone, and links are accurate — we double-check before publishing."
+  },
+  "footer": {
+    "tagline": "Built by skateboarders, for skateboarders. Open source.",
+    "github": "GitHub",
+    "submitEvent": "Submit event",
+    "language": "Language",
+    "theme": "Theme",
+    "rights": "All times shown in local venue time unless noted otherwise."
+  },
+  "theme": {
+    "dark": "Dark mode",
+    "light": "Light mode"
+  },
+  "notFound": {
+    "title": "No event found here",
+    "body": "This link may be old, or the event may have moved.",
+    "cta": "Back to calendar"
+  }
+}

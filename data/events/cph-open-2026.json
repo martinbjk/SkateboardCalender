@@ -1,0 +1,31 @@
+{
+  "slug": "cph-open-2026",
+  "name": "CPH OPEN",
+  "series": "Copenhagen Open",
+  "category": ["street", "demo"],
+  "level": "open",
+  "startDate": "2026-08-26T12:00:00+02:00",
+  "endDate": "2026-08-30T22:00:00+02:00",
+  "timezone": "Europe/Copenhagen",
+  "location": {
+    "venue": "CPH Skatepark & stadens gator",
+    "city": "Köpenhamn",
+    "country": "Danmark",
+    "countryCode": "DK",
+    "continent": "europe",
+    "lat": 55.6598,
+    "lng": 12.5401
+  },
+  "description": {
+    "sv": "En fristående skateboardfestival snarare än en traditionell tävling — dagliga sessions på ikoniska spots i hela Köpenhamn, best-trick-jams, gatuvandringar och fester, utan stel tävlingsstruktur. Efterträdare till Copenhagen Pro (grundat 2007).",
+    "en": "An independent skateboarding festival rather than a traditional contest — daily sessions at iconic spots across Copenhagen, best-trick jams, street pilgrimages, and parties, without a rigid competition structure. Successor to the Copenhagen Pro, founded in 2007."
+  },
+  "officialUrl": "https://www.boardriding.com/events/copenhagen-open-2026",
+  "organizer": "CPH Skatepark",
+  "disciplines": ["Street jams", "Best Trick"],
+  "source": {
+    "note": "Exakta datum för 2026 var inte slutgiltigt bekräftade vid research; augusti-period enligt tidigare år och Boardriding-kalendern.",
+    "url": "https://www.boardriding.com/events/copenhagen-open-2026",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

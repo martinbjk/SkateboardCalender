@@ -1,0 +1,31 @@
+{
+  "slug": "skateboardcupen-jonkoping-2026",
+  "name": "Skateboardcupen Jönköping — Street SM",
+  "series": "Skateboardcupen / SM-veckan",
+  "category": ["street", "contest"],
+  "level": "open",
+  "startDate": "2026-09-05T09:00:00+02:00",
+  "endDate": "2026-09-06T18:00:00+02:00",
+  "timezone": "Europe/Stockholm",
+  "location": {
+    "venue": "Skatepark Jönköping",
+    "city": "Jönköping",
+    "country": "Sverige",
+    "countryCode": "SE",
+    "continent": "europe",
+    "lat": 57.7826,
+    "lng": 14.1618
+  },
+  "description": {
+    "sv": "Svenska mästerskapen i street, arrangerade inom ramen för Skateboardcupen och SM-veckan. En av höjdpunkterna i den svenska tävlingskalendern, öppen för åkare på väg mot landslagsnivå.",
+    "en": "The Swedish Championships in street skateboarding, held as part of Skateboardcupen and SM-veckan (Sweden's national multi-sport championship week). One of the highlights of the Swedish competitive calendar, open to riders working toward national-team level."
+  },
+  "officialUrl": "https://skateboardcupen.se/",
+  "organizer": "Sveriges Skateboardförbund",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Hämtat från Sveriges Skateboardförbunds officiella kalender.",
+    "url": "https://sverigesskateboardforbund.se/kalender/",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

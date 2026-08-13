@@ -1,0 +1,31 @@
+{
+  "slug": "sls-sydney-2026",
+  "name": "SLS Sydney",
+  "series": "SLS Championship Tour",
+  "category": ["street"],
+  "level": "pro",
+  "startDate": "2026-02-14T10:00:00+11:00",
+  "endDate": "2026-02-15T18:00:00+11:00",
+  "timezone": "Australia/Sydney",
+  "location": {
+    "venue": "Ken Rosewall Arena",
+    "city": "Sydney",
+    "country": "Australia",
+    "countryCode": "AU",
+    "continent": "oceania",
+    "lat": -33.7969,
+    "lng": 151.0824
+  },
+  "description": {
+    "sv": "Säsongsöppningen av SLS Championship Tour 2026, för första gången i turnerans historia. Två dagar med knockout-omgångar och final på Ken Rosewall Arena, efter två utsålda upplagor 2023 och 2024.",
+    "en": "The season opener of the 2026 SLS Championship Tour, the first time Australia has hosted the tour's opening event. Two days of Knockout Rounds and Finals at Ken Rosewall Arena, following two sold-out editions in 2023 and 2024."
+  },
+  "officialUrl": "https://www.streetleague.com/sydney",
+  "organizer": "Street League Skateboarding",
+  "disciplines": ["Knockout Rounds", "Finals", "Best Trick Jam"],
+  "source": {
+    "note": "Datum och plats bekräftade av SLS officiella sajt.",
+    "url": "https://www.streetleague.com/sydney",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

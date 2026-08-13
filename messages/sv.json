@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "siteTitle": "Skate Event Calendar",
+    "siteDescription": "Alla stora och små skateboardtävlingar i världen — samlade på ett ställe, alltid aktuella."
+  },
+  "nav": {
+    "home": "Kalender",
+    "submit": "Föreslå event",
+    "about": "Om sajten"
+  },
+  "hero": {
+    "eyebrow": "Live · Global · Community-driven",
+    "title": "Skateboard-tävlingar, hela världen, ett flöde.",
+    "subtitle": "Från SLS och X Games till lokala jams — filtrera på land, disciplin och nivå. Uppdateras automatiskt via GitHub.",
+    "cta": "Se alla events",
+    "submitCta": "Föreslå ett event"
+  },
+  "status": {
+    "upcoming": "Kommande",
+    "live": "Live",
+    "finished": "Avslutat",
+    "cancelled": "Inställt",
+    "postponed": "Uppskjutet"
+  },
+  "view": {
+    "list": "Lista",
+    "calendar": "Kalender"
+  },
+  "filters": {
+    "title": "Filtrera",
+    "search": "Sök event, stad eller serie...",
+    "category": "Disciplin",
+    "level": "Nivå",
+    "continent": "Region",
+    "dateRange": "Datum",
+    "clear": "Rensa filter",
+    "noResults": "Inga events matchar filtren. Prova att rensa något.",
+    "resultsCount": "{count, plural, =0 {Inga events} one {# event} other {# events}}"
+  },
+  "category": {
+    "street": "Street",
+    "park": "Park",
+    "vert": "Vert",
+    "bowl": "Bowl",
+    "freestyle": "Freestyle",
+    "downhill": "Downhill",
+    "demo": "Demo",
+    "contest": "Contest"
+  },
+  "level": {
+    "amateur": "Amatör",
+    "pro": "Pro",
+    "open": "Open",
+    "youth": "Youth"
+  },
+  "continent": {
+    "africa": "Afrika",
+    "asia": "Asien",
+    "europe": "Europa",
+    "north-america": "Nordamerika",
+    "south-america": "Sydamerika",
+    "oceania": "Oceanien"
+  },
+  "event": {
+    "officialSite": "Officiell sajt",
+    "register": "Anmäl dig",
+    "tickets": "Biljetter",
+    "addToCalendar": "Lägg till i kalender",
+    "addToGoogle": "Google Calendar",
+    "downloadIcs": "Ladda ner .ics",
+    "organizer": "Arrangör",
+    "disciplines": "Grenar",
+    "venue": "Arena",
+    "backToCalendar": "Tillbaka till kalendern",
+    "source": "Källa",
+    "sponsoredSlot": "Annonsplats (kommer snart)"
+  },
+  "submit": {
+    "title": "Föreslå ett event",
+    "intro": "Sajten uppdateras via GitHub. Det finns två sätt att föreslå ett event:",
+    "issueTitle": "1. Öppna en GitHub Issue",
+    "issueBody": "Snabbast för de flesta. Fyll i vår mall med namn, datum, plats och länk — vi lägger till det i /data/events.",
+    "issueCta": "Öppna Issue-mallen",
+    "prTitle": "2. Skicka en Pull Request",
+    "prBody": "Om du redan känner till strukturen: lägg en ny JSON-fil i /data/events/ enligt schemat och öppna en PR. Ett GitHub Actions-jobb validerar filen automatiskt.",
+    "prCta": "Visa exempel-JSON på GitHub",
+    "guidelines": "Se till att datum, tidszon och länkar stämmer — vi dubbelkollar innan publicering."
+  },
+  "footer": {
+    "tagline": "Byggd av skateboardåkare, för skateboardåkare. Öppen källkod.",
+    "github": "GitHub",
+    "submitEvent": "Föreslå event",
+    "language": "Språk",
+    "theme": "Tema",
+    "rights": "Alla tider visas i lokal arenatid om inget annat anges."
+  },
+  "theme": {
+    "dark": "Mörkt läge",
+    "light": "Ljust läge"
+  },
+  "notFound": {
+    "title": "Hittade inget event här",
+    "body": "Länken kan vara gammal eller så har eventet flyttats.",
+    "cta": "Tillbaka till kalendern"
+  }
+}

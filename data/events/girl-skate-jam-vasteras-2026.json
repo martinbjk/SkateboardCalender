@@ -1,0 +1,31 @@
+{
+  "slug": "girl-skate-jam-vasteras-2026",
+  "name": "Girl Skate Jam Västerås",
+  "series": "Girl Skate Jam",
+  "category": ["bowl", "street", "demo"],
+  "level": "open",
+  "startDate": "2026-08-16T10:00:00+02:00",
+  "endDate": "2026-08-16T14:30:00+02:00",
+  "timezone": "Europe/Stockholm",
+  "location": {
+    "venue": "Löga skatepark",
+    "city": "Västerås",
+    "country": "Sverige",
+    "countryCode": "SE",
+    "continent": "europe",
+    "lat": 59.5915,
+    "lng": 16.5231
+  },
+  "description": {
+    "sv": "Sjätte upplagan av Girl Skate Jam i Västerås utomhuspark. En dag i EachOneTeachOne-anda där tjejer i alla nivåer åker tillsammans, med tävling i bowl och street för den som vill. Anmälan sker på plats.",
+    "en": "The sixth edition of Girl Skate Jam at Västerås's outdoor park. A day in the EachOneTeachOne spirit where girls of all levels skate together, with an optional bowl and street competition. Sign-up happens on site."
+  },
+  "officialUrl": "https://sverigesskateboardforbund.se/kalender/",
+  "organizer": "Sveriges Skateboardförbund",
+  "disciplines": ["Bowl", "Street"],
+  "source": {
+    "note": "Hämtat från Sveriges Skateboardförbunds officiella kalender.",
+    "url": "https://sverigesskateboardforbund.se/kalender/",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

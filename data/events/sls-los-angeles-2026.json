@@ -1,0 +1,31 @@
+{
+  "slug": "sls-los-angeles-2026",
+  "name": "SLS Downtown Los Angeles Takeover",
+  "series": "SLS Championship Tour",
+  "category": ["street"],
+  "level": "pro",
+  "startDate": "2026-04-04T11:00:00-07:00",
+  "endDate": "2026-04-04T21:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "Ace*Mission Studios",
+    "city": "Los Angeles",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 34.0407,
+    "lng": -118.2468
+  },
+  "description": {
+    "sv": "SLS Takeover-serien slår ner i Downtown LA med en heldag av tävling, Auto Jam och prisceremoni, plus liveframträdande. Del av SLS 2026 Takeover-format med fokus på enskilda trick-format.",
+    "en": "The SLS Takeover series lands in Downtown LA with a full day of competition, an Auto Jam, and an awards ceremony with a live musical performance. Part of SLS's 2026 Takeover format focused on single-trick competition."
+  },
+  "officialUrl": "https://www.streetleague.com/post/street-league-skateboarding-downtown-los-angeles-2026-event-schedule",
+  "organizer": "Street League Skateboarding",
+  "disciplines": ["Takeover", "Auto Jam"],
+  "source": {
+    "note": "Schema enligt SLS officiella sajt.",
+    "url": "https://www.streetleague.com/post/street-league-skateboarding-downtown-los-angeles-2026-event-schedule",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

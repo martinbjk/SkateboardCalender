@@ -1,0 +1,31 @@
+{
+  "slug": "x-games-chiba-2026",
+  "name": "X Games Chiba",
+  "series": "X Games League (XGL) — Summer Season, Stop 2",
+  "category": ["street", "park"],
+  "level": "pro",
+  "startDate": "2026-07-04T10:00:00+09:00",
+  "endDate": "2026-07-05T19:00:00+09:00",
+  "timezone": "Asia/Tokyo",
+  "location": {
+    "venue": "Makuhari Messe",
+    "city": "Chiba",
+    "country": "Japan",
+    "countryCode": "JP",
+    "continent": "asia",
+    "lat": 35.6474,
+    "lng": 140.0345
+  },
+  "description": {
+    "sv": "Andra stoppet på XGL:s sommarsäsong. Åkare som Yuto Horigome, Chloe Covell, Sora Shirai och Coco Yoshizawa tävlar för sina lag inför den avgörande finalen i New Orleans.",
+    "en": "The second stop on the XGL summer season. Athletes including Yuto Horigome, Chloe Covell, Sora Shirai, and Coco Yoshizawa compete for their clubs ahead of the deciding championship stop in New Orleans."
+  },
+  "officialUrl": "https://www.xgames.com/",
+  "organizer": "X Games",
+  "disciplines": ["Street", "Park"],
+  "source": {
+    "note": "Datum och plats enligt Olympics.com/X Games-förhandsbevakning.",
+    "url": "https://www.olympics.com/en/news/x-games-chiba-2026-preview",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "motherland-johannesburg-2026",
+  "name": "Motherland — All-Girls Skate Contest",
+  "series": "The Skate School",
+  "category": ["street", "park"],
+  "level": "amateur",
+  "startDate": "2026-08-09T09:00:00+02:00",
+  "endDate": "2026-08-09T17:00:00+02:00",
+  "timezone": "Africa/Johannesburg",
+  "location": {
+    "venue": "The Skate School, Randburg",
+    "city": "Johannesburg",
+    "country": "Sydafrika",
+    "countryCode": "ZA",
+    "continent": "africa",
+    "lat": -26.0939,
+    "lng": 27.9973
+  },
+  "description": {
+    "sv": "Sydafrikas första nationella tävling enbart för tjejer, arrangerad av The Skate School på Kvinnodagen. Sex års planering ligger bakom eventet, som ska ge unga tjejer en scen som är helt deras egen.",
+    "en": "South Africa's first national-scale skateboarding competition dedicated entirely to girls, hosted by The Skate School on Women's Day. Six years in the making, the event gives young female skaters a platform that's fully their own."
+  },
+  "organizer": "The Skate School",
+  "disciplines": ["Street", "Park"],
+  "source": {
+    "note": "Rapporterat av TimesLIVE inför eventet 9 augusti 2026.",
+    "url": "https://www.timeslive.co.za/news/south-africa/2026-08-08-watch-all-girls-skateboarding-contest-aims-to-spotlight-budding-talent/",
+    "retrievedAt": "2026-08-13T00:00:00+02:00"
+  }
+}

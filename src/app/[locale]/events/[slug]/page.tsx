@@ -1,0 +1,161 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { MapPin, ExternalLink, Ticket, Users } from 'lucide-react';
+import { Link } from '@/i18n/navigation';
+import { getAllEvents, getEventBySlug, getEventStatus } from '@/lib/events';
+import { formatDateRange, formatTime } from '@/lib/date';
+import { StatusTag } from '@/components/StatusTag';
+import { AddToCalendar } from '@/components/AddToCalendar';
+
+export function generateStaticParams() {
+  return getAllEvents().map((e) => ({ slug: e.slug }));
+}
+
+export async function generateMetadata({
+  params: { locale, slug }
+}: {
+  params: { locale: string; slug: string };
+}): Promise<Metadata> {
+  const event = getEventBySlug(slug);
+  if (!event) return {};
+  const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  return {
+    title: event.name,
+    description,
+    openGraph: { title: event.name, description, type: 'article' }
+  };
+}
+
+export default async function EventPage({
+  params: { locale, slug }
+}: {
+  params: { locale: string; slug: string };
+}) {
+  const event = getEventBySlug(slug);
+  if (!event) notFound();
+
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale });
+  const status = getEventStatus(event);
+  const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+
+  return (
+    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+      <Link href="/" className="font-mono-tight text-xs uppercase tracking-wide text-chalk-500 hover:text-spray">
+        ← {t('event.backToCalendar')}
+      </Link>
+
+      <div className="mt-5 flex items-center gap-3">
+        <StatusTag status={status} />
+        {event.series && <span className="text-sm text-chalk-500">{event.series}</span>}
+      </div>
+
+      <h1 className="font-display mt-3 text-4xl leading-[1.02] tracking-tight sm:text-5xl">
+        {event.name}
+      </h1>
+
+      <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 font-mono-tight text-sm text-asphalt-800 dark:text-chalk-300">
+        <span className="flex items-center gap-1.5">
+          <MapPin size={14} className="text-spray" />
+          {event.location.venue}, {event.location.city}, {event.location.country}
+        </span>
+        <span>{formatDateRange(event, locale)}</span>
+        <span>
+          {formatTime(event.startDate, event.timezone, locale)}–
+          {formatTime(event.endDate, event.timezone, locale)} ({event.timezone.split('/').pop()?.replace('_', ' ')})
+        </span>
+      </div>
+
+      <div className="mt-6 flex flex-wrap gap-2">
+        {event.category.map((c) => (
+          <span
+            key={c}
+            className="rounded-sm border border-asphalt-700/25 px-2.5 py-1 font-mono-tight text-xs uppercase tracking-wide text-chalk-500 dark:border-chalk-500/20"
+          >
+            {t(`category.${c}`)}
+          </span>
+        ))}
+        <span className="rounded-sm bg-hazard/20 px-2.5 py-1 font-mono-tight text-xs uppercase tracking-wide text-hazard-dark dark:text-hazard">
+          {t(`level.${event.level}`)}
+        </span>
+      </div>
+
+      <p className="mt-8 max-w-2xl text-base leading-relaxed text-asphalt-800/90 dark:text-chalk-300/90">
+        {description}
+      </p>
+
+      {event.disciplines && event.disciplines.length > 0 && (
+        <div className="mt-6">
+          <h2 className="font-mono-tight text-xs uppercase tracking-wide text-chalk-500">
+            {t('event.disciplines')}
+          </h2>
+          <p className="mt-1 text-sm">{event.disciplines.join(' · ')}</p>
+        </div>
+      )}
+
+      {event.organizer && (
+        <div className="mt-4 flex items-center gap-2 text-sm text-chalk-500">
+          <Users size={14} />
+          {t('event.organizer')}: {event.organizer}
+        </div>
+      )}
+
+      <div className="mt-8 flex flex-wrap items-center gap-3">
+        <AddToCalendar event={event} />
+
+        {event.officialUrl && (
+          <LinkButton href={event.officialUrl} icon={<ExternalLink size={15} />}>
+            {t('event.officialSite')}
+          </LinkButton>
+        )}
+        {event.registrationUrl && (
+          <LinkButton href={event.registrationUrl} icon={<Users size={15} />}>
+            {t('event.register')}
+          </LinkButton>
+        )}
+        {event.ticketsUrl && (
+          <LinkButton href={event.ticketsUrl} icon={<Ticket size={15} />}>
+            {t('event.tickets')}
+          </LinkButton>
+        )}
+      </div>
+
+      {/* Reserverad plats för framtida sponsrad banner-placering (ej aktiv i denna version) */}
+      <div className="mt-10 flex items-center justify-center rounded-stamp border border-dashed border-asphalt-700/25 py-6 font-mono-tight text-xs uppercase tracking-wide text-chalk-500 dark:border-chalk-500/20">
+        {t('event.sponsoredSlot')}
+      </div>
+
+      {event.source?.url && (
+        <p className="mt-6 text-xs text-chalk-500">
+          {t('event.source')}:{' '}
+          <a href={event.source.url} target="_blank" rel="noreferrer noopener" className="underline hover:text-spray">
+            {event.source.url}
+          </a>
+        </p>
+      )}
+    </div>
+  );
+}
+
+function LinkButton({
+  href,
+  icon,
+  children
+}: {
+  href: string;
+  icon: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer noopener"
+      className="flex items-center gap-2 rounded-stamp border border-asphalt-700/30 px-4 py-2.5 font-mono-tight text-xs font-bold uppercase tracking-wide transition hover:border-spray hover:text-spray dark:border-chalk-500/20"
+    >
+      {icon}
+      {children}
+    </a>
+  );
+}
