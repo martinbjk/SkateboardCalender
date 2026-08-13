@@ -1,0 +1,33 @@
+name: Validera eventdata
+
+# Körs på varje Pull Request som ändrar filer i /data/events, samt manuellt.
+# Detta är den mekanism som gör att community-PRs med nya events failar
+# tydligt i GitHub UI om JSON:en är trasig eller inte matchar schemat.
+
+on:
+  pull_request:
+    paths:
+      - "data/events/**"
+      - "src/lib/schema.ts"
+      - "scripts/validate-events.ts"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Installera dependencies
+        run: npm ci
+
+      - name: Validera data/events/*.json mot schema
+        run: npm run validate-events
+
+      - name: Typecheck
+        run: npm run typecheck

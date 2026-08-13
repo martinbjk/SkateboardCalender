@@ -1,0 +1,53 @@
+name: Schemalagd datauppdatering (MALL — ej aktiv)
+
+# VIKTIGT — LÄS DETTA FÖRST:
+# Det här är en MALL för hur du kan schemalägga automatisk hämtning av
+# nya events, t.ex. från en officiell kalender-API eller ett flöde som
+# SLS/X Games/World Skate publicerar. Jag (Claude) har INTE kopplat detta
+# mot någon riktig datakälla, eftersom ingen sådan angavs i uppdraget —
+# att bygga en pålitlig scraper mot en specifik sajt kräver att man vet
+# exakt vilken sajt, vilket format den har, och om scraping är tillåtet
+# enligt sajtens villkor.
+#
+# För att aktivera:
+#   1. Skriv scripts/fetch-events.ts som hämtar data från din valda källa
+#      och skriver nya filer till data/events/ enligt schema.ts.
+#   2. Avkommentera `schedule:`-blocket nedan.
+#   3. Byt `if: false` till `if: true` i steget "Hämta events".
+#
+# Tills dess körs jobbet men gör ingenting skadligt (dry-run).
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 6 * * 1" # varje måndag 06:00 UTC
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Installera dependencies
+        run: npm ci
+
+      - name: Hämta events (INAKTIVT — se kommentar högst upp i filen)
+        if: false
+        run: npx tsx scripts/fetch-events.ts
+
+      - name: Validera ny data
+        run: npm run validate-events
+
+      - name: Skapa Pull Request med eventuella ändringar
+        if: false
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: automatisk eventuppdatering"
+          title: "Automatisk eventuppdatering"
+          branch: auto/event-update
+          add-paths: data/events/**
