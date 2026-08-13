@@ -40,8 +40,8 @@ body {
 .grip-texture {
   background-image: radial-gradient(currentColor 1px, transparent 1px);
   background-size: 7px 7px;
-  color: currentColor;
-  opacity: 1;
+  
+  
 }
 
 /* Hazard-stripes — används sparsamt, som live-indikator/divider */
