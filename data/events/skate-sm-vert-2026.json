@@ -1,0 +1,31 @@
+{
+  "slug": "skate-sm-vert-2026",
+  "name": "Skate SM Vert",
+  "series": "Skate SM",
+  "category": ["vert"],
+  "level": "open",
+  "startDate": "2026-09-05T09:00:00+03:00",
+  "endDate": "2026-09-05T18:00:00+03:00",
+  "timezone": "Europe/Helsinki",
+  "location": {
+    "venue": "Savelan skeittiparkki",
+    "city": "Helsingfors",
+    "country": "Finland",
+    "countryCode": "FI",
+    "continent": "europe",
+    "lat": 60.2354,
+    "lng": 25.0200
+  },
+  "description": {
+    "sv": "Finlands mästerskap i vert, arrangerat som en del av Mica Vert Day på Savelan skeittiparkki i Helsingfors. Utlänningar får delta, men SM-titeln kräver finskt medborgarskap, personnummer eller fast bosättning i Finland.",
+    "en": "Finland's national vert championship, held as part of Mica Vert Day at Savelan skeittiparkki in Helsinki. Foreign competitors may participate, but the national title requires Finnish citizenship, a Finnish personal ID, or permanent residence in Finland."
+  },
+  "officialUrl": "https://www.rullalauta.fi/skatesm",
+  "organizer": "Suomen Rullalautaliitto",
+  "disciplines": ["Vert"],
+  "source": {
+    "note": "Datum bekräftat direkt via Suomen Rullalautaliittos officiella sida (rullalauta.fi/skatesm och rullalauta.fi/tapahtumat), sökt 14 aug 2026.",
+    "url": "https://www.rullalauta.fi/skatesm",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

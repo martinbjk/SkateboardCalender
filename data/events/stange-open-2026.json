@@ -1,0 +1,31 @@
+{
+  "slug": "stange-open-2026",
+  "name": "Stange Open",
+  "series": "Stange Open",
+  "category": ["street", "bowl"],
+  "level": "open",
+  "startDate": "2026-09-19T09:00:00+02:00",
+  "endDate": "2026-09-20T18:00:00+02:00",
+  "timezone": "Europe/Oslo",
+  "location": {
+    "venue": "Stange skatepark",
+    "city": "Stange",
+    "country": "Norge",
+    "countryCode": "NO",
+    "continent": "europe",
+    "lat": 60.7314,
+    "lng": 11.1841
+  },
+  "description": {
+    "sv": "Årligt öppet event i Stange (Hamar-området) med street, bowl jam, best trick och Game of S.K.A.T.E. Ca 40 000 NOK i prispengar.",
+    "en": "Annual open event in Stange (Hamar area) featuring street, a bowl jam, best trick, and Game of S.K.A.T.E. Approximately NOK 40,000 in prize money."
+  },
+  "officialUrl": "https://www.brettstedet.no",
+  "organizer": "Stange Skateboardklubb",
+  "disciplines": ["Street", "Bowl", "Best Trick"],
+  "source": {
+    "note": "Datum ej oberoende bekräftat av mig via officiell 2026-specifik källa — baserat på uppgift från användaren. Historiskt har eventet hållits i augusti/september med varierande exakt datum år för år. Verifiera på brettstedet.no eller Brettforbundets sida innan publicering.",
+    "url": "https://www.brettstedet.no/info.asp?id=2894",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

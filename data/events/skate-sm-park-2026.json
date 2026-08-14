@@ -1,0 +1,31 @@
+{
+  "slug": "skate-sm-park-2026",
+  "name": "Skate SM Park",
+  "series": "Skate SM",
+  "category": ["park"],
+  "level": "open",
+  "startDate": "2026-10-23T09:00:00+03:00",
+  "endDate": "2026-10-24T18:00:00+03:00",
+  "timezone": "Europe/Helsinki",
+  "location": {
+    "venue": "Grip Skatepark",
+    "city": "Tammerfors",
+    "country": "Finland",
+    "countryCode": "FI",
+    "continent": "europe",
+    "lat": 61.4978,
+    "lng": 23.7610
+  },
+  "description": {
+    "sv": "Finlands mästerskap i park, på Grip Skatepark i Tammerfors. Del av Skate SM 2026-serien.",
+    "en": "Finland's national park championship, at Grip Skatepark in Tampere. Part of the 2026 Skate SM series."
+  },
+  "officialUrl": "https://www.rullalauta.fi/skatesm",
+  "organizer": "Suomen Rullalautaliitto",
+  "disciplines": ["Park"],
+  "source": {
+    "note": "Datum bekräftat direkt via Suomen Rullalautaliittos officiella sida, sökt 14 aug 2026.",
+    "url": "https://www.rullalauta.fi/skatesm",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

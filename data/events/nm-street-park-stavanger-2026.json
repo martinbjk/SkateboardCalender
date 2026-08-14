@@ -1,0 +1,31 @@
+{
+  "slug": "nm-street-park-stavanger-2026",
+  "name": "NM Street & Park / Stavanger Open",
+  "series": "Norgesmesterskap (NM)",
+  "category": ["street", "park"],
+  "level": "open",
+  "startDate": "2026-08-14T09:00:00+02:00",
+  "endDate": "2026-08-16T18:00:00+02:00",
+  "timezone": "Europe/Oslo",
+  "location": {
+    "venue": "Tasta skatepark",
+    "city": "Stavanger",
+    "country": "Norge",
+    "countryCode": "NO",
+    "continent": "europe",
+    "lat": 58.9700,
+    "lng": 5.7331
+  },
+  "description": {
+    "sv": "Norges mästerskap i street och park, kombinerat med Stavanger Opens 30-årsjubileum på Tasta skatepark. Norges landslag och flera internationella åkare deltar.",
+    "en": "Norway's national street and park championship, combined with Stavanger Open's 30th anniversary at Tasta skatepark. Norway's national team and several international riders take part."
+  },
+  "officialUrl": "https://www.brettforbundet.no/artikler/sann-blir-nm-i-street-park-2026",
+  "organizer": "Brettforbundet / Stavanger Skateklubb",
+  "disciplines": ["Street", "Park"],
+  "source": {
+    "note": "Datum bekräftat via Brettforbundets officiella pressmeddelande och artikel: 14–16 augusti 2026. OBS: detta datum sammanfaller med dagens datum (14 aug 2026) — eventet pågår troligen redan eller startar idag/imorgon.",
+    "url": "https://www.brettforbundet.no/artikler/sann-blir-nm-i-street-park-2026",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

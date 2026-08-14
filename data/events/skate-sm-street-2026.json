@@ -1,0 +1,31 @@
+{
+  "slug": "skate-sm-street-2026",
+  "name": "Skate SM Street",
+  "series": "Skate SM",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-11-27T09:00:00+02:00",
+  "endDate": "2026-11-29T18:00:00+02:00",
+  "timezone": "Europe/Helsinki",
+  "location": {
+    "venue": "Vipukulman skeittihalli",
+    "city": "Lahtis",
+    "country": "Finland",
+    "countryCode": "FI",
+    "continent": "europe",
+    "lat": 60.9827,
+    "lng": 25.6612
+  },
+  "description": {
+    "sv": "Finlands mästerskap i street, på Vipukulman skeittihalli i Lahtis. Sista och avslutande deltävlingen i Skate SM 2026-serien.",
+    "en": "Finland's national street championship, at Vipukulman skeittihalli in Lahti. The final leg of the 2026 Skate SM series."
+  },
+  "officialUrl": "https://www.rullalauta.fi/skatesm",
+  "organizer": "Suomen Rullalautaliitto",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum bekräftat direkt via Suomen Rullalautaliittos officiella sida, sökt 14 aug 2026.",
+    "url": "https://www.rullalauta.fi/skatesm",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

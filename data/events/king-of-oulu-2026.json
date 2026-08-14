@@ -1,0 +1,31 @@
+{
+  "slug": "king-of-oulu-2026",
+  "name": "King of Oulu",
+  "series": "King of Oulu",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-09-04T09:00:00+03:00",
+  "endDate": "2026-09-05T18:00:00+03:00",
+  "timezone": "Europe/Helsinki",
+  "location": {
+    "venue": "TBD",
+    "city": "Uleåborg",
+    "country": "Finland",
+    "countryCode": "FI",
+    "continent": "europe",
+    "lat": 65.0121,
+    "lng": 25.4651
+  },
+  "description": {
+    "sv": "Öppen skateboardtävling i Uleåborg (Oulu), norra Finland.",
+    "en": "Open skateboarding contest in Oulu, northern Finland."
+  },
+  "officialUrl": "https://www.rullalauta.fi/tapahtumat",
+  "organizer": "Oulun Rullalautailijat",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt Suomen Rullalautaliittos evenemangslista (rullalauta.fi/tapahtumat), ej ytterligare oberoende verifierat av mig. Exakt arena ej specificerad.",
+    "url": "https://www.rullalauta.fi/tapahtumat",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}
