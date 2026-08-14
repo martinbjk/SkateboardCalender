@@ -22,14 +22,13 @@
     "sv": "Inbjudningsbaserad vert-tävling arrangerad av Tony Hawk i Salt Lake City.",
     "en": "Invite-only vert skateboarding contest organized by Tony Hawk in Salt Lake City."
   },
-  "officialUrl": "",
   "organizer": "Tony Hawk",
   "disciplines": [
     "Vert"
   ],
   "source": {
     "note": "Inbjudningsevent – ej öppet för allmän anmälan. Datum enligt källa 20–22 aug 2026.",
-    "url": "",
+    "url": "https://theboardr.com/eventsindustry",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }

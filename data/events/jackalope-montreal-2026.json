@@ -23,7 +23,6 @@
     "sv": "Street- och vert-tävling i Jackalope-serien, Montreal, Kanada.",
     "en": "Street and vert contest in the Jackalope series, Montreal, Canada."
   },
-  "officialUrl": "",
   "organizer": "Jackalope",
   "disciplines": [
     "Street",
@@ -31,7 +30,7 @@
   ],
   "source": {
     "note": "Datum ungefärligt enligt källa (ca 11–13 sep 2026).",
-    "url": "",
+    "url": "https://theboardr.com/eventsindustry",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }
