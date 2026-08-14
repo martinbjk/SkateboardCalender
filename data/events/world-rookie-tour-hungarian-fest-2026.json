@@ -1,0 +1,35 @@
+{
+  "slug": "world-rookie-tour-hungarian-fest-2026",
+  "name": "Hungarian Rookie Fest",
+  "series": "World Rookie Tour",
+  "category": [
+    "street"
+  ],
+  "level": "amateur",
+  "startDate": "2026-09-04T09:00:00+02:00",
+  "endDate": "2026-09-06T18:00:00+02:00",
+  "timezone": "Europe/Budapest",
+  "location": {
+    "venue": "TBD",
+    "city": "Budapest",
+    "country": "Ungern",
+    "countryCode": "HU",
+    "continent": "europe",
+    "lat": 47.4979,
+    "lng": 19.0402
+  },
+  "description": {
+    "sv": "Deltävling i World Rookie Tour för ungdomar/amatörer i street-skateboard, Ungern.",
+    "en": "World Rookie Tour stop for youth/amateur street skateboarding, Hungary."
+  },
+  "officialUrl": "https://worldrookietour.com",
+  "organizer": "World Rookie Tour",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Exakt ort inom Ungern ej specificerad i källan – Budapest satt som platshållare.",
+    "url": "https://worldrookietour.com",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "world-skate-games-asuncion-street-2026",
+  "name": "World Skate Games – Street World Championships",
+  "series": "World Skate Games",
+  "category": [
+    "street"
+  ],
+  "level": "pro",
+  "startDate": "2026-10-14T09:00:00-04:00",
+  "endDate": "2026-10-18T20:00:00-04:00",
+  "timezone": "America/Asuncion",
+  "location": {
+    "venue": "TBD",
+    "city": "Asunción",
+    "country": "Paraguay",
+    "countryCode": "PY",
+    "continent": "south-america",
+    "lat": -25.2637,
+    "lng": -57.5759
+  },
+  "description": {
+    "sv": "Street-VM inom ramen för World Skate Games i Asunción, del av kvalvägen mot OS 2028.",
+    "en": "Street World Championships held as part of the World Skate Games in Asunción, part of the Olympic qualification pathway toward LA 2028."
+  },
+  "officialUrl": "https://worldskate.org",
+  "organizer": "World Skate",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt källa ca 14–18 okt 2026. Verifiera på World Skates officiella kalender.",
+    "url": "https://skateboarding.worldskate.org",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

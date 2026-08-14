@@ -1,0 +1,35 @@
+{
+  "slug": "skateboard-gb-nationals-street-2026",
+  "name": "Skateboard GB National Championships – Street",
+  "series": "Skateboard GB Nationals",
+  "category": [
+    "street"
+  ],
+  "level": "amateur",
+  "startDate": "2026-09-12T09:00:00+01:00",
+  "endDate": "2026-09-13T18:00:00+01:00",
+  "timezone": "Europe/London",
+  "location": {
+    "venue": "BaySixty6",
+    "city": "London",
+    "country": "Storbritannien",
+    "countryCode": "GB",
+    "continent": "europe",
+    "lat": 51.5074,
+    "lng": -0.1278
+  },
+  "description": {
+    "sv": "Storbritanniens nationella mästerskap i street-skateboard, arrangerat av Skateboard GB på BaySixty6 i London.",
+    "en": "Britain's national street skateboarding championship, organized by Skateboard GB at BaySixty6 in London."
+  },
+  "officialUrl": "https://www.skateboardgb.org",
+  "organizer": "Skateboard GB",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum bekräftat i källan: 12–13 sep 2026.",
+    "url": "https://www.skateboardgb.org",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

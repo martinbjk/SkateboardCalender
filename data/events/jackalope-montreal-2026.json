@@ -1,0 +1,37 @@
+{
+  "slug": "jackalope-montreal-2026",
+  "name": "Jackalope Montreal",
+  "series": "Jackalope",
+  "category": [
+    "street",
+    "vert"
+  ],
+  "level": "open",
+  "startDate": "2026-09-11T09:00:00-04:00",
+  "endDate": "2026-09-13T18:00:00-04:00",
+  "timezone": "America/Toronto",
+  "location": {
+    "venue": "TBD",
+    "city": "Montreal",
+    "country": "Kanada",
+    "countryCode": "CA",
+    "continent": "north-america",
+    "lat": 45.5019,
+    "lng": -73.5674
+  },
+  "description": {
+    "sv": "Street- och vert-tävling i Jackalope-serien, Montreal, Kanada.",
+    "en": "Street and vert contest in the Jackalope series, Montreal, Canada."
+  },
+  "officialUrl": "",
+  "organizer": "Jackalope",
+  "disciplines": [
+    "Street",
+    "Vert"
+  ],
+  "source": {
+    "note": "Datum ungefärligt enligt källa (ca 11–13 sep 2026).",
+    "url": "",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

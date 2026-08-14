@@ -1,0 +1,35 @@
+{
+  "slug": "tony-hawk-vert-alert-2026",
+  "name": "Tony Hawk's Vert Alert",
+  "series": "Vert Alert",
+  "category": [
+    "vert"
+  ],
+  "level": "pro",
+  "startDate": "2026-08-20T09:00:00-06:00",
+  "endDate": "2026-08-22T20:00:00-06:00",
+  "timezone": "America/Denver",
+  "location": {
+    "venue": "TBD",
+    "city": "Salt Lake City",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 40.7608,
+    "lng": -111.891
+  },
+  "description": {
+    "sv": "Inbjudningsbaserad vert-tävling arrangerad av Tony Hawk i Salt Lake City.",
+    "en": "Invite-only vert skateboarding contest organized by Tony Hawk in Salt Lake City."
+  },
+  "officialUrl": "",
+  "organizer": "Tony Hawk",
+  "disciplines": [
+    "Vert"
+  ],
+  "source": {
+    "note": "Inbjudningsevent – ej öppet för allmän anmälan. Datum enligt källa 20–22 aug 2026.",
+    "url": "",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

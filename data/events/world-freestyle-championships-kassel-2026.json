@@ -1,0 +1,35 @@
+{
+  "slug": "world-freestyle-championships-kassel-2026",
+  "name": "World Freestyle Skateboarding Championships & Global Jam",
+  "series": "World Freestyle Skateboarding Championships",
+  "category": [
+    "freestyle"
+  ],
+  "level": "open",
+  "startDate": "2026-08-14T09:00:00+02:00",
+  "endDate": "2026-08-16T18:00:00+02:00",
+  "timezone": "Europe/Berlin",
+  "location": {
+    "venue": "TBD",
+    "city": "Kassel",
+    "country": "Tyskland",
+    "countryCode": "DE",
+    "continent": "europe",
+    "lat": 51.3127,
+    "lng": 9.4797
+  },
+  "description": {
+    "sv": "Det största öppna evenemanget inom freestyle-skateboard, med VM och en gemensam Global Jam i Kassel, Tyskland.",
+    "en": "The largest open freestyle skateboarding event, featuring the World Championships and a communal Global Jam in Kassel, Germany."
+  },
+  "officialUrl": "https://world-freestyle.com",
+  "organizer": "World Freestyle Skateboarding Championships",
+  "disciplines": [
+    "Freestyle"
+  ],
+  "source": {
+    "note": "Datum enligt källa 14–16 aug 2026. OBS: detta datum har redan passerat vid retrieval-tidpunkten (14 aug 2026) — kontrollera om eventet redan startat/är pågående.",
+    "url": "https://world-freestyle.com",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

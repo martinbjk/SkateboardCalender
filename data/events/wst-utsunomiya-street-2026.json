@@ -1,0 +1,35 @@
+{
+  "slug": "wst-utsunomiya-street-2026",
+  "name": "WST Utsunomiya Street",
+  "series": "World Skateboarding Tour (WST)",
+  "category": [
+    "street"
+  ],
+  "level": "pro",
+  "startDate": "2026-11-16T09:00:00+09:00",
+  "endDate": "2026-11-23T20:00:00+09:00",
+  "timezone": "Asia/Tokyo",
+  "location": {
+    "venue": "TBD",
+    "city": "Utsunomiya",
+    "country": "Japan",
+    "countryCode": "JP",
+    "continent": "asia",
+    "lat": 36.5551,
+    "lng": 139.8828
+  },
+  "description": {
+    "sv": "Street-tävling i World Skateboarding Tour, en del av kvalvägen mot den olympiska rankingen.",
+    "en": "Street contest on the World Skateboarding Tour, part of the Olympic ranking qualification pathway."
+  },
+  "officialUrl": "https://skateboarding.worldskate.org",
+  "organizer": "World Skate",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt källa ca 16–23 nov 2026.",
+    "url": "https://skateboarding.worldskate.org",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

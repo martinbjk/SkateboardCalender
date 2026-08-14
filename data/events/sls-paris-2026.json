@@ -2,10 +2,12 @@
   "slug": "sls-paris-2026",
   "name": "SLS Paris",
   "series": "SLS Championship Tour",
-  "category": ["street"],
+  "category": [
+    "street"
+  ],
   "level": "pro",
-  "startDate": "2026-10-03T11:00:00+02:00",
-  "endDate": "2026-10-03T21:00:00+02:00",
+  "startDate": "2026-10-03T09:00:00+02:00",
+  "endDate": "2026-10-03T20:00:00+02:00",
   "timezone": "Europe/Paris",
   "location": {
     "venue": "Stade Roland-Garros",
@@ -13,19 +15,21 @@
     "country": "Frankrike",
     "countryCode": "FR",
     "continent": "europe",
-    "lat": 48.8470,
-    "lng": 2.2530
+    "lat": 48.8566,
+    "lng": 2.3522
   },
   "description": {
-    "sv": "SLS återvänder till de ikoniska grusbanorna på Roland-Garros för tredje året i rad — och andra året på just Stade Roland-Garros — i vad som beskrivs som ett av turnéns mest unika stopp.",
-    "en": "SLS returns to the iconic clay courts of Roland-Garros for the third time — and the second year at Stade Roland-Garros specifically — in what's described as one of the tour's most unique stops."
+    "sv": "SLS Championship Tour-stopp i Paris, tredje året i rad på Roland-Garros. En hel dag med tävling på en skatepark byggd särskilt för tillfället på Suzanne-Lenglen-banan.",
+    "en": "SLS Championship Tour stop in Paris, the third consecutive year at Roland-Garros. A full day of competition on a skatepark built specially for the occasion on the Suzanne-Lenglen court."
   },
   "officialUrl": "https://www.streetleague.com",
   "organizer": "Street League Skateboarding",
-  "disciplines": ["Street"],
+  "disciplines": [
+    "Street"
+  ],
   "source": {
-    "note": "Datum enligt SLS nyhetsflöde.",
-    "url": "https://www.streetleague.com/blog",
-    "retrievedAt": "2026-08-13T00:00:00+02:00"
+    "note": "Bekräftat datum: 3 oktober 2026, Stade Roland-Garros.",
+    "url": "https://www.streetleague.com/post/street-league-skateboarding-paris-2026-tickets-are-on-sale-now",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }

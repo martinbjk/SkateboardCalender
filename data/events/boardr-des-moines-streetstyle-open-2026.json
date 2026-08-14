@@ -1,0 +1,35 @@
+{
+  "slug": "boardr-des-moines-streetstyle-open-2026",
+  "name": "The Boardr Des Moines Streetstyle Open",
+  "series": "The Boardr Series",
+  "category": [
+    "street"
+  ],
+  "level": "open",
+  "startDate": "2026-09-24T09:00:00-05:00",
+  "endDate": "2026-09-26T18:00:00-05:00",
+  "timezone": "America/Chicago",
+  "location": {
+    "venue": "TBD",
+    "city": "Des Moines",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 41.5868,
+    "lng": -93.625
+  },
+  "description": {
+    "sv": "Öppen street-tävling för alla åldrar i The Boardr Series, Des Moines, Iowa.",
+    "en": "Open all-ages street contest in The Boardr Series, Des Moines, Iowa."
+  },
+  "officialUrl": "https://theboardr.com/events",
+  "organizer": "The Boardr",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum ungefärligt enligt källa (ca 24–26 sep 2026).",
+    "url": "https://theboardr.com/events",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

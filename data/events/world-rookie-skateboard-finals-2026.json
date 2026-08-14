@@ -1,0 +1,35 @@
+{
+  "slug": "world-rookie-skateboard-finals-2026",
+  "name": "World Rookie Skateboard Finals",
+  "series": "World Rookie Tour",
+  "category": [
+    "park"
+  ],
+  "level": "amateur",
+  "startDate": "2026-09-25T09:00:00+02:00",
+  "endDate": "2026-09-27T18:00:00+02:00",
+  "timezone": "Europe/Ljubljana",
+  "location": {
+    "venue": "TBD",
+    "city": "TBD",
+    "country": "Slovenien",
+    "countryCode": "SI",
+    "continent": "europe",
+    "lat": 46.0569,
+    "lng": 14.5058
+  },
+  "description": {
+    "sv": "Final för World Rookie Tour i park-skateboard, Slovenien.",
+    "en": "Final of the World Rookie Tour in park skateboarding, Slovenia."
+  },
+  "officialUrl": "https://worldrookietour.com",
+  "organizer": "World Rookie Tour",
+  "disciplines": [
+    "Park"
+  ],
+  "source": {
+    "note": "Exakt ort i Slovenien ej specificerad i källan.",
+    "url": "https://worldrookietour.com",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "mediterranean-games-taranto-2026",
+  "name": "Mediterranean Games Taranto – Street Skateboarding",
+  "series": "Mediterranean Games",
+  "category": [
+    "street"
+  ],
+  "level": "pro",
+  "startDate": "2026-09-01T09:00:00+02:00",
+  "endDate": "2026-09-02T20:00:00+02:00",
+  "timezone": "Europe/Rome",
+  "location": {
+    "venue": "Salinella Urban Centre",
+    "city": "Taranto",
+    "country": "Italien",
+    "countryCode": "IT",
+    "continent": "europe",
+    "lat": 40.4738,
+    "lng": 17.23
+  },
+  "description": {
+    "sv": "Street-skateboard som en del av Medelhavsspelen i Taranto, på den nybyggda 1000-personers Salinella Urban Centre-anläggningen som blir kvar som permanent skatepark efter spelen.",
+    "en": "Street skateboarding as part of the Mediterranean Games in Taranto, at the newly built 1,000-capacity Salinella Urban Centre, which will remain as a permanent skatepark after the Games."
+  },
+  "officialUrl": "https://taranto2026.it",
+  "organizer": "International Committee of Mediterranean Games",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Bekräftat datum av World Skate: 1–2 september 2026.",
+    "url": "https://www.skateboarding.worldskate.org/news/1859-mediterranean-games-fop-reveal.html",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

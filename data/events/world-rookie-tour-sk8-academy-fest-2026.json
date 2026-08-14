@@ -1,0 +1,35 @@
+{
+  "slug": "world-rookie-tour-sk8-academy-fest-2026",
+  "name": "Sk8 Academy Rookie Fest",
+  "series": "World Rookie Tour",
+  "category": [
+    "street"
+  ],
+  "level": "amateur",
+  "startDate": "2026-09-12T09:00:00+02:00",
+  "endDate": "2026-09-12T18:00:00+02:00",
+  "timezone": "Europe/Zurich",
+  "location": {
+    "venue": "Sk8 Academy",
+    "city": "TBD",
+    "country": "Schweiz",
+    "countryCode": "CH",
+    "continent": "europe",
+    "lat": 46.8182,
+    "lng": 8.2275
+  },
+  "description": {
+    "sv": "Endagstävling i World Rookie Tour för ungdomar/amatörer i street-skateboard, Schweiz.",
+    "en": "One-day World Rookie Tour stop for youth/amateur street skateboarding, Switzerland."
+  },
+  "officialUrl": "https://worldrookietour.com",
+  "organizer": "World Rookie Tour",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Exakt ort i Schweiz ej specificerad i källan.",
+    "url": "https://worldrookietour.com",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

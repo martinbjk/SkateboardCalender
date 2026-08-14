@@ -1,0 +1,35 @@
+{
+  "slug": "world-rookie-tour-garda-fest-2026",
+  "name": "Garda Rookie Fest",
+  "series": "World Rookie Tour",
+  "category": [
+    "street"
+  ],
+  "level": "amateur",
+  "startDate": "2026-09-11T09:00:00+02:00",
+  "endDate": "2026-09-13T18:00:00+02:00",
+  "timezone": "Europe/Rome",
+  "location": {
+    "venue": "TBD",
+    "city": "Garda",
+    "country": "Italien",
+    "countryCode": "IT",
+    "continent": "europe",
+    "lat": 45.5763,
+    "lng": 10.6866
+  },
+  "description": {
+    "sv": "Deltävling i World Rookie Tour för ungdomar/amatörer i street-skateboard, vid Gardasjön i Italien.",
+    "en": "World Rookie Tour stop for youth/amateur street skateboarding, at Lake Garda, Italy."
+  },
+  "officialUrl": "https://worldrookietour.com",
+  "organizer": "World Rookie Tour",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt källa 11–13 sep 2026.",
+    "url": "https://worldrookietour.com",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

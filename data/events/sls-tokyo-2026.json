@@ -1,0 +1,31 @@
+{
+  "slug": "sls-tokyo-2026",
+  "name": "SLS Tokyo",
+  "series": "SLS Championship Tour",
+  "category": ["street"],
+  "level": "pro",
+  "startDate": "2026-11-14T09:00:00+09:00",
+  "endDate": "2026-11-14T20:00:00+09:00",
+  "timezone": "Asia/Tokyo",
+  "location": {
+    "venue": "Ariake Arena",
+    "city": "Tokyo",
+    "country": "Japan",
+    "countryCode": "JP",
+    "continent": "asia",
+    "lat": 35.6431,
+    "lng": 139.7938
+  },
+  "description": {
+    "sv": "SLS Championship Tour återvänder till Tokyo med ett stopp på Ariake Arena, med några av Japans största åkare inför hemmapubliken.",
+    "en": "SLS Championship Tour returns to Tokyo with a stop at Ariake Arena, featuring some of Japan's biggest names in front of the home crowd."
+  },
+  "officialUrl": "https://www.streetleague.com",
+  "organizer": "Street League Skateboarding",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Bekräftat datum: 14 november 2026, Ariake Arena, Tokyo.",
+    "url": "https://www.streetleague.com/blog",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

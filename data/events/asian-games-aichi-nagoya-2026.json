@@ -1,0 +1,37 @@
+{
+  "slug": "asian-games-aichi-nagoya-2026",
+  "name": "Asian Games 2026 – Park & Street Skateboarding",
+  "series": "Asian Games",
+  "category": [
+    "park",
+    "street"
+  ],
+  "level": "pro",
+  "startDate": "2026-09-19T09:00:00+09:00",
+  "endDate": "2026-09-30T20:00:00+09:00",
+  "timezone": "Asia/Tokyo",
+  "location": {
+    "venue": "TBD",
+    "city": "Aichi-Nagoya",
+    "country": "Japan",
+    "countryCode": "JP",
+    "continent": "asia",
+    "lat": 35.1815,
+    "lng": 136.9066
+  },
+  "description": {
+    "sv": "Park- och street-skateboard vid Asiatiska spelen i Aichi-Nagoya.",
+    "en": "Park and street skateboarding at the Asian Games in Aichi-Nagoya."
+  },
+  "officialUrl": "https://www.aichi-nagoya2026.com",
+  "organizer": "Olympic Council of Asia",
+  "disciplines": [
+    "Park",
+    "Street"
+  ],
+  "source": {
+    "note": "OBEKRÄFTAT exakt datum inom september 2026 – källan anger endast månad, inte exakta dagar för skateboard-grenarna.",
+    "url": "https://skateboarding.worldskate.org",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "sls-sao-paulo-super-crown-2026",
+  "name": "SLS Super Crown World Championship",
+  "series": "SLS Championship Tour",
+  "category": [
+    "street"
+  ],
+  "level": "pro",
+  "startDate": "2026-12-05T09:00:00-03:00",
+  "endDate": "2026-12-06T20:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "location": {
+    "venue": "TBD",
+    "city": "São Paulo",
+    "country": "Brasilien",
+    "countryCode": "BR",
+    "continent": "south-america",
+    "lat": -23.5505,
+    "lng": -46.6333
+  },
+  "description": {
+    "sv": "Säsongsfinal för SLS Championship Tour 2026 – Super Crown World Championship i São Paulo, femte året i rad som finalen hålls i Brasilien.",
+    "en": "Season finale of the 2026 SLS Championship Tour – the Super Crown World Championship in São Paulo, the fifth consecutive year the finale is held in Brazil."
+  },
+  "officialUrl": "https://www.streetleague.com",
+  "organizer": "Street League Skateboarding",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "SLS har bekräftat december 2026 i São Paulo (femte året i rad), men exakt datum inom december var ännu inte publicerat vid senaste sökning (aug 2026). Föregående upplaga var 6–7 dec 2025 — nuvarande platshållardatum (5–6 dec) är en rimlig gissning baserat på mönstret, INTE bekräftat. Verifiera på streetleague.com/supercrownwc innan publicering.",
+    "url": "https://maquinadoesporte.com.br/sls/sls-super-crown-2025-movimenta-r-28-milhoes-e-confirma-retorno-ao-brasil/",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}
