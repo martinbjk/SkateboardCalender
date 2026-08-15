@@ -1,0 +1,31 @@
+{
+  "slug": "rockstar-energy-open-2026",
+  "name": "Rockstar Energy Open",
+  "series": "Rockstar Energy Open",
+  "category": ["street", "park"],
+  "level": "open",
+  "startDate": "2026-08-14T10:00:00-07:00",
+  "endDate": "2026-08-16T20:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "Tom McCall Waterfront Park",
+    "city": "Portland",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 45.5152,
+    "lng": -122.6725
+  },
+  "description": {
+    "sv": "Gratis tredagarsevent i Portland med street- och parktävlingar i världsklass, kombinerat med livemusik (bl.a. Hot Mulligan, PUP, Basement, Angel Du$t).",
+    "en": "Free three-day event in Portland featuring world-class street and park skateboard contests, combined with live music (including Hot Mulligan, PUP, Basement, Angel Du$t)."
+  },
+  "officialUrl": "https://www.rockstarenergy.com/pages/rseo",
+  "organizer": "Rockstar Energy",
+  "disciplines": ["Street", "Park"],
+  "source": {
+    "note": "Datum bekräftat direkt på Rockstar Energys officiella eventsida: 14–16 augusti 2026. OBS: sammanfaller med dagens datum — eventet pågår troligen redan.",
+    "url": "https://www.rockstarenergy.com/pages/rseo",
+    "retrievedAt": "2026-08-14T00:00:00+02:00"
+  }
+}

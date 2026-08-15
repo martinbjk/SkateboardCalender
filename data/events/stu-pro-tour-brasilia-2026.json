@@ -1,0 +1,31 @@
+{
+  "slug": "stu-pro-tour-brasilia-2026",
+  "name": "STU Pro Tour Brasília",
+  "series": "STU Pro Tour",
+  "category": ["street", "park", "vert"],
+  "level": "pro",
+  "startDate": "2026-09-05T09:00:00-03:00",
+  "endDate": "2026-09-06T20:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "location": {
+    "venue": "Parque da Cidade Sarah Kubitschek",
+    "city": "Brasília",
+    "country": "Brasilien",
+    "countryCode": "BR",
+    "continent": "south-america",
+    "lat": -15.7942,
+    "lng": -47.9294
+  },
+  "description": {
+    "sv": "STU Pro Tour-stopp i Brasília på Parque da Cidade Sarah Kubitschek, med en stark uppsättning proffsåkare och vert-tävlingar. Gratis biljetter via Zig.fun.",
+    "en": "STU Pro Tour stop in Brasília at Parque da Cidade Sarah Kubitschek, featuring a strong lineup of professional skateboarders and vert competitions. Free tickets via Zig.fun."
+  },
+  "officialUrl": "https://stuskateboard.com",
+  "organizer": "Skate Total Urbe (STU)",
+  "disciplines": ["Street", "Park", "Vert"],
+  "source": {
+    "note": "Datum bekräftat direkt via officiell biljettsida (Zig.tickets): 5–6 september 2026, Parque da Cidade Sarah Kubitschek. Gratis biljetter, begränsad läktarplats, mat-donation (1 kg) krävs för entré.",
+    "url": "https://zig.tickets/pt-BR/eventos/pro-tour-stu-brasilia-vert-best-trick-street-fase-1-e-fase-2",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}
