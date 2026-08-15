@@ -1,0 +1,31 @@
+{
+  "slug": "issa-25-cone-world-series-session4-2026",
+  "name": "ISSA 25-Cone World Series – Session 4",
+  "series": "ISSA 25-Cone World Series",
+  "category": ["contest"],
+  "level": "open",
+  "startDate": "2026-09-04T09:00:00+00:00",
+  "endDate": "2026-09-07T18:00:00+00:00",
+  "timezone": "UTC",
+  "location": {
+    "venue": "Distribuerat/lokala lopp (flera platser)",
+    "city": "TBD",
+    "country": "TBD",
+    "countryCode": "XX",
+    "continent": "europe",
+    "lat": 0,
+    "lng": 0
+  },
+  "description": {
+    "sv": "Fjärde deltävlingen i ISSA:s 25-Cone World Series. Formatet innebär att lokala lopp hålls samtidigt på flera platser globalt under samma helg, med resultat som räknas samman i en gemensam världsserie — därför saknas en enskild ort.",
+    "en": "Fourth stop in the ISSA 25-Cone World Series. The format involves local races held simultaneously at multiple locations worldwide during the same weekend, with results combined into a shared world series — hence no single location."
+  },
+  "officialUrl": "https://usaslalomskateboarding.com/event/issa-25-cone-world-series-session-4/",
+  "organizer": "International Skateboard Slalom Association (ISSA)",
+  "disciplines": ["Slalom"],
+  "source": {
+    "note": "Datum bekräftat direkt på USA Slalom Skateboardings officiella eventkalender: 4-7 sep 2026. Ort satt till TBD/0,0 eftersom formatet är distribuerat (lokala lopp globalt, ej en enskild plats) — se beskrivning.",
+    "url": "https://usaslalomskateboarding.com/event/issa-25-cone-world-series-session-4/",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

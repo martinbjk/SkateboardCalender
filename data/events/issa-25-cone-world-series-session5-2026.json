@@ -1,0 +1,31 @@
+{
+  "slug": "issa-25-cone-world-series-session5-2026",
+  "name": "ISSA 25-Cone World Series – Session 5",
+  "series": "ISSA 25-Cone World Series",
+  "category": ["contest"],
+  "level": "open",
+  "startDate": "2026-11-13T09:00:00+00:00",
+  "endDate": "2026-11-16T18:00:00+00:00",
+  "timezone": "UTC",
+  "location": {
+    "venue": "Distribuerat/lokala lopp (flera platser)",
+    "city": "TBD",
+    "country": "TBD",
+    "countryCode": "XX",
+    "continent": "europe",
+    "lat": 0,
+    "lng": 0
+  },
+  "description": {
+    "sv": "Femte deltävlingen i ISSA:s 25-Cone World Series. Samma distribuerade format som Session 4 — lokala lopp globalt, resultat räknas samman i en gemensam världsserie.",
+    "en": "Fifth stop in the ISSA 25-Cone World Series. Same distributed format as Session 4 — local races held globally, results combined into a shared world series."
+  },
+  "officialUrl": "https://usaslalomskateboarding.com/event/issa-25-cone-world-series-session-5/",
+  "organizer": "International Skateboard Slalom Association (ISSA)",
+  "disciplines": ["Slalom"],
+  "source": {
+    "note": "Datum bekräftat direkt på USA Slalom Skateboardings officiella eventkalender: 13-16 nov 2026. Ort satt till TBD/0,0 eftersom formatet är distribuerat (lokala lopp globalt, ej en enskild plats) — se beskrivning.",
+    "url": "https://usaslalomskateboarding.com/event/issa-25-cone-world-series-session-5/",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

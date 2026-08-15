@@ -1,0 +1,31 @@
+{
+  "slug": "n-men-racing-king-of-hill-2-2026",
+  "name": "N-Men Racing King of the Hill Series #2",
+  "series": "N-Men Racing King of the Hill Series",
+  "category": ["downhill"],
+  "level": "open",
+  "startDate": "2026-09-26T09:00:00-07:00",
+  "endDate": "2026-09-27T18:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "TBD",
+    "city": "El Dorado Hills",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 38.6785,
+    "lng": -121.0819
+  },
+  "description": {
+    "sv": "Andra deltävlingen i N-Men Racing King of the Hill-serien, El Dorado Hills, Kalifornien.",
+    "en": "Second stop in the N-Men Racing King of the Hill series, El Dorado Hills, California."
+  },
+  "officialUrl": "https://usaslalomskateboarding.com/event/n-men-racing-king-of-the-hill-series-2/",
+  "organizer": "N-Men Racing",
+  "disciplines": ["Downhill"],
+  "source": {
+    "note": "Datum och plats bekräftade direkt på USA Slalom Skateboardings officiella eventkalender.",
+    "url": "https://usaslalomskateboarding.com/event/n-men-racing-king-of-the-hill-series-2/",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}
