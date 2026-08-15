@@ -6,8 +6,8 @@
     "street"
   ],
   "level": "amateur",
-  "startDate": "2026-10-31T09:00:00+00:00",
-  "endDate": "2026-11-13T20:00:00+00:00",
+  "startDate": "2026-11-02T09:00:00+00:00",
+  "endDate": "2026-11-05T20:00:00+00:00",
   "timezone": "Africa/Dakar",
   "location": {
     "venue": "Complexe Tour de l'Œuf",
@@ -19,8 +19,8 @@
     "lng": -17.4677
   },
   "description": {
-    "sv": "Street-skateboard för ungdomar vid Ungdoms-OS i Dakar (31 okt–13 nov 2026), det första Ungdoms-OS på afrikansk mark. Tävlingarna hålls på Complexe Tour de l'Œuf.",
-    "en": "Youth street skateboarding at the Youth Olympic Games in Dakar (Oct 31–Nov 13, 2026), the first Youth Olympics held on African soil. Competition takes place at Complexe Tour de l'Œuf."
+    "sv": "Street-skateboard för ungdomar vid Ungdoms-OS i Dakar. Skateboardgrenens specifika tävlingsperiod är 2–5 november 2026 (hela spelen pågår 31 okt–13 nov).",
+    "en": "Youth street skateboarding at the Youth Olympic Games in Dakar. The skateboarding discipline's specific competition window is November 2–5, 2026 (the overall Games run Oct 31–Nov 13)."
   },
   "officialUrl": "https://www.dakar2026.sn",
   "organizer": "International Olympic Committee",
@@ -28,8 +28,8 @@
     "Street"
   ],
   "source": {
-    "note": "Övergripande spelperiod bekräftad: 31 okt–13 nov 2026. Exakt datum för street-skateboard-grenen inom perioden ej publicerat i sökta källor ännu — kontrollera dakar2026-sajten närmare eventet.",
-    "url": "https://www.olympics.com/en/dakar-2026/news/dakar-2026-guide-fourth-youth-olympic-games-dates-venues-schedule",
+    "note": "Skateboardspecifikt datum bekräftat direkt på World Skates officiella eventkalender (event #482): 2–5 nov 2026. Detta är mer exakt än det tidigare satta hela spelperiod-datumet.",
+    "url": "https://www.worldskate.org/events/upcoming-events/event/482.html",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }

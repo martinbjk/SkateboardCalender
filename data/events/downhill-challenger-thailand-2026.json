@@ -1,0 +1,31 @@
+{
+  "slug": "downhill-challenger-thailand-2026",
+  "name": "Downhill Skateboarding Challenger – Thailand Tropical Downhill Race",
+  "series": "World Skate Downhill Challenger Series",
+  "category": ["downhill"],
+  "level": "open",
+  "startDate": "2026-11-13T09:00:00+07:00",
+  "endDate": "2026-11-15T18:00:00+07:00",
+  "timezone": "Asia/Bangkok",
+  "location": {
+    "venue": "TBD",
+    "city": "Songkhla",
+    "country": "Thailand",
+    "countryCode": "TH",
+    "continent": "asia",
+    "lat": 7.1898,
+    "lng": 100.5951
+  },
+  "description": {
+    "sv": "Öppen downhill-deltävling i World Skates Challenger-serie, i Songkhla, Thailand.",
+    "en": "Open downhill skateboarding challenger event in World Skate's Challenger Series, in Songkhla, Thailand."
+  },
+  "officialUrl": "https://www.worldskate.org/events/upcoming-events/event/501.html",
+  "organizer": "World Skate",
+  "disciplines": ["Downhill"],
+  "source": {
+    "note": "Datum bekräftat direkt på World Skates officiella eventkalender (event #501): 13–15 nov 2026.",
+    "url": "https://www.worldskate.org/events/upcoming-events/event/501.html",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

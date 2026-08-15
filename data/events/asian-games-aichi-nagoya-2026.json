@@ -7,8 +7,8 @@
     "street"
   ],
   "level": "pro",
-  "startDate": "2026-09-19T09:00:00+09:00",
-  "endDate": "2026-09-30T20:00:00+09:00",
+  "startDate": "2026-09-21T09:00:00+09:00",
+  "endDate": "2026-09-27T20:00:00+09:00",
   "timezone": "Asia/Tokyo",
   "location": {
     "venue": "TBD",
@@ -30,8 +30,8 @@
     "Street"
   ],
   "source": {
-    "note": "OBEKRÄFTAT exakt datum inom september 2026 – källan anger endast månad, inte exakta dagar för skateboard-grenarna.",
-    "url": "https://skateboarding.worldskate.org",
+    "note": "Datum bekräftat direkt på World Skates officiella eventkalender (event #481): 21–27 sep 2026 (skateboardgrenarnas specifika period inom de större Asiatiska spelen).",
+    "url": "https://www.worldskate.org/events/upcoming-events/event/481.html",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }

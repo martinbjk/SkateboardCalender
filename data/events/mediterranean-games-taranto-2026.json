@@ -6,7 +6,7 @@
     "street"
   ],
   "level": "pro",
-  "startDate": "2026-09-01T09:00:00+02:00",
+  "startDate": "2026-08-29T09:00:00+02:00",
   "endDate": "2026-09-02T20:00:00+02:00",
   "timezone": "Europe/Rome",
   "location": {
@@ -28,8 +28,8 @@
     "Street"
   ],
   "source": {
-    "note": "Bekräftat datum av World Skate: 1–2 september 2026.",
-    "url": "https://www.skateboarding.worldskate.org/news/1859-mediterranean-games-fop-reveal.html",
+    "note": "Datum bekräftat direkt på World Skates officiella eventkalender (worldskate.org/events/upcoming-events.html, event #480): 29 aug–2 sep 2026. (Tidigare källa angav 1–2 sep; World Skates egen kalender är primärkälla och används här.)",
+    "url": "https://www.worldskate.org/events/upcoming-events/event/480.html",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }

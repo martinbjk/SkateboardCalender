@@ -6,8 +6,8 @@
     "downhill"
   ],
   "level": "pro",
-  "startDate": "2026-10-05T09:00:00-04:00",
-  "endDate": "2026-10-09T20:00:00-04:00",
+  "startDate": "2026-10-01T09:00:00-04:00",
+  "endDate": "2026-11-05T20:00:00-04:00",
   "timezone": "America/Asuncion",
   "location": {
     "venue": "TBD",
@@ -28,8 +28,8 @@
     "Downhill"
   ],
   "source": {
-    "note": "OBEKRÄFTAT datum – källan anger endast 'early October'. Måste verifieras innan publicering.",
-    "url": "https://skateboarding.worldskate.org",
+    "note": "Datum enligt World Skates officiella eventkalender (event #487): 1 okt–5 nov 2026. OBS: ovanligt lång period (över en månad) för en enskild VM-gren — kan innebära flera kvalomgångar/etapper snarare än en sammanhållen tävlingshelg. Dubbelkolla gärna exakt tävlingsdag när mer info publiceras.",
+    "url": "https://www.worldskate.org/events/upcoming-events/event/487.html",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }

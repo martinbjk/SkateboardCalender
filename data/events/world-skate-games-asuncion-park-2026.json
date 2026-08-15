@@ -6,8 +6,8 @@
     "park"
   ],
   "level": "pro",
-  "startDate": "2026-10-07T09:00:00-04:00",
-  "endDate": "2026-10-12T20:00:00-04:00",
+  "startDate": "2026-10-03T09:00:00-04:00",
+  "endDate": "2026-10-10T20:00:00-04:00",
   "timezone": "America/Asuncion",
   "location": {
     "venue": "TBD",
@@ -28,8 +28,8 @@
     "Park"
   ],
   "source": {
-    "note": "OBEKRÄFTAT datum – källan anger endast 'early–mid October'. Måste verifieras innan publicering.",
-    "url": "https://skateboarding.worldskate.org",
+    "note": "Datum bekräftat direkt på World Skates officiella eventkalender (event #488): 3–10 okt 2026.",
+    "url": "https://www.worldskate.org/events/upcoming-events/event/488.html",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }

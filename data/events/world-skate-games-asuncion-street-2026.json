@@ -6,7 +6,7 @@
     "street"
   ],
   "level": "pro",
-  "startDate": "2026-10-14T09:00:00-04:00",
+  "startDate": "2026-10-11T09:00:00-04:00",
   "endDate": "2026-10-18T20:00:00-04:00",
   "timezone": "America/Asuncion",
   "location": {
@@ -28,8 +28,8 @@
     "Street"
   ],
   "source": {
-    "note": "Datum enligt källa ca 14–18 okt 2026. Verifiera på World Skates officiella kalender.",
-    "url": "https://skateboarding.worldskate.org",
+    "note": "Datum bekräftat direkt på World Skates officiella eventkalender (event #489): 11–18 okt 2026.",
+    "url": "https://www.worldskate.org/events/upcoming-events/event/489.html",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }
 }
