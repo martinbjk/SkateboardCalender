@@ -1,0 +1,35 @@
+{
+  "slug": "swiss-skateboard-cup-st-gallen-2026",
+  "name": "Swiss Skateboard Cup – St. Gallen Kreuzbleiche",
+  "series": "Swiss Skateboard Open (SSO)",
+  "category": [
+    "street"
+  ],
+  "level": "open",
+  "startDate": "2026-09-05T09:00:00+02:00",
+  "endDate": "2026-09-05T18:00:00+02:00",
+  "timezone": "Europe/Zurich",
+  "location": {
+    "venue": "Kreuzbleiche",
+    "city": "St. Gallen",
+    "country": "Schweiz",
+    "countryCode": "CH",
+    "continent": "europe",
+    "lat": 47.4245,
+    "lng": 9.3767
+  },
+  "description": {
+    "sv": "Deltävling i Swiss Skateboard Open, Schweiz största skateboardserie.",
+    "en": "Stop in the Swiss Skateboard Open, Switzerland's largest skateboard contest series."
+  },
+  "officialUrl": "https://www.boardriding.com/events/swiss-skateboard-cup-st-gallen-kreuzbleiche-2026",
+  "organizer": "Swiss Skateboard Open",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/swiss-skateboard-cup-st-gallen-kreuzbleiche-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

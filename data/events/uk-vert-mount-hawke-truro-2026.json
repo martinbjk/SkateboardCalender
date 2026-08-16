@@ -1,0 +1,35 @@
+{
+  "slug": "uk-vert-mount-hawke-truro-2026",
+  "name": "UK Independent Vert Series – Mount Hawke Vert Jam",
+  "series": "UK Independent Vert Series",
+  "category": [
+    "vert"
+  ],
+  "level": "open",
+  "startDate": "2026-11-15T09:00:00+00:00",
+  "endDate": "2026-11-15T18:00:00+00:00",
+  "timezone": "Europe/London",
+  "location": {
+    "venue": "Mount Hawke",
+    "city": "Truro",
+    "country": "Storbritannien",
+    "countryCode": "GB",
+    "continent": "europe",
+    "lat": 50.2632,
+    "lng": -5.051
+  },
+  "description": {
+    "sv": "Avslappnad, oberoende vert-tävling nära Truro, Cornwall.",
+    "en": "Relaxed, independently run vert contest near Truro, Cornwall."
+  },
+  "officialUrl": "https://www.boardriding.com/events/uk-independent-vert-series-mount-hawke-vert-jam-truro-2026",
+  "organizer": "UK Independent Vert Series",
+  "disciplines": [
+    "Vert"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/uk-independent-vert-series-mount-hawke-vert-jam-truro-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

@@ -11,7 +11,7 @@
   "timezone": "Europe/Ljubljana",
   "location": {
     "venue": "TBD",
-    "city": "TBD",
+    "city": "Celje",
     "country": "Slovenien",
     "countryCode": "SI",
     "continent": "europe",
@@ -28,7 +28,7 @@
     "Park"
   ],
   "source": {
-    "note": "Exakt ort i Slovenien ej specificerad i källan.",
+    "note": "Exakt ort i Slovenien ej specificerad i källan. Ort bekräftad via boardriding.com: Celje.",
     "url": "https://worldrookietour.com",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }

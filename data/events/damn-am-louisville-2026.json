@@ -1,0 +1,35 @@
+{
+  "slug": "damn-am-louisville-2026",
+  "name": "Damn Am – Louisville",
+  "series": "Damn Am Series",
+  "category": [
+    "street"
+  ],
+  "level": "amateur",
+  "startDate": "2026-09-18T09:00:00-04:00",
+  "endDate": "2026-09-20T18:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "TBD",
+    "city": "Louisville",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 38.2527,
+    "lng": -85.7585
+  },
+  "description": {
+    "sv": "Amatörtävling i Damn Am-serien, Louisville, Kentucky. Topp 12 kvalar automatiskt till Tampa Am.",
+    "en": "Amateur contest in the Damn Am series, Louisville, Kentucky. Top 12 automatically qualify for Tampa Am."
+  },
+  "officialUrl": "https://www.boardriding.com/events/damn-am-louisville-ky-2026",
+  "organizer": "The Boardr",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/damn-am-louisville-ky-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

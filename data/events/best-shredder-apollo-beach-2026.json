@@ -1,0 +1,37 @@
+{
+  "slug": "best-shredder-apollo-beach-2026",
+  "name": "Best Shredder Series – Apollo Beach",
+  "series": "Best Shredder Series",
+  "category": [
+    "street",
+    "park"
+  ],
+  "level": "amateur",
+  "startDate": "2026-09-19T09:00:00-04:00",
+  "endDate": "2026-09-19T18:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "Apollo Beach Skate Park",
+    "city": "Tampa",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 27.7712,
+    "lng": -82.4062
+  },
+  "description": {
+    "sv": "Deltävling i Hillsborough Countys rankingserie Best Shredder, Apollo Beach Skate Park, Tampa.",
+    "en": "Stop in Hillsborough County's Best Shredder ranking series, Apollo Beach Skate Park, Tampa."
+  },
+  "officialUrl": "https://www.boardriding.com/events/best-shredder-series-apollo-beach-skate-park-tampa-fl-2026",
+  "organizer": "Hillsborough County",
+  "disciplines": [
+    "Street",
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/best-shredder-series-apollo-beach-skate-park-tampa-fl-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

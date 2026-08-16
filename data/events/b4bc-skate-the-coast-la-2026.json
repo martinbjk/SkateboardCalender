@@ -1,0 +1,37 @@
+{
+  "slug": "b4bc-skate-the-coast-la-2026",
+  "name": "B4BC's 19th Annual Skate The Coast",
+  "series": "Skate The Coast",
+  "category": [
+    "street",
+    "park"
+  ],
+  "level": "open",
+  "startDate": "2026-10-23T09:00:00-07:00",
+  "endDate": "2026-10-23T18:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "TBD",
+    "city": "Los Angeles",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  "description": {
+    "sv": "Årlig tävling till förmån för Boarding for Breast Cancer, Los Angeles.",
+    "en": "Annual contest benefiting Boarding for Breast Cancer, Los Angeles."
+  },
+  "officialUrl": "https://www.boardriding.com/events/b4bcs-19th-annual-skate-the-coast-los-angeles-ca-2026",
+  "organizer": "Boarding for Breast Cancer (B4BC)",
+  "disciplines": [
+    "Street",
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/b4bcs-19th-annual-skate-the-coast-los-angeles-ca-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

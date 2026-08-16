@@ -1,0 +1,35 @@
+{
+  "slug": "red-bull-origin-nyc-2026",
+  "name": "Red Bull Origin – NYC",
+  "series": "Red Bull Origin",
+  "category": [
+    "street"
+  ],
+  "level": "pro",
+  "startDate": "2026-09-17T09:00:00-04:00",
+  "endDate": "2026-09-19T20:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "TBD",
+    "city": "New York",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 40.7128,
+    "lng": -74.006
+  },
+  "description": {
+    "sv": "Street-tävling som firar New York-skateboardingens historia, arrangerad av Red Bull.",
+    "en": "Street contest celebrating the history of New York City skateboarding, organized by Red Bull."
+  },
+  "officialUrl": "https://www.boardriding.com/events/red-bull-origin-2026",
+  "organizer": "Red Bull",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/red-bull-origin-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

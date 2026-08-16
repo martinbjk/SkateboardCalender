@@ -1,0 +1,37 @@
+{
+  "slug": "best-shredder-riverview-2026",
+  "name": "Best Shredder Series – Riverview",
+  "series": "Best Shredder Series",
+  "category": [
+    "street",
+    "park"
+  ],
+  "level": "amateur",
+  "startDate": "2026-11-07T09:00:00-05:00",
+  "endDate": "2026-11-07T18:00:00-05:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "Providence Skate Park",
+    "city": "Riverview",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 27.8661,
+    "lng": -82.3243
+  },
+  "description": {
+    "sv": "Deltävling i Hillsborough Countys rankingserie Best Shredder, Providence Skate Park, Riverview.",
+    "en": "Stop in Hillsborough County's Best Shredder ranking series, Providence Skate Park, Riverview."
+  },
+  "officialUrl": "https://www.boardriding.com/events/best-shredder-series-providence-skate-park-riverview-fl-2026",
+  "organizer": "Hillsborough County",
+  "disciplines": [
+    "Street",
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/best-shredder-series-providence-skate-park-riverview-fl-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "johnny-strange-mini-ramp-jam-malibu-2026",
+  "name": "Johnny Strange Legacy Mini-Ramp Jam",
+  "series": "Malibu Chili Cook Off",
+  "category": [
+    "park"
+  ],
+  "level": "open",
+  "startDate": "2026-09-05T09:00:00-07:00",
+  "endDate": "2026-09-05T18:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "TBD",
+    "city": "Malibu",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 34.0259,
+    "lng": -118.7798
+  },
+  "description": {
+    "sv": "Mini-ramp-jam i samband med Malibu Chili Cook Off, till minne av Johnny Strange.",
+    "en": "Mini-ramp jam held alongside the Malibu Chili Cook Off, in memory of Johnny Strange."
+  },
+  "officialUrl": "https://www.boardriding.com/events/johnny-strange-legacy-mini-ramp-jam-at-the-malibu-chili-cook-off-malibu-ca-2026",
+  "organizer": "Malibu Chili Cook Off",
+  "disciplines": [
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/johnny-strange-legacy-mini-ramp-jam-at-the-malibu-chili-cook-off-malibu-ca-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

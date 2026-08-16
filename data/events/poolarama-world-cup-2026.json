@@ -1,0 +1,35 @@
+{
+  "slug": "poolarama-world-cup-2026",
+  "name": "Poolarama – World Cup Skateboarding",
+  "series": "Poolarama",
+  "category": [
+    "bowl"
+  ],
+  "level": "pro",
+  "startDate": "2026-08-30T09:00:00+02:00",
+  "endDate": "2026-08-31T18:00:00+02:00",
+  "timezone": "Europe/Rome",
+  "location": {
+    "venue": "TBD",
+    "city": "Almese",
+    "country": "Italien",
+    "countryCode": "IT",
+    "continent": "europe",
+    "lat": 45.1167,
+    "lng": 7.3667
+  },
+  "description": {
+    "sv": "Internationell bowl/pool-tävling i Almese, Italien.",
+    "en": "International bowl/pool skateboarding contest in Almese, Italy."
+  },
+  "officialUrl": "https://www.boardriding.com/events/poolarama-world-cup-skateboarding-2026",
+  "organizer": "Poolarama",
+  "disciplines": [
+    "Bowl"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/poolarama-world-cup-skateboarding-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

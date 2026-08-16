@@ -1,0 +1,35 @@
+{
+  "slug": "uk-vert-blockless-combat-birmingham-2026",
+  "name": "UK Independent Vert Series – Blockless Combat",
+  "series": "UK Independent Vert Series",
+  "category": [
+    "vert"
+  ],
+  "level": "open",
+  "startDate": "2026-10-04T09:00:00+01:00",
+  "endDate": "2026-10-04T18:00:00+01:00",
+  "timezone": "Europe/London",
+  "location": {
+    "venue": "TBD",
+    "city": "Birmingham",
+    "country": "Storbritannien",
+    "countryCode": "GB",
+    "continent": "europe",
+    "lat": 52.4862,
+    "lng": -1.8904
+  },
+  "description": {
+    "sv": "Avslappnad, oberoende vert-tävling i Birmingham.",
+    "en": "Relaxed, independently run vert contest in Birmingham."
+  },
+  "officialUrl": "https://www.boardriding.com/events/uk-independent-vert-series-blockless-combat-birmingham-2026",
+  "organizer": "UK Independent Vert Series",
+  "disciplines": [
+    "Vert"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/uk-independent-vert-series-blockless-combat-birmingham-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

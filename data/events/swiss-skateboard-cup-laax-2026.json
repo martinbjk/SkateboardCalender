@@ -1,0 +1,35 @@
+{
+  "slug": "swiss-skateboard-cup-laax-2026",
+  "name": "Swiss Skateboard Cup – Laax Freestyle Academy (Swiss Championship Park)",
+  "series": "Swiss Skateboard Open (SSO)",
+  "category": [
+    "park"
+  ],
+  "level": "open",
+  "startDate": "2026-12-05T09:00:00+01:00",
+  "endDate": "2026-12-05T18:00:00+01:00",
+  "timezone": "Europe/Zurich",
+  "location": {
+    "venue": "Freestyle Academy",
+    "city": "Laax",
+    "country": "Schweiz",
+    "countryCode": "CH",
+    "continent": "europe",
+    "lat": 46.8092,
+    "lng": 9.2578
+  },
+  "description": {
+    "sv": "Schweiziska mästerskapet i park, avslutande deltävlingen i Swiss Skateboard Open.",
+    "en": "Swiss national park championship, the final stop of the Swiss Skateboard Open."
+  },
+  "officialUrl": "https://www.boardriding.com/events/swiss-skateboard-cup-laax-freestyle-academy-2026",
+  "organizer": "Swiss Skateboard Open",
+  "disciplines": [
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/swiss-skateboard-cup-laax-freestyle-academy-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "uk-vert-wales-rampage-cardiff-2026",
+  "name": "UK Independent Vert Series – Wales Rampage",
+  "series": "UK Independent Vert Series",
+  "category": [
+    "vert"
+  ],
+  "level": "open",
+  "startDate": "2026-08-30T09:00:00+01:00",
+  "endDate": "2026-08-30T18:00:00+01:00",
+  "timezone": "Europe/London",
+  "location": {
+    "venue": "TBD",
+    "city": "Cardiff",
+    "country": "Storbritannien",
+    "countryCode": "GB",
+    "continent": "europe",
+    "lat": 51.4816,
+    "lng": -3.1791
+  },
+  "description": {
+    "sv": "Avslappnad, oberoende vert-tävling i Cardiff, Wales.",
+    "en": "Relaxed, independently run vert contest in Cardiff, Wales."
+  },
+  "officialUrl": "https://www.boardriding.com/events/uk-independent-vert-series-wales-rampage-cardiff-2026",
+  "organizer": "UK Independent Vert Series",
+  "disciplines": [
+    "Vert"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/uk-independent-vert-series-wales-rampage-cardiff-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

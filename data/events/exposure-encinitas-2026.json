@@ -1,0 +1,39 @@
+{
+  "slug": "exposure-encinitas-2026",
+  "name": "Exposure – Encinitas",
+  "series": "Exposure Open",
+  "category": [
+    "street",
+    "vert",
+    "bowl"
+  ],
+  "level": "open",
+  "startDate": "2026-11-06T09:00:00-08:00",
+  "endDate": "2026-11-08T18:00:00-08:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "TBD",
+    "city": "Encinitas",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 33.037,
+    "lng": -117.292
+  },
+  "description": {
+    "sv": "Årlig street-, vert- och bowl-tävling för kvinnor och ickebinära åkare, Encinitas, Kalifornien.",
+    "en": "Annual street, vert, and bowl contest for women and nonbinary skaters, Encinitas, California."
+  },
+  "officialUrl": "https://www.boardriding.com/events/exposure-encinitas-2026",
+  "organizer": "Exposure",
+  "disciplines": [
+    "Street",
+    "Vert",
+    "Bowl"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/exposure-encinitas-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "swiss-skateboard-cup-winterthur-2026",
+  "name": "Swiss Skateboard Cup – Winterthur (Swiss Championship Street)",
+  "series": "Swiss Skateboard Open (SSO)",
+  "category": [
+    "street"
+  ],
+  "level": "open",
+  "startDate": "2026-10-31T09:00:00+01:00",
+  "endDate": "2026-10-31T18:00:00+01:00",
+  "timezone": "Europe/Zurich",
+  "location": {
+    "venue": "TBD",
+    "city": "Winterthur",
+    "country": "Schweiz",
+    "countryCode": "CH",
+    "continent": "europe",
+    "lat": 47.5,
+    "lng": 8.75
+  },
+  "description": {
+    "sv": "Schweiziska mästerskapet i street, del av Swiss Skateboard Open.",
+    "en": "Swiss national street championship, part of the Swiss Skateboard Open."
+  },
+  "officialUrl": "https://www.boardriding.com/events/swiss-skateboard-cup-winterthur-2026",
+  "organizer": "Swiss Skateboard Open",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/swiss-skateboard-cup-winterthur-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

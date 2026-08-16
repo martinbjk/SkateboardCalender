@@ -1,0 +1,37 @@
+{
+  "slug": "extreme-barcelona-2026",
+  "name": "Extreme Barcelona",
+  "series": "Urban World Series",
+  "category": [
+    "street",
+    "park"
+  ],
+  "level": "open",
+  "startDate": "2026-09-04T09:00:00+02:00",
+  "endDate": "2026-09-06T20:00:00+02:00",
+  "timezone": "Europe/Madrid",
+  "location": {
+    "venue": "TBD",
+    "city": "Barcelona",
+    "country": "Spanien",
+    "countryCode": "ES",
+    "continent": "europe",
+    "lat": 41.3851,
+    "lng": 2.1734
+  },
+  "description": {
+    "sv": "Del av Urban World Series, som främjar urbana sporter på både proffs- och amatörnivå.",
+    "en": "Part of the Urban World Series, promoting urban sports at both professional and amateur level."
+  },
+  "officialUrl": "https://www.boardriding.com/events/extreme-barcelona-2026",
+  "organizer": "Urban World Series",
+  "disciplines": [
+    "Street",
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/extreme-barcelona-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

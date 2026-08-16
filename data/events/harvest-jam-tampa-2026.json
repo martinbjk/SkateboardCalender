@@ -1,0 +1,37 @@
+{
+  "slug": "harvest-jam-tampa-2026",
+  "name": "Harvest Jam – Tampa",
+  "series": "Harvest Jam",
+  "category": [
+    "street",
+    "park"
+  ],
+  "level": "open",
+  "startDate": "2026-11-07T09:00:00-05:00",
+  "endDate": "2026-11-07T18:00:00-05:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "Skatepark of Tampa",
+    "city": "Tampa",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 27.9506,
+    "lng": -82.4572
+  },
+  "description": {
+    "sv": "Öppen tävling för alla åldrar, Skatepark of Tampa.",
+    "en": "Open all-ages contest, Skatepark of Tampa."
+  },
+  "officialUrl": "https://www.boardriding.com/events/harvest-jam-tampa-2026",
+  "organizer": "Skatepark of Tampa",
+  "disciplines": [
+    "Street",
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/harvest-jam-tampa-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

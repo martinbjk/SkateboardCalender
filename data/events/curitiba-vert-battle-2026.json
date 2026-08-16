@@ -1,0 +1,35 @@
+{
+  "slug": "curitiba-vert-battle-2026",
+  "name": "Curitiba Vert Battle",
+  "series": "Curitiba Vert Battle",
+  "category": [
+    "vert"
+  ],
+  "level": "pro",
+  "startDate": "2026-10-10T09:00:00-03:00",
+  "endDate": "2026-10-12T20:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "location": {
+    "venue": "TBD",
+    "city": "Curitiba",
+    "country": "Brasilien",
+    "countryCode": "BR",
+    "continent": "south-america",
+    "lat": -25.4284,
+    "lng": -49.2733
+  },
+  "description": {
+    "sv": "Vert-tävling i Curitiba, Brasilien.",
+    "en": "Vert skateboarding contest in Curitiba, Brazil."
+  },
+  "officialUrl": "https://www.boardriding.com/events/curitiba-vert-battle-2026",
+  "organizer": "Okänd",
+  "disciplines": [
+    "Vert"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/curitiba-vert-battle-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

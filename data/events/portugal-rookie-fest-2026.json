@@ -1,0 +1,35 @@
+{
+  "slug": "portugal-rookie-fest-2026",
+  "name": "Portugal Rookie Fest",
+  "series": "World Rookie Tour",
+  "category": [
+    "street"
+  ],
+  "level": "amateur",
+  "startDate": "2026-08-29T09:00:00+01:00",
+  "endDate": "2026-08-30T18:00:00+01:00",
+  "timezone": "Europe/Lisbon",
+  "location": {
+    "venue": "TBD",
+    "city": "TBD",
+    "country": "Portugal",
+    "countryCode": "PT",
+    "continent": "europe",
+    "lat": 38.7223,
+    "lng": -9.1393
+  },
+  "description": {
+    "sv": "Deltävling i World Rookie Tour, Portugal. Exakt ort ej specificerad i källan.",
+    "en": "World Rookie Tour stop, Portugal. Exact city not specified in the source."
+  },
+  "officialUrl": "https://www.boardriding.com/events/portugal-rookie-fest-2026",
+  "organizer": "World Rookie Tour",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/portugal-rookie-fest-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

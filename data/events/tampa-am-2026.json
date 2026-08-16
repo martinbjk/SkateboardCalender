@@ -1,0 +1,35 @@
+{
+  "slug": "tampa-am-2026",
+  "name": "32nd Annual Tampa Am",
+  "series": "Tampa Am",
+  "category": [
+    "street"
+  ],
+  "level": "amateur",
+  "startDate": "2026-10-15T09:00:00-04:00",
+  "endDate": "2026-10-18T20:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "Skatepark of Tampa",
+    "city": "Tampa",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 27.9506,
+    "lng": -82.4572
+  },
+  "description": {
+    "sv": "Ett av världens mest anrika amatörevent i street-skateboard, 32:a upplagan, på Skatepark of Tampa (SPoT).",
+    "en": "One of the world's most storied amateur street skateboarding events, 32nd edition, at Skatepark of Tampa (SPoT)."
+  },
+  "officialUrl": "https://www.boardriding.com/events/32nd-annual-tampa-am-2026",
+  "organizer": "Skatepark of Tampa",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/32nd-annual-tampa-am-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

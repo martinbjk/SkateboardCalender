@@ -1,0 +1,37 @@
+{
+  "slug": "free-fall-fest-2026",
+  "name": "Free Fall Fest",
+  "series": "Free Fall Fest",
+  "category": [
+    "street",
+    "park"
+  ],
+  "level": "open",
+  "startDate": "2026-09-26T09:00:00-04:00",
+  "endDate": "2026-09-26T18:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "TBD",
+    "city": "TBD",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 0,
+    "lng": 0
+  },
+  "description": {
+    "sv": "Tävling för alla åldrar och nivåer. Exakt ort ej specificerad i källan.",
+    "en": "Contest for all ages and skill levels. Exact city not specified in the source."
+  },
+  "officialUrl": "https://www.boardriding.com/events/free-fall-fest-2026",
+  "organizer": "Okänd",
+  "disciplines": [
+    "Street",
+    "Park"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/free-fall-fest-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "mb-skate-cup-mlada-boleslav-2026",
+  "name": "MB Skate Cup – Mlada Boleslav",
+  "series": "MB Skate Cup",
+  "category": [
+    "street"
+  ],
+  "level": "open",
+  "startDate": "2026-09-05T09:00:00+02:00",
+  "endDate": "2026-09-05T18:00:00+02:00",
+  "timezone": "Europe/Prague",
+  "location": {
+    "venue": "TBD",
+    "city": "Mlada Boleslav",
+    "country": "Tjeckien",
+    "countryCode": "CZ",
+    "continent": "europe",
+    "lat": 50.4111,
+    "lng": 14.9066
+  },
+  "description": {
+    "sv": "Lokal skateboardcup i Mlada Boleslav, Tjeckien.",
+    "en": "Local skateboard cup in Mlada Boleslav, Czech Republic."
+  },
+  "officialUrl": "https://www.boardriding.com/events/mb-skate-cup-mlada-boleslav-2026",
+  "organizer": "MB Skate Cup",
+  "disciplines": [
+    "Street"
+  ],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas.",
+    "url": "https://www.boardriding.com/events/mb-skate-cup-mlada-boleslav-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}
