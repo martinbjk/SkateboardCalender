@@ -1,0 +1,31 @@
+{
+  "slug": "simple-session-riga-2026",
+  "name": "Simple Session Street Series – Riga",
+  "series": "Simple Session Street Series",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-08-22T09:00:00+03:00",
+  "endDate": "2026-08-23T18:00:00+03:00",
+  "timezone": "Europe/Riga",
+  "location": {
+    "venue": "TBD",
+    "city": "Riga",
+    "country": "Lettland",
+    "countryCode": "LV",
+    "continent": "europe",
+    "lat": 56.9496,
+    "lng": 24.1052
+  },
+  "description": {
+    "sv": "Street-tävling i Simple Session-serien, Riga. Skateboard och BMX i samma event.",
+    "en": "Street contest in the Simple Session series, Riga. Skateboard and BMX in the same event."
+  },
+  "officialUrl": "https://www.boardriding.com/events/simple-session-street-series-riga-2026",
+  "organizer": "Simple Session",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas: 22–23 aug 2026.",
+    "url": "https://www.boardriding.com/events/simple-session-street-series-riga-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

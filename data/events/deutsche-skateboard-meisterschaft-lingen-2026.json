@@ -1,0 +1,31 @@
+{
+  "slug": "deutsche-skateboard-meisterschaft-lingen-2026",
+  "name": "Deutsche Skateboard Meisterschaft – Lingen",
+  "series": "Deutsche Skateboard Meisterschaft",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-08-22T09:00:00+02:00",
+  "endDate": "2026-08-23T18:00:00+02:00",
+  "timezone": "Europe/Berlin",
+  "location": {
+    "venue": "TBD",
+    "city": "Lingen",
+    "country": "Tyskland",
+    "countryCode": "DE",
+    "continent": "europe",
+    "lat": 52.5236,
+    "lng": 7.3161
+  },
+  "description": {
+    "sv": "Tyska mästerskapet i street-skateboard firar sitt 29:e år i Lingen. Kval på lördagen, final på söndagen, inklusive det nya olympiska formatet.",
+    "en": "The German street skateboarding championship celebrates its 29th year in Lingen. Qualifying on Saturday, finals on Sunday, including the new Olympic format."
+  },
+  "officialUrl": "https://www.boardriding.com/events/deutsche-skateboard-meisterschaft-lingen-2026",
+  "organizer": "Deutscher Rollsport und Inline-Verband",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas: 22–23 aug 2026.",
+    "url": "https://www.boardriding.com/events/deutsche-skateboard-meisterschaft-lingen-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

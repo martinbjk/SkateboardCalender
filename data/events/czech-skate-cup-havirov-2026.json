@@ -1,0 +1,31 @@
+{
+  "slug": "czech-skate-cup-havirov-2026",
+  "name": "Czech Skate Cup / ČSP – Havířov",
+  "series": "Český skateboardový pohár (ČSP)",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-08-28T09:00:00+02:00",
+  "endDate": "2026-08-29T18:00:00+02:00",
+  "timezone": "Europe/Prague",
+  "location": {
+    "venue": "TBD",
+    "city": "Havířov",
+    "country": "Tjeckien",
+    "countryCode": "CZ",
+    "continent": "europe",
+    "lat": 49.7797,
+    "lng": 18.4368
+  },
+  "description": {
+    "sv": "Den tjeckiska nationella skateboardcupen är tillbaka i Havířov efter tre års uppehåll.",
+    "en": "The Czech national skateboard cup is back in Havířov after a three-year hiatus."
+  },
+  "officialUrl": "https://www.boardriding.com/events/czech-skate-cup-csp-havirov-2026",
+  "organizer": "Český svaz skateboardingu",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas: 28–29 aug 2026.",
+    "url": "https://www.boardriding.com/events/czech-skate-cup-csp-havirov-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

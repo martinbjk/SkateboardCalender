@@ -1,0 +1,31 @@
+{
+  "slug": "simple-session-tallinn-2026",
+  "name": "Simple Session Street Series – Tallinn",
+  "series": "Simple Session Street Series",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-08-19T09:00:00+03:00",
+  "endDate": "2026-08-20T18:00:00+03:00",
+  "timezone": "Europe/Tallinn",
+  "location": {
+    "venue": "TBD",
+    "city": "Tallinn",
+    "country": "Estland",
+    "countryCode": "EE",
+    "continent": "europe",
+    "lat": 59.4370,
+    "lng": 24.7536
+  },
+  "description": {
+    "sv": "Street-tävling i Simple Session-serien, Tallinn. Skateboard och BMX i samma event.",
+    "en": "Street contest in the Simple Session series, Tallinn. Skateboard and BMX in the same event."
+  },
+  "officialUrl": "https://www.boardriding.com/events/simple-session-street-series-tallinn-2026",
+  "organizer": "Simple Session",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas: 19–20 aug 2026.",
+    "url": "https://www.boardriding.com/events/simple-session-street-series-tallinn-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

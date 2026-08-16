@@ -1,0 +1,31 @@
+{
+  "slug": "damn-am-san-diego-2026",
+  "name": "Damn Am – San Diego",
+  "series": "Damn Am Series",
+  "category": ["street"],
+  "level": "amateur",
+  "startDate": "2026-08-28T09:00:00-07:00",
+  "endDate": "2026-08-30T18:00:00-07:00",
+  "timezone": "America/Los_Angeles",
+  "location": {
+    "venue": "TBD",
+    "city": "San Diego",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  "description": {
+    "sv": "Amatörtävling i Damn Am-serien, San Diego. De 12 bästa åkarna kvalar automatiskt till Tampa Am.",
+    "en": "Amateur contest in the Damn Am series, San Diego. The top 12 skaters automatically qualify for Tampa Am."
+  },
+  "officialUrl": "https://www.boardriding.com/events/damn-am-san-diego-ca-2026",
+  "organizer": "The Boardr",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas: 28–30 aug 2026.",
+    "url": "https://www.boardriding.com/events/damn-am-san-diego-ca-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

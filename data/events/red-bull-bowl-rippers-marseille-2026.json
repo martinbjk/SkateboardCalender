@@ -1,0 +1,31 @@
+{
+  "slug": "red-bull-bowl-rippers-marseille-2026",
+  "name": "Red Bull Bowl Rippers – Marseille",
+  "series": "Red Bull Bowl Rippers",
+  "category": ["bowl"],
+  "level": "pro",
+  "startDate": "2026-08-28T09:00:00+02:00",
+  "endDate": "2026-08-30T20:00:00+02:00",
+  "timezone": "Europe/Paris",
+  "location": {
+    "venue": "TBD",
+    "city": "Marseille",
+    "country": "Frankrike",
+    "countryCode": "FR",
+    "continent": "europe",
+    "lat": 43.2965,
+    "lng": 5.3698
+  },
+  "description": {
+    "sv": "Internationell inbjudningstävling i bowl-skateboard i Marseille, arrangerad av Red Bull.",
+    "en": "International invitational bowl skateboarding event in Marseille, organized by Red Bull."
+  },
+  "officialUrl": "https://www.boardriding.com/events/red-bull-bowl-rippers-marseille-2026",
+  "organizer": "Red Bull",
+  "disciplines": ["Bowl"],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas: 28–30 aug 2026.",
+    "url": "https://www.boardriding.com/events/red-bull-bowl-rippers-marseille-2026",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}

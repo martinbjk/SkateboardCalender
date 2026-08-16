@@ -1,0 +1,31 @@
+{
+  "slug": "bunt-jam-toronto-2026",
+  "name": "The Bunt Jam – Toronto",
+  "series": "The Bunt Jam",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-08-28T09:00:00-04:00",
+  "endDate": "2026-08-29T18:00:00-04:00",
+  "timezone": "America/Toronto",
+  "location": {
+    "venue": "TBD",
+    "city": "Toronto",
+    "country": "Kanada",
+    "countryCode": "CA",
+    "continent": "north-america",
+    "lat": 43.6532,
+    "lng": -79.3832
+  },
+  "description": {
+    "sv": "Tredje upplagan av The Bunt Jam i Toronto, presenterad av Vans.",
+    "en": "Third edition of The Bunt Jam in Toronto, presented by Vans."
+  },
+  "officialUrl": "https://www.boardriding.com/events/the-bunt-jam-2026-toronto",
+  "organizer": "The Bunt / Vans",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt boardriding.coms eventdatabas: 28–29 aug 2026.",
+    "url": "https://www.boardriding.com/events/the-bunt-jam-2026-toronto",
+    "retrievedAt": "2026-08-15T00:00:00+02:00"
+  }
+}
