@@ -11,7 +11,7 @@ import { CalendarView } from './CalendarView';
 
 type ViewMode = 'list' | 'calendar';
 
-export function EventsExplorer({ events }: { events: SkateEvent[] }) {
+export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: string }) {
   const t = useTranslations();
   const locale = useLocale();
   const [view, setView] = useState<ViewMode>('list');
@@ -128,11 +128,11 @@ export function EventsExplorer({ events }: { events: SkateEvent[] }) {
       ) : view === 'list' ? (
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((event, i) => (
-            <EventCard key={event.slug} event={event} index={i} />
+            <EventCard key={event.slug} event={event} index={i} now={now} />
           ))}
         </div>
       ) : (
-        <CalendarView events={filtered} />
+        <CalendarView events={filtered} now={now} />
       )}
     </div>
   );
