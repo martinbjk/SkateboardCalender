@@ -1,7 +1,8 @@
 {
   "meta": {
-    "siteTitle": "Skate Event Calendar",
-    "siteDescription": "Alla stora och små skateboardtävlingar i världen — samlade på ett ställe, alltid aktuella."
+    "siteTitle": "Skateboard Event Calendar – Skateboard-tävlingar & evenemang världen över",
+    "siteName": "Skateboard Event Calendar",
+    "siteDescription": "Alla stora och små skateboardtävlingar i världen — samlade på ett ställe, alltid aktuella. Filtrera på datum, land, disciplin och nivå."
   },
   "nav": {
     "home": "Kalender",
