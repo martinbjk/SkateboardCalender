@@ -1,7 +1,8 @@
 {
   "meta": {
-    "siteTitle": "Skate Event Calendar",
-    "siteDescription": "Every major and minor skateboarding competition on Earth — in one place, always current."
+    "siteTitle": "Skateboard Event Calendar – Skateboarding Events & Competitions Worldwide",
+    "siteName": "Skateboard Event Calendar",
+    "siteDescription": "Find skateboard events, competitions, and contests worldwide. Browse upcoming events by date, country, discipline and level."
   },
   "nav": {
     "home": "Calendar",
