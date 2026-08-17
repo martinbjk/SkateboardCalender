@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { Plus } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ThemeToggle } from './ThemeToggle';
@@ -27,6 +28,16 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          {/* Alltid synlig, även på mobil — texten i <nav> ovan är dold under
+              sm-brytpunkten, så utan den här skulle "Föreslå event" bara
+              nås via den lilla länken i footern. */}
+          <Link
+            href="/submit"
+            className="flex items-center gap-1.5 rounded-stamp bg-spray px-2.5 py-1.5 font-mono-tight text-xs font-bold uppercase tracking-wide text-asphalt-950 hover:bg-spray-dark sm:hidden"
+          >
+            <Plus size={14} />
+            {t('nav.submit')}
+          </Link>
           <LanguageSwitcher />
           <ThemeToggle />
         </div>
