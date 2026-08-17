@@ -34,20 +34,25 @@ export async function generateMetadata({
   // (t.ex. https://ditt-namn.github.io/skate-event-calendar), annars
   // faller sitemap/OG-taggar tillbaka på denna platshållare.
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
+  const pageUrl = `${siteUrl}/${locale}`;
 
   return {
     metadataBase: new URL(siteUrl),
     title: {
       default: t('siteTitle'),
-      template: `%s · ${t('siteTitle')}`
+      template: `%s · ${t('siteName')}`
     },
     description: t('siteDescription'),
     manifest: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/manifest.webmanifest`,
     openGraph: {
       title: t('siteTitle'),
       description: t('siteDescription'),
+      url: pageUrl,
+      siteName: t('siteName'),
       type: 'website',
       locale
+      // OBS: og:image saknas medvetet — det finns ingen bildfil i /public ännu.
+      // Lägg till en (rekommenderat: 1200×630px) och sätt images: [{ url: '/og-image.png', width: 1200, height: 630 }] här.
     },
     twitter: {
       card: 'summary_large_image',
@@ -55,7 +60,11 @@ export async function generateMetadata({
       description: t('siteDescription')
     },
     alternates: {
-      languages: Object.fromEntries(locales.map((l) => [l, `/${l}`]))
+      canonical: pageUrl,
+      languages: {
+        ...Object.fromEntries(locales.map((l) => [l, `/${l}`])),
+        'x-default': '/en'
+      }
     }
   };
 }
