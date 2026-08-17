@@ -9,10 +9,18 @@ import { getEventStatus } from '@/lib/events-shared';
 import { formatDateRange } from '@/lib/date';
 import { StatusTag } from './StatusTag';
 
-export function EventCard({ event, index = 0 }: { event: SkateEvent; index?: number }) {
+export function EventCard({
+  event,
+  index = 0,
+  now
+}: {
+  event: SkateEvent;
+  index?: number;
+  now: string;
+}) {
   const locale = useLocale();
   const t = useTranslations();
-  const status = getEventStatus(event);
+  const status = getEventStatus(event, new Date(now));
   const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
 
   return (
