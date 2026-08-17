@@ -20,10 +20,45 @@ export async function generateMetadata({
   const event = getEventBySlug(slug);
   if (!event) return {};
   const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
+  const pageUrl = `${siteUrl}/${locale}/events/${slug}`;
   return {
     title: event.name,
     description,
-    openGraph: { title: event.name, description, type: 'article' }
+    alternates: { canonical: pageUrl },
+    openGraph: { title: event.name, description, url: pageUrl, type: 'article' }
+  };
+}
+
+function eventJsonLd(event: ReturnType<typeof getEventBySlug>, locale: string, siteUrl: string) {
+  if (!event) return null;
+  const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: event.name,
+    startDate: event.startDate,
+    endDate: event.endDate,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    description,
+    url: `${siteUrl}/${locale}/events/${event.slug}`,
+    location: {
+      '@type': 'Place',
+      name: event.location.venue || event.location.city,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: event.location.city,
+        addressCountry: event.location.countryCode
+      },
+      ...(event.location.lat && event.location.lng
+        ? { geo: { '@type': 'GeoCoordinates', latitude: event.location.lat, longitude: event.location.lng } }
+        : {})
+    },
+    ...(event.organizer
+      ? { organizer: { '@type': 'Organization', name: event.organizer } }
+      : {}),
+    ...(event.officialUrl ? { sameAs: event.officialUrl } : {})
   };
 }
 
@@ -39,9 +74,15 @@ export default async function EventPage({
   const t = await getTranslations({ locale });
   const status = getEventStatus(event);
   const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
+  const jsonLd = eventJsonLd(event, locale, siteUrl);
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+      {jsonLd && (
+        // eslint-disable-next-line react/no-danger -- JSON-LD kräver rå script-injektion, ingen brukarindata renderas som HTML
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      )}
       <Link href="/" className="font-mono-tight text-xs uppercase tracking-wide text-chalk-500 hover:text-spray">
         ← {t('event.backToCalendar')}
       </Link>
