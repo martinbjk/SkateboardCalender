@@ -13,7 +13,7 @@ export function Header() {
             SEC
           </span>
           <span className="font-display text-lg tracking-tight group-hover:text-spray">
-            {t('meta.siteTitle')}
+            {t('meta.siteName')}
           </span>
         </Link>
 
