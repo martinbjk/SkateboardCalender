@@ -29,7 +29,7 @@ const STATUS_DOT: Record<string, string> = {
   postponed: 'bg-hazard'
 };
 
-export function CalendarView({ events }: { events: SkateEvent[] }) {
+export function CalendarView({ events, now }: { events: SkateEvent[]; now: string }) {
   const locale = useLocale();
   const t = useTranslations();
   const dfLocale = locale === 'sv' ? sv : enUS;
@@ -126,7 +126,7 @@ export function CalendarView({ events }: { events: SkateEvent[] }) {
                     <span
                       className={clsx(
                         'h-1.5 w-1.5 shrink-0 rounded-full',
-                        STATUS_DOT[getEventStatus(event)]
+                        STATUS_DOT[getEventStatus(event, new Date(now))]
                       )}
                     />
                     <span className="truncate">{event.name}</span>
