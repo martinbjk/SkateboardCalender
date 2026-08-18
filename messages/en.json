@@ -83,9 +83,12 @@
     "issueTitle": "1. Open a GitHub Issue",
     "issueBody": "Fastest for most people. Fill in our template with the name, date, location, and link — we'll add it to /data/events.",
     "issueCta": "Open the Issue template",
+    "issueMobileHint": "Form not working, or looking odd on mobile?",
+    "issueSimpleCta": "Try the simple mobile-friendly version instead",
     "prTitle": "2. Send a Pull Request",
     "prBody": "If you're already familiar with the structure: add a new JSON file to /data/events/ following the schema and open a PR. A GitHub Actions job validates the file automatically.",
     "prCta": "View example JSON on GitHub",
+    "prMobileTip": "Tip: the PR flow works best on desktop. On mobile, try requesting \"Desktop site\" in your browser if the buttons don't respond.",
     "guidelines": "Please make sure dates, timezone, and links are accurate — we double-check before publishing."
   },
   "footer": {
