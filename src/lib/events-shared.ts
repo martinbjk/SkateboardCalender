@@ -25,6 +25,7 @@ export const ALL_CATEGORIES = [
   'bowl',
   'freestyle',
   'downhill',
+  'slalom',
   'demo',
   'contest'
 ] as const;

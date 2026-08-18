@@ -14,6 +14,7 @@ export const EventCategory = z.enum([
   'bowl',
   'freestyle',
   'downhill',
+  'slalom',
   'demo',
   'contest'
 ]);
