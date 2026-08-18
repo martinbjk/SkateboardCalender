@@ -83,9 +83,12 @@
     "issueTitle": "1. Öppna en GitHub Issue",
     "issueBody": "Snabbast för de flesta. Fyll i vår mall med namn, datum, plats och länk — vi lägger till det i /data/events.",
     "issueCta": "Öppna Issue-mallen",
+    "issueMobileHint": "Fungerar formuläret inte, eller ser konstigt ut på mobilen?",
+    "issueSimpleCta": "Prova den enkla mobilvänliga versionen istället",
     "prTitle": "2. Skicka en Pull Request",
     "prBody": "Om du redan känner till strukturen: lägg en ny JSON-fil i /data/events/ enligt schemat och öppna en PR. Ett GitHub Actions-jobb validerar filen automatiskt.",
     "prCta": "Visa exempel-JSON på GitHub",
+    "prMobileTip": "Tips: PR-flödet fungerar bäst på dator. På mobilen, be webbläsaren visa \"datorversion\"/\"desktop site\" om knapparna inte reagerar.",
     "guidelines": "Se till att datum, tidszon och länkar stämmer — vi dubbelkollar innan publicering."
   },
   "footer": {
