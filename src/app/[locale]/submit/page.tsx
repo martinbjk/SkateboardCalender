@@ -33,6 +33,17 @@ export default async function SubmitPage({ params: { locale } }: { params: { loc
           >
             {t('issueCta')}
           </a>
+          <p className="mt-3 text-xs text-chalk-500">
+            {t('issueMobileHint')}{' '}
+            <a
+              href={`${REPO_URL}/issues/new?template=event_submission_simple.yml`}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline hover:text-spray"
+            >
+              {t('issueSimpleCta')}
+            </a>
+          </p>
         </div>
 
         <div className="rounded-stamp border border-asphalt-700/25 p-5 dark:border-chalk-500/20">
@@ -49,6 +60,7 @@ export default async function SubmitPage({ params: { locale } }: { params: { loc
           >
             {t('prCta')}
           </a>
+          <p className="mt-3 text-xs text-chalk-500">{t('prMobileTip')}</p>
         </div>
       </div>
 
