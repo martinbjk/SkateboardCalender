@@ -3,7 +3,7 @@
   "name": "World Skate Games – Slalom World Championships",
   "series": "World Skate Games",
   "category": [
-    "contest"
+    "slalom"
   ],
   "level": "open",
   "startDate": "2026-10-14T09:00:00-04:00",
@@ -28,7 +28,7 @@
     "Slalom"
   ],
   "source": {
-    "note": "Datum bekräftat direkt på World Skates officiella eventkalender (event #490): 14–17 okt 2026. Kategori satt till 'contest' eftersom 'slalom' inte är ett giltigt värde i schemats category-enum.",
+    "note": "Datum bekräftat direkt på World Skates officiella eventkalender (event #490): 14–17 okt 2026.",
     "url": "https://www.worldskate.org/events/upcoming-events/event/490.html",
     "retrievedAt": "2026-08-14T00:00:00+02:00"
   }

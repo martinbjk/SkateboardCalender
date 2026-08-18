@@ -2,7 +2,9 @@
   "slug": "issa-25-cone-world-series-session4-2026",
   "name": "ISSA 25-Cone World Series – Session 4",
   "series": "ISSA 25-Cone World Series",
-  "category": ["contest"],
+  "category": [
+    "slalom"
+  ],
   "level": "open",
   "startDate": "2026-09-04T09:00:00+00:00",
   "endDate": "2026-09-07T18:00:00+00:00",
@@ -22,7 +24,9 @@
   },
   "officialUrl": "https://usaslalomskateboarding.com/event/issa-25-cone-world-series-session-4/",
   "organizer": "International Skateboard Slalom Association (ISSA)",
-  "disciplines": ["Slalom"],
+  "disciplines": [
+    "Slalom"
+  ],
   "source": {
     "note": "Datum bekräftat direkt på USA Slalom Skateboardings officiella eventkalender: 4-7 sep 2026. Ort satt till TBD/0,0 eftersom formatet är distribuerat (lokala lopp globalt, ej en enskild plats) — se beskrivning.",
     "url": "https://usaslalomskateboarding.com/event/issa-25-cone-world-series-session-4/",
