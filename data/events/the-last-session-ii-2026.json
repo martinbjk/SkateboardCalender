@@ -1,0 +1,31 @@
+{
+  "slug": "the-last-session-ii-2026",
+  "name": "The Last Session II",
+  "series": "Last Vert Session",
+  "category": ["vert"],
+  "level": "open",
+  "startDate": "2026-09-19T09:00:00+02:00",
+  "endDate": "2026-09-19T20:00:00+02:00",
+  "timezone": "Europe/Stockholm",
+  "location": {
+    "venue": "Fryshuset",
+    "city": "Stockholm",
+    "country": "Sverige",
+    "countryCode": "SE",
+    "continent": "europe",
+    "lat": 59.3033,
+    "lng": 18.0956
+  },
+  "description": {
+    "sv": "Vert-tävling på Fryshuset i Stockholm — andra upplagan av Last Vert Session.",
+    "en": "Vert competition at Fryshuset in Stockholm — the second edition of the Last Vert Session."
+  },
+  "officialUrl": "https://www.instagram.com/lastvertsession/",
+  "organizer": "Last Vert Session",
+  "disciplines": ["Vert"],
+  "source": {
+    "note": "Datum och plats enligt arrangörens Instagram-post och användarens uppgifter. Kontaktväg för frågor: lastvertsession@gmail.com / DM @lastvertsession.",
+    "url": "https://www.instagram.com/p/DXJ9fypCl7p/",
+    "retrievedAt": "2026-08-22T00:00:00+02:00"
+  }
+}
