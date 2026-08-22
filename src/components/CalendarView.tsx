@@ -20,6 +20,7 @@ import clsx from 'clsx';
 import { Link } from '@/i18n/navigation';
 import type { SkateEvent } from '@/lib/schema';
 import { getEventStatus } from '@/lib/events-shared';
+import { useLiveNow } from '@/lib/useLiveNow';
 
 const STATUS_DOT: Record<string, string> = {
   live: 'bg-live',
@@ -30,6 +31,7 @@ const STATUS_DOT: Record<string, string> = {
 };
 
 export function CalendarView({ events, now }: { events: SkateEvent[]; now: string }) {
+  const liveNow = useLiveNow(now);
   const locale = useLocale();
   const t = useTranslations();
   const dfLocale = locale === 'sv' ? sv : enUS;
@@ -126,7 +128,7 @@ export function CalendarView({ events, now }: { events: SkateEvent[]; now: strin
                     <span
                       className={clsx(
                         'h-1.5 w-1.5 shrink-0 rounded-full',
-                        STATUS_DOT[getEventStatus(event, new Date(now))]
+                        STATUS_DOT[getEventStatus(event, new Date(liveNow))]
                       )}
                     />
                     <span className="truncate">{event.name}</span>
