@@ -2,9 +2,15 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import type { SkateEvent } from '@/lib/schema';
+import { getEventStatus } from '@/lib/events-shared';
+import { useLiveNow } from '@/lib/useLiveNow';
 
-export function Hero({ liveCount, upcomingCount }: { liveCount: number; upcomingCount: number }) {
+export function Hero({ events, now }: { events: SkateEvent[]; now: string }) {
   const t = useTranslations();
+  const liveNow = useLiveNow(now);
+  const liveCount = events.filter((e) => getEventStatus(e, new Date(liveNow)) === 'live').length;
+  const upcomingCount = events.filter((e) => getEventStatus(e, new Date(liveNow)) === 'upcoming').length;
 
   return (
     <section className="relative overflow-hidden border-b border-asphalt-700/20 dark:border-chalk-500/15">
