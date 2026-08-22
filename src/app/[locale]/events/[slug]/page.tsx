@@ -33,6 +33,14 @@ export async function generateMetadata({
 function eventJsonLd(event: ReturnType<typeof getEventBySlug>, locale: string, siteUrl: string) {
   if (!event) return null;
   const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  // "Okänd" (och liknande platshållarvärden) betyder i praktiken att vi
+  // inte har en riktig arrangör — behandla det som inget värde alls i
+  // stället för att skicka blandspråkig text som "Okänd athletes" till
+  // Google. Riktig fix är att uppdatera själva datafilen, men detta skydd
+  // finns kvar även om fler filer skulle råka få samma platshållare.
+  const UNKNOWN_VALUES = new Set(['okänd', 'unknown', 'n/a', '-', '']);
+  const hasRealOrganizer = event.organizer && !UNKNOWN_VALUES.has(event.organizer.trim().toLowerCase());
+  const offerUrl = event.ticketsUrl ?? event.registrationUrl ?? event.officialUrl;
   return {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
@@ -43,6 +51,7 @@ function eventJsonLd(event: ReturnType<typeof getEventBySlug>, locale: string, s
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     description,
     url: `${siteUrl}/${locale}/events/${event.slug}`,
+    image: [event.image || `${siteUrl}/og-image.png`],
     location: {
       '@type': 'Place',
       name: event.location.venue || event.location.city,
@@ -55,8 +64,27 @@ function eventJsonLd(event: ReturnType<typeof getEventBySlug>, locale: string, s
         ? { geo: { '@type': 'GeoCoordinates', latitude: event.location.lat, longitude: event.location.lng } }
         : {})
     },
-    ...(event.organizer
-      ? { organizer: { '@type': 'Organization', name: event.organizer } }
+    performer: {
+      '@type': 'PerformingGroup',
+      name: hasRealOrganizer ? `${event.organizer} athletes` : 'Professional skateboarders'
+    },
+    ...(hasRealOrganizer
+      ? {
+          organizer: {
+            '@type': 'Organization',
+            name: event.organizer,
+            url: event.officialUrl ?? siteUrl
+          }
+        }
+      : {}),
+    ...(offerUrl
+      ? {
+          offers: {
+            '@type': 'Offer',
+            url: offerUrl,
+            availability: 'https://schema.org/InStock'
+          }
+        }
       : {}),
     ...(event.officialUrl ? { sameAs: event.officialUrl } : {})
   };
