@@ -6,6 +6,7 @@ import { MapPin } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import type { SkateEvent } from '@/lib/schema';
 import { getEventStatus } from '@/lib/events-shared';
+import { useLiveNow } from '@/lib/useLiveNow';
 import { formatDateRange } from '@/lib/date';
 import { StatusTag } from './StatusTag';
 
@@ -20,7 +21,8 @@ export function EventCard({
 }) {
   const locale = useLocale();
   const t = useTranslations();
-  const status = getEventStatus(event, new Date(now));
+  const liveNow = useLiveNow(now);
+  const status = getEventStatus(event, new Date(liveNow));
   const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
 
   return (
