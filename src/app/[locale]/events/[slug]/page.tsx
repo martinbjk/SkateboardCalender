@@ -21,7 +21,7 @@ export async function generateMetadata({
   if (!event) return {};
   const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
-  const pageUrl = `${siteUrl}/${locale}/events/${slug}`;
+  const pageUrl = `${siteUrl}/${locale}/events/${slug}/`;
   return {
     title: event.name,
     description,
@@ -50,7 +50,7 @@ function eventJsonLd(event: ReturnType<typeof getEventBySlug>, locale: string, s
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     description,
-    url: `${siteUrl}/${locale}/events/${event.slug}`,
+    url: `${siteUrl}/${locale}/events/${event.slug}/`,
     image: [event.image || `${siteUrl}/og-image.png`],
     location: {
       '@type': 'Place',
