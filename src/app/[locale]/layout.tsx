@@ -34,7 +34,7 @@ export async function generateMetadata({
   // (t.ex. https://ditt-namn.github.io/skate-event-calendar), annars
   // faller sitemap/OG-taggar tillbaka på denna platshållare.
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
-  const pageUrl = `${siteUrl}/${locale}`;
+  const pageUrl = `${siteUrl}/${locale}/`;
 
   return {
     metadataBase: new URL(siteUrl),
@@ -62,8 +62,8 @@ export async function generateMetadata({
     alternates: {
       canonical: pageUrl,
       languages: {
-        ...Object.fromEntries(locales.map((l) => [l, `/${l}`])),
-        'x-default': '/en'
+        ...Object.fromEntries(locales.map((l) => [l, `/${l}/`])),
+        'x-default': '/en/'
       }
     }
   };
