@@ -1,0 +1,31 @@
+{
+  "slug": "open-skate-jam-linkoping-2026",
+  "name": "Open Skate Jam 2026",
+  "series": "Open Skate Jam",
+  "category": ["park"],
+  "level": "open",
+  "startDate": "2026-08-29T16:00:00+02:00",
+  "endDate": "2026-08-29T19:00:00+02:00",
+  "timezone": "Europe/Stockholm",
+  "location": {
+    "venue": "Hangaren",
+    "city": "Linköping",
+    "country": "Sverige",
+    "countryCode": "SE",
+    "continent": "europe",
+    "lat": 58.4108,
+    "lng": 15.6214
+  },
+  "description": {
+    "sv": "Öppen skate-jam i Hangaren, Linköping, med Best Trick Contest (prispott), live DJ och gratis inträde för publik.",
+    "en": "Open skate jam at Hangaren, Linköping, featuring a Best Trick Contest with prize pool, live DJ, and free entry for spectators."
+  },
+  "officialUrl": "https://www.hangaren.org",
+  "organizer": "Hangaren / LKPG Skatepark",
+  "disciplines": ["Park"],
+  "source": {
+    "note": "Datum, tid och detaljer enligt arrangörens egen affisch (Instagram/sociala medier). Anmälningsavgift till Best Trick Contest kunde inte läsas säkert på affischen (text delvis dold av överlagrad grafik) — kontrollera på www.hangaren.org innan publicering om exakt avgift behövs.",
+    "url": "https://www.hangaren.org",
+    "retrievedAt": "2026-08-24T00:00:00+02:00"
+  }
+}
