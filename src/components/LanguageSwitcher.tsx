@@ -30,6 +30,20 @@ const LOCALE_CODES: Record<Locale, string> = {
   ja: 'JA'
 };
 
+// Samma nyckel som src/app/page.tsx läser vid rot-omdirigering, så ett
+// manuellt val här respekteras nästa gång besökaren kommer till "/".
+const STORAGE_KEY = 'preferred-locale';
+
+function selectLocale(l: Locale, router: ReturnType<typeof useRouter>, pathname: string) {
+  try {
+    window.localStorage.setItem(STORAGE_KEY, l);
+  } catch {
+    // localStorage kan vara blockerat — språkbytet fungerar ändå för
+    // det här besöket, det sparas bara inte till nästa gång.
+  }
+  router.replace(pathname, { locale: l });
+}
+
 export function LanguageSwitcher() {
   const locale = useLocale() as Locale;
   const router = useRouter();
@@ -44,11 +58,6 @@ export function LanguageSwitcher() {
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);
   }, []);
-
-  function selectLocale(l: Locale) {
-    router.replace(pathname, { locale: l });
-    setOpen(false);
-  }
 
   return (
     <div className="relative" ref={ref}>
@@ -75,7 +84,10 @@ export function LanguageSwitcher() {
               type="button"
               role="option"
               aria-selected={locale === l}
-              onClick={() => selectLocale(l)}
+              onClick={() => {
+                selectLocale(l, router, pathname);
+                setOpen(false);
+              }}
               className={`flex w-full items-center justify-between px-4 py-2 text-left text-sm hover:bg-spray/10 hover:text-spray ${
                 locale === l ? 'font-semibold text-spray' : ''
               }`}
