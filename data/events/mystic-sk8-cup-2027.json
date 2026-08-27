@@ -1,0 +1,39 @@
+{
+  "slug": "mystic-sk8-cup-2027",
+  "name": "Mystic Sk8 Cup",
+  "series": "Mystic Sk8 Cup",
+  "category": [
+    "street",
+    "bowl",
+    "vert"
+  ],
+  "level": "pro",
+  "startDate": "2027-06-25T09:00:00+02:00",
+  "endDate": "2027-06-27T20:00:00+02:00",
+  "timezone": "Europe/Prague",
+  "location": {
+    "venue": "Štvanice Island",
+    "city": "Prag",
+    "country": "Tjeckien",
+    "countryCode": "CZ",
+    "continent": "europe",
+    "lat": 50.094,
+    "lng": 14.446
+  },
+  "description": {
+    "sv": "32:a upplagan av Mystic Sk8 Cup på Štvanice Island i Prag — en av Europas största och mest klassiska tävlingar i street, bowl och vert.",
+    "en": "32nd edition of the Mystic Sk8 Cup at Štvanice Island in Prague — one of Europe's largest and most iconic street, bowl, and vert competitions."
+  },
+  "officialUrl": "https://www.mysticsk8cup.cz/en",
+  "organizer": "Mystic Sk8 Cup",
+  "disciplines": [
+    "Street",
+    "Bowl",
+    "Vert"
+  ],
+  "source": {
+    "note": "Datum, plats och upplaga (32:a) enligt uppgift från användaren. Officiell sajt: mysticsk8cup.cz — ett av Europas äldsta och största skateboardevent, arrangerat sedan 1994. Observera: Štvanice Island är samma ö där även Czech Skate Cup Finals hålls (separat, mindre nationell tävling).",
+    "url": "https://www.mysticsk8cup.cz/en",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}
