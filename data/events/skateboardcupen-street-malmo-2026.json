@@ -1,0 +1,31 @@
+{
+  "slug": "skateboardcupen-street-malmo-2026",
+  "name": "Skateboardcupen Street – Finalhelg Malmö",
+  "series": "Skateboardcupen",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-12-05T09:00:00+01:00",
+  "endDate": "2026-12-05T18:00:00+01:00",
+  "timezone": "Europe/Stockholm",
+  "location": {
+    "venue": "TBD",
+    "city": "Malmö",
+    "country": "Sverige",
+    "countryCode": "SE",
+    "continent": "europe",
+    "lat": 55.6050,
+    "lng": 13.0038
+  },
+  "description": {
+    "sv": "Avslutande deltävlingen i Skateboardcupens street-serie, finalhelg i Malmö. De fyra bästa av fem deltävlingar räknas till cupsegern.",
+    "en": "Final stop of the Skateboardcupen street series, finals weekend in Malmö. The best four of five results count toward the overall cup title."
+  },
+  "officialUrl": "https://skateboardcupen.se/",
+  "organizer": "Sveriges Skateboardförbund",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt arrangörens officiella affisch för Skateboardcupen 2026. Malmö är finalhelg för både street- och böj-serien (separata datum, 5 resp 4 dec).",
+    "url": "https://skateboardcupen.se/",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}

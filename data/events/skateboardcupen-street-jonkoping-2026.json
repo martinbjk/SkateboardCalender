@@ -1,0 +1,31 @@
+{
+  "slug": "skateboardcupen-street-jonkoping-2026",
+  "name": "Skateboardcupen Street – SM Jönköping",
+  "series": "Skateboardcupen",
+  "category": ["street"],
+  "level": "open",
+  "startDate": "2026-09-05T09:00:00+02:00",
+  "endDate": "2026-09-06T18:00:00+02:00",
+  "timezone": "Europe/Stockholm",
+  "location": {
+    "venue": "Olliewood",
+    "city": "Jönköping",
+    "country": "Sverige",
+    "countryCode": "SE",
+    "continent": "europe",
+    "lat": 57.7826,
+    "lng": 14.1618
+  },
+  "description": {
+    "sv": "Svenska mästerskapet i street ingår i den här deltävlingen av Skateboardcupen. Körs på Olliewood, nyligen om- och utbyggd för ca 18 miljoner kronor. Klasser: dam, herr, junior och masters.",
+    "en": "The Swedish Championship in street is decided at this Skateboardcupen stop, held at Olliewood following a recent ~18 million SEK renovation and expansion. Classes: women, men, junior and masters."
+  },
+  "officialUrl": "https://skateboardcupen.se/",
+  "organizer": "Sveriges Skateboardförbund",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum bekräftat både via arrangörens egen affisch och oberoende via Jönköpings kommuns nyhetssida (5–6 sep, Olliewood). SM-status i street avgörs här.",
+    "url": "https://www.jonkoping.se/fritid-kultur--natur/forening-och-foreningsstod/nyheter-och-aktuellt-foreningar/foreningsnyheter/2026-05-25-sm-i-skateboard-till-jonkoping---folkfest-pa-olliewood",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}
