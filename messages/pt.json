@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "siteTitle": "Calendário de Eventos de Skate – Competições e Eventos de Skate no Mundo Todo",
+    "siteName": "Calendário de Eventos de Skate",
+    "siteDescription": "Encontre eventos, competições e campeonatos de skate no mundo todo. Filtre por data, país, modalidade e nível."
+  },
+  "nav": {
+    "home": "Calendário",
+    "submit": "Sugerir evento",
+    "about": "Sobre"
+  },
+  "hero": {
+    "eyebrow": "Ao vivo · Global · Feito pela comunidade",
+    "title": "Competições de skate, o mundo inteiro, um só feed.",
+    "subtitle": "Da SLS e X Games aos jams locais — filtre por país, modalidade e nível. Atualiza automaticamente via GitHub.",
+    "cta": "Ver todos os eventos",
+    "submitCta": "Sugerir um evento"
+  },
+  "status": {
+    "upcoming": "Em breve",
+    "live": "Ao vivo",
+    "finished": "Encerrado",
+    "cancelled": "Cancelado",
+    "postponed": "Adiado"
+  },
+  "view": {
+    "list": "Lista",
+    "calendar": "Calendário"
+  },
+  "filters": {
+    "title": "Filtros",
+    "search": "Buscar eventos, cidades ou séries...",
+    "category": "Modalidade",
+    "level": "Nível",
+    "continent": "Região",
+    "dateRange": "Data",
+    "clear": "Limpar filtros",
+    "noResults": "Nenhum evento corresponde aos seus filtros. Tente remover algum.",
+    "resultsCount": "{count, plural, =0 {Nenhum evento} one {# evento} other {# eventos}}"
+  },
+  "category": {
+    "street": "Street",
+    "park": "Park",
+    "vert": "Vert",
+    "bowl": "Bowl",
+    "freestyle": "Freestyle",
+    "downhill": "Downhill",
+    "slalom": "Slalom",
+    "demo": "Demo",
+    "contest": "Contest"
+  },
+  "level": {
+    "amateur": "Amador",
+    "pro": "Profissional",
+    "open": "Aberto",
+    "youth": "Juvenil"
+  },
+  "continent": {
+    "africa": "África",
+    "asia": "Ásia",
+    "europe": "Europa",
+    "north-america": "América do Norte",
+    "south-america": "América do Sul",
+    "oceania": "Oceania"
+  },
+  "event": {
+    "officialSite": "Site oficial",
+    "register": "Inscrever-se",
+    "tickets": "Ingressos",
+    "addToCalendar": "Adicionar ao calendário",
+    "addToGoogle": "Google Agenda",
+    "downloadIcs": "Baixar .ics",
+    "organizer": "Organizador",
+    "disciplines": "Modalidades",
+    "venue": "Local",
+    "backToCalendar": "Voltar ao calendário",
+    "source": "Fonte",
+    "sponsoredSlot": "Espaço publicitário (em breve)"
+  },
+  "submit": {
+    "title": "Sugerir um evento",
+    "intro": "Este site é atualizado via GitHub. Há duas formas de sugerir um evento:",
+    "issueTitle": "1. Abrir uma Issue no GitHub",
+    "issueBody": "O jeito mais rápido para a maioria. Preencha nosso modelo com nome, data, local e link — nós adicionamos em /data/events.",
+    "issueCta": "Abrir o modelo de Issue",
+    "issueMobileHint": "O formulário não funciona ou está estranho no celular?",
+    "issueSimpleCta": "Experimente a versão simples para celular",
+    "prTitle": "2. Enviar um Pull Request",
+    "prBody": "Se você já conhece a estrutura: adicione um novo arquivo JSON em /data/events/ seguindo o schema e abra um PR. Um job do GitHub Actions valida o arquivo automaticamente.",
+    "prCta": "Ver exemplo de JSON no GitHub",
+    "prMobileTip": "Dica: o fluxo de PR funciona melhor no computador. No celular, tente solicitar o \"site para computador\" no navegador se os botões não responderem.",
+    "guidelines": "Confira se as datas, o fuso horário e os links estão corretos — nós verificamos tudo antes de publicar."
+  },
+  "footer": {
+    "tagline": "Feito por skatistas, para skatistas. Código aberto.",
+    "github": "GitHub",
+    "submitEvent": "Sugerir evento",
+    "language": "Idioma",
+    "theme": "Tema",
+    "rights": "Todos os horários são exibidos no horário local do evento, salvo indicação contrária."
+  },
+  "theme": {
+    "dark": "Modo escuro",
+    "light": "Modo claro"
+  },
+  "notFound": {
+    "title": "Nenhum evento encontrado",
+    "body": "Este link pode estar desatualizado, ou o evento pode ter sido movido.",
+    "cta": "Voltar ao calendário"
+  }
+}

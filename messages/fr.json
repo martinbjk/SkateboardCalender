@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "siteTitle": "Calendrier des événements de skateboard – Compétitions et événements de skate dans le monde",
+    "siteName": "Calendrier des événements de skateboard",
+    "siteDescription": "Trouvez des événements, compétitions et contests de skateboard dans le monde entier. Filtrez par date, pays, discipline et niveau."
+  },
+  "nav": {
+    "home": "Calendrier",
+    "submit": "Proposer un événement",
+    "about": "À propos"
+  },
+  "hero": {
+    "eyebrow": "En direct · Mondial · Animé par la communauté",
+    "title": "Les compétitions de skateboard, le monde entier, un seul flux.",
+    "subtitle": "De la SLS et des X Games aux jams locaux — filtrez par pays, discipline et niveau. Mis à jour automatiquement via GitHub.",
+    "cta": "Voir tous les événements",
+    "submitCta": "Proposer un événement"
+  },
+  "status": {
+    "upcoming": "À venir",
+    "live": "En direct",
+    "finished": "Terminé",
+    "cancelled": "Annulé",
+    "postponed": "Reporté"
+  },
+  "view": {
+    "list": "Liste",
+    "calendar": "Calendrier"
+  },
+  "filters": {
+    "title": "Filtrer",
+    "search": "Rechercher un événement, une ville ou une série...",
+    "category": "Discipline",
+    "level": "Niveau",
+    "continent": "Région",
+    "dateRange": "Date",
+    "clear": "Réinitialiser les filtres",
+    "noResults": "Aucun événement ne correspond à vos filtres. Essayez d'en retirer un.",
+    "resultsCount": "{count, plural, =0 {Aucun événement} one {# événement} other {# événements}}"
+  },
+  "category": {
+    "street": "Street",
+    "park": "Park",
+    "vert": "Vert",
+    "bowl": "Bowl",
+    "freestyle": "Freestyle",
+    "downhill": "Downhill",
+    "slalom": "Slalom",
+    "demo": "Demo",
+    "contest": "Contest"
+  },
+  "level": {
+    "amateur": "Amateur",
+    "pro": "Pro",
+    "open": "Ouvert",
+    "youth": "Jeunes"
+  },
+  "continent": {
+    "africa": "Afrique",
+    "asia": "Asie",
+    "europe": "Europe",
+    "north-america": "Amérique du Nord",
+    "south-america": "Amérique du Sud",
+    "oceania": "Océanie"
+  },
+  "event": {
+    "officialSite": "Site officiel",
+    "register": "S'inscrire",
+    "tickets": "Billets",
+    "addToCalendar": "Ajouter au calendrier",
+    "addToGoogle": "Google Agenda",
+    "downloadIcs": "Télécharger .ics",
+    "organizer": "Organisateur",
+    "disciplines": "Disciplines",
+    "venue": "Lieu",
+    "backToCalendar": "Retour au calendrier",
+    "source": "Source",
+    "sponsoredSlot": "Emplacement publicitaire (bientôt disponible)"
+  },
+  "submit": {
+    "title": "Proposer un événement",
+    "intro": "Ce site est mis à jour via GitHub. Il y a deux façons de proposer un événement :",
+    "issueTitle": "1. Ouvrir une Issue GitHub",
+    "issueBody": "Le plus rapide pour la plupart des gens. Remplissez notre modèle avec le nom, la date, le lieu et un lien — nous l'ajouterons à /data/events.",
+    "issueCta": "Ouvrir le modèle d'Issue",
+    "issueMobileHint": "Le formulaire ne fonctionne pas ou s'affiche mal sur mobile ?",
+    "issueSimpleCta": "Essayez plutôt la version simplifiée adaptée au mobile",
+    "prTitle": "2. Envoyer une Pull Request",
+    "prBody": "Si vous connaissez déjà la structure : ajoutez un nouveau fichier JSON dans /data/events/ en suivant le schéma et ouvrez une PR. Un job GitHub Actions valide automatiquement le fichier.",
+    "prCta": "Voir un exemple de JSON sur GitHub",
+    "prMobileTip": "Astuce : le processus de PR fonctionne mieux sur ordinateur. Sur mobile, essayez de demander la \"version ordinateur\" dans votre navigateur si les boutons ne répondent pas.",
+    "guidelines": "Merci de vérifier que les dates, le fuseau horaire et les liens sont corrects — nous vérifions tout avant publication."
+  },
+  "footer": {
+    "tagline": "Créé par des skateurs, pour des skateurs. Open source.",
+    "github": "GitHub",
+    "submitEvent": "Proposer un événement",
+    "language": "Langue",
+    "theme": "Thème",
+    "rights": "Tous les horaires sont indiqués en heure locale du lieu, sauf indication contraire."
+  },
+  "theme": {
+    "dark": "Mode sombre",
+    "light": "Mode clair"
+  },
+  "notFound": {
+    "title": "Aucun événement trouvé",
+    "body": "Ce lien est peut-être obsolète, ou l'événement a été déplacé.",
+    "cta": "Retour au calendrier"
+  }
+}

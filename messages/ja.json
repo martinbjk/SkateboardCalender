@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "siteTitle": "スケートボード・イベントカレンダー – 世界のスケートボード大会・イベント情報",
+    "siteName": "スケートボード・イベントカレンダー",
+    "siteDescription": "世界中のスケートボードイベント、大会、コンテストを検索。日付、国、種目、レベルで絞り込めます。"
+  },
+  "nav": {
+    "home": "カレンダー",
+    "submit": "イベントを提案",
+    "about": "このサイトについて"
+  },
+  "hero": {
+    "eyebrow": "ライブ・グローバル・コミュニティ運営",
+    "title": "世界中のスケートボード大会を、ひとつのフィードで。",
+    "subtitle": "SLSやX Gamesから地元のジャムまで — 国・種目・レベルで絞り込み。GitHub経由で自動更新。",
+    "cta": "すべてのイベントを見る",
+    "submitCta": "イベントを提案する"
+  },
+  "status": {
+    "upcoming": "開催予定",
+    "live": "開催中",
+    "finished": "終了",
+    "cancelled": "中止",
+    "postponed": "延期"
+  },
+  "view": {
+    "list": "リスト",
+    "calendar": "カレンダー"
+  },
+  "filters": {
+    "title": "絞り込み",
+    "search": "イベント、都市、シリーズを検索...",
+    "category": "種目",
+    "level": "レベル",
+    "continent": "地域",
+    "dateRange": "日付",
+    "clear": "フィルターをクリア",
+    "noResults": "条件に一致するイベントがありません。フィルターを解除してみてください。",
+    "resultsCount": "{count, plural, =0 {イベントなし} other {#件のイベント}}"
+  },
+  "category": {
+    "street": "Street",
+    "park": "Park",
+    "vert": "Vert",
+    "bowl": "Bowl",
+    "freestyle": "Freestyle",
+    "downhill": "Downhill",
+    "slalom": "Slalom",
+    "demo": "Demo",
+    "contest": "Contest"
+  },
+  "level": {
+    "amateur": "アマチュア",
+    "pro": "プロ",
+    "open": "オープン",
+    "youth": "ユース"
+  },
+  "continent": {
+    "africa": "アフリカ",
+    "asia": "アジア",
+    "europe": "ヨーロッパ",
+    "north-america": "北アメリカ",
+    "south-america": "南アメリカ",
+    "oceania": "オセアニア"
+  },
+  "event": {
+    "officialSite": "公式サイト",
+    "register": "登録",
+    "tickets": "チケット",
+    "addToCalendar": "カレンダーに追加",
+    "addToGoogle": "Googleカレンダー",
+    "downloadIcs": ".icsをダウンロード",
+    "organizer": "主催者",
+    "disciplines": "種目",
+    "venue": "会場",
+    "backToCalendar": "カレンダーに戻る",
+    "source": "情報源",
+    "sponsoredSlot": "広告枠（近日公開）"
+  },
+  "submit": {
+    "title": "イベントを提案する",
+    "intro": "このサイトはGitHub経由で更新されます。イベントを提案する方法は2つあります：",
+    "issueTitle": "1. GitHub Issueを開く",
+    "issueBody": "ほとんどの方に最適な方法です。名前・日付・場所・リンクをテンプレートに入力してください — /data/eventsに追加します。",
+    "issueCta": "Issueテンプレートを開く",
+    "issueMobileHint": "フォームが動作しない、またはスマホで表示が崩れていますか？",
+    "issueSimpleCta": "代わりにスマホ向けのシンプル版を試す",
+    "prTitle": "2. Pull Requestを送る",
+    "prBody": "すでに構造をご存知の場合：スキーマに従って/data/events/に新しいJSONファイルを追加し、PRを開いてください。GitHub Actionsが自動的にファイルを検証します。",
+    "prCta": "GitHubでJSONの例を見る",
+    "prMobileTip": "ヒント：PRの操作はパソコンでの利用が最適です。スマホでボタンが反応しない場合は、ブラウザで「PC版サイト」を表示してみてください。",
+    "guidelines": "日付・タイムゾーン・リンクが正確であることをご確認ください — 公開前に確認いたします。"
+  },
+  "footer": {
+    "tagline": "スケーターによる、スケーターのためのサイト。オープンソース。",
+    "github": "GitHub",
+    "submitEvent": "イベントを提案",
+    "language": "言語",
+    "theme": "テーマ",
+    "rights": "特に記載がない限り、時間はすべて現地時間で表示されています。"
+  },
+  "theme": {
+    "dark": "ダークモード",
+    "light": "ライトモード"
+  },
+  "notFound": {
+    "title": "イベントが見つかりません",
+    "body": "このリンクは古いか、イベントが移動した可能性があります。",
+    "cta": "カレンダーに戻る"
+  }
+}

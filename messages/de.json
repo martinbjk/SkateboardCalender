@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "siteTitle": "Skateboard Event Kalender – Skateboarding Wettkämpfe & Events weltweit",
+    "siteName": "Skateboard Event Kalender",
+    "siteDescription": "Finde Skateboard-Events, Wettkämpfe und Contests weltweit. Durchsuche kommende Events nach Datum, Land, Disziplin und Niveau."
+  },
+  "nav": {
+    "home": "Kalender",
+    "submit": "Event vorschlagen",
+    "about": "Über uns"
+  },
+  "hero": {
+    "eyebrow": "Live · Weltweit · Von der Community",
+    "title": "Skateboard-Wettkämpfe, die ganze Welt, ein Feed.",
+    "subtitle": "Von SLS und X Games bis zu lokalen Jams — filtere nach Land, Disziplin und Niveau. Aktualisiert sich automatisch über GitHub.",
+    "cta": "Alle Events ansehen",
+    "submitCta": "Event vorschlagen"
+  },
+  "status": {
+    "upcoming": "Bevorstehend",
+    "live": "Live",
+    "finished": "Beendet",
+    "cancelled": "Abgesagt",
+    "postponed": "Verschoben"
+  },
+  "view": {
+    "list": "Liste",
+    "calendar": "Kalender"
+  },
+  "filters": {
+    "title": "Filter",
+    "search": "Events, Städte oder Serien suchen...",
+    "category": "Disziplin",
+    "level": "Niveau",
+    "continent": "Region",
+    "dateRange": "Datum",
+    "clear": "Filter zurücksetzen",
+    "noResults": "Keine Events entsprechen deinen Filtern. Versuche, einen zu entfernen.",
+    "resultsCount": "{count, plural, =0 {Keine Events} one {# Event} other {# Events}}"
+  },
+  "category": {
+    "street": "Street",
+    "park": "Park",
+    "vert": "Vert",
+    "bowl": "Bowl",
+    "freestyle": "Freestyle",
+    "downhill": "Downhill",
+    "slalom": "Slalom",
+    "demo": "Demo",
+    "contest": "Contest"
+  },
+  "level": {
+    "amateur": "Amateur",
+    "pro": "Profi",
+    "open": "Offen",
+    "youth": "Jugend"
+  },
+  "continent": {
+    "africa": "Afrika",
+    "asia": "Asien",
+    "europe": "Europa",
+    "north-america": "Nordamerika",
+    "south-america": "Südamerika",
+    "oceania": "Ozeanien"
+  },
+  "event": {
+    "officialSite": "Offizielle Website",
+    "register": "Anmelden",
+    "tickets": "Tickets",
+    "addToCalendar": "Zum Kalender hinzufügen",
+    "addToGoogle": "Google Kalender",
+    "downloadIcs": ".ics herunterladen",
+    "organizer": "Veranstalter",
+    "disciplines": "Disziplinen",
+    "venue": "Austragungsort",
+    "backToCalendar": "Zurück zum Kalender",
+    "source": "Quelle",
+    "sponsoredSlot": "Werbeplatz (bald verfügbar)"
+  },
+  "submit": {
+    "title": "Event vorschlagen",
+    "intro": "Diese Seite wird über GitHub aktualisiert. Es gibt zwei Wege, ein Event vorzuschlagen:",
+    "issueTitle": "1. GitHub Issue öffnen",
+    "issueBody": "Am schnellsten für die meisten. Fülle unsere Vorlage mit Name, Datum, Ort und Link aus — wir fügen es zu /data/events hinzu.",
+    "issueCta": "Issue-Vorlage öffnen",
+    "issueMobileHint": "Formular funktioniert nicht oder sieht auf dem Handy komisch aus?",
+    "issueSimpleCta": "Probiere stattdessen die einfache, handyfreundliche Version",
+    "prTitle": "2. Pull Request senden",
+    "prBody": "Wenn du die Struktur bereits kennst: füge eine neue JSON-Datei zu /data/events/ gemäß dem Schema hinzu und öffne einen PR. Ein GitHub-Actions-Job validiert die Datei automatisch.",
+    "prCta": "Beispiel-JSON auf GitHub ansehen",
+    "prMobileTip": "Tipp: Der PR-Ablauf funktioniert am besten am Desktop. Fordere auf dem Handy die \"Desktop-Website\" an, falls die Buttons nicht reagieren.",
+    "guidelines": "Bitte stelle sicher, dass Datum, Zeitzone und Links korrekt sind — wir prüfen alles vor der Veröffentlichung."
+  },
+  "footer": {
+    "tagline": "Von Skateboardern für Skateboarder gebaut. Open Source.",
+    "github": "GitHub",
+    "submitEvent": "Event vorschlagen",
+    "language": "Sprache",
+    "theme": "Design",
+    "rights": "Alle Zeiten in lokaler Ortszeit, sofern nicht anders angegeben."
+  },
+  "theme": {
+    "dark": "Dunkelmodus",
+    "light": "Hellmodus"
+  },
+  "notFound": {
+    "title": "Kein Event gefunden",
+    "body": "Dieser Link könnte veraltet sein, oder das Event wurde verschoben.",
+    "cta": "Zurück zum Kalender"
+  }
+}
