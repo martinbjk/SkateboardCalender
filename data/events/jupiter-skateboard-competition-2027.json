@@ -1,0 +1,31 @@
+{
+  "slug": "jupiter-skateboard-competition-2027",
+  "name": "Jupiter Skateboard Competition",
+  "series": "Jupiter Skateboard Competition",
+  "category": ["bowl", "park"],
+  "level": "amateur",
+  "startDate": "2027-04-24T16:00:00-04:00",
+  "endDate": "2027-04-24T22:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "Jupiter Skate Park",
+    "city": "Jupiter",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 26.9342,
+    "lng": -80.1414
+  },
+  "description": {
+    "sv": "Årlig kommunalt arrangerad skateboardtävling på Jupiter Skate Park, med bowl- och miniramp/spine-gren. Registrering 16:00, tävling börjar 18:00. Åldersklasser: 12 år och yngre, 13–15, 16 år och äldre. Anmälningsavgift 10 USD, inklusive t-shirt, mat och dryck.",
+    "en": "Annual municipally organized skateboard competition at Jupiter Skate Park, featuring bowl and mini ramp/spine divisions. Registration at 4pm, contest starts at 6pm. Age divisions: 12 and under, 13–15, 16 and over. $10 entry fee, including a t-shirt, food and drink."
+  },
+  "officialUrl": "https://www.jupiter.fl.us/1126/Jupiter-Skateboard-Competition",
+  "organizer": "Town of Jupiter, Florida (Parks & Recreation)",
+  "disciplines": ["Bowl", "Mini Ramp"],
+  "source": {
+    "note": "Datum (24 april 2027) och tider enligt uppgift från användaren, hämtat från kommunens sida. OBS: källtextens löpande beskrivningsstycke nämnde av misstag förra årets tider (2–5 pm registrering / 5 pm start) — den siffran verkar vara oren kopia från 2026 års text. Jag har istället gått på 'Event Details'-sektionen och sammanfattningen högst upp, som båda entydigt anger registrering 16:00 och tävlingsstart 18:00. Dubbelkolla gärna direkt med arrangören (561-630-5684) om exakt tid är avgörande.",
+    "url": "https://www.jupiter.fl.us/1126/Jupiter-Skateboard-Competition",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}
