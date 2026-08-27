@@ -1,0 +1,31 @@
+{
+  "slug": "lake-murray-country-open-2027",
+  "name": "Lake Murray Country Open",
+  "series": "The Boardr Series",
+  "category": ["contest"],
+  "level": "open",
+  "startDate": "2027-04-02T09:00:00-04:00",
+  "endDate": "2027-04-04T18:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "TBD",
+    "city": "Irmo / Columbia",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 34.0857,
+    "lng": -81.1637
+  },
+  "description": {
+    "sv": "Lake Murray Country Open, del av The Boardr Series. Mer detaljer ej publicerade ännu.",
+    "en": "Lake Murray Country Open, part of The Boardr Series. Further details not yet published."
+  },
+  "officialUrl": "https://theboardr.com/events/4371/Lake_Murray_Country_Open",
+  "organizer": "The Boardr",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum enligt The Boardrs officiella eventsida. Innehåll utöver datum/plats markerat 'and more TBD' av arrangören själv — disciplin gissad utifrån seriens generella inriktning.",
+    "url": "https://theboardr.com/events/4371/Lake_Murray_Country_Open",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}

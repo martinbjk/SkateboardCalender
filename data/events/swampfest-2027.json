@@ -1,0 +1,31 @@
+{
+  "slug": "swampfest-2027",
+  "name": "Swampfest Presented by Monster Energy",
+  "series": "Swampfest",
+  "category": ["contest"],
+  "level": "open",
+  "startDate": "2027-03-11T09:00:00-05:00",
+  "endDate": "2027-03-13T18:00:00-05:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "Waldo RV and Motorsports Park",
+    "city": "Waldo",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 29.7847,
+    "lng": -82.1651
+  },
+  "description": {
+    "sv": "BMX- och skateboardfestival på Waldo RV and Motorsports Park i Florida.",
+    "en": "A BMX and skateboarding festival at Waldo RV and Motorsports Park in Florida."
+  },
+  "officialUrl": "https://theboardr.com/events/4363/Swampfest_Presented_by_Monster_Energy",
+  "organizer": "The Boardr",
+  "disciplines": ["Street"],
+  "source": {
+    "note": "Datum och plats bekräftade direkt på The Boardrs officiella eventsida. Schema/biljetter ej publicerat ännu ('Coming soon'). Kombinerat BMX/skateboard-event; exakt disciplin(er) för skateboarddelen ej specificerad.",
+    "url": "https://theboardr.com/events/4363/Swampfest_Presented_by_Monster_Energy",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}

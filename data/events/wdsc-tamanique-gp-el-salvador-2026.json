@@ -1,0 +1,31 @@
+{
+  "slug": "wdsc-tamanique-gp-el-salvador-2026",
+  "name": "Tamanique GP by Surf City",
+  "series": "World Downhill Skateboarding Championship (WDSC)",
+  "category": ["downhill"],
+  "level": "pro",
+  "startDate": "2026-12-04T09:00:00-06:00",
+  "endDate": "2026-12-06T18:00:00-06:00",
+  "timezone": "America/El_Salvador",
+  "location": {
+    "venue": "TBD",
+    "city": "Tamanique",
+    "country": "El Salvador",
+    "countryCode": "SV",
+    "continent": "north-america",
+    "lat": 13.5833,
+    "lng": -89.4167
+  },
+  "description": {
+    "sv": "Deltävling i World Downhill Skateboarding Championship, Tamanique, El Salvador. Femte upplagan efter en tävling i El Salvador 2025.",
+    "en": "Stop on the World Downhill Skateboarding Championship, Tamanique, El Salvador. Follows a 2025 edition in El Salvador."
+  },
+  "officialUrl": "https://worlddownhillskateboardingchampionship.com/tamanique-gp-by-surfcity-el-salvador-registration-december-4-6-2026/",
+  "organizer": "World Downhill Skateboarding Championship (WDSC)",
+  "disciplines": ["Downhill"],
+  "source": {
+    "note": "Datum enligt WDSC:s officiella anmälningssida: 4–6 december 2026.",
+    "url": "https://worlddownhillskateboardingchampionship.com/tamanique-gp-by-surfcity-el-salvador-registration-december-4-6-2026/",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}

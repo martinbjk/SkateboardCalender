@@ -1,0 +1,31 @@
+{
+  "slug": "village-mini-ramp-jam-raleigh-2026",
+  "name": "The Village Mini-Ramp Jam",
+  "series": "The Boardr",
+  "category": ["park"],
+  "level": "open",
+  "startDate": "2026-10-02T18:00:00-04:00",
+  "endDate": "2026-10-03T22:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "TBD (bar-lokal)",
+    "city": "Raleigh",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 35.7796,
+    "lng": -78.6382
+  },
+  "description": {
+    "sv": "Avslappnad mini-ramp-jam med The Boardrs egen ramp, på en bar i Raleigh.",
+    "en": "A laid-back mini-ramp jam with The Boardr's own ramp, at a bar in Raleigh."
+  },
+  "officialUrl": "https://theboardr.com/events/4368/The_Village_Mini-Ramp_Jam",
+  "organizer": "The Boardr",
+  "disciplines": ["Park"],
+  "source": {
+    "note": "Datum och plats enligt The Boardrs officiella eventsida.",
+    "url": "https://theboardr.com/events/4368/The_Village_Mini-Ramp_Jam",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "wdsc-cumberland-valley-2027",
+  "name": "WDSC Cumberland Valley",
+  "series": "World Downhill Skateboarding Championship (WDSC)",
+  "category": ["downhill"],
+  "level": "pro",
+  "startDate": "2027-05-14T09:00:00-04:00",
+  "endDate": "2027-05-16T18:00:00-04:00",
+  "timezone": "America/New_York",
+  "location": {
+    "venue": "TBD",
+    "city": "Cumberland Valley",
+    "country": "USA",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 40.2085,
+    "lng": -77.3691
+  },
+  "description": {
+    "sv": "Nytt stopp på World Downhill Skateboarding Championship-kalendern i Cumberland Valley, Pennsylvania. Ombokat från 2026 till maj 2027 för att hinna slutföra tillstånd för vägavstängning och säkerhet.",
+    "en": "New stop on the World Downhill Skateboarding Championship calendar in Cumberland Valley, Pennsylvania. Rescheduled from 2026 to May 2027 to allow time to complete road-closure and safety permitting."
+  },
+  "officialUrl": "https://worlddownhillskateboardingchampionship.com/wdsc-cumberland-valley-event-rescheduled-to-may-2027/",
+  "organizer": "World Downhill Skateboarding Championship (WDSC)",
+  "disciplines": ["Downhill"],
+  "source": {
+    "note": "Datum bekräftat direkt via WDSC:s officiella nyhetsartikel om ombokningen: 14–16 maj 2027. Exakt tävlingsbana/arena ännu ej specificerad.",
+    "url": "https://worlddownhillskateboardingchampionship.com/wdsc-cumberland-valley-event-rescheduled-to-may-2027/",
+    "retrievedAt": "2026-08-27T00:00:00+02:00"
+  }
+}
