@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { MapPin } from 'lucide-react';
+import { MapPin, ChevronRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import type { SkateEvent } from '@/lib/schema';
 import { getEventStatus } from '@/lib/events-shared';
@@ -78,6 +78,15 @@ export function EventCard({
           <span className="rounded-sm bg-hazard/20 px-2 py-0.5 font-mono-tight text-[10px] uppercase tracking-wide text-hazard-dark dark:text-hazard">
             {t(`level.${event.level}`)}
           </span>
+        </div>
+
+        {/* Tydlig visuell signal om att kortet leder till mer information
+            (fullständig beskrivning, karta, anmälan, källa osv.) — annars
+            kan hela kortets innehåll uppfattas som "allt som finns",
+            eftersom namn/plats/datum/kort beskrivning redan syns här. */}
+        <div className="relative mt-4 flex items-center gap-1 border-t border-asphalt-700/10 pt-3 font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500 transition group-hover:text-spray dark:border-chalk-500/10">
+          {t('event.viewDetails')}
+          <ChevronRight size={13} className="transition-transform group-hover:translate-x-0.5" />
         </div>
       </Link>
     </motion.div>
