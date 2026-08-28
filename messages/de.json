@@ -76,7 +76,8 @@
     "venue": "Austragungsort",
     "backToCalendar": "Zurück zum Kalender",
     "source": "Quelle",
-    "sponsoredSlot": "Werbeplatz (bald verfügbar)"
+    "sponsoredSlot": "Werbeplatz (bald verfügbar)",
+    "viewDetails": "Details ansehen"
   },
   "submit": {
     "title": "Event vorschlagen",
