@@ -1,11 +1,11 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { LayoutList, CalendarDays, Search, X } from 'lucide-react';
 import clsx from 'clsx';
 import type { SkateEvent } from '@/lib/schema';
-import { ALL_CATEGORIES, ALL_LEVELS, ALL_CONTINENTS } from '@/lib/events-shared';
+import { ALL_CATEGORIES, ALL_LEVELS, ALL_CONTINENTS, getEventStatus } from '@/lib/events-shared';
 import { EventCard } from './EventCard';
 import { CalendarView } from './CalendarView';
 
@@ -43,6 +43,33 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
   }, [events, search, category, level, continent, locale]);
 
   const hasActiveFilters = Boolean(search || category || level || continent);
+
+  // Listan sorteras kronologiskt äldst-först (se getAllEvents), vilket
+  // annars innebär att besökaren först möts av flera månaders redan
+  // avslutade event innan dagens/kommande dyker upp. Skrolla automatiskt
+  // fram till det första ej-avslutade eventet — men bara EN gång vid
+  // första sidladdningen, inte varje gång filtren ändras (annars hade
+  // vyn hoppat omkring på ett förvirrande sätt medan man söker/filtrerar).
+  const firstUpcomingIndex = useMemo(
+    () => filtered.findIndex((e) => getEventStatus(e, new Date(now)) !== 'finished'),
+    [filtered, now]
+  );
+  const firstUpcomingRef = useRef<HTMLDivElement>(null);
+  const hasAutoScrolled = useRef(false);
+
+  useEffect(() => {
+    if (hasAutoScrolled.current) return;
+    if (view !== 'list') return;
+    if (firstUpcomingIndex <= 0) {
+      // Redan överst (eller inget ej-avslutat event hittades) — inget att göra.
+      hasAutoScrolled.current = true;
+      return;
+    }
+    if (firstUpcomingRef.current) {
+      firstUpcomingRef.current.scrollIntoView({ behavior: 'auto', block: 'start' });
+      hasAutoScrolled.current = true;
+    }
+  }, [firstUpcomingIndex, view]);
 
   function clearFilters() {
     setSearch('');
@@ -128,7 +155,9 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
       ) : view === 'list' ? (
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((event, i) => (
-            <EventCard key={event.slug} event={event} index={i} now={now} />
+            <div key={event.slug} ref={i === firstUpcomingIndex ? firstUpcomingRef : undefined} className="scroll-mt-20">
+              <EventCard event={event} index={i} now={now} />
+            </div>
           ))}
         </div>
       ) : (
