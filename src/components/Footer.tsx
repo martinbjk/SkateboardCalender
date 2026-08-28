@@ -44,11 +44,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 flex flex-col-reverse gap-3 border-t border-asphalt-700/15 pt-6 text-xs text-chalk-500 sm:flex-row sm:items-center sm:justify-between dark:border-chalk-500/10">
+        <div className="mt-8 flex flex-col gap-4 border-t border-asphalt-700/15 pt-6 text-xs text-chalk-500 sm:flex-row sm:items-center sm:justify-between dark:border-chalk-500/10">
           <p>{t('footer.rights')}</p>
-          <Link href="/submit" className="font-mono-tight uppercase tracking-wide hover:text-spray">
-            {t('footer.submitEvent')} →
-          </Link>
+          <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono-tight uppercase tracking-wide">
+            <Link href="/about" className="hover:text-spray">
+              {t('about.title')}
+            </Link>
+            <Link href="/contact" className="hover:text-spray">
+              {t('contact.title')}
+            </Link>
+            <Link href="/privacy" className="hover:text-spray">
+              {t('privacy.title')}
+            </Link>
+            <Link href="/submit" className="hover:text-spray">
+              {t('footer.submitEvent')} →
+            </Link>
+          </nav>
         </div>
       </div>
     </footer>
