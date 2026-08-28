@@ -1,0 +1,26 @@
+name: Föreslå ett event (enkel version) / Suggest an event (simple version)
+description: Fungerar bättre på mobil — inga rullgardinsmenyer, bara vanlig text. / Works better on mobile — no dropdowns, just plain text.
+title: "[Event]: "
+labels: ["event-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Enklare version av formuläret, bättre anpassad för mobil. Skriv bara in informationen du har.
+
+        Simpler version of the form, better suited for mobile. Just type in the info you have.
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Berätta om eventet / Tell us about the event
+      description: Namn, datum, plats, land, disciplin (street/park/vert/bowl/downhill/slalom/freestyle), nivå (amatör/pro), och gärna en länk till källan.
+      placeholder: |
+        Namn: SLS Paris
+        Datum: 3 oktober 2026
+        Plats: Paris, Frankrike
+        Disciplin: Street
+        Nivå: Pro
+        Källa: https://...
+    validations:
+      required: true
