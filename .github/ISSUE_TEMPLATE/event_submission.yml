@@ -1,26 +1,119 @@
-name: Föreslå ett event (enkel version) / Suggest an event (simple version)
-description: Fungerar bättre på mobil — inga rullgardinsmenyer, bara vanlig text. / Works better on mobile — no dropdowns, just plain text.
+name: Föreslå ett event / Suggest an event
+description: Föreslå ett skateboard-tävling eller event att lägga till i kalendern. / Suggest a skateboarding competition or event to add to the calendar.
 title: "[Event]: "
 labels: ["event-submission"]
 body:
   - type: markdown
     attributes:
       value: |
-        Enklare version av formuläret, bättre anpassad för mobil. Skriv bara in informationen du har.
+        Tack för att du vill bidra till kalendern! Fyll i så mycket du vet — det är okej att lämna fält tomma om du är osäker. En underhållare granskar och lägger till eventet manuellt.
 
-        Simpler version of the form, better suited for mobile. Just type in the info you have.
+        Thanks for contributing! Fill in what you know — it's fine to leave fields blank if unsure. A maintainer will review and add the event manually.
+
+  - type: input
+    id: name
+    attributes:
+      label: Eventnamn / Event name
+      placeholder: t.ex. "SLS Paris" eller "Skate SM Street"
+    validations:
+      required: true
+
+  - type: input
+    id: series
+    attributes:
+      label: Serie/tour (om tillämpligt) / Series/tour (if applicable)
+      placeholder: t.ex. "SLS Championship Tour", "World Rookie Tour"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Disciplin(er) / Discipline(s)
+      multiple: true
+      options:
+        - street
+        - park
+        - vert
+        - bowl
+        - freestyle
+        - downhill
+        - slalom
+        - demo
+        - contest
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Nivå / Level
+      options:
+        - amateur
+        - pro
+        - open
+        - youth
+    validations:
+      required: true
+
+  - type: input
+    id: startDate
+    attributes:
+      label: Startdatum / Start date
+      placeholder: "ÅÅÅÅ-MM-DD, t.ex. 2026-09-05"
+    validations:
+      required: true
+
+  - type: input
+    id: endDate
+    attributes:
+      label: Slutdatum / End date
+      placeholder: "ÅÅÅÅ-MM-DD (samma som startdatum om endagsevent)"
+    validations:
+      required: true
+
+  - type: input
+    id: venue
+    attributes:
+      label: Arena/plats / Venue
+      placeholder: t.ex. "Stade Roland-Garros" (skriv "TBD" om okänt)
+    validations:
+      required: false
+
+  - type: input
+    id: city
+    attributes:
+      label: Stad / City
+    validations:
+      required: true
+
+  - type: input
+    id: country
+    attributes:
+      label: Land / Country
+    validations:
+      required: true
 
   - type: textarea
-    id: details
+    id: description
     attributes:
-      label: Berätta om eventet / Tell us about the event
-      description: Namn, datum, plats, land, disciplin (street/park/vert/bowl/downhill/freestyle), nivå (amatör/pro), och gärna en länk till källan.
-      placeholder: |
-        Namn: SLS Paris
-        Datum: 3 oktober 2026
-        Plats: Paris, Frankrike
-        Disciplin: Street
-        Nivå: Pro
-        Källa: https://...
+      label: Kort beskrivning / Short description
+      placeholder: Ett par meningar om eventet.
+    validations:
+      required: false
+
+  - type: input
+    id: officialUrl
+    attributes:
+      label: Officiell webbplats / Official website
+      placeholder: "https://..."
+    validations:
+      required: false
+
+  - type: input
+    id: source
+    attributes:
+      label: Källa (var hittade du informationen?) / Source (where did you find this?)
+      placeholder: "Länk till nyhet, arrangörens Instagram, etc."
     validations:
       required: true
