@@ -76,7 +76,8 @@
     "venue": "Lieu",
     "backToCalendar": "Retour au calendrier",
     "source": "Source",
-    "sponsoredSlot": "Emplacement publicitaire (bientôt disponible)"
+    "sponsoredSlot": "Emplacement publicitaire (bientôt disponible)",
+    "viewDetails": "Voir les détails"
   },
   "submit": {
     "title": "Proposer un événement",
