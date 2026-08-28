@@ -76,7 +76,8 @@
     "venue": "Local",
     "backToCalendar": "Voltar ao calendário",
     "source": "Fonte",
-    "sponsoredSlot": "Espaço publicitário (em breve)"
+    "sponsoredSlot": "Espaço publicitário (em breve)",
+    "viewDetails": "Ver detalhes"
   },
   "submit": {
     "title": "Sugerir um evento",
