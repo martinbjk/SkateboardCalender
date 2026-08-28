@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { LayoutList, CalendarDays, Search, X } from 'lucide-react';
+import { LayoutList, CalendarDays, Search, X, ChevronDown, Check } from 'lucide-react';
 import clsx from 'clsx';
 import type { SkateEvent } from '@/lib/schema';
 import { ALL_CATEGORIES, ALL_LEVELS, ALL_CONTINENTS, getEventStatus } from '@/lib/events-shared';
@@ -213,26 +213,87 @@ function FilterGroup<T extends readonly string[]>({
   translatePrefix: string;
 }) {
   const t = useTranslations();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Byggd från grunden (i stället för en native <select>) eftersom
+  // operativsystemets egen rullgardinsmeny ritas av OS:et självt, inte
+  // av oss — på Windows gav det ibland en svårläst, till synes
+  // "inaktiverad" nedrullningslista i mörkt läge (dålig kontrast,
+  // OS-standardfärger som ignorerade vår styling). Med en egen dropdown
+  // (samma mönster som språkväxlaren) ser den identisk ut och beter sig
+  // likadant oavsett Windows/Mac/mobil.
+  useEffect(() => {
+    function onClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener('click', onClick);
+    return () => document.removeEventListener('click', onClick);
+  }, []);
+
+  const selectedLabel = value ? t(`${translatePrefix}.${value}`) : label;
+
   return (
-    <div className="relative">
-      <select
-        value={value ?? ''}
-        onChange={(e) => onChange(e.target.value || null)}
+    <div className="relative" ref={ref}>
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
         aria-label={label}
         className={clsx(
-          'appearance-none rounded-stamp border px-3 py-1.5 pr-7 font-mono-tight text-xs uppercase tracking-wide outline-none transition',
+          'flex items-center gap-1.5 rounded-stamp border px-3 py-1.5 font-mono-tight text-xs uppercase tracking-wide transition',
           value
             ? 'border-spray bg-spray/10 text-spray'
-            : 'border-asphalt-700/30 bg-transparent text-current dark:border-chalk-500/20'
+            : 'border-asphalt-700/30 bg-transparent text-current hover:border-spray hover:text-spray dark:border-chalk-500/20'
         )}
       >
-        <option value="">{label}</option>
-        {options.map((opt) => (
-          <option key={opt} value={opt}>
-            {t(`${translatePrefix}.${opt}`)}
-          </option>
-        ))}
-      </select>
+        {selectedLabel}
+        <ChevronDown size={13} className={clsx('transition-transform', open && 'rotate-180')} />
+      </button>
+
+      {open && (
+        <div
+          role="listbox"
+          className="absolute left-0 top-full z-20 mt-2 max-h-64 w-48 overflow-y-auto rounded-stamp border border-asphalt-700/20 bg-concrete-100 py-1 shadow-lg dark:border-chalk-500/20 dark:bg-asphalt-900"
+        >
+          <button
+            type="button"
+            role="option"
+            aria-selected={value === null}
+            onClick={() => {
+              onChange(null);
+              setOpen(false);
+            }}
+            className={clsx(
+              'flex w-full items-center justify-between px-4 py-2 text-left font-mono-tight text-xs uppercase tracking-wide hover:bg-spray/10 hover:text-spray',
+              value === null && 'font-semibold text-spray'
+            )}
+          >
+            {label}
+            {value === null && <Check size={13} />}
+          </button>
+          {options.map((opt) => (
+            <button
+              key={opt}
+              type="button"
+              role="option"
+              aria-selected={value === opt}
+              onClick={() => {
+                onChange(opt);
+                setOpen(false);
+              }}
+              className={clsx(
+                'flex w-full items-center justify-between px-4 py-2 text-left font-mono-tight text-xs uppercase tracking-wide hover:bg-spray/10 hover:text-spray',
+                value === opt && 'font-semibold text-spray'
+              )}
+            >
+              {t(`${translatePrefix}.${opt}`)}
+              {value === opt && <Check size={13} />}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
