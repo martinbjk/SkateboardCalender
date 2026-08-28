@@ -80,69 +80,75 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
 
   return (
     <div>
-      {/* Sök + vy-växlare */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="relative flex-1 sm:max-w-md">
-          <Search
-            size={16}
-            className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-chalk-500"
-          />
-          <input
-            type="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder={t('filters.search')}
-            className="w-full rounded-stamp border border-asphalt-700/30 bg-white/70 py-2.5 pl-9 pr-3 text-sm outline-none transition placeholder:text-chalk-500 focus:border-spray dark:border-chalk-500/20 dark:bg-asphalt-900/70"
-          />
+      {/* Klibbig sök/filter-sektion, fäst direkt under headern (som också
+          är sticky). Utan detta hamnar filtren ovanför skärmen så fort man
+          scrollar ner i listan — särskilt märkbart på mobil efter att
+          sidan automatiskt hoppat fram till dagens/kommande event. */}
+      <div className="sticky top-[60px] z-30 -mx-4 bg-concrete-100/95 px-4 pb-3 pt-2 backdrop-blur sm:-mx-6 sm:px-6 dark:bg-asphalt-950/95">
+        {/* Sök + vy-växlare */}
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="relative flex-1 sm:max-w-md">
+            <Search
+              size={16}
+              className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-chalk-500"
+            />
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder={t('filters.search')}
+              className="w-full rounded-stamp border border-asphalt-700/30 bg-white/70 py-2.5 pl-9 pr-3 text-sm outline-none transition placeholder:text-chalk-500 focus:border-spray dark:border-chalk-500/20 dark:bg-asphalt-900/70"
+            />
+          </div>
+
+          <div className="flex items-center gap-1 self-start rounded-stamp border border-asphalt-700/30 p-1 dark:border-chalk-500/20">
+            <ViewButton active={view === 'list'} onClick={() => setView('list')} icon={<LayoutList size={15} />}>
+              {t('view.list')}
+            </ViewButton>
+            <ViewButton
+              active={view === 'calendar'}
+              onClick={() => setView('calendar')}
+              icon={<CalendarDays size={15} />}
+            >
+              {t('view.calendar')}
+            </ViewButton>
+          </div>
         </div>
 
-        <div className="flex items-center gap-1 self-start rounded-stamp border border-asphalt-700/30 p-1 dark:border-chalk-500/20">
-          <ViewButton active={view === 'list'} onClick={() => setView('list')} icon={<LayoutList size={15} />}>
-            {t('view.list')}
-          </ViewButton>
-          <ViewButton
-            active={view === 'calendar'}
-            onClick={() => setView('calendar')}
-            icon={<CalendarDays size={15} />}
-          >
-            {t('view.calendar')}
-          </ViewButton>
+        {/* Filterchips */}
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <FilterGroup
+            label={t('filters.category')}
+            options={ALL_CATEGORIES}
+            value={category}
+            onChange={setCategory}
+            translatePrefix="category"
+          />
+          <FilterGroup
+            label={t('filters.level')}
+            options={ALL_LEVELS}
+            value={level}
+            onChange={setLevel}
+            translatePrefix="level"
+          />
+          <FilterGroup
+            label={t('filters.continent')}
+            options={ALL_CONTINENTS}
+            value={continent}
+            onChange={setContinent}
+            translatePrefix="continent"
+          />
+          {hasActiveFilters && (
+            <button
+              type="button"
+              onClick={clearFilters}
+              className="flex items-center gap-1 rounded-stamp px-2.5 py-1.5 font-mono-tight text-xs text-spray hover:underline"
+            >
+              <X size={13} />
+              {t('filters.clear')}
+            </button>
+          )}
         </div>
-      </div>
-
-      {/* Filterchips */}
-      <div className="mt-4 flex flex-wrap items-center gap-2">
-        <FilterGroup
-          label={t('filters.category')}
-          options={ALL_CATEGORIES}
-          value={category}
-          onChange={setCategory}
-          translatePrefix="category"
-        />
-        <FilterGroup
-          label={t('filters.level')}
-          options={ALL_LEVELS}
-          value={level}
-          onChange={setLevel}
-          translatePrefix="level"
-        />
-        <FilterGroup
-          label={t('filters.continent')}
-          options={ALL_CONTINENTS}
-          value={continent}
-          onChange={setContinent}
-          translatePrefix="continent"
-        />
-        {hasActiveFilters && (
-          <button
-            type="button"
-            onClick={clearFilters}
-            className="flex items-center gap-1 rounded-stamp px-2.5 py-1.5 font-mono-tight text-xs text-spray hover:underline"
-          >
-            <X size={13} />
-            {t('filters.clear')}
-          </button>
-        )}
       </div>
 
       <p className="mt-4 font-mono-tight text-xs uppercase tracking-wide text-chalk-500">
@@ -155,7 +161,7 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
       ) : view === 'list' ? (
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((event, i) => (
-            <div key={event.slug} ref={i === firstUpcomingIndex ? firstUpcomingRef : undefined} className="scroll-mt-20">
+            <div key={event.slug} ref={i === firstUpcomingIndex ? firstUpcomingRef : undefined} className="scroll-mt-40">
               <EventCard event={event} index={i} now={now} />
             </div>
           ))}
