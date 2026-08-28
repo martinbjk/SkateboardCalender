@@ -1,4 +1,4 @@
-[README (2).md](https://github.com/user-attachments/files/31560837/README.2.md)
+[README (3).md](https://github.com/user-attachments/files/31561023/README.3.md)
 # Skateboard Event Calendar
 
 En global, live kalender för skateboard-tävlingar och events —
@@ -209,12 +209,7 @@ npx serve out           # servera dem lokalt, precis som i produktion
 
 ## Licens
 
-Uppdelad licens — koden är öppen, eventdatan är skyddad:
-
-- **Källkoden** (allt under `src/`, `scripts/`, konfigurationsfiler)
-  är **MIT-licensierad** — se [`LICENSE`](LICENSE). Använd, kopiera
-  eller bygg vidare på den fritt.
-- **Eventdatan** (`data/events/*.json` — den kuraterade listan över
-  tävlingar) är **inte** MIT-licensierad. Se
-  [`data/events/LICENSE`](data/events/LICENSE) — all rights reserved,
-  kontakta upphovsrättsinnehavaren för tillstånd att återanvända den.
+All Rights Reserved — se [`LICENSE`](LICENSE). Koden och eventdatan är
+publikt synliga för transparens och demonstration, men ingen tillåtelse
+ges att kopiera, ändra, distribuera eller återanvända något av det utan
+skriftligt medgivande i förväg.
