@@ -130,11 +130,11 @@ export default async function EventPage({
           href={googleMapsUrl(event)}
           target="_blank"
           rel="noreferrer noopener"
-          className="flex items-center gap-1.5 hover:text-spray hover:underline"
+          className="flex items-center gap-1.5 text-spray underline decoration-spray/40 underline-offset-2 transition hover:decoration-spray"
         >
           <MapPin size={14} className="text-spray" />
           {event.location.venue}, {event.location.city}, {event.location.country}
-          <ExternalLink size={12} className="text-chalk-500" />
+          <ExternalLink size={12} className="text-spray" />
         </a>
         <span>{formatDateRange(event, locale)}</span>
         <span>
