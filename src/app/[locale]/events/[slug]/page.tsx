@@ -20,7 +20,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const event = getEventBySlug(slug);
   if (!event) return {};
-  const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  const rawDescription = event.description[locale as keyof typeof event.description] ?? event.description.en;
+  // Lägger till en kort uppmaning som lovar KONKRET extra värde vid
+  // klick (kartlänk, anmälan, fler detaljer) — utan den ser Google-
+  // sökaren redan datum/plats via strukturerad data i själva
+  // sökresultatet och har ingen tydlig anledning att klicka vidare.
+  const t = await getTranslations({ locale, namespace: 'meta' });
+  const description = `${rawDescription}${t('eventCta')}`;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
   const pageUrl = `${siteUrl}/${locale}/events/${slug}/`;
   return {
@@ -33,7 +39,7 @@ export async function generateMetadata({
 
 function eventJsonLd(event: ReturnType<typeof getEventBySlug>, locale: string, siteUrl: string) {
   if (!event) return null;
-  const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  const description = event.description[locale as keyof typeof event.description] ?? event.description.en;
   // "Okänd" (och liknande platshållarvärden) betyder i praktiken att vi
   // inte har en riktig arrangör — behandla det som inget värde alls i
   // stället för att skicka blandspråkig text som "Okänd athletes" till
@@ -102,7 +108,7 @@ export default async function EventPage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
   const status = getEventStatus(event);
-  const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  const description = event.description[locale as keyof typeof event.description] ?? event.description.en;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
   const jsonLd = eventJsonLd(event, locale, siteUrl);
 
