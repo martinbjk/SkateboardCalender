@@ -76,7 +76,8 @@
     "venue": "Arena",
     "backToCalendar": "Tillbaka till kalendern",
     "source": "Källa",
-    "sponsoredSlot": "Annonsplats (kommer snart)"
+    "sponsoredSlot": "Annonsplats (kommer snart)",
+    "viewDetails": "Visa detaljer"
   },
   "submit": {
     "title": "Föreslå ett event",
