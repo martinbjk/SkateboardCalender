@@ -76,7 +76,8 @@
     "venue": "Venue",
     "backToCalendar": "Back to calendar",
     "source": "Source",
-    "sponsoredSlot": "Ad slot (coming soon)"
+    "sponsoredSlot": "Ad slot (coming soon)",
+    "viewDetails": "View details"
   },
   "submit": {
     "title": "Submit an event",
