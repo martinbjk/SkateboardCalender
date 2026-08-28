@@ -108,5 +108,23 @@
     "title": "No event found here",
     "body": "This link may be old, or the event may have moved.",
     "cta": "Back to calendar"
+  },
+  "about": {
+    "title": "About",
+    "p1": "Skateboard Event Calendar brings together skateboarding competitions from around the world in one place — from world championships and pro tours like SLS and X Games, to national cups and local jams.",
+    "p2": "Every event is manually verified against a real source (the organizer's own site, an official calendar, or a news article) before being added — see the \"Source\" link at the bottom of each event page.",
+    "p3": "The site is open source and built by Martin Björck. Community submissions of new events are very welcome via GitHub.",
+    "githubCta": "View the code on GitHub"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Have a question, found an error, or want to suggest an event? Open an Issue on GitHub — it's the fastest way to reach us.",
+    "issuesTitle": "GitHub Issues",
+    "issuesBody": "Works for everything: incorrect event info, technical bugs, event suggestions, or general questions.",
+    "issuesCta": "Open an Issue",
+    "responseTime": "We usually respond within a few days. This is a community-run project without a dedicated support team."
+  },
+  "privacy": {
+    "title": "Privacy Policy"
   }
 }

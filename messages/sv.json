@@ -108,5 +108,23 @@
     "title": "Hittade inget event här",
     "body": "Länken kan vara gammal eller så har eventet flyttats.",
     "cta": "Tillbaka till kalendern"
+  },
+  "about": {
+    "title": "Om sajten",
+    "p1": "Skateboard Event Calendar samlar skateboardtävlingar från hela världen på ett ställe — från VM och proffs-tourer som SLS och X Games, till nationella cuper och lokala jams.",
+    "p2": "Varje event är manuellt verifierat mot en riktig källa (arrangörens egen sajt, en officiell kalender, eller en nyhetsartikel) innan det läggs till — se \"Källa\"-länken längst ner på varje eventsida.",
+    "p3": "Sajten är öppen källkod och byggd av Martin Björck. Community-inskick av nya event är varmt välkomna via GitHub.",
+    "githubCta": "Se koden på GitHub"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Har du en fråga, hittat ett fel, eller vill föreslå ett event? Öppna en Issue på GitHub — det är det snabbaste sättet att nå oss.",
+    "issuesTitle": "GitHub Issues",
+    "issuesBody": "Fungerar för allt: felaktig eventinformation, tekniska buggar, eventförslag, eller allmänna frågor.",
+    "issuesCta": "Öppna en Issue",
+    "responseTime": "Vi svarar oftast inom några dagar. Det här är ett community-drivet projekt utan en dedikerad supportfunktion."
+  },
+  "privacy": {
+    "title": "Integritetspolicy"
   }
 }
