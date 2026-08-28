@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapPin, ExternalLink, Ticket, Users } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { getAllEvents, getEventBySlug, getEventStatus } from '@/lib/events';
-import { googleMapsUrl } from '@/lib/events-shared';
+import { googleMapsUrl, locationIsKnown } from '@/lib/events-shared';
 import { formatDateRange, formatTime } from '@/lib/date';
 import { StatusTag } from '@/components/StatusTag';
 import { AddToCalendar } from '@/components/AddToCalendar';
@@ -126,16 +126,23 @@ export default async function EventPage({
       </h1>
 
       <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 font-mono-tight text-sm text-asphalt-800 dark:text-chalk-300">
-        <a
-          href={googleMapsUrl(event)}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="flex items-center gap-1.5 text-spray underline decoration-spray/40 underline-offset-2 transition hover:decoration-spray"
-        >
-          <MapPin size={14} className="text-spray" />
-          {event.location.venue}, {event.location.city}, {event.location.country}
-          <ExternalLink size={12} className="text-spray" />
-        </a>
+        {locationIsKnown(event) ? (
+          <a
+            href={googleMapsUrl(event)}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="flex items-center gap-1.5 text-spray underline decoration-spray/40 underline-offset-2 transition hover:decoration-spray"
+          >
+            <MapPin size={14} className="text-spray" />
+            {event.location.venue}, {event.location.city}, {event.location.country}
+            <ExternalLink size={12} className="text-spray" />
+          </a>
+        ) : (
+          <span className="flex items-center gap-1.5">
+            <MapPin size={14} className="text-spray" />
+            {event.location.venue}, {event.location.city}, {event.location.country}
+          </span>
+        )}
         <span>{formatDateRange(event, locale)}</span>
         <span>
           {formatTime(event.startDate, event.timezone, locale)}–
