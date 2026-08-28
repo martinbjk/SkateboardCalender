@@ -1,0 +1,34 @@
+All Rights Reserved — Eventdata
+
+Copyright (c) 2026 Martin Björck
+
+Detta gäller specifikt innehållet i data/events/*.json (den kuraterade
+listan över skateboardevent: namn, datum, platser, beskrivningar,
+kategorisering m.m.) — INTE resten av repot, som är MIT-licensierad
+(se LICENSE i repots rot).
+
+Ingen tillåtelse ges att kopiera, distribuera, publicera på annan
+webbplats, sälja, eller på annat sätt återanvända denna eventdata,
+helt eller delvis, utan skriftligt medgivande från upphovsrättsinnehavaren
+i förväg.
+
+Om du vill använda eventdatan (t.ex. för forskning, en icke-kommersiell
+mashup, eller ett samarbete), kontakta upphovsrättsinnehavaren för
+tillstånd.
+
+---
+
+All Rights Reserved — Event Data
+
+This applies specifically to the content of data/events/*.json (the
+curated list of skateboarding events: names, dates, locations,
+descriptions, categorization, etc.) — NOT the rest of the repository,
+which is MIT-licensed (see LICENSE in the repo root).
+
+No permission is granted to copy, redistribute, republish elsewhere,
+sell, or otherwise reuse this event data, in whole or in part, without
+prior written consent from the copyright holder.
+
+If you'd like to use the event data (e.g. for research, a non-commercial
+mashup, or a collaboration), please contact the copyright holder for
+permission.
