@@ -23,7 +23,11 @@
     "live": "Ao vivo",
     "finished": "Encerrado",
     "cancelled": "Cancelado",
-    "postponed": "Adiado"
+    "postponed": "Adiado",
+    "inDays": "{days, plural, one {Em # dia} other {Em # dias}}",
+    "inHours": "{hours, plural, one {Em # hora} other {Em # horas}}",
+    "liveNow": "Ao vivo agora",
+    "tomorrow": "Amanhã"
   },
   "view": {
     "list": "Lista",
