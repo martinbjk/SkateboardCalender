@@ -23,7 +23,11 @@
     "live": "Live",
     "finished": "Beendet",
     "cancelled": "Abgesagt",
-    "postponed": "Verschoben"
+    "postponed": "Verschoben",
+    "inDays": "{days, plural, one {In # Tag} other {In # Tagen}}",
+    "inHours": "{hours, plural, one {In # Stunde} other {In # Stunden}}",
+    "liveNow": "Jetzt live",
+    "tomorrow": "Morgen"
   },
   "view": {
     "list": "Liste",
