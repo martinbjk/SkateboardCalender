@@ -3,7 +3,8 @@
     "siteTitle": "Calendário de Eventos de Skate – Competições e Eventos de Skate no Mundo Todo",
     "siteName": "Calendário de Eventos de Skate",
     "siteDescription": "Encontre eventos, competições e campeonatos de skate no mundo todo. Filtre por data, país, modalidade e nível.",
-    "eventCta": " Veja a localização no mapa, inscrição e mais detalhes aqui."
+    "eventCta": " Veja a localização no mapa, inscrição e mais detalhes aqui.",
+    "metaFacts": "{location} · {date}."
   },
   "nav": {
     "home": "Calendário",
