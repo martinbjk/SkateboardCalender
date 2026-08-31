@@ -15,14 +15,12 @@ export function formatDateRange(event: SkateEvent, locale: string): string {
   if (sameDay) {
     return `${dayFmt.format(start)} ${yearFmt.format(start)}`;
   }
-  const sameMonth = start.getUTCMonth() === end.getUTCMonth();
-  if (sameMonth) {
-    const startDay = new Intl.DateTimeFormat(locale, { day: 'numeric', timeZone: event.timezone }).format(
-      start
-    );
-    return `${startDay}–${dayFmt.format(end)} ${yearFmt.format(end)}`;
-  }
-  return `${dayFmt.format(start)} – ${dayFmt.format(end)} ${yearFmt.format(end)}`;
+  // formatRange() (standard Intl/ECMA-402-metod) sköter dag/månad-
+  // ordningen korrekt per språk automatiskt, och slår ihop till "28–29
+  // Aug" när start/slut delar månad eller "28 Aug – 3 Sep" annars.
+  // Tidigare byggde vi ihop strängen manuellt här, vilket gav fel
+  // ordning på engelska: "28–Aug 29" istället för korrekta "28–29 Aug".
+  return `${dayFmt.formatRange(start, end)} ${yearFmt.format(end)}`;
 }
 
 export function formatTime(dateStr: string, timezone: string, locale: string): string {
