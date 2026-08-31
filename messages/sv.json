@@ -127,5 +127,294 @@
   },
   "privacy": {
     "title": "Integritetspolicy"
+  },
+  "disciplines": {
+    "navTitle": "Discipliner",
+    "pageTitle": "Skateboarddiscipliner – en djupgående guide",
+    "metaDescription": "Djupgående guide till skateboardens discipliner — Street, Park, Vert, Bowl, Freestyle och Slalom — med officiella tävlingsregler från World Skate 2026.",
+    "intro": "Skateboard är inte en enda sport. Det är flera distinkta discipliner med olika banor, tekniker, regler och tävlingsformat. Här går vi igenom de viktigaste disciplinerna med officiella definitioner från World Skate (2026) där det är relevant.",
+    "filterHint": "Osäker på skillnaden mellan disciplinerna?",
+    "filterHintCta": "Läs vår guide",
+    "sourcesNote": "Källor: World Skate Competition Rules – Slalom & Vert (Update August 2026) samt etablerad skatekultur.",
+    "ctaText": "Se kommande event i denna disciplin",
+    "sections": {
+      "street": {
+        "title": "Street",
+        "body": "Street är den absolut vanligaste disciplinen i modern skateboard. Åkaren använder stadsmiljö eller en specialbyggd bana som efterliknar den: trappor, ledstänger (rails), curb, gap, ledges och manuals.",
+        "featuresTitle": "Kännetecken",
+        "features": [
+          "Fokus på tekniska flip-tricks, grinds, slides och manuals",
+          "Kreativitet och \"line\"-tänkande är viktigare än ren amplitude",
+          "Oftast individuella runs (45–60 sekunder) eller best-trick-format"
+        ],
+        "formatNote": "SLS (Street League) kör ett knockout-system med runs + best trick. Olympiska Street har både runs och best trick.",
+        "whyNote": "Den kräver minst infrastruktur och speglar hur de flesta åker i vardagen."
+      },
+      "park": {
+        "title": "Park",
+        "body": "Park körs i en designad skatepark med transitioner, hips, bowls, spines och quarterpipes. Det är en hybrid mellan street och vert — hastighet, luft och tekniska tricks blandas.",
+        "featuresTitle": "Kännetecken",
+        "features": [
+          "Högre fart och större luft än street",
+          "Runs är vanligtvis 45–60 sekunder",
+          "Bedömning baseras på difficulty, execution, use of course, flow och consistency"
+        ],
+        "eventsNote": "Stora events: X Games Park, World Skate Park World Championships, olympiska Park."
+      },
+      "vert": {
+        "title": "Vert",
+        "body": "Vert (vertical) körs på en stor halfpipe, ofta 3,5–4 meter hög med vertikal vägg. Det är den klassiska \"stora luft\"-disciplinen.",
+        "formatTitle": "Officiellt tävlingsformat (World Skate 2026)",
+        "qualifyingTitle": "Kval och semifinal",
+        "qualifyingBody": "Bäst av två (upp till fyra) runs på 30–45 sekunder. Fem domare ger poäng 0,00–100. Högsta och lägsta poängen stryks, de tre mittersta räknas om till snitt.",
+        "finalTitle": "Final – 3/5/3-format",
+        "finalItems": [
+          "3 runs à 30 sekunder (bästa runnen räknas)",
+          "5 individuella trick-försök (de två bästa räknas)",
+          "Totalpoäng = bästa run + två bästa single tricks"
+        ],
+        "criteriaTitle": "Bedömningskriterier (World Skate)",
+        "criteria": [
+          "Difficulty and Variety",
+          "Quality of Execution",
+          "Use of Vert ramp and features",
+          "Flow and Consistency",
+          "Repetition (straffas)"
+        ],
+        "helmetNote": "Hjälm är obligatorisk för alla åldrar i Vert enligt World Skate-reglerna 2026.",
+        "legendsTitle": "Klassiska namn",
+        "legends": "Tony Hawk, Bucky Lasek, Andy Macdonald, Sandro Dias, Gui Khury."
+      },
+      "bowl": {
+        "title": "Bowl / Pool",
+        "body": "Bowl är den moderna versionen av de gamla swimmingpoolerna som Z-Boys åkte i på 1970-talet. Banorna är djupa, organiska och har oftast \"pool coping\".",
+        "featuresTitle": "Kännetecken",
+        "features": [
+          "Fokus på lines, speed, lip tricks och stil",
+          "Mindre \"tricks för poäng\" och mer flow än modern Park",
+          "Oftast öppna jams eller invitational-format"
+        ],
+        "eventsNote": "Stora events: Red Bull Bowl Rippers, Poolarama, Vans Pool Party (historiskt)."
+      },
+      "freestyle": {
+        "title": "Freestyle",
+        "body": "Freestyle är den äldsta tävlingsdisciplinen. Åkaren utför tricks på platt mark, ofta till musik, med extrem fokus på balans, spins, holds och flatground-teknik.",
+        "featuresTitle": "Kännetecken",
+        "features": [
+          "Ingen ramp eller obstacle",
+          "Rutinbaserat (likt konståkning)",
+          "Mycket tekniskt och konstnärligt"
+        ],
+        "eventsNote": "Stora events: World Freestyle Skateboarding Championships."
+      },
+      "slalom": {
+        "title": "Slalom",
+        "body": "Slalom är en ren racingdisciplin där åkaren passerar koner i växelvis vänster/höger-mönster. Tiden är det enda som räknas, med straffsekunder för nedslagna koner.",
+        "subTitle": "De officiella underdisciplinerna",
+        "subHeaders": {
+          "discipline": "Disciplin",
+          "distance": "Konavstånd",
+          "cones": "Antal koner",
+          "surface": "Underlag",
+          "character": "Karaktär"
+        },
+        "subRows": {
+          "ts": {
+            "name": "Tight Slalom (TS)",
+            "distance": "1,5–3,0 m",
+            "cones": "50",
+            "surface": "Platt eller lutning",
+            "character": "Extremt snabba, korta svängar"
+          },
+          "sps": {
+            "name": "Straight Slalom (SPS)",
+            "distance": "1,6–2,5 m",
+            "cones": "50",
+            "surface": "Platt eller lutning",
+            "character": "Regelbunden rytm, rakt ner"
+          },
+          "hs": {
+            "name": "Hybrid / Special (HS/SS)",
+            "distance": "1,5–4,5 m",
+            "cones": "50",
+            "surface": "3–8 % lutning",
+            "character": "Blandning av korta och medellånga svängar"
+          },
+          "gs": {
+            "name": "Giant Slalom (GS)",
+            "distance": "2,0–10 m",
+            "cones": "40",
+            "surface": "3–10 % lutning",
+            "character": "Varierade radier, högre fart"
+          },
+          "sgs": {
+            "name": "Super-GS (SGS)",
+            "distance": "3,0–20 m",
+            "cones": "30",
+            "surface": "3–10 % lutning",
+            "character": "Högfart, långa svängar, tucking"
+          }
+        },
+        "penaltiesTitle": "Straff för nedslagna koner (2026)",
+        "penalties": [
+          "Tight / Straight / Hybrid: +0,1 sek per kon",
+          "Giant Slalom: +0,2 sek",
+          "Super-GS: +0,3 sek"
+        ],
+        "dqNote": "Mer än 9 nedslagna koner = diskvalifikation (Race Director kan sätta lägre gräns).",
+        "startNote": "Start sker från en ramp (minst 0,75 m hög) med antingen random beep eller fast nedräkning."
+      },
+      "other": {
+        "title": "Övriga discipliner",
+        "items": {
+          "miniramp": {
+            "title": "Mini-ramp",
+            "body": "Mindre halfpipe (ofta 1,5–2,2 m). Populär för både proffs och amatörer."
+          },
+          "besttrick": {
+            "title": "Best Trick",
+            "body": "Endast ett trick räknas. Vanligt i street- och park-event."
+          },
+          "downhill": {
+            "title": "Downhill / Speed",
+            "body": "Hastighetsåkning nedför backe (ofta longboard)."
+          },
+          "bankedslalom": {
+            "title": "Banked Slalom",
+            "body": "Slalom på bankade ytor."
+          }
+        }
+      }
+    },
+    "fitTitle": "Vilken disciplin passar dig?",
+    "fitHeaders": {
+      "goal": "Mål",
+      "recommendation": "Rekommenderad disciplin"
+    },
+    "fitRows": {
+      "beginner": {
+        "goal": "Nybörjare / gatukänsla",
+        "recommendation": "Street eller Park"
+      },
+      "bigair": {
+        "goal": "Stora luft och amplitude",
+        "recommendation": "Vert eller Bowl"
+      },
+      "technique": {
+        "goal": "Ren teknik och precision",
+        "recommendation": "Freestyle eller Tight Slalom"
+      },
+      "racing": {
+        "goal": "Racing och fart",
+        "recommendation": "Giant / Super-GS eller Downhill"
+      },
+      "compete": {
+        "goal": "Tävla på högsta nivå",
+        "recommendation": "Street och Park (flest proffs-tävlingar)"
+      }
+    }
+  },
+  "history": {
+    "navTitle": "Historia",
+    "pageTitle": "Skateboardens historia – Från surfare till olympisk sport",
+    "metaDescription": "Skateboardens historia från 1950-talets Kalifornien till OS-debuten i Tokyo — Z-Boys, uretanhjul, vert-guldåldern, street-eran och den olympiska tidsåldern.",
+    "intro": "Skateboard är en av de få sporter som gått från en lokal kalifornisk subkultur till global olympisk disciplin på drygt 70 år. Här är den djupare historien.",
+    "sourcesNote": "Källor: World Skate Competition Rules (Update August 2026) samt etablerad skatehistoria.",
+    "closingText": "Skateboard har behållit sin kärna — frihet, kreativitet och community — trots att den gått från gatan till olympiska arenor.",
+    "eras": {
+      "era1950": {
+        "title": "1950–1960-talet: Början",
+        "body": "I slutet av 1950-talet började surfare i södra Kalifornien skruva fast rullskridskohjul på träplankor för att \"surfa\" när havet var platt. De första kommersiella brädorna (Roller Derby, Makaha) kom runt 1959–1963. Hjulen var av metall eller lera — greppet var uselt och hastigheterna låga."
+      },
+      "era1970": {
+        "title": "1970-talet: Revolutionen",
+        "intro": "Tre saker förändrade allt:",
+        "changes": [
+          "Uretanhjul (Frank Nasworthy, 1972–73) — plötsligt gick det att åka fort och kontrollera brädan.",
+          "Dogtown & Z-Boys (Santa Monica/Venice) — en grupp ungdomar som började åka i tömda swimmingpooler under torkan. Tony Alva, Jay Adams, Stacy Peralta m.fl. skapade en ny aggressiv stil.",
+          "Vert föds — halfpipes började byggas och den första generationen vert-åkare växte fram."
+        ],
+        "outro": "Skateboard gick från leksak till ungdomskultur. Tidningarna Skateboarder och senare Thrasher (1981) blev centrala."
+      },
+      "era1980": {
+        "title": "1980-talet: Vert-guldåldern",
+        "bullets": [
+          "Halfpipes fanns överallt.",
+          "Freestyle var fortfarande stort (Rodney Mullen revolutionerade flatground).",
+          "Tony Hawk, Christian Hosoi, Lance Mountain, Steve Caballero och Bones Brigade (Powell-Peralta) dominerade.",
+          "Vision, Santa Cruz och Powell var de stora märkena.",
+          "Vert-tävlingar var huvudattraktionen på de stora eventen."
+        ]
+      },
+      "era1990": {
+        "title": "1990-talet: Street tar över",
+        "intro": "Streetskateboarden exploderade.",
+        "bullets": [
+          "Mark Gonzales, Mike Carroll, Eric Koston, Guy Mariano, Tom Penny och den nya generationen definierade den tekniska stilen.",
+          "Tech-deck-tricks, ledstänger och \"switch\"-åkning blev standard.",
+          "X Games startade 1995 och gav sporten massiv TV-exponering.",
+          "Företag som Girl, Chocolate, Emerica, Lakai och Independent växte fram.",
+          "The Berrics, 411VM och Transworld blev de nya mediaplattformarna."
+        ]
+      },
+      "era2000": {
+        "title": "2000–2010-talet: Professionalisering",
+        "bullets": [
+          "Street League Skateboarding (SLS) startade 2010 under Rob Dyrdeks ledning och skapade en tydlig proffs-tour med stora prispengar.",
+          "X Games fortsatte växa.",
+          "Kvinnliga åkare fick mer utrymme (Elissa Steamer, Cara-Beth Burnside, senare Leticia Bufoni, Samarria Brevard, Sky Brown, Rayssa Leal).",
+          "Brasilien, Japan och Australien blev nya stormakter."
+        ]
+      },
+      "era2020": {
+        "title": "2020-talet: Olympisk era",
+        "bullets": [
+          "Skateboard debuterade i OS i Tokyo 2020 (genomfört 2021) med Street och Park.",
+          "World Skate blev det officiella internationella förbundet.",
+          "Sporten blev mer global än någonsin — starka scener i Brasilien, Japan, Sverige, Sydafrika, Kina och Frankrike.",
+          "X Games, SLS, World Skate World Tour och kontinentala mästerskap kör parallellt.",
+          "Vert har återigen fått mer fokus med officiella World Skate-regler och ranking (WSVR)."
+        ]
+      }
+    },
+    "timelineTitle": "Kort tidslinje",
+    "timelineHeaders": {
+      "year": "Årtal",
+      "event": "Händelse"
+    },
+    "timelineRows": [
+      {
+        "year": "1959–63",
+        "event": "Första kommersiella brädorna"
+      },
+      {
+        "year": "1972–73",
+        "event": "Uretanhjul revolutionerar åkningen"
+      },
+      {
+        "year": "1975",
+        "event": "Z-Boys och pool-åkning"
+      },
+      {
+        "year": "1981",
+        "event": "Thrasher Magazine grundas"
+      },
+      {
+        "year": "1995",
+        "event": "Första X Games"
+      },
+      {
+        "year": "2010",
+        "event": "Street League startar"
+      },
+      {
+        "year": "2021",
+        "event": "Skateboard i OS (Tokyo)"
+      },
+      {
+        "year": "2024–26",
+        "event": "World Skate formaliserar Vert- och Slalom-regler"
+      }
+    ]
   }
 }
