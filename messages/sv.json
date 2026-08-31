@@ -114,7 +114,7 @@
     "title": "Om sajten",
     "p1": "Skateboard Event Calendar samlar skateboardtävlingar från hela världen på ett ställe — från VM och proffs-tourer som SLS och X Games, till nationella cuper och lokala jams.",
     "p2": "Varje event är manuellt verifierat mot en riktig källa (arrangörens egen sajt, en officiell kalender, eller en nyhetsartikel) innan det läggs till — se \"Källa\"-länken längst ner på varje eventsida.",
-    "p3": "Sajten är öppen källkod och byggd av Martin Björck. Community-inskick av nya event är varmt välkomna via GitHub.",
+    "p3": "Koden är publikt synlig på GitHub för insyn och transparens, byggd av Martin Björck. Community-inskick av nya event är varmt välkomna.",
     "githubCta": "Se koden på GitHub"
   },
   "contact": {
