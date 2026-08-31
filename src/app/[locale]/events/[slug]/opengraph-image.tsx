@@ -1,6 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { getAllEvents, getEventBySlug } from '@/lib/events';
 import { formatDateRange } from '@/lib/date';
+import { localizedCountryName } from '@/lib/events-shared';
 import { locales } from '@/i18n/config';
 
 /**
@@ -27,7 +28,8 @@ export function generateStaticParams() {
 export default function Image({ params: { locale, slug } }: { params: { locale: string; slug: string } }) {
   const event = getEventBySlug(slug);
   const dateStr = event ? formatDateRange(event, locale) : '';
-  const location = event ? [event.location.city, event.location.country].filter(Boolean).join(', ') : '';
+  const countryName = event ? localizedCountryName(event.location.countryCode, locale, event.location.country) : '';
+  const location = event ? [event.location.city, countryName].filter(Boolean).join(', ') : '';
   const tag = event?.disciplines?.[0] ?? event?.category?.[0] ?? '';
   const metaLine = [location, dateStr].filter(Boolean).join('   ·   ');
 
