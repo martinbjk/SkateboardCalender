@@ -77,7 +77,9 @@
     "backToCalendar": "カレンダーに戻る",
     "source": "情報源",
     "sponsoredSlot": "広告枠（近日公開）",
-    "viewDetails": "詳細を見る"
+    "viewDetails": "詳細を見る",
+    "share": "共有",
+    "linkCopied": "リンクをコピーしました"
   },
   "submit": {
     "title": "イベントを提案する",
