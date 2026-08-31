@@ -127,5 +127,294 @@
   },
   "privacy": {
     "title": "Política de Privacidade"
+  },
+  "disciplines": {
+    "navTitle": "Modalidades",
+    "pageTitle": "Modalidades do skate – Um guia aprofundado",
+    "metaDescription": "Guia aprofundado sobre as modalidades do skate — Street, Park, Vert, Bowl, Freestyle e Slalom — incluindo as regras oficiais de competição da World Skate 2026.",
+    "intro": "Skate não é um único esporte. São várias modalidades distintas, com terrenos, técnicas, regras e formatos de competição próprios. Aqui abordamos as modalidades mais importantes, com definições oficiais da World Skate (2026) quando relevante.",
+    "filterHint": "Não sabe o que significam as modalidades?",
+    "filterHintCta": "Leia nosso guia",
+    "sourcesNote": "Fontes: World Skate Competition Rules – Slalom & Vert (atualização de agosto de 2026) e cultura do skate estabelecida.",
+    "ctaText": "Ver próximos eventos nesta modalidade",
+    "sections": {
+      "street": {
+        "title": "Street",
+        "body": "O street é, de longe, a modalidade mais comum no skate moderno. Os skatistas usam o ambiente urbano, ou um percurso construído especialmente para imitá-lo: escadas, corrimãos, guias, gaps, ledges e manuals.",
+        "featuresTitle": "Características",
+        "features": [
+          "Foco em manobras técnicas de flip, grinds, slides e manuals",
+          "Criatividade e o raciocínio de \"linha\" importam mais do que a amplitude pura",
+          "Geralmente runs individuais (45–60 segundos) ou formato best trick"
+        ],
+        "formatNote": "A SLS (Street League) usa um sistema eliminatório com runs + best trick. O street olímpico inclui tanto runs quanto best trick.",
+        "whyNote": "Exige a menor infraestrutura e reflete como a maioria das pessoas anda de skate no dia a dia."
+      },
+      "park": {
+        "title": "Park",
+        "body": "O park é praticado em uma pista projetada com transições, hips, bowls, spines e quarterpipes. É um híbrido entre street e vert — velocidade, ar e manobras técnicas se misturam.",
+        "featuresTitle": "Características",
+        "features": [
+          "Mais velocidade e mais altura no ar do que o street",
+          "Runs geralmente duram 45–60 segundos",
+          "Julgado por dificuldade, execução, uso da pista, flow e consistência"
+        ],
+        "eventsNote": "Grandes eventos: X Games Park, World Skate Park World Championships, park olímpico."
+      },
+      "vert": {
+        "title": "Vert",
+        "body": "O vert (vertical) é praticado em uma grande half-pipe, geralmente com 3,5–4 metros de altura e parede vertical. É a modalidade clássica de \"grande altura\".",
+        "formatTitle": "Formato oficial de competição (World Skate 2026)",
+        "qualifyingTitle": "Classificatória e semifinal",
+        "qualifyingBody": "Melhor de dois (até quatro) runs de 30–45 segundos. Cinco juízes dão notas de 0,00 a 100. A maior e a menor nota são descartadas, e as três do meio são calculadas em média.",
+        "finalTitle": "Final – formato 3/5/3",
+        "finalItems": [
+          "3 runs de 30 segundos cada (o melhor run conta)",
+          "5 tentativas de manobra individuais (as duas melhores contam)",
+          "Pontuação total = melhor run + duas melhores manobras individuais"
+        ],
+        "criteriaTitle": "Critérios de julgamento (World Skate)",
+        "criteria": [
+          "Difficulty and Variety",
+          "Quality of Execution",
+          "Use of Vert ramp and features",
+          "Flow and Consistency",
+          "Repetition (é penalizada)"
+        ],
+        "helmetNote": "O capacete é obrigatório para todas as idades no Vert, segundo as regras da World Skate de 2026.",
+        "legendsTitle": "Nomes clássicos",
+        "legends": "Tony Hawk, Bucky Lasek, Andy Macdonald, Sandro Dias, Gui Khury."
+      },
+      "bowl": {
+        "title": "Bowl / Pool",
+        "body": "O bowl é a versão moderna das antigas piscinas onde os Z-Boys andavam de skate nos anos 1970. As pistas são profundas, de formato orgânico, geralmente com \"pool coping\".",
+        "featuresTitle": "Características",
+        "features": [
+          "Foco em linhas, velocidade, lip tricks e estilo",
+          "Menos \"manobras por pontos\" e mais flow do que o Park moderno",
+          "Geralmente jams abertos ou formatos por convite"
+        ],
+        "eventsNote": "Grandes eventos: Red Bull Bowl Rippers, Poolarama, e historicamente o Vans Pool Party."
+      },
+      "freestyle": {
+        "title": "Freestyle",
+        "body": "O freestyle é a modalidade competitiva mais antiga. Os skatistas realizam manobras em piso plano, muitas vezes ao som de música, com foco extremo em equilíbrio, giros, holds e técnica de flatground.",
+        "featuresTitle": "Características",
+        "features": [
+          "Sem rampa ou obstáculos",
+          "Baseado em rotina (semelhante à patinação artística)",
+          "Muito técnico e artístico"
+        ],
+        "eventsNote": "Grande evento: World Freestyle Skateboarding Championships."
+      },
+      "slalom": {
+        "title": "Slalom",
+        "body": "O slalom é uma modalidade puramente de corrida, na qual o skatista passa por cones em um padrão alternado esquerda/direita. Só o tempo conta, com penalidades em segundos por cones derrubados.",
+        "subTitle": "As submodalidades oficiais",
+        "subHeaders": {
+          "discipline": "Modalidade",
+          "distance": "Distância entre cones",
+          "cones": "Número de cones",
+          "surface": "Superfície",
+          "character": "Característica"
+        },
+        "subRows": {
+          "ts": {
+            "name": "Tight Slalom (TS)",
+            "distance": "1,5–3,0 m",
+            "cones": "50",
+            "surface": "Plano ou inclinado",
+            "character": "Curvas extremamente rápidas e curtas"
+          },
+          "sps": {
+            "name": "Straight Slalom (SPS)",
+            "distance": "1,6–2,5 m",
+            "cones": "50",
+            "surface": "Plano ou inclinado",
+            "character": "Ritmo regular, em linha reta"
+          },
+          "hs": {
+            "name": "Hybrid / Special (HS/SS)",
+            "distance": "1,5–4,5 m",
+            "cones": "50",
+            "surface": "Inclinação de 3–8 %",
+            "character": "Mistura de curvas curtas e médias"
+          },
+          "gs": {
+            "name": "Giant Slalom (GS)",
+            "distance": "2,0–10 m",
+            "cones": "40",
+            "surface": "Inclinação de 3–10 %",
+            "character": "Raios variados, maior velocidade"
+          },
+          "sgs": {
+            "name": "Super-GS (SGS)",
+            "distance": "3,0–20 m",
+            "cones": "30",
+            "surface": "Inclinação de 3–10 %",
+            "character": "Alta velocidade, curvas longas, tucking"
+          }
+        },
+        "penaltiesTitle": "Penalidades por cones derrubados (2026)",
+        "penalties": [
+          "Tight / Straight / Hybrid: +0,1 s por cone",
+          "Giant Slalom: +0,2 s",
+          "Super-GS: +0,3 s"
+        ],
+        "dqNote": "Mais de 9 cones derrubados = desqualificação (o Diretor de Prova pode definir um limite menor).",
+        "startNote": "A largada é feita a partir de uma rampa (de pelo menos 0,75 m de altura), com sinal sonoro aleatório ou contagem regressiva fixa."
+      },
+      "other": {
+        "title": "Outras modalidades",
+        "items": {
+          "miniramp": {
+            "title": "Mini-ramp",
+            "body": "Half-pipe menor (geralmente 1,5–2,2 m). Popular tanto entre profissionais quanto amadores."
+          },
+          "besttrick": {
+            "title": "Best Trick",
+            "body": "Apenas uma manobra conta. Comum em eventos de street e park."
+          },
+          "downhill": {
+            "title": "Downhill / Speed",
+            "body": "Descida em alta velocidade por um morro (geralmente de longboard)."
+          },
+          "bankedslalom": {
+            "title": "Banked Slalom",
+            "body": "Slalom praticado em superfícies inclinadas."
+          }
+        }
+      }
+    },
+    "fitTitle": "Qual modalidade combina com você?",
+    "fitHeaders": {
+      "goal": "Objetivo",
+      "recommendation": "Modalidade recomendada"
+    },
+    "fitRows": {
+      "beginner": {
+        "goal": "Iniciante / pegada de rua",
+        "recommendation": "Street ou Park"
+      },
+      "bigair": {
+        "goal": "Grande altura e amplitude",
+        "recommendation": "Vert ou Bowl"
+      },
+      "technique": {
+        "goal": "Técnica pura e precisão",
+        "recommendation": "Freestyle ou Tight Slalom"
+      },
+      "racing": {
+        "goal": "Corrida e velocidade",
+        "recommendation": "Giant / Super-GS ou Downhill"
+      },
+      "compete": {
+        "goal": "Competir no mais alto nível",
+        "recommendation": "Street e Park (mais competições profissionais)"
+      }
+    }
+  },
+  "history": {
+    "navTitle": "História",
+    "pageTitle": "A história do skate – De surfistas a esporte olímpico",
+    "metaDescription": "A história do skate, desde a Califórnia dos anos 1950 até a estreia olímpica em Tóquio — os Z-Boys, as rodas de uretano, a era de ouro do vert, a era street e a era olímpica.",
+    "intro": "O skate é um dos poucos esportes que passou de uma subcultura local da Califórnia a uma modalidade olímpica global em pouco mais de 70 anos. Aqui está a história mais detalhada.",
+    "sourcesNote": "Fontes: World Skate Competition Rules (atualização de agosto de 2026) e história consolidada do skate.",
+    "closingText": "O skate manteve sua essência — liberdade, criatividade e comunidade — apesar de ter saído da rua para as arenas olímpicas.",
+    "eras": {
+      "era1950": {
+        "title": "Décadas de 1950–1960: O início",
+        "body": "No final dos anos 1950, surfistas do sul da Califórnia começaram a parafusar rodas de patins em pranchas de madeira para \"surfar\" quando o mar estava sem ondas. As primeiras pranchas comerciais (Roller Derby, Makaha) surgiram por volta de 1959–1963. As rodas eram de metal ou argila — a aderência era péssima e as velocidades, baixas."
+      },
+      "era1970": {
+        "title": "Anos 1970: A revolução",
+        "intro": "Três coisas mudaram tudo:",
+        "changes": [
+          "Rodas de uretano (Frank Nasworthy, 1972–73) — de repente, era possível andar rápido e realmente controlar o skate.",
+          "Dogtown e os Z-Boys (Santa Monica/Venice) — um grupo de adolescentes que começou a andar de skate em piscinas vazias durante a seca. Tony Alva, Jay Adams, Stacy Peralta e outros criaram um estilo novo e agressivo.",
+          "O vert nasce — half-pipes começaram a ser construídas e surgiu a primeira geração de skatistas de vert."
+        ],
+        "outro": "O skate passou de brinquedo a cultura jovem. A revista Skateboarder e, mais tarde, a Thrasher (1981) se tornaram centrais."
+      },
+      "era1980": {
+        "title": "Anos 1980: A era de ouro do vert",
+        "bullets": [
+          "Half-pipes estavam por toda parte.",
+          "O freestyle ainda era enorme (Rodney Mullen revolucionou o flatground).",
+          "Tony Hawk, Christian Hosoi, Lance Mountain, Steve Caballero e a Bones Brigade (Powell-Peralta) dominavam.",
+          "Vision, Santa Cruz e Powell eram as grandes marcas.",
+          "As competições de vert eram a principal atração dos grandes eventos."
+        ]
+      },
+      "era1990": {
+        "title": "Anos 1990: O street assume o controle",
+        "intro": "O street skate explodiu.",
+        "bullets": [
+          "Mark Gonzales, Mike Carroll, Eric Koston, Guy Mariano, Tom Penny e a nova geração definiram o estilo técnico.",
+          "Manobras de tech-deck, corrimãos e andar de switch se tornaram padrão.",
+          "O X Games estreou em 1995, dando ao esporte enorme exposição na TV.",
+          "Empresas como Girl, Chocolate, Emerica, Lakai e Independent surgiram.",
+          "The Berrics, 411VM e Transworld se tornaram as novas plataformas de mídia."
+        ]
+      },
+      "era2000": {
+        "title": "Anos 2000–2010: A profissionalização",
+        "bullets": [
+          "A Street League Skateboarding (SLS) foi lançada em 2010 sob a liderança de Rob Dyrdek, criando um circuito profissional claro com grandes premiações.",
+          "O X Games continuou crescendo.",
+          "Skatistas mulheres ganharam mais visibilidade (Elissa Steamer, Cara-Beth Burnside, depois Leticia Bufoni, Samarria Brevard, Sky Brown, Rayssa Leal).",
+          "Brasil, Japão e Austrália se tornaram novas potências."
+        ]
+      },
+      "era2020": {
+        "title": "Anos 2020: A era olímpica",
+        "bullets": [
+          "O skate estreou nos Jogos Olímpicos de Tóquio 2020 (realizados em 2021) com street e park.",
+          "A World Skate se tornou a federação internacional oficial.",
+          "O esporte se tornou mais global do que nunca — cenas fortes no Brasil, Japão, Suécia, África do Sul, China e França.",
+          "X Games, SLS, World Skate World Tour e campeonatos continentais acontecem em paralelo.",
+          "O vert voltou a ganhar destaque com regras e ranking oficiais da World Skate (WSVR)."
+        ]
+      }
+    },
+    "timelineTitle": "Linha do tempo resumida",
+    "timelineHeaders": {
+      "year": "Ano",
+      "event": "Acontecimento"
+    },
+    "timelineRows": [
+      {
+        "year": "1959–63",
+        "event": "Primeiras pranchas comerciais"
+      },
+      {
+        "year": "1972–73",
+        "event": "Rodas de uretano revolucionam o skate"
+      },
+      {
+        "year": "1975",
+        "event": "Os Z-Boys e o skate em piscinas"
+      },
+      {
+        "year": "1981",
+        "event": "Fundação da revista Thrasher"
+      },
+      {
+        "year": "1995",
+        "event": "Primeiro X Games"
+      },
+      {
+        "year": "2010",
+        "event": "Lançamento da Street League"
+      },
+      {
+        "year": "2021",
+        "event": "Skate nos Jogos Olímpicos (Tóquio)"
+      },
+      {
+        "year": "2024–26",
+        "event": "World Skate formaliza as regras de Vert e Slalom"
+      }
+    ]
   }
 }
