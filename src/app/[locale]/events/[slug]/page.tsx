@@ -8,6 +8,7 @@ import { googleMapsUrl, locationIsKnown } from '@/lib/events-shared';
 import { formatDateRange, formatTime } from '@/lib/date';
 import { StatusTag } from '@/components/StatusTag';
 import { AddToCalendar } from '@/components/AddToCalendar';
+import { ShareButton } from '@/components/ShareButton';
 
 export function generateStaticParams() {
   return getAllEvents().map((e) => ({ slug: e.slug }));
@@ -192,6 +193,7 @@ export default async function EventPage({
 
       <div className="mt-8 flex flex-wrap items-center gap-3">
         <AddToCalendar event={event} />
+        <ShareButton url={`${siteUrl}/${locale}/events/${event.slug}/`} title={event.name} />
 
         {event.officialUrl && (
           <LinkButton href={event.officialUrl} icon={<ExternalLink size={15} />}>
