@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { MapPin, ChevronRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import type { SkateEvent } from '@/lib/schema';
-import { getEventStatus } from '@/lib/events-shared';
+import { getEventStatus, localizedCountryName } from '@/lib/events-shared';
 import { useLiveNow } from '@/lib/useLiveNow';
 import { formatDateRange } from '@/lib/date';
 import { StatusTag } from './StatusTag';
@@ -24,6 +24,7 @@ export function EventCard({
   const liveNow = useLiveNow(now);
   const status = getEventStatus(event, new Date(liveNow));
   const description = event.description[locale as 'sv' | 'en'] ?? event.description.en;
+  const countryName = localizedCountryName(event.location.countryCode, locale, event.location.country);
 
   return (
     <motion.div
@@ -55,7 +56,7 @@ export function EventCard({
 
         <p className="relative mt-3 flex items-center gap-1.5 font-mono-tight text-sm text-asphalt-800 dark:text-chalk-300">
           <MapPin size={14} className="shrink-0 text-spray" />
-          {event.location.city}, {event.location.country}
+          {event.location.city}, {countryName}
         </p>
 
         <p className="relative font-mono-tight text-sm text-chalk-500">
