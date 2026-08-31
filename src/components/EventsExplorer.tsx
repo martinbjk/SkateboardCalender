@@ -1,9 +1,11 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { LayoutList, CalendarDays, Search, X, ChevronDown, Check } from 'lucide-react';
 import clsx from 'clsx';
+import { Link } from '@/i18n/navigation';
 import type { SkateEvent } from '@/lib/schema';
 import { ALL_CATEGORIES, ALL_LEVELS, ALL_CONTINENTS, getEventStatus } from '@/lib/events-shared';
 import { EventCard } from './EventCard';
@@ -14,9 +16,16 @@ type ViewMode = 'list' | 'calendar';
 export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: string }) {
   const t = useTranslations();
   const locale = useLocale();
+  const searchParams = useSearchParams();
+  // Länkar från discipliner-guiden ("Se kommande Vert-event") kan förfylla
+  // kategorifiltret via ?category=vert i URL:en. Bara ett giltigt värde ur
+  // ALL_CATEGORIES godkänns — annars ignoreras parametern tyst.
+  const initialCategory = searchParams.get('category');
   const [view, setView] = useState<ViewMode>('list');
   const [search, setSearch] = useState('');
-  const [category, setCategory] = useState<string | null>(null);
+  const [category, setCategory] = useState<string | null>(
+    initialCategory && (ALL_CATEGORIES as readonly string[]).includes(initialCategory) ? initialCategory : null
+  );
   const [level, setLevel] = useState<string | null>(null);
   const [continent, setContinent] = useState<string | null>(null);
 
@@ -115,8 +124,18 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
           </div>
         </div>
 
+        {/* Länk till discipliner-guiden — placerad precis här eftersom det
+            är exakt där någon står och funderar på skillnaden mellan
+            t.ex. Vert och Bowl medan de filtrerar. */}
+        <p className="mt-4 text-xs text-chalk-500">
+          {t('disciplines.filterHint')}{' '}
+          <Link href="/disciplines" className="text-spray underline hover:text-spray-dark">
+            {t('disciplines.filterHintCta')}
+          </Link>
+        </p>
+
         {/* Filterchips */}
-        <div className="mt-4 flex flex-wrap items-center gap-2">
+        <div className="mt-3 flex flex-wrap items-center gap-2">
           <FilterGroup
             label={t('filters.category')}
             options={ALL_CATEGORIES}
