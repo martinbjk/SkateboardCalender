@@ -3,7 +3,8 @@
     "siteTitle": "Skateboard Event Kalender – Skateboarding Wettkämpfe & Events weltweit",
     "siteName": "Skateboard Event Kalender",
     "siteDescription": "Finde Skateboard-Events, Wettkämpfe und Contests weltweit. Durchsuche kommende Events nach Datum, Land, Disziplin und Niveau.",
-    "eventCta": " Standort auf der Karte, Anmeldung und weitere Details hier."
+    "eventCta": " Standort auf der Karte, Anmeldung und weitere Details hier.",
+    "metaFacts": "{location} · {date}."
   },
   "nav": {
     "home": "Kalender",
