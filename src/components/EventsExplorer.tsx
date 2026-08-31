@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { LayoutList, CalendarDays, Search, X, ChevronDown, Check } from 'lucide-react';
 import clsx from 'clsx';
@@ -16,18 +15,28 @@ type ViewMode = 'list' | 'calendar';
 export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: string }) {
   const t = useTranslations();
   const locale = useLocale();
-  const searchParams = useSearchParams();
-  // Länkar från discipliner-guiden ("Se kommande Vert-event") kan förfylla
-  // kategorifiltret via ?category=vert i URL:en. Bara ett giltigt värde ur
-  // ALL_CATEGORIES godkänns — annars ignoreras parametern tyst.
-  const initialCategory = searchParams.get('category');
   const [view, setView] = useState<ViewMode>('list');
   const [search, setSearch] = useState('');
-  const [category, setCategory] = useState<string | null>(
-    initialCategory && (ALL_CATEGORIES as readonly string[]).includes(initialCategory) ? initialCategory : null
-  );
+  const [category, setCategory] = useState<string | null>(null);
   const [level, setLevel] = useState<string | null>(null);
   const [continent, setContinent] = useState<string | null>(null);
+
+  // Länkar från discipliner-guiden ("Se kommande Vert-event") kan förfylla
+  // kategorifiltret via ?category=vert i URL:en. Läses manuellt via
+  // window.location EFTER mount (i en effect), inte med Next.js egna
+  // useSearchParams() — den hooken kräver en Suspense-gräns i statisk
+  // export, vilket fick hela kalendern att sluta serverrenderas (byggd
+  // HTML blev tom, "kalendern helt dold" tills klienten hann rita om
+  // allt, och kraschade den ritningen syntes ingenting alls). Detta sätt
+  // håller komponenten helt vanlig — server-HTML:en är komplett direkt,
+  // och filtret sätts bara som en liten förbättring om parametern finns.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const initial = params.get('category');
+    if (initial && (ALL_CATEGORIES as readonly string[]).includes(initial)) {
+      setCategory(initial);
+    }
+  }, []);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
