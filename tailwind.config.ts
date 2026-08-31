@@ -35,7 +35,10 @@ const config: Config = {
           DEFAULT: '#f5d90a',
           dark: '#c9b100'
         },
-        live: '#ff2d55'
+        // Ändrad från röd (#ff2d55) till grön på uttrycklig begäran — ger
+        // en tydligare "live/på gång nu"-känsla och används konsekvent
+        // överallt (StatusTag, CalendarView, Hero), inte bara i korten.
+        live: '#22c55e'
       },
       fontFamily: {
         display: ['var(--font-display)', 'Impact', 'sans-serif'],
@@ -55,6 +58,10 @@ const config: Config = {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.4' }
         },
+        'pulse-glow': {
+          '0%, 100%': { boxShadow: '0 0 0 0 rgba(34, 197, 94, 0.55)' },
+          '50%': { boxShadow: '0 0 0 6px rgba(34, 197, 94, 0)' }
+        },
         marquee: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' }
@@ -62,7 +69,21 @@ const config: Config = {
       },
       animation: {
         'pulse-live': 'pulse-live 1.4s ease-in-out infinite',
+        'pulse-glow': 'pulse-glow 1.8s ease-out infinite',
         marquee: 'marquee 22s linear infinite'
+      },
+      boxShadow: {
+        // Lagrad, mjuk "djup"-skugga för korten (två skikt: en tight
+        // kontaktskugga + en bredare, mjukare ambient-skugga) — samma
+        // teknik som Material/iOS-kort använder för verklig djupkänsla
+        // istället för en enda platt skugga.
+        card: '0 1px 2px rgba(16, 16, 18, 0.06), 0 6px 16px -4px rgba(16, 16, 18, 0.10)',
+        'card-dark': '0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 20px -4px rgba(0, 0, 0, 0.45)',
+        'card-hover': '0 2px 4px rgba(16, 16, 18, 0.08), 0 14px 28px -6px rgba(16, 16, 18, 0.16)',
+        'card-hover-dark': '0 2px 4px rgba(0, 0, 0, 0.35), 0 16px 32px -6px rgba(0, 0, 0, 0.55)',
+        // Mjukad efter feedback: tunnare, mer transparent ring + lättare
+        // yttre glöd (för stark glöd kändes "gaming").
+        'live-ring': '0 0 0 1.5px rgba(34, 197, 94, 0.35), 0 0 12px -2px rgba(34, 197, 94, 0.22)'
       },
       borderRadius: {
         stamp: '2px'
