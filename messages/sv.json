@@ -77,7 +77,9 @@
     "backToCalendar": "Tillbaka till kalendern",
     "source": "Källa",
     "sponsoredSlot": "Annonsplats (kommer snart)",
-    "viewDetails": "Visa detaljer"
+    "viewDetails": "Visa detaljer",
+    "share": "Dela",
+    "linkCopied": "Länk kopierad"
   },
   "submit": {
     "title": "Föreslå ett event",
