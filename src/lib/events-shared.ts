@@ -8,6 +8,27 @@ import type { SkateEvent } from './schema';
 
 export type EventStatus = 'upcoming' | 'live' | 'finished' | 'cancelled' | 'postponed';
 
+/**
+ * Härleder landsnamnet på RÄTT språk från den redan existerande
+ * `countryCode` (ISO 3166-1, t.ex. "CA", "SE", "JP") istället för att
+ * lita på det fritt inskrivna `country`-fältet i data/events/*.json.
+ * Anledning: en genomgång (aug 2026) visade att 34 av 89 eventfiler har
+ * landsnamnet hårdkodat på svenska (t.ex. "Kanada", "Tyskland") — vilket
+ * visades fel i ALLA språkversioner, inte bara de svenska. Med denna
+ * funktion är countryCode den enda sanningskällan, så nya event behöver
+ * aldrig få landsnamnet manuellt översatt igen.
+ * Faller tillbaka till det inskrivna `country`-fältet om countryCode
+ * saknas eller är ogiltig (t.ex. "TBD"-platshållare för okänd plats).
+ */
+export function localizedCountryName(countryCode: string | undefined, locale: string, fallback: string): string {
+  if (!countryCode || countryCode.length !== 2) return fallback;
+  try {
+    return new Intl.DisplayNames([locale], { type: 'region' }).of(countryCode.toUpperCase()) ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
 export function getEventStatus(event: SkateEvent, now: Date = new Date()): EventStatus {
   if (event.statusOverride) return event.statusOverride;
   const start = new Date(event.startDate).getTime();
