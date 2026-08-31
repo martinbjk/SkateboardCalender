@@ -23,7 +23,11 @@
     "live": "En direct",
     "finished": "Terminé",
     "cancelled": "Annulé",
-    "postponed": "Reporté"
+    "postponed": "Reporté",
+    "inDays": "{days, plural, one {Dans # jour} other {Dans # jours}}",
+    "inHours": "{hours, plural, one {Dans # heure} other {Dans # heures}}",
+    "liveNow": "En direct maintenant",
+    "tomorrow": "Demain"
   },
   "view": {
     "list": "Liste",
