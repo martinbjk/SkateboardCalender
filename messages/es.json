@@ -3,7 +3,8 @@
     "siteTitle": "Calendario de eventos de skateboard – Competiciones y eventos de skate en todo el mundo",
     "siteName": "Calendario de eventos de skateboard",
     "siteDescription": "Encuentra eventos, competiciones y contests de skateboard en todo el mundo. Filtra por fecha, país, disciplina y nivel.",
-    "eventCta": " Ver la ubicación en el mapa, inscripción y más detalles aquí."
+    "eventCta": " Ver la ubicación en el mapa, inscripción y más detalles aquí.",
+    "metaFacts": "{location} · {date}."
   },
   "nav": {
     "home": "Calendario",
