@@ -77,7 +77,9 @@
     "backToCalendar": "Voltar ao calendário",
     "source": "Fonte",
     "sponsoredSlot": "Espaço publicitário (em breve)",
-    "viewDetails": "Ver detalhes"
+    "viewDetails": "Ver detalhes",
+    "share": "Compartilhar",
+    "linkCopied": "Link copiado"
   },
   "submit": {
     "title": "Sugerir um evento",
