@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapPin, ExternalLink, Ticket, Users } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { getAllEvents, getEventBySlug, getEventStatus } from '@/lib/events';
-import { googleMapsUrl, locationIsKnown } from '@/lib/events-shared';
+import { googleMapsUrl, locationIsKnown, localizedCountryName } from '@/lib/events-shared';
 import { formatDateRange, formatTime } from '@/lib/date';
 import { StatusTag } from '@/components/StatusTag';
 import { AddToCalendar } from '@/components/AddToCalendar';
@@ -27,13 +27,26 @@ export async function generateMetadata({
   // sökaren redan datum/plats via strukturerad data i själva
   // sökresultatet och har ingen tydlig anledning att klicka vidare.
   const t = await getTranslations({ locale, namespace: 'meta' });
-  const description = `${rawDescription}${t('eventCta')}`;
+  const dateRange = formatDateRange(event, locale);
+  const countryName = localizedCountryName(event.location.countryCode, locale, event.location.country);
+  const location = [event.location.city, countryName].filter(Boolean).join(', ');
+  // Konkreta fakta (plats + datum) rakt i beskrivningen, så den matchar
+  // vad folk faktiskt sökt efter — inte bara en generisk uppmaning.
+  const facts = t('metaFacts', { location, date: dateRange });
+  const description = `${rawDescription} ${facts}${t('eventCta')}`;
+  // Datum i <title> hjälper sökträffen matcha "[event] [stad] [datum]"-
+  // sökningar. Ingen separat stad här — eventnamnet innehåller den redan
+  // i de allra flesta fall (t.ex. "The Bunt Jam – Toronto").
+  const title = `${event.name} (${dateRange})`;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
   const pageUrl = `${siteUrl}/${locale}/events/${slug}/`;
   return {
-    title: event.name,
+    title,
     description,
     alternates: { canonical: pageUrl },
+    // OG-titeln hålls ren (bara eventnamnet) — delningsbilden (se
+    // opengraph-image.tsx) visar redan datum/plats visuellt, så att
+    // upprepa det i textraden här är överflödigt för sociala kort.
     openGraph: { title: event.name, description, url: pageUrl, type: 'article' }
   };
 }
@@ -110,6 +123,7 @@ export default async function EventPage({
   const t = await getTranslations({ locale });
   const status = getEventStatus(event);
   const description = event.description[locale as keyof typeof event.description] ?? event.description.en;
+  const countryName = localizedCountryName(event.location.countryCode, locale, event.location.country);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
   const jsonLd = eventJsonLd(event, locale, siteUrl);
 
@@ -141,13 +155,13 @@ export default async function EventPage({
             className="flex items-center gap-1.5 text-spray underline decoration-spray/40 underline-offset-2 transition hover:decoration-spray"
           >
             <MapPin size={14} className="text-spray" />
-            {event.location.venue}, {event.location.city}, {event.location.country}
+            {event.location.venue}, {event.location.city}, {countryName}
             <ExternalLink size={12} className="text-spray" />
           </a>
         ) : (
           <span className="flex items-center gap-1.5">
             <MapPin size={14} className="text-spray" />
-            {event.location.venue}, {event.location.city}, {event.location.country}
+            {event.location.venue}, {event.location.city}, {countryName}
           </span>
         )}
         <span>{formatDateRange(event, locale)}</span>
