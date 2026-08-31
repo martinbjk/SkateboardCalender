@@ -13,6 +13,14 @@ import './globals.css';
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="sv" suppressHydrationWarning>
+      <head>
+        {/* Cloudflare Web Analytics — cookiefri besöksstatistik, inget samtycke krävs */}
+        <script
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "f96776bf6f1b40c79cb299c6ab382f34"}'
+        />
+      </head>
       <body className="font-body flex min-h-screen flex-col">{children}</body>
     </html>
   );
