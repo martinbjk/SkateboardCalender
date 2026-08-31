@@ -77,7 +77,9 @@
     "backToCalendar": "Back to calendar",
     "source": "Source",
     "sponsoredSlot": "Ad slot (coming soon)",
-    "viewDetails": "View details"
+    "viewDetails": "View details",
+    "share": "Share",
+    "linkCopied": "Link copied"
   },
   "submit": {
     "title": "Submit an event",
