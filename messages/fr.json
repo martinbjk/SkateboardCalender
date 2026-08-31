@@ -114,7 +114,7 @@
     "title": "À propos",
     "p1": "Skateboard Event Calendar rassemble en un seul endroit les compétitions de skateboard du monde entier — des championnats du monde et tournées professionnelles comme SLS et X Games, aux coupes nationales et jams locaux.",
     "p2": "Chaque événement est vérifié manuellement à partir d'une source réelle (le site de l'organisateur, un calendrier officiel ou un article de presse) avant d'être ajouté — voir le lien \"Source\" en bas de chaque page d'événement.",
-    "p3": "Le site est open source et créé par Martin Björck. Les contributions de la communauté pour de nouveaux événements sont les bienvenues via GitHub.",
+    "p3": "Le code est visible publiquement sur GitHub par souci de transparence, créé par Martin Björck. Les contributions de la communauté pour de nouveaux événements sont les bienvenues.",
     "githubCta": "Voir le code sur GitHub"
   },
   "contact": {
