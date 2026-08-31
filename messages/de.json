@@ -114,7 +114,7 @@
     "title": "Über uns",
     "p1": "Skateboard Event Kalender bringt Skateboard-Wettkämpfe aus aller Welt an einem Ort zusammen — von Weltmeisterschaften und Profi-Touren wie SLS und X Games bis zu nationalen Cups und lokalen Jams.",
     "p2": "Jedes Event wird vor der Aufnahme manuell anhand einer echten Quelle überprüft (die eigene Website des Veranstalters, ein offizieller Kalender oder ein Nachrichtenartikel) — siehe den Link \"Quelle\" am Ende jeder Eventseite.",
-    "p3": "Die Seite ist Open Source und wurde von Martin Björck erstellt. Community-Einreichungen neuer Events sind über GitHub sehr willkommen.",
+    "p3": "Der Code ist auf GitHub aus Gründen der Transparenz öffentlich einsehbar und wurde von Martin Björck erstellt. Community-Einreichungen neuer Events sind sehr willkommen.",
     "githubCta": "Code auf GitHub ansehen"
   },
   "contact": {
