@@ -23,7 +23,11 @@
     "live": "開催中",
     "finished": "終了",
     "cancelled": "中止",
-    "postponed": "延期"
+    "postponed": "延期",
+    "inDays": "#日後",
+    "inHours": "#時間後",
+    "liveNow": "ただいま開催中",
+    "tomorrow": "明日"
   },
   "view": {
     "list": "リスト",
