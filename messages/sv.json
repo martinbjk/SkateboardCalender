@@ -23,7 +23,11 @@
     "live": "Live",
     "finished": "Avslutat",
     "cancelled": "Inställt",
-    "postponed": "Uppskjutet"
+    "postponed": "Uppskjutet",
+    "inDays": "{days, plural, one {Om # dag} other {Om # dagar}}",
+    "inHours": "{hours, plural, one {Om # timme} other {Om # timmar}}",
+    "liveNow": "Live nu",
+    "tomorrow": "Imorgon"
   },
   "view": {
     "list": "Lista",
