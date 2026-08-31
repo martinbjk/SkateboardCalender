@@ -127,5 +127,294 @@
   },
   "privacy": {
     "title": "Politique de confidentialité"
+  },
+  "disciplines": {
+    "navTitle": "Disciplines",
+    "pageTitle": "Les disciplines du skateboard – Guide approfondi",
+    "metaDescription": "Guide approfondi des disciplines du skateboard — Street, Park, Vert, Bowl, Freestyle et Slalom — avec les règles officielles de compétition World Skate 2026.",
+    "intro": "Le skateboard n'est pas un seul sport. Ce sont plusieurs disciplines distinctes avec leur propre terrain, techniques, règles et formats de compétition. Voici les disciplines les plus importantes, avec les définitions officielles de World Skate (2026) le cas échéant.",
+    "filterHint": "Vous ne savez pas ce que signifient les disciplines ?",
+    "filterHintCta": "Lire notre guide",
+    "sourcesNote": "Sources : World Skate Competition Rules – Slalom & Vert (mise à jour août 2026) et culture skate établie.",
+    "ctaText": "Voir les événements à venir dans cette discipline",
+    "sections": {
+      "street": {
+        "title": "Street",
+        "body": "Le street est de loin la discipline la plus courante dans le skateboard moderne. Les riders utilisent l'environnement urbain, ou un parcours spécialement construit qui l'imite : escaliers, rampes, bordures, gaps, ledges et manuals.",
+        "featuresTitle": "Caractéristiques",
+        "features": [
+          "Accent sur les flip tricks techniques, grinds, slides et manuals",
+          "La créativité et la logique de \"ligne\" comptent plus que la pure amplitude",
+          "Généralement des runs individuels (45 à 60 secondes) ou un format best trick"
+        ],
+        "formatNote": "La SLS (Street League) utilise un système à élimination directe avec runs + best trick. Le street olympique inclut à la fois des runs et du best trick.",
+        "whyNote": "Elle nécessite le moins d'infrastructure et reflète la façon dont la plupart des gens skatent au quotidien."
+      },
+      "park": {
+        "title": "Park",
+        "body": "Le park se pratique dans un skatepark conçu avec des transitions, hips, bowls, spines et quarterpipes. C'est un hybride entre le street et le vert — vitesse, air et tricks techniques se mélangent.",
+        "featuresTitle": "Caractéristiques",
+        "features": [
+          "Plus de vitesse et plus d'air que le street",
+          "Les runs durent généralement 45 à 60 secondes",
+          "Jugé sur la difficulté, l'exécution, l'utilisation du parcours, le flow et la régularité"
+        ],
+        "eventsNote": "Grands événements : X Games Park, World Skate Park World Championships, park olympique."
+      },
+      "vert": {
+        "title": "Vert",
+        "body": "Le vert (vertical) se pratique sur une grande halfpipe, souvent haute de 3,5 à 4 mètres avec une paroi verticale. C'est la discipline classique du \"grand air\".",
+        "formatTitle": "Format de compétition officiel (World Skate 2026)",
+        "qualifyingTitle": "Qualifications et demi-finale",
+        "qualifyingBody": "Meilleur de deux (jusqu'à quatre) runs de 30 à 45 secondes. Cinq juges attribuent une note de 0,00 à 100. Les notes les plus hautes et les plus basses sont écartées, les trois du milieu sont moyennées.",
+        "finalTitle": "Finale – format 3/5/3",
+        "finalItems": [
+          "3 runs de 30 secondes chacun (le meilleur run compte)",
+          "5 tentatives de trick individuelles (les deux meilleures comptent)",
+          "Score total = meilleur run + deux meilleurs tricks individuels"
+        ],
+        "criteriaTitle": "Critères de jugement (World Skate)",
+        "criteria": [
+          "Difficulty and Variety",
+          "Quality of Execution",
+          "Use of Vert ramp and features",
+          "Flow and Consistency",
+          "Repetition (pénalisée)"
+        ],
+        "helmetNote": "Le casque est obligatoire pour tous les âges en Vert selon les règles World Skate 2026.",
+        "legendsTitle": "Noms classiques",
+        "legends": "Tony Hawk, Bucky Lasek, Andy Macdonald, Sandro Dias, Gui Khury."
+      },
+      "bowl": {
+        "title": "Bowl / Pool",
+        "body": "Le bowl est la version moderne des anciennes piscines dans lesquelles skataient les Z-Boys dans les années 1970. Les parcours sont profonds, de forme organique, et disposent généralement d'un \"pool coping\".",
+        "featuresTitle": "Caractéristiques",
+        "features": [
+          "Accent sur les lignes, la vitesse, les lip tricks et le style",
+          "Moins de \"tricks pour les points\", plus de flow que le park moderne",
+          "Généralement des jams ouverts ou des formats sur invitation"
+        ],
+        "eventsNote": "Grands événements : Red Bull Bowl Rippers, Poolarama, et historiquement le Vans Pool Party."
+      },
+      "freestyle": {
+        "title": "Freestyle",
+        "body": "Le freestyle est la plus ancienne discipline de compétition. Les riders réalisent des tricks sur terrain plat, souvent en musique, avec un accent extrême sur l'équilibre, les spins, les holds et la technique au sol.",
+        "featuresTitle": "Caractéristiques",
+        "features": [
+          "Pas de rampe ni d'obstacle",
+          "Basé sur une routine (comme le patinage artistique)",
+          "Très technique et artistique"
+        ],
+        "eventsNote": "Grand événement : World Freestyle Skateboarding Championships."
+      },
+      "slalom": {
+        "title": "Slalom",
+        "body": "Le slalom est une pure discipline de course où le rider passe des cônes selon un motif alterné gauche/droite. Seul le temps compte, avec des pénalités en secondes pour les cônes renversés.",
+        "subTitle": "Les sous-disciplines officielles",
+        "subHeaders": {
+          "discipline": "Discipline",
+          "distance": "Espacement des cônes",
+          "cones": "Nombre de cônes",
+          "surface": "Surface",
+          "character": "Caractère"
+        },
+        "subRows": {
+          "ts": {
+            "name": "Tight Slalom (TS)",
+            "distance": "1,5–3,0 m",
+            "cones": "50",
+            "surface": "Plat ou en pente",
+            "character": "Virages extrêmement rapides et courts"
+          },
+          "sps": {
+            "name": "Straight Slalom (SPS)",
+            "distance": "1,6–2,5 m",
+            "cones": "50",
+            "surface": "Plat ou en pente",
+            "character": "Rythme régulier, tout droit"
+          },
+          "hs": {
+            "name": "Hybrid / Special (HS/SS)",
+            "distance": "1,5–4,5 m",
+            "cones": "50",
+            "surface": "Pente de 3–8 %",
+            "character": "Mélange de virages courts et moyens"
+          },
+          "gs": {
+            "name": "Giant Slalom (GS)",
+            "distance": "2,0–10 m",
+            "cones": "40",
+            "surface": "Pente de 3–10 %",
+            "character": "Rayons variés, vitesse plus élevée"
+          },
+          "sgs": {
+            "name": "Super-GS (SGS)",
+            "distance": "3,0–20 m",
+            "cones": "30",
+            "surface": "Pente de 3–10 %",
+            "character": "Haute vitesse, longs virages, tucking"
+          }
+        },
+        "penaltiesTitle": "Pénalités pour cônes renversés (2026)",
+        "penalties": [
+          "Tight / Straight / Hybrid : +0,1 s par cône",
+          "Giant Slalom : +0,2 s",
+          "Super-GS : +0,3 s"
+        ],
+        "dqNote": "Plus de 9 cônes renversés = disqualification (le directeur de course peut fixer une limite inférieure).",
+        "startNote": "Le départ se fait depuis une rampe (d'au moins 0,75 m de haut), avec un bip aléatoire ou un décompte fixe."
+      },
+      "other": {
+        "title": "Autres disciplines",
+        "items": {
+          "miniramp": {
+            "title": "Mini-ramp",
+            "body": "Halfpipe plus petite (souvent 1,5 à 2,2 m). Populaire auprès des pros comme des amateurs."
+          },
+          "besttrick": {
+            "title": "Best Trick",
+            "body": "Un seul trick compte. Courant lors des événements street et park."
+          },
+          "downhill": {
+            "title": "Downhill / Speed",
+            "body": "Descente à haute vitesse d'une colline (souvent en longboard)."
+          },
+          "bankedslalom": {
+            "title": "Banked Slalom",
+            "body": "Slalom pratiqué sur des surfaces inclinées."
+          }
+        }
+      }
+    },
+    "fitTitle": "Quelle discipline vous convient ?",
+    "fitHeaders": {
+      "goal": "Objectif",
+      "recommendation": "Discipline recommandée"
+    },
+    "fitRows": {
+      "beginner": {
+        "goal": "Débutant / sensation street",
+        "recommendation": "Street ou Park"
+      },
+      "bigair": {
+        "goal": "Grand air et amplitude",
+        "recommendation": "Vert ou Bowl"
+      },
+      "technique": {
+        "goal": "Technique pure et précision",
+        "recommendation": "Freestyle ou Tight Slalom"
+      },
+      "racing": {
+        "goal": "Course et vitesse",
+        "recommendation": "Giant / Super-GS ou Downhill"
+      },
+      "compete": {
+        "goal": "Concourir au plus haut niveau",
+        "recommendation": "Street et Park (le plus de compétitions pro)"
+      }
+    }
+  },
+  "history": {
+    "navTitle": "Histoire",
+    "pageTitle": "L'histoire du skateboard – Des surfeurs au sport olympique",
+    "metaDescription": "L'histoire du skateboard, de la Californie des années 1950 aux débuts olympiques à Tokyo — les Z-Boys, les roues en uréthane, l'âge d'or du vert, l'ère street et l'ère olympique.",
+    "intro": "Le skateboard est l'un des rares sports à être passé d'une sous-culture californienne locale à une discipline olympique mondiale en un peu plus de 70 ans. Voici l'histoire plus en détail.",
+    "sourcesNote": "Sources : World Skate Competition Rules (mise à jour août 2026) et l'histoire établie du skateboard.",
+    "closingText": "Le skateboard a conservé son essence — liberté, créativité et communauté — malgré son passage de la rue aux arènes olympiques.",
+    "eras": {
+      "era1950": {
+        "title": "Années 1950–1960 : Les débuts",
+        "body": "À la fin des années 1950, des surfeurs du sud de la Californie ont commencé à visser des roues de patins à roulettes sur des planches de bois pour \"surfer\" quand l'océan était plat. Les premières planches commerciales (Roller Derby, Makaha) sont apparues vers 1959–1963. Les roues étaient en métal ou en argile — l'adhérence était mauvaise et les vitesses faibles."
+      },
+      "era1970": {
+        "title": "Les années 1970 : La révolution",
+        "intro": "Trois choses ont tout changé :",
+        "changes": [
+          "Les roues en uréthane (Frank Nasworthy, 1972–73) — il devenait soudain possible d'aller vite et de réellement contrôler la planche.",
+          "Dogtown & les Z-Boys (Santa Monica/Venice) — un groupe d'adolescents qui ont commencé à skater dans des piscines vides pendant la sécheresse. Tony Alva, Jay Adams, Stacy Peralta et d'autres ont créé un style nouveau et agressif.",
+          "Le vert naît — des halfpipes ont commencé à être construites et la première génération de riders de vert a émergé."
+        ],
+        "outro": "Le skateboard est passé du jouet à la culture jeune. Le magazine Skateboarder, puis Thrasher (1981), sont devenus incontournables."
+      },
+      "era1980": {
+        "title": "Les années 1980 : L'âge d'or du vert",
+        "bullets": [
+          "Les halfpipes étaient partout.",
+          "Le freestyle était encore énorme (Rodney Mullen a révolutionné le flatground).",
+          "Tony Hawk, Christian Hosoi, Lance Mountain, Steve Caballero et la Bones Brigade (Powell-Peralta) dominaient.",
+          "Vision, Santa Cruz et Powell étaient les grandes marques.",
+          "Les compétitions de vert étaient l'attraction principale des grands événements."
+        ]
+      },
+      "era1990": {
+        "title": "Les années 1990 : Le street prend le dessus",
+        "intro": "Le street skateboard a explosé.",
+        "bullets": [
+          "Mark Gonzales, Mike Carroll, Eric Koston, Guy Mariano, Tom Penny et la nouvelle génération ont défini le style technique.",
+          "Les tricks tech-deck, les rampes d'escalier et le riding en switch sont devenus la norme.",
+          "Les X Games ont été lancés en 1995, offrant au sport une exposition télévisuelle massive.",
+          "Des marques comme Girl, Chocolate, Emerica, Lakai et Independent ont émergé.",
+          "The Berrics, 411VM et Transworld sont devenus les nouvelles plateformes médiatiques."
+        ]
+      },
+      "era2000": {
+        "title": "Années 2000–2010 : La professionnalisation",
+        "bullets": [
+          "La Street League Skateboarding (SLS) a été lancée en 2010 sous la direction de Rob Dyrdek, créant une véritable tournée professionnelle avec de grosses dotations.",
+          "Les X Games ont continué à croître.",
+          "Les riders féminines ont gagné en visibilité (Elissa Steamer, Cara-Beth Burnside, puis Leticia Bufoni, Samarria Brevard, Sky Brown, Rayssa Leal).",
+          "Le Brésil, le Japon et l'Australie sont devenus de nouvelles puissances."
+        ]
+      },
+      "era2020": {
+        "title": "Les années 2020 : L'ère olympique",
+        "bullets": [
+          "Le skateboard a fait ses débuts aux Jeux olympiques de Tokyo 2020 (disputés en 2021) avec le street et le park.",
+          "World Skate est devenue la fédération internationale officielle.",
+          "Le sport est devenu plus mondial que jamais — scènes fortes au Brésil, au Japon, en Suède, en Afrique du Sud, en Chine et en France.",
+          "Les X Games, la SLS, le World Skate World Tour et les championnats continentaux se déroulent en parallèle.",
+          "Le vert a regagné en importance grâce aux règles et classements officiels de World Skate (WSVR)."
+        ]
+      }
+    },
+    "timelineTitle": "Chronologie rapide",
+    "timelineHeaders": {
+      "year": "Année",
+      "event": "Événement"
+    },
+    "timelineRows": [
+      {
+        "year": "1959–63",
+        "event": "Premières planches commerciales"
+      },
+      {
+        "year": "1972–73",
+        "event": "Les roues en uréthane révolutionnent la pratique"
+      },
+      {
+        "year": "1975",
+        "event": "Les Z-Boys et le skate en piscine"
+      },
+      {
+        "year": "1981",
+        "event": "Fondation du magazine Thrasher"
+      },
+      {
+        "year": "1995",
+        "event": "Premiers X Games"
+      },
+      {
+        "year": "2010",
+        "event": "Lancement de la Street League"
+      },
+      {
+        "year": "2021",
+        "event": "Le skateboard aux Jeux olympiques (Tokyo)"
+      },
+      {
+        "year": "2024–26",
+        "event": "World Skate officialise les règles du vert et du slalom"
+      }
+    ]
   }
 }
