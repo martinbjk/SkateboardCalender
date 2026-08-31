@@ -47,6 +47,12 @@ export function Footer() {
         <div className="mt-8 flex flex-col gap-4 border-t border-asphalt-700/15 pt-6 text-xs text-chalk-500 sm:flex-row sm:items-center sm:justify-between dark:border-chalk-500/10">
           <p>{t('footer.rights')}</p>
           <nav className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono-tight uppercase tracking-wide">
+            <Link href="/disciplines" className="hover:text-spray">
+              {t('disciplines.navTitle')}
+            </Link>
+            <Link href="/history" className="hover:text-spray">
+              {t('history.navTitle')}
+            </Link>
             <Link href="/about" className="hover:text-spray">
               {t('about.title')}
             </Link>
