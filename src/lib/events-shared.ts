@@ -39,6 +39,33 @@ export function getEventStatus(event: SkateEvent, now: Date = new Date()): Event
   return 'live';
 }
 
+export type Countdown = { unit: 'hours' | 'tomorrow' | 'days'; value: number };
+
+/**
+ * Databaserad nedräkning till eventets start, för "energi"-visning på
+ * kommande event (t.ex. "Om 3 dagar" / "Om 6 h" / "Imorgon"). Tre lägen,
+ * växlar automatiskt utan att någon manuellt behöver ange det per event:
+ *  - under 24 h kvar: timmar (mest angeläget/precist)
+ *  - 24–48 h kvar: "imorgon" — kändes mer mänskligt än en exakt timsiffra
+ *    eller "om 1 dag" (feedback efter första versionen)
+ *  - 48 h eller mer: dagar (avrundat, så texten inte hoppar hela tiden)
+ * Returnerar null om eventet redan börjat (skyddar mot negativa/
+ * missvisande värden om detta anropas utan att först kolla
+ * getEventStatus).
+ */
+export function getCountdown(event: SkateEvent, now: Date = new Date()): Countdown | null {
+  const diffMs = new Date(event.startDate).getTime() - now.getTime();
+  if (diffMs <= 0) return null;
+  const diffHours = diffMs / (1000 * 60 * 60);
+  if (diffHours < 24) {
+    return { unit: 'hours', value: Math.max(1, Math.round(diffHours)) };
+  }
+  if (diffHours < 48) {
+    return { unit: 'tomorrow', value: 1 };
+  }
+  return { unit: 'days', value: Math.round(diffHours / 24) };
+}
+
 export const ALL_CATEGORIES = [
   'street',
   'park',
