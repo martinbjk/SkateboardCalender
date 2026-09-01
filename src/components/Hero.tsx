@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import type { SkateEvent } from '@/lib/schema';
 import { getEventStatus } from '@/lib/events-shared';
 import { useLiveNow } from '@/lib/useLiveNow';
@@ -48,10 +49,25 @@ export function Hero({ events, now }: { events: SkateEvent[]; now: string }) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="mt-8 flex flex-wrap items-center gap-6 font-mono-tight text-sm"
+          className="mt-8 flex flex-wrap items-center justify-between gap-6"
         >
-          <Stat value={liveCount} label={t('status.live')} accent="text-live" pulse={liveCount > 0} />
-          <Stat value={upcomingCount} label={t('status.upcoming')} accent="text-spray" />
+          <div className="flex flex-wrap items-center gap-6 font-mono-tight text-sm">
+            <Stat value={liveCount} label={t('status.live')} accent="text-live" pulse={liveCount > 0} />
+            <Stat value={upcomingCount} label={t('status.upcoming')} accent="text-spray" />
+          </div>
+
+          {/* Dekorativ badge i det tomma utrymmet bredvid statistiken.
+              aria-hidden eftersom den bara är dekorativ — statistiken
+              ovan har redan sin egen text, badgen tillför inget nytt
+              för skärmläsare. */}
+          <Image
+            src="/logo-badge.webp"
+            alt=""
+            aria-hidden="true"
+            width={320}
+            height={287}
+            className="h-16 w-auto -rotate-6 object-contain opacity-95 sm:h-20"
+          />
         </motion.div>
       </div>
     </section>
