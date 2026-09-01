@@ -67,7 +67,7 @@ export function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Choose language"
-        className="flex items-center gap-1.5 rounded-stamp border border-asphalt-700/40 px-2.5 py-1.5 font-mono-tight text-xs transition hover:border-spray hover:text-spray dark:border-chalk-500/30"
+        className="flex items-center gap-1.5 rounded-stamp border border-spray/50 bg-asphalt-700 px-3 py-2 font-mono-tight text-xs font-bold text-chalk-100 shadow-lg transition hover:border-spray hover:shadow-xl active:translate-y-px active:shadow-sm"
       >
         <Globe size={14} />
         {LOCALE_CODES[locale]}
