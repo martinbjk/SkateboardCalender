@@ -58,10 +58,6 @@ const config: Config = {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.4' }
         },
-        'pulse-glow': {
-          '0%, 100%': { boxShadow: '0 0 0 0 rgba(34, 197, 94, 0.55)' },
-          '50%': { boxShadow: '0 0 0 6px rgba(34, 197, 94, 0)' }
-        },
         marquee: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' }
@@ -69,7 +65,6 @@ const config: Config = {
       },
       animation: {
         'pulse-live': 'pulse-live 1.4s ease-in-out infinite',
-        'pulse-glow': 'pulse-glow 1.8s ease-out infinite',
         marquee: 'marquee 22s linear infinite'
       },
       boxShadow: {
