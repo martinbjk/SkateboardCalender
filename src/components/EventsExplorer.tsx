@@ -103,9 +103,12 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
           scrollar ner i listan — särskilt märkbart på mobil efter att
           sidan automatiskt hoppat fram till dagens/kommande event. */}
       <div className="sticky top-[60px] z-30 -mx-4 bg-concrete-100/95 px-4 pb-3 pt-2 backdrop-blur sm:-mx-6 sm:px-6 dark:bg-asphalt-950/95">
-        {/* Sök + vy-växlare */}
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div className="relative flex-1 sm:max-w-md">
+        {/* Sök + vy-växlare — samma rad överallt (tidigare staplat på
+            mobil) för en kompaktare header. ViewButton döljer sin text
+            under sm-brytpunkten (bara ikon) så raden får plats utan att
+            klämmas ihop på smala skärmar. */}
+        <div className="flex items-center gap-2">
+          <div className="relative min-w-0 flex-1 sm:max-w-md">
             <Search
               size={16}
               className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-chalk-500"
@@ -119,19 +122,20 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
             />
           </div>
 
-          <div className="flex items-center gap-1 self-start rounded-stamp border border-asphalt-700/30 p-1 dark:border-chalk-500/20">
-            <ViewButton active={view === 'list'} onClick={() => setView('list')} icon={<LayoutList size={15} />}>
+          <div className="flex shrink-0 items-center gap-1.5 rounded-stamp border border-asphalt-700/25 bg-asphalt-800/[0.04] p-1.5 shadow-sm dark:border-chalk-500/15 dark:bg-chalk-500/[0.04]">
+            <ViewButton active={view === 'list'} onClick={() => setView('list')} icon={<LayoutList size={16} />}>
               {t('view.list')}
             </ViewButton>
             <ViewButton
               active={view === 'calendar'}
               onClick={() => setView('calendar')}
-              icon={<CalendarDays size={15} />}
+              icon={<CalendarDays size={16} />}
             >
               {t('view.calendar')}
             </ViewButton>
           </div>
         </div>
+
 
         {/* Länk till discipliner-guiden — placerad precis här eftersom det
             är exakt där någon står och funderar på skillnaden mellan
@@ -216,13 +220,21 @@ function ViewButton({
     <button
       type="button"
       onClick={onClick}
+      aria-label={typeof children === 'string' ? children : undefined}
       className={clsx(
-        'flex items-center gap-1.5 rounded-sm px-3 py-1.5 font-mono-tight text-xs uppercase tracking-wide transition',
-        active ? 'bg-spray text-asphalt-950' : 'text-current opacity-60 hover:opacity-100'
+        'flex items-center justify-center gap-2 rounded-stamp px-3 py-2.5 font-mono-tight text-sm font-bold uppercase tracking-wide transition sm:px-4',
+        active
+          ? // Mörk text (inte vit) på den ljusa orangea bakgrunden — bättre
+            // kontrastvärde/läsbarhet, vilket var specens egen överordnade
+            // krav ("high contrast and easy to read").
+            'bg-spray text-asphalt-950 shadow-md'
+          : 'border border-asphalt-700/20 bg-asphalt-800/[0.05] text-chalk-500 shadow-sm hover:text-current dark:border-chalk-500/15 dark:bg-chalk-500/[0.05]'
       )}
     >
       {icon}
-      {children}
+      {/* Text dold på mobil (bara ikon, för att få plats bredvid sökfältet
+          på samma rad) — synlig igen från sm-brytpunkten. */}
+      <span className="hidden sm:inline">{children}</span>
     </button>
   );
 }
@@ -270,10 +282,10 @@ function FilterGroup<T extends readonly string[]>({
         aria-expanded={open}
         aria-label={label}
         className={clsx(
-          'flex items-center gap-1.5 rounded-stamp border px-3 py-1.5 font-mono-tight text-xs uppercase tracking-wide transition',
+          'flex items-center gap-1.5 rounded-stamp border px-3.5 py-2 font-mono-tight text-xs font-semibold uppercase tracking-wide shadow-sm transition',
           value
-            ? 'border-spray bg-spray/10 text-spray'
-            : 'border-asphalt-700/30 bg-transparent text-current hover:border-spray hover:text-spray dark:border-chalk-500/20'
+            ? 'border-spray bg-spray/10 text-spray shadow-md'
+            : 'border-asphalt-700/20 bg-asphalt-800/[0.05] text-current hover:border-spray hover:text-spray dark:border-chalk-500/15 dark:bg-chalk-500/[0.05]'
         )}
       >
         {selectedLabel}
