@@ -23,7 +23,7 @@ export function Header() {
             width={900}
             height={231}
             priority
-            className="h-8 w-auto object-contain transition group-hover:opacity-90 sm:h-9"
+            className="h-[38px] w-auto object-contain transition group-hover:opacity-90"
           />
         </Link>
 
