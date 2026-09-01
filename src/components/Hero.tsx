@@ -17,7 +17,7 @@ export function Hero({ events, now }: { events: SkateEvent[]; now: string }) {
     <section className="relative overflow-hidden border-b border-asphalt-700/20 dark:border-chalk-500/15">
       <div className="grip-texture pointer-events-none absolute inset-0 text-asphalt-900/[0.035] dark:text-chalk-100/[0.03]" />
 
-      <div className="mx-auto max-w-6xl px-4 pb-8 pt-16 sm:px-6 sm:pb-10 sm:pt-24">
+      <div className="mx-auto max-w-6xl px-4 pb-8 pt-5 sm:px-6 sm:pb-9 sm:pt-6">
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export function Hero({ events, now }: { events: SkateEvent[]; now: string }) {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="mt-8 flex flex-nowrap items-center justify-between gap-6"
         >
-          <div className="flex flex-wrap items-center gap-6 font-mono-tight text-sm">
+          <div className="ml-2 flex flex-wrap items-center gap-6 font-mono-tight text-sm">
             <Stat value={liveCount} label={t('status.live')} accent="text-live" pulse={liveCount > 0} />
             <Stat value={upcomingCount} label={t('status.upcoming')} accent="text-spray" />
           </div>
