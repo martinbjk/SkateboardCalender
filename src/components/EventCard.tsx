@@ -99,18 +99,6 @@ export function EventCard({
           {/* Lager 1: bakgrundstextur (djupast bak) */}
           <div className="grip-texture pointer-events-none absolute inset-0 text-asphalt-900/[0.03] dark:text-chalk-100/[0.03]" />
 
-          {/* "Avslutat/Inställt"-ribbon — diagonal banderoll över hörnet,
-              samma position/vinkel/text-logik på alla kort, helt
-              databaserad (visas bara när isEnded är sant). */}
-          {isEnded && (
-            <div
-              className="pointer-events-none absolute -right-11 top-5 z-20 w-40 -rotate-45 bg-asphalt-950/85 py-1 text-center font-mono-tight text-[10px] font-bold uppercase tracking-wider text-chalk-300 shadow-md dark:bg-black/70"
-              aria-hidden="true"
-            >
-              {t(`status.${status}`)}
-            </div>
-          )}
-
           {/* Lager 2 (mellanlager): rubrik/metadata-innehåll — "relative"
               lyfter det ovanför bakgrundstexturen (lager 1) i z-ordning,
               vilket ger den skiktade djup-känslan som efterfrågades. */}
