@@ -13,7 +13,7 @@ export function ThemeToggle() {
   useEffect(() => setMounted(true), []);
 
   if (!mounted) {
-    return <div className="h-9 w-9" aria-hidden />;
+    return <div className="h-[38px] w-[38px]" aria-hidden />;
   }
 
   const isDark = resolvedTheme === 'dark';
@@ -22,7 +22,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
-      className="flex h-9 w-9 items-center justify-center rounded-stamp border border-asphalt-700/40 text-current transition hover:border-spray hover:text-spray dark:border-chalk-500/30"
+      className="flex h-[38px] w-[38px] items-center justify-center rounded-stamp border border-spray/50 bg-asphalt-700 text-chalk-100 shadow-lg transition hover:border-spray hover:shadow-xl active:translate-y-px active:shadow-sm"
       aria-label={isDark ? t('light') : t('dark')}
       title={isDark ? t('light') : t('dark')}
     >
