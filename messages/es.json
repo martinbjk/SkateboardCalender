@@ -9,7 +9,8 @@
   "nav": {
     "home": "Calendario",
     "submit": "Proponer evento",
-    "about": "Acerca de"
+    "about": "Acerca de",
+    "submitShort": "Proponer"
   },
   "hero": {
     "eyebrow": "En vivo · Global · Impulsado por la comunidad",
