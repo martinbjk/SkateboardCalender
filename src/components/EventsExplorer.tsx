@@ -102,7 +102,7 @@ export function EventsExplorer({ events, now }: { events: SkateEvent[]; now: str
           är sticky). Utan detta hamnar filtren ovanför skärmen så fort man
           scrollar ner i listan — särskilt märkbart på mobil efter att
           sidan automatiskt hoppat fram till dagens/kommande event. */}
-      <div className="sticky top-[60px] z-30 -mx-4 bg-concrete-100/95 px-4 pb-3 pt-2 backdrop-blur sm:-mx-6 sm:px-6 dark:bg-asphalt-950/95">
+      <div className="sticky top-[60px] z-30 -mx-4 bg-concrete-100 px-4 pb-3 pt-2 sm:-mx-6 sm:px-6 dark:bg-asphalt-950">
         {/* Sök + vy-växlare — samma rad överallt (tidigare staplat på
             mobil) för en kompaktare header. ViewButton döljer sin text
             under sm-brytpunkten (bara ikon) så raden får plats utan att
