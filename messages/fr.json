@@ -9,7 +9,8 @@
   "nav": {
     "home": "Calendrier",
     "submit": "Proposer un événement",
-    "about": "À propos"
+    "about": "À propos",
+    "submitShort": "Proposer"
   },
   "hero": {
     "eyebrow": "En direct · Mondial · Animé par la communauté",
