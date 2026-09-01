@@ -8,7 +8,7 @@ import { ThemeToggle } from './ThemeToggle';
 export function Header() {
   const t = useTranslations();
   return (
-    <header className="sticky top-0 z-40 border-b border-asphalt-700/20 bg-concrete-100/90 shadow-card backdrop-blur dark:border-chalk-500/15 dark:bg-asphalt-950/90 dark:shadow-card-dark">
+    <header className="sticky top-0 z-40 border-b border-asphalt-700/20 bg-concrete-100 shadow-card dark:border-chalk-500/15 dark:bg-asphalt-950 dark:shadow-card-dark">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Link href="/" className="group flex shrink-0 items-center">
           {/* Egen 3D/graffiti-wordmark (tillhandahållen av Martin) i
