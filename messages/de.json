@@ -9,7 +9,8 @@
   "nav": {
     "home": "Kalender",
     "submit": "Event vorschlagen",
-    "about": "Über uns"
+    "about": "Über uns",
+    "submitShort": "Melden"
   },
   "hero": {
     "eyebrow": "Live · Weltweit · Von der Community",
