@@ -66,7 +66,7 @@ export function Hero({ events, now }: { events: SkateEvent[]; now: string }) {
             aria-hidden="true"
             width={320}
             height={287}
-            className="h-16 w-auto -rotate-6 object-contain opacity-95 sm:h-20"
+            className="h-32 w-auto -rotate-6 object-contain opacity-95 sm:h-40"
           />
         </motion.div>
       </div>
