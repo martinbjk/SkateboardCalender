@@ -95,7 +95,7 @@ export default async function LocaleLayout({
       {/* eslint-disable-next-line @next/next/no-page-custom-font -- regeln gäller Pages Router; vi använder App Router där detta är rätt mönster */}
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=optional"
       />
       <SetHtmlLang locale={locale} />
       <ThemeProvider>
