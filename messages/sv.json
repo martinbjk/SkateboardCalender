@@ -9,7 +9,8 @@
   "nav": {
     "home": "Kalender",
     "submit": "Föreslå event",
-    "about": "Om sajten"
+    "about": "Om sajten",
+    "submitShort": "Föreslå"
   },
   "hero": {
     "eyebrow": "Live · Global · Community-driven",
