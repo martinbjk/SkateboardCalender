@@ -17,7 +17,7 @@ export function Hero({ events, now }: { events: SkateEvent[]; now: string }) {
     <section className="relative overflow-hidden border-b border-asphalt-700/20 dark:border-chalk-500/15">
       <div className="grip-texture pointer-events-none absolute inset-0 text-asphalt-900/[0.035] dark:text-chalk-100/[0.03]" />
 
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 pb-8 pt-16 sm:px-6 sm:pb-10 sm:pt-24">
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
