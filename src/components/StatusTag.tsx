@@ -21,9 +21,17 @@ export function StatusTag({ status, className }: { status: EventStatus; classNam
       )}
     >
       {status === 'live' && (
-        <span className="h-1.5 w-1.5 animate-pulse-live rounded-full bg-chalk-100" />
+        <span className="relative flex h-2 w-2">
+          {/* animate-ping (Tailwinds inbyggda, skala+opacitet) i stället
+              för en box-shadow-animation — box-shadow tvingar repaint
+              varje bildruta, vilket mättes ge 640ms INP (dåligt) på
+              denna badge i produktion. Samma visuella "radierande
+              ring"-effekt, men i princip gratis för webbläsaren. */}
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-chalk-100 opacity-75" />
+          <span className="relative inline-flex h-2 w-2 animate-pulse-live rounded-full bg-chalk-100" />
+        </span>
       )}
-      {t(status)}
+      {status === 'live' ? t('liveNow') : t(status)}
     </span>
   );
 }
