@@ -9,7 +9,8 @@
   "nav": {
     "home": "Calendar",
     "submit": "Submit event",
-    "about": "About"
+    "about": "About",
+    "submitShort": "Submit"
   },
   "hero": {
     "eyebrow": "Live · Global · Community-driven",
