@@ -41,7 +41,7 @@ export function Header() {
               konsekvent, tydligt klickbar knapp överallt istället. */}
           <Link
             href="/submit"
-            className="flex items-center gap-1.5 whitespace-nowrap rounded-stamp bg-gradient-to-b from-spray-light to-spray px-3 py-2 font-mono-tight text-xs font-bold uppercase tracking-wide text-asphalt-950 shadow-md transition hover:shadow-lg active:translate-y-px active:shadow-sm"
+            className="flex items-center gap-1.5 whitespace-nowrap rounded-stamp bg-gradient-to-b from-spray-light to-spray px-3 py-2 font-mono-tight text-xs font-bold uppercase tracking-wide text-asphalt-950 shadow-md transition-transform hover:shadow-lg active:translate-y-px active:shadow-sm"
           >
             <Plus size={14} strokeWidth={3} />
             <span className="sm:hidden">{t('nav.submitShort')}</span>
