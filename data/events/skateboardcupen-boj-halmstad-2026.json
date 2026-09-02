@@ -2,19 +2,21 @@
   "slug": "skateboardcupen-boj-halmstad-2026",
   "name": "Skateboardcupen Böj – SM Vert Halmstad",
   "series": "Skateboardcupen",
-  "category": ["vert"],
+  "category": [
+    "vert"
+  ],
   "level": "open",
-  "startDate": "2026-10-24T09:00:00+02:00",
-  "endDate": "2026-10-24T18:00:00+02:00",
+  "startDate": "2026-10-24T08:00:00+02:00",
+  "endDate": "2026-10-24T17:00:00+02:00",
   "timezone": "Europe/Stockholm",
   "location": {
-    "venue": "TBD",
+    "venue": "Slottsmöllans Skatepark",
     "city": "Halmstad",
     "country": "Sverige",
     "countryCode": "SE",
     "continent": "europe",
-    "lat": 56.6745,
-    "lng": 12.8570
+    "lat": 56.6739,
+    "lng": 12.858
   },
   "description": {
     "sv": "Svenska mästerskapet i vert avgörs vid den här deltävlingen av Skateboardcupens Böj-serie (ny division 2026).",
@@ -22,9 +24,11 @@
   },
   "officialUrl": "https://skateboardcupen.se/",
   "organizer": "Sveriges Skateboardförbund",
-  "disciplines": ["Vert"],
+  "disciplines": [
+    "Vert"
+  ],
   "source": {
-    "note": "Datum enligt arrangörens officiella affisch för Skateboardcupen 2026. Böj-serien är ny för 2026; SM-titeln som avgörs här är specifikt Vert (till skillnad från SM Miniramp i Karlstad tidigare i serien).",
+    "note": "Datum enligt arrangörens officiella affisch för Skateboardcupen 2026. Böj-serien är ny för 2026; SM-titeln som avgörs här är specifikt Vert (till skillnad från SM Miniramp i Karlstad tidigare i serien). Exakt anläggning och tid (08:00-17:00 CET) bekräftad via arrangörens officiella kalender (myskatespots.com/events).",
     "url": "https://skateboardcupen.se/",
     "retrievedAt": "2026-08-27T00:00:00+02:00"
   }

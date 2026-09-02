@@ -2,18 +2,20 @@
   "slug": "skateboardcupen-street-sundsvall-2026",
   "name": "Skateboardcupen Street – Sundsvall",
   "series": "Skateboardcupen",
-  "category": ["street"],
+  "category": [
+    "street"
+  ],
   "level": "open",
-  "startDate": "2026-11-14T09:00:00+01:00",
-  "endDate": "2026-11-14T18:00:00+01:00",
+  "startDate": "2026-11-14T08:00:00+01:00",
+  "endDate": "2026-11-14T17:00:00+01:00",
   "timezone": "Europe/Stockholm",
   "location": {
-    "venue": "TBD",
+    "venue": "Åparken Sundsvall",
     "city": "Sundsvall",
     "country": "Sverige",
     "countryCode": "SE",
     "continent": "europe",
-    "lat": 62.3908,
+    "lat": 62.3927,
     "lng": 17.3069
   },
   "description": {
@@ -22,9 +24,11 @@
   },
   "officialUrl": "https://skateboardcupen.se/",
   "organizer": "Sveriges Skateboardförbund",
-  "disciplines": ["Street"],
+  "disciplines": [
+    "Street"
+  ],
   "source": {
-    "note": "Datum enligt arrangörens officiella affisch för Skateboardcupen 2026.",
+    "note": "Datum enligt arrangörens officiella affisch för Skateboardcupen 2026. Exakt anläggning och tid (08:00-17:00 CET) bekräftad via arrangörens officiella kalender (myskatespots.com/events).",
     "url": "https://skateboardcupen.se/",
     "retrievedAt": "2026-08-27T00:00:00+02:00"
   }
