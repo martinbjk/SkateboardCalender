@@ -86,7 +86,7 @@ export function EventCard({
         <Link
           href={`/events/${event.slug}`}
           className={clsx(
-            'group relative flex h-full flex-col overflow-hidden rounded-stamp border border-asphalt-700/30 bg-white/60 p-5 shadow-card transition-[box-shadow,border-color] duration-200 hover:border-spray hover:shadow-card-hover dark:border-chalk-500/15 dark:bg-asphalt-900/60 dark:shadow-card-dark dark:hover:shadow-card-hover-dark',
+            'group relative flex h-full flex-col overflow-hidden rounded-stamp border border-asphalt-700/30 bg-white/60 p-5 shadow-card hover:border-spray hover:shadow-card-hover dark:border-chalk-500/15 dark:bg-asphalt-900/60 dark:shadow-card-dark dark:hover:shadow-card-hover-dark',
             // "Avslutat/Inställt": urblekt (universellt via en enda
             // saturate/kontrast-klass, ingen bild- eller per-kort-hantering)
             isEnded && 'saturate-[0.3] contrast-[0.94]',
@@ -160,7 +160,7 @@ export function EventCard({
               (fullständig beskrivning, karta, anmälan, källa osv.) — annars
               kan hela kortets innehåll uppfattas som "allt som finns",
               eftersom namn/plats/datum/kort beskrivning redan syns här. */}
-          <div className="relative mt-4 flex items-center gap-1 border-t border-asphalt-700/10 pt-3 font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500 transition group-hover:text-spray dark:border-chalk-500/10">
+          <div className="relative mt-4 flex items-center gap-1 border-t border-asphalt-700/10 pt-3 font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500 group-hover:text-spray dark:border-chalk-500/10">
             {t('event.viewDetails')}
             <ChevronRight size={13} className="transition-transform group-hover:translate-x-0.5" />
           </div>
