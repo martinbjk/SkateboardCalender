@@ -4,27 +4,18 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { NAV_ITEMS } from "@/lib/nav/config";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 /**
  * FAST BOTTOM-NAV (YouTube/Amazon-stil) — bara ikoner, ingen text
  * ---------------------------------------------------------------
- * VIKTIGT — det här rör INTE er befintliga header.
- *
- * PANEL-STRUKTUR (viktigt att inte ändra utan att tänka efter):
- * Panelen är uppdelad i tre icke-skrollande delar (header, språk/tema)
- * plus EN skrollande del (bara sidlistan). Anledning: LanguageSwitcher
- * öppnar en dropdown nedåt från sin knapp — om språk/tema-raden låg
- * INUTI en overflow-y-auto-ruta skulle dropdownen klippas bort av den
- * rutans egen kant (osynlig även fast den tekniskt är "öppen"). Genom
- * att bara låta SIDLISTAN vara skrollbar, och hålla språk/tema helt
- * utanför den skrollbara ytan, kan dropdownen rendera fritt ovanpå
- * resten av panelen utan att klippas.
+ * VIKTIGT — det här rör INTE er befintliga header. Språk/tema hanteras
+ * INTE här längre (borttaget medvetet) — det finns redan i toppmenyn,
+ * och att duplicera det här gav bara en färgkrock (den här panelen är
+ * hårdkodad mörk, medan LanguageSwitcher/ThemeToggle följer sajtens
+ * riktiga ljust/mörkt-tema).
  *
  * SPRÅK: Link/usePathname kommer från @/i18n/navigation (samma som
- * Footer.tsx och LanguageSwitcher.tsx använder) — INTE next/link eller
- * next/navigation.
+ * Footer.tsx använder) — INTE next/link eller next/navigation.
  */
 export default function BottomNav() {
   const t = useTranslations();
@@ -80,7 +71,7 @@ export default function BottomNav() {
         </button>
       </nav>
 
-      {/* BOTTOM SHEET */}
+      {/* BOTTOM SHEET — bara sidlänkar, inget språk/tema */}
       {sheetOpen && (
         <div className="fixed inset-0 z-50">
           <button
@@ -90,8 +81,6 @@ export default function BottomNav() {
             className="absolute inset-0 bg-black/60"
           />
 
-          {/* Panelen: flex-col, max-höjd 75vh. Header och språk/tema är
-              shrink-0 (skrollar ALDRIG). Bara <nav> nedanför skrollar. */}
           <div className="absolute inset-x-0 bottom-0 flex max-h-[75vh] flex-col rounded-t-2xl border-t border-zinc-800 bg-zinc-950 pb-[env(safe-area-inset-bottom)]">
             <div className="flex shrink-0 items-center justify-between border-b border-zinc-800 px-4 py-3">
               <span className="text-sm font-semibold text-white">Meny</span>
@@ -103,13 +92,6 @@ export default function BottomNav() {
               >
                 ✕
               </button>
-            </div>
-
-            {/* Språk/tema FÖRE sidlistan, och UTANFÖR den skrollbara
-                rutan — se kommentaren högst upp i filen för varför. */}
-            <div className="flex shrink-0 items-center gap-3 border-b border-zinc-800 px-4 py-3">
-              <LanguageSwitcher />
-              <ThemeToggle />
             </div>
 
             <nav className="overflow-y-auto">
