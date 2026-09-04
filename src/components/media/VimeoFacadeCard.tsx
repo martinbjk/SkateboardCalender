@@ -6,7 +6,7 @@ interface Props {
   videoId: string;
   thumbnailUrl: string | null;
   title: string | null;
-  caption?: string;
+  caption?: string | null;
 }
 
 export default function VimeoFacadeCard({ videoId, thumbnailUrl, title, caption }: Props) {
