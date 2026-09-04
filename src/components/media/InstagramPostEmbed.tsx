@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 interface Props {
   url: string;
-  caption?: string;
+  caption?: string | null;
 }
 
 declare global {
@@ -34,7 +34,7 @@ export default function InstagramPostEmbed({ url, caption }: Props) {
     if (!el) return;
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
+        if (entries.length > 0 && entries[0].isIntersecting) {
           setShouldLoad(true);
           observer.disconnect();
         }
