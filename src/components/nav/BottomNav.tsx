@@ -1,31 +1,39 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { NAV_ITEMS } from "@/lib/nav/config";
-import { LanguageSwitcher } from '@/components/LanguageSwitcher';
-import { ThemeToggle } from '@/components/ThemeToggle';
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 /**
- * FAST BOTTOM-NAV (YouTube/Amazon-stil)
+ * FAST BOTTOM-NAV (YouTube/Amazon-stil) — bara ikoner, ingen text
  * ---------------------------------------------------------------
  * VIKTIGT — det här rör INTE er befintliga header. Headern (logga,
  * sök, vy-växlare) förblir exakt som den är idag. Det här är en
  * HELT NY, fristående rad längst ner på skärmen.
  *
- * Två flikar:
- *   - Hem  → länkar till "/" (kalendern)
- *   - Meny → öppnar en "bottom sheet" (panel som glider upp underifrån,
- *            samma mönster som Amazon-appens hamburgarmeny) med alla
- *            undersidor + platshållare för språk/tema
+ * INGEN SYNLIG TEXT i själva raden (bara ikoner, samma som Amazon-
+ * appen) — men aria-label finns kvar på båda knapparna, översatt via
+ * er befintliga nav.home-nyckel, så skärmläsare fortfarande får rätt
+ * ord på rätt språk. Det löser också "Meny"-textens
+ * översättningsproblem helt, eftersom ordet aldrig visas.
  *
- * KRÄVER EN ÅTGÄRD FRÅN ER: lägg padding-bottom på ert sidinnehåll
- * så att den fasta raden aldrig täcker sista eventkortet i kalendern
- * — se README-bottom-nav.md steg 3. Utan det ligger raden OVANPÅ
- * innehållet längst ner, vilket är exakt det ni inte ville.
+ * SPRÅK: Link/usePathname kommer från @/i18n/navigation (samma som
+ * Footer.tsx och LanguageSwitcher.tsx använder) — INTE next/link eller
+ * next/navigation.
+ *
+ * Sidnamnen INUTI menyn (Discipliner, Historia osv, i bottom sheet-
+ * panelen) har fortfarande synlig text och använder BEFINTLIGA
+ * next-intl-nycklar, samma som Footer.tsx.
+ *
+ * HÖJD: h-12 (48px) — Apple/Google rekommenderar minst ~44px
+ * touch-yta, så detta är den smalaste rimliga höjden utan att bli
+ * svår att trycka på. Om ni vill ännu smalare, säg till.
  */
 export default function BottomNav() {
+  const t = useTranslations();
   const pathname = usePathname();
   const [sheetOpen, setSheetOpen] = useState(false);
   const isHome = pathname === "/";
@@ -38,7 +46,6 @@ export default function BottomNav() {
     return () => document.removeEventListener("keydown", handleEscape);
   }, []);
 
-  // Låser bakgrundsscroll när menyn (bottom sheet) är öppen
   useEffect(() => {
     document.body.style.overflow = sheetOpen ? "hidden" : "";
     return () => {
@@ -48,22 +55,22 @@ export default function BottomNav() {
 
   return (
     <>
-      {/* SJÄLVA FASTA RADEN */}
+      {/* SJÄLVA FASTA RADEN — bara ikoner, h-12 (48px) */}
       <nav
         aria-label="Huvudmeny"
-        className="fixed inset-x-0 bottom-0 z-40 flex h-16 border-t border-zinc-800 bg-zinc-950/95 backdrop-blur"
-        style={{ paddingBottom: "env(safe-area-inset-bottom)" }} // för iPhone-hemindikator
+        className="fixed inset-x-0 bottom-0 z-40 flex h-12 border-t border-zinc-800 bg-zinc-950/95 backdrop-blur"
+        style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
       >
         <Link
           href="/"
-          className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-xs ${
+          aria-label={t("nav.home")}
+          className={`flex flex-1 items-center justify-center ${
             isHome ? "text-white" : "text-zinc-400"
           }`}
         >
-          <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+          <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current">
             <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z" />
           </svg>
-          Hem
         </Link>
 
         <button
@@ -71,16 +78,17 @@ export default function BottomNav() {
           onClick={() => setSheetOpen(true)}
           aria-label="Öppna meny"
           aria-expanded={sheetOpen}
-          className="flex flex-1 flex-col items-center justify-center gap-0.5 text-xs text-zinc-400"
+          className="flex flex-1 items-center justify-center text-zinc-400"
         >
-          <svg viewBox="0 0 24 24" className="h-6 w-6 stroke-current" fill="none" strokeWidth={2}>
+          <svg viewBox="0 0 24 24" className="h-5 w-5 stroke-current" fill="none" strokeWidth={2}>
             <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-          Meny
         </button>
       </nav>
 
-      {/* BOTTOM SHEET — glider upp underifrån när Meny trycks */}
+      {/* BOTTOM SHEET — glider upp underifrån när Meny trycks. Har
+          synlig text för sidnamnen, det är bara den FASTA raden ovan
+          som är ikon-only. */}
       {sheetOpen && (
         <div className="fixed inset-0 z-50">
           <button
@@ -111,17 +119,17 @@ export default function BottomNav() {
                       onClick={() => setSheetOpen(false)}
                       className="block px-4 py-3 text-sm text-zinc-200 transition-colors hover:bg-zinc-800 hover:text-white"
                     >
-                      {item.label}
+                      {t(item.translationKey)}
                     </Link>
                   </li>
                 ))}
               </ul>
             </nav>
 
-           <div className="flex items-center gap-3 border-t border-zinc-800 px-4 py-3">
-  <LanguageSwitcher />
-  <ThemeToggle />
-</div>
+            <div className="flex items-center gap-3 border-t border-zinc-800 px-4 py-3">
+              <LanguageSwitcher />
+              <ThemeToggle />
+            </div>
           </div>
         </div>
       )}
