@@ -1,22 +1,24 @@
 /**
  * MENYINNEHÅLL — lägg till/ta bort sidor här, inget annat behöver ändras.
- * `label` visas i menyn, `href` är sökvägen (utan språkprefix — er
- * routing sköter redan i18n baserat på tidigare beslut om 7 språk).
+ * `translationKey` är en BEFINTLIG next-intl-nyckel (samma som Footer.tsx
+ * redan använder för samma sidor) — INTE en ny nyckel jag hittat på.
+ * `href` är sökvägen (utan språkprefix — @/i18n/navigation sköter det).
  *
- * OBS: Artiklar-sidan var senast admin-only och väntade på sin första
- * riktiga artikel innan den skulle driftsättas — ta bort/kommentera
- * bort raden nedan om den fortfarande inte är publik än.
+ * OBS om "Artiklar": ingen rad för /articles här, eftersom sidan inte
+ * var publik än (admin-only, väntade på första riktiga artikeln) och
+ * inte heller ligger i Footer.tsx. Lägg till en rad här (med rätt
+ * översättningsnyckel, kolla vad artikel-sidan faktiskt använder) den
+ * dagen sidan blir publik.
  */
 export interface NavItem {
-  label: string;
+  translationKey: string;
   href: string;
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Artiklar", href: "/articles" },
-  { label: "Discipliner", href: "/disciplines" },
-  { label: "Historia", href: "/history" },
-  { label: "Om oss", href: "/about" },
-  { label: "Kontakt", href: "/contact" },
-  { label: "Integritetspolicy", href: "/privacy" },
+  { translationKey: "disciplines.navTitle", href: "/disciplines" },
+  { translationKey: "history.navTitle", href: "/history" },
+  { translationKey: "about.title", href: "/about" },
+  { translationKey: "contact.title", href: "/contact" },
+  { translationKey: "privacy.title", href: "/privacy" },
 ];
