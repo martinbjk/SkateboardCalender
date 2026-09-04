@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
+import BottomNav from '@/components/nav/BottomNav';
 import './globals.css';
-
 /**
  * Rot-layout (utanför /[locale]). Innehåller <html>/<body> eftersom det,
  * utan middleware (se not i README om GitHub Pages-varianten), inte
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           data-cf-beacon='{"token": "f96776bf6f1b40c79cb299c6ab382f34"}'
         />
       </head>
-      <body className="font-body flex min-h-screen flex-col">{children}</body>
+      <body className="font-body flex min-h-screen flex-col pb-16">{children}<BottomNav /></body>
     </html>
   );
 }
