@@ -1,4 +1,3 @@
-
 /**
  * FEATURED VIDEOS — för artikel-frontmatter
  * ---------------------------------------------------------------
@@ -42,8 +41,8 @@ export interface FeaturedVideoInput {
 export interface ResolvedYoutubeVideo {
   platform: "youtube";
   videoId: string;
-  caption?: string;
-  intro?: string;
+  caption?: string | null;
+  intro?: string | null;
 }
 
 export interface ResolvedVimeoVideo {
@@ -51,15 +50,15 @@ export interface ResolvedVimeoVideo {
   videoId: string;
   thumbnailUrl: string | null;
   title: string | null;
-  caption?: string;
-  intro?: string;
+  caption?: string | null;
+  intro?: string | null;
 }
 
 export interface ResolvedInstagramVideo {
   platform: "instagram";
   url: string; // instagram-embed.js behöver bara originalURL:en
-  caption?: string;
-  intro?: string;
+  caption?: string | null;
+  intro?: string | null;
 }
 
 export type ResolvedVideo =
@@ -96,7 +95,14 @@ async function resolveVimeo(
       { next: { revalidate: 86400 } } // thumbnails ändras sällan — cacha 1 dygn
     );
     if (!res.ok) {
-      return { platform: "vimeo", videoId, thumbnailUrl: null, title: null, caption, intro };
+      return {
+        platform: "vimeo",
+        videoId,
+        thumbnailUrl: null,
+        title: null,
+        caption: caption ?? null,
+        intro: intro ?? null,
+      };
     }
     const data = await res.json();
     return {
@@ -104,11 +110,18 @@ async function resolveVimeo(
       videoId,
       thumbnailUrl: data.thumbnail_url ?? null,
       title: data.title ?? null,
-      caption,
-      intro,
+      caption: caption ?? null,
+      intro: intro ?? null,
     };
   } catch {
-    return { platform: "vimeo", videoId, thumbnailUrl: null, title: null, caption, intro };
+    return {
+      platform: "vimeo",
+      videoId,
+      thumbnailUrl: null,
+      title: null,
+      caption: caption ?? null,
+      intro: intro ?? null,
+    };
   }
 }
 
@@ -122,13 +135,13 @@ export async function resolveFeaturedVideos(
         if (!videoId) {
           return { platform: "error", message: `Kunde inte tolka YouTube-URL: ${v.url}` };
         }
-        return { platform: "youtube", videoId, caption: v.caption, intro: v.intro };
+        return { platform: "youtube", videoId, caption: v.caption ?? null, intro: v.intro ?? null };
       }
       if (v.platform === "vimeo") {
         return resolveVimeo(v.url, v.caption, v.intro);
       }
       if (v.platform === "instagram") {
-        return { platform: "instagram", url: v.url, caption: v.caption, intro: v.intro };
+        return { platform: "instagram", url: v.url, caption: v.caption ?? null, intro: v.intro ?? null };
       }
       return { platform: "error", message: `Okänd plattform i frontmatter: ${(v as any).platform}` };
     })
