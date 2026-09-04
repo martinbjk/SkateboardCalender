@@ -103,7 +103,7 @@ export default function BottomNav() {
                       onClick={() => setSheetOpen(false)}
                       className="block px-4 py-3 text-sm text-zinc-200 transition-colors hover:bg-zinc-800 hover:text-white"
                     >
-                      {t(item.translationKey)}
+                      {item.translationKey ? t(item.translationKey) : item.label}
                     </Link>
                   </li>
                 ))}
