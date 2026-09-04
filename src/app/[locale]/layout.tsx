@@ -8,6 +8,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { SetHtmlLang } from '@/components/SetHtmlLang';
+import BottomNav from '@/components/nav/BottomNav';
 
 /**
  * OBS: ingen <html>/<head>/<body> här längre — de flyttade till
@@ -103,6 +104,7 @@ export default async function LocaleLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
+           <BottomNav />
         </NextIntlClientProvider>
       </ThemeProvider>
     </>
