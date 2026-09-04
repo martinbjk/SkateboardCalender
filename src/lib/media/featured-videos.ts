@@ -71,12 +71,12 @@ function extractYoutubeId(url: string): string | null {
   const match = url.match(
     /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/
   );
-  return match ? match[1] : null;
+  return match?.[1] ?? null;
 }
 
 function extractVimeoId(url: string): string | null {
   const match = url.match(/vimeo\.com\/(?:video\/)?(\d+)/);
-  return match ? match[1] : null;
+  return match?.[1] ?? null;
 }
 
 async function resolveVimeo(
