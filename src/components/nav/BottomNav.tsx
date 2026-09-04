@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS } from "@/lib/nav/config";
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 /**
  * FAST BOTTOM-NAV (YouTube/Amazon-stil)
@@ -116,25 +118,10 @@ export default function BottomNav() {
               </ul>
             </nav>
 
-            <div className="border-t border-zinc-800 px-4 py-3 space-y-3">
-              {/*
-                PLACEHOLDER — SPRÅKVÄLJARE
-                Byt raden nedan mot er riktiga komponent, t.ex:
-                <LanguageSwitcher />
-              */}
-              <div className="text-xs uppercase tracking-wide text-zinc-500">
-                Språk (PLACEHOLDER — byt ut mot &lt;LanguageSwitcher /&gt;)
-              </div>
-
-              {/*
-                PLACEHOLDER — TEMAVÄXLARE
-                Byt raden nedan mot er riktiga komponent, t.ex:
-                <ThemeToggle />
-              */}
-              <div className="text-xs uppercase tracking-wide text-zinc-500">
-                Tema (PLACEHOLDER — byt ut mot &lt;ThemeToggle /&gt;)
-              </div>
-            </div>
+           <div className="flex items-center gap-3 border-t border-zinc-800 px-4 py-3">
+  <LanguageSwitcher />
+  <ThemeToggle />
+</div>
           </div>
         </div>
       )}
