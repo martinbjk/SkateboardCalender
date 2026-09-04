@@ -1,4 +1,4 @@
-[README (3).md](https://github.com/user-attachments/files/31561023/README.3.md)
+[README (4).md](https://github.com/user-attachments/files/31836343/README.4.md)
 # Skateboard Event Calendar
 
 En global, live kalender för skateboard-tävlingar och events —
@@ -30,6 +30,12 @@ längst ner för kända begränsningar och nästa steg.
   dagens/kommande event vid sidladdning (så man slipper scrolla förbi
   redan avslutade tävlingar).
 - **Kalendervy** utöver listvyn, öppnar alltid på innevarande månad.
+- **Fast bottennav (Hem + Meny)** — en ikon-only rad längst ner på
+  skärmen (samma mönster som YouTube/Amazon-appen), synlig på både
+  mobil och desktop. Menyn samlar Discipliner, Historia, Om sajten,
+  Kontakt och Integritetspolicy på ett ställe. Helt fristående från
+  headern och hämtar ingen data, så den kan aldrig påverka kalenderns
+  prestanda.
 - **Google Maps-länk** per event — smart fallback: riktigt venue-namn
   ger en textsökning (hittar oftast exakt anläggning), okänt venue med
   kända koordinater ger en platslänk, och helt okänd plats visar ingen
@@ -65,20 +71,31 @@ npm run validate-events        # validera all data/events/*.json mot schemat
 ```
 data/events/*.json              ← källa till sanning för alla events (en fil per event)
 messages/{sv,en,de,fr,es,pt,ja}.json  ← alla UI-texter (next-intl)
+content/articles/{sv,en}/*.md   ← markdown-artiklar (se "Artiklar" nedan — inte helt kopplat än)
 src/
   app/
+    layout.tsx                  ← rot-layout (<html>/<body>), ingen språk-kontext här
     page.tsx                    ← rot-omdirigering med språkdetektering (localStorage + navigator.languages)
-    [locale]/                   ← sidor (startsida, /events/[slug], /submit)
+    [locale]/                   ← sidor (startsida, /events/[slug], /submit, /articles m.fl.)
     sitemap.ts, robots.ts, manifest.ts
   components/
     EventsExplorer.tsx           ← sök, filter, klibbig filterrad, autoscroll till dagens event
-    EventCard.tsx, CalendarView.tsx, Hero.tsx, Header.tsx, LanguageSwitcher.tsx m.fl.
+    EventCard.tsx, CalendarView.tsx, Hero.tsx, Header.tsx, Footer.tsx, LanguageSwitcher.tsx, ThemeToggle.tsx m.fl.
+    nav/
+      BottomNav.tsx               ← fast bottennav (Hem + Meny), oberoende av headern
+    media/
+      FeaturedVideos.tsx, FeaturedImages.tsx, YouTubeFacadeCard.tsx,
+      VimeoFacadeCard.tsx, InstagramPostEmbed.tsx
+                                  ← kuraterade video-/bildinbäddningar för artiklar (klicka-för-att-spela, lazy-load)
   lib/
     schema.ts                    ← Zod-schema, källa till sanning för datastrukturen
     events.ts                    ← läser & validerar /data/events (server-only)
     events-shared.ts             ← delad logik (status, kategorier, googleMapsUrl) — säker för klientkomponenter
     date.ts                      ← datumformat, ICS-export, Google Calendar-länk
     useLiveNow.ts                ← håller Live/Kommande-status uppdaterad efter sidladdning utan hydreringsfel
+    nav/config.ts                ← bottennavets sidlista (lägg till/ta bort sidor här)
+    media/featured-videos.ts, featured-images.ts
+                                  ← typer + URL-tolkning för video-/bildinbäddning i artikelfrontmatter
   i18n/                         ← next-intl-konfiguration (lägg till nya språk i config.ts)
 .github/
   workflows/
@@ -138,6 +155,18 @@ Viktigt:
 - Skriv **"TBD"** i `venue` om ni inte känner till exakt anläggning — då faller Google Maps-länken automatiskt tillbaka på stadens koordinater istället för att gissa fel.
 - Kategorierna (street/park/vert/bowl/downhill/slalom/freestyle/demo/contest) hålls medvetet **oöversatta** i alla språk — internationellt vedertagen skateboard-terminologi, som "kickflip" eller "ollie".
 
+## Artiklar
+
+Ett markdown-baserat artikelsystem finns under `content/articles/{sv,en}/*.md`.
+En artikel kan valfritt bädda in videor (YouTube, Vimeo, Instagram) eller
+lokala bilder via frontmatter-fälten `videos`/`images`, båda med en egen
+skriven `intro`-text ovanför varje video/bild — tänkt att göra innehållet
+personligt istället för en ren embed-lista. Se
+`src/lib/media/featured-videos.ts` och `src/lib/media/featured-images.ts`
+för exakt format.
+
+⚠️ **Inte helt kopplat samman än** — se [Vad som INTE är klart](#vad-som-inte-är-klart-ännu).
+
 ## Fler språk
 
 Alla sju språk (sv, en, de, fr, es, pt, ja) är helt översatta för
@@ -187,6 +216,13 @@ npx serve out           # servera dem lokalt, precis som i produktion
 
 ## Vad som INTE är klart ännu
 
+- **Artikelsystemet är delvis byggt men inte kopplat samman.**
+  Komponenterna för att bädda in videor/bilder i en artikel
+  (`FeaturedVideos.tsx`, `FeaturedImages.tsx` m.fl.) finns färdiga och
+  redo att användas, men den riktiga artikel-mallen som läser
+  `content/articles/*.md` och renderar en artikel med dem finns inte
+  än. `/articles`-routen visar just nu en tillfällig platshållarbild
+  ("Coming soon") istället för en riktig artikellista.
 - **Automatisk datahämtning/scraping är inte implementerad.** Ett
   utkast till skript (`scripts/fetch-worldskate.ts`) och en schemalagd
   workflow (`.github/workflows/scheduled-fetch.yml`) har tagits fram
