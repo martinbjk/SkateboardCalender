@@ -6,9 +6,10 @@ import './globals.css';
  * utan middleware (se not i README om GitHub Pages-varianten), inte
  * längre finns någon serverkod som fångar upp "/" innan rendering.
  * "/"-sidan (src/app/page.tsx) och alla /[locale]/-sidor renderas båda
- * genom denna layout. Själva språket på <html lang="..."> sätts av en
- * liten klientkomponent i [locale]/layout.tsx, eftersom den (till
- * skillnad från denna rot-layout) vet vilket språk som är aktivt.
+ * genom denna layout. <html lang> går inte att sätta per språk här (den
+ * här layouten har ingen locale-param) — värdet nedan är en platshållare
+ * som skrivs om per exporterad fil av scripts/fix-html-lang.mjs (körs som
+ * `postbuild`, se package.json).
  *
  * VIKTIGT: BottomNav renderas INTE här. Den här layouten saknar
  * NextIntlClientProvider (den finns bara i [locale]/layout.tsx), och
@@ -23,6 +24,8 @@ import './globals.css';
  * raden aldrig täcker sidans eget innehåll längst ner.
  */
 export default function RootLayout({ children }: { children: ReactNode }) {
+  // lang="sv" är en build-tids-platshållare — scripts/fix-html-lang.mjs
+  // skriver om den till rätt språk per fil i /out efter `next build`.
   return (
     <html lang="sv" suppressHydrationWarning>
       <head>
