@@ -5,6 +5,7 @@ import { Link } from '@/i18n/navigation';
 import { getArticleBySlug, getAllArticleSlugs } from '@/lib/articles';
 import { formatArticleDate } from '@/lib/articles-shared';
 import { ArticleMarkdown } from '@/components/ArticleMarkdown';
+import { ShareButton } from '@/components/ShareButton';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
@@ -128,6 +129,14 @@ export default async function ArticlePage({
           {t('onlyInEnglishNote')}
         </p>
       )}
+
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        <ShareButton
+          url={`${SITE_URL}/${locale}/articles/${article.slug}/`}
+          title={article.title}
+          text={article.excerpt}
+        />
+      </div>
 
       <ArticleMarkdown content={article.content} slug={article.slug} />
     </div>

@@ -5,20 +5,31 @@ import { useTranslations } from 'next-intl';
 import { Share2, Check } from 'lucide-react';
 
 /**
- * Delaknapp för eventsidor. Använder native Web Share API (öppnar
- * telefonens/OS:ets egen delningsmeny — Instagram, WhatsApp, SMS osv)
- * där det stöds, annars faller den tillbaka på att kopiera länken till
- * urklipp med en kort "kopierat"-bekräftelse. Skrivbordswebbläsare
+ * Delaknapp för event- och artikelsidor. Använder native Web Share API
+ * (öppnar telefonens/OS:ets egen delningsmeny — Instagram, WhatsApp, SMS
+ * osv) där det stöds, annars faller den tillbaka på att kopiera länken
+ * till urklipp med en kort "kopierat"-bekräftelse. Skrivbordswebbläsare
  * saknar oftast navigator.share, så fallback är det vanliga läget där.
+ *
+ * `text` är valfri — eventsidorna delar bara titel + URL, artikelsidorna
+ * skickar även med utdraget (excerpt) som delningstext.
  */
-export function ShareButton({ url, title }: { url: string; title: string }) {
+export function ShareButton({
+  url,
+  title,
+  text
+}: {
+  url: string;
+  title: string;
+  text?: string;
+}) {
   const t = useTranslations('event');
   const [copied, setCopied] = useState(false);
 
   async function handleShare() {
     if (typeof navigator !== 'undefined' && navigator.share) {
       try {
-        await navigator.share({ title, url });
+        await navigator.share({ title, url, ...(text ? { text } : {}) });
       } catch {
         // Användaren avbröt delningsdialogen eller den nekades — inget att göra
       }
