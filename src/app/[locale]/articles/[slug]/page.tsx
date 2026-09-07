@@ -6,6 +6,7 @@ import { getArticleBySlug, getAllArticleSlugs } from '@/lib/articles';
 import { formatArticleDate } from '@/lib/articles-shared';
 import { ArticleMarkdown } from '@/components/ArticleMarkdown';
 import { ShareButton } from '@/components/ShareButton';
+import { ARTICLE_EMBEDS } from '@/lib/article-embeds/registry';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
@@ -69,6 +70,28 @@ export async function generateMetadata({
   };
 }
 
+/**
+ * Delar artikelns markdown-kropp i två delar runt det avsnitt en
+ * artikel-embed ersätter. Kastar hellre ett tydligt fel vid build än
+ * tappar innehåll tyst om markörerna inte finns eller ligger i fel
+ * ordning (t.ex. efter en redigering av artikeln).
+ */
+function spliceArticleEmbed(
+  content: string,
+  splice: { from: string; to: string },
+  slug: string
+): { before: string; after: string } {
+  const start = content.indexOf(splice.from);
+  const end = content.indexOf(splice.to);
+  if (start === -1 || end === -1 || end <= start) {
+    throw new Error(
+      `Artikel-embed för "${slug}": hittade inte markörerna ${JSON.stringify(splice.from)} → ` +
+        `${JSON.stringify(splice.to)} i rätt ordning. Har artikeltexten ändrats?`
+    );
+  }
+  return { before: content.slice(0, start), after: content.slice(end) };
+}
+
 function articleJsonLd(
   article: NonNullable<ReturnType<typeof getArticleBySlug>>,
   locale: string
@@ -97,6 +120,11 @@ export default async function ArticlePage({
 
   const t = await getTranslations({ locale, namespace: 'articles' });
   const jsonLd = articleJsonLd(article, locale);
+
+  const embed = ARTICLE_EMBEDS[article.slug];
+  const split = embed
+    ? spliceArticleEmbed(article.content, embed.splice, article.slug)
+    : null;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
@@ -138,7 +166,15 @@ export default async function ArticlePage({
         />
       </div>
 
-      <ArticleMarkdown content={article.content} slug={article.slug} />
+      {embed && split ? (
+        <>
+          <ArticleMarkdown content={split.before} slug={article.slug} />
+          {embed.render()}
+          <ArticleMarkdown content={split.after} slug={article.slug} />
+        </>
+      ) : (
+        <ArticleMarkdown content={article.content} slug={article.slug} />
+      )}
     </div>
   );
 }
