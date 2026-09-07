@@ -81,6 +81,21 @@ export const verifiedIndoorSkateparks: Skatepark[] = [
     "warning": null
   },
   {
+    "id": "fryshuset-stockholm-skatepark",
+    "name": "Fryshuset Stockholm Skatepark",
+    "location": "Stockholm, Sweden",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "region": "Europe",
+    "description": "Mini ramp, a large concrete bowl, 800 m² of street area, and Stockholm's only vert ramp, plus an on-site skate shop.",
+    "addresses": [
+      "Mårtensdalsgatan 2-8, 120 30 Stockholm"
+    ],
+    "website": "fryshuset.se/verksamhet/stockholm-skatepark",
+    "email": "StockholmSkatepark@fryshuset.se",
+    "warning": null
+  },
+  {
     "id": "wallride",
     "name": "Wallride",
     "location": "Växjö, Sweden",

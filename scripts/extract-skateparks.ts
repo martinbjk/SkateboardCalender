@@ -124,7 +124,13 @@ function parseParkBlock(lines: string[], region: string): Skatepark | null {
 }
 
 function main() {
-  const md = fs.readFileSync(SRC, 'utf-8').replace(/^---\n[\s\S]*?\n---\n/, '');
+  // Normalisera radslut först — arbetskopian kan ha CRLF (core.autocrlf),
+  // annars blir ett kvarvarande \r i slutet av varje rad och regexarna
+  // nedan matchar inget.
+  const md = fs
+    .readFileSync(SRC, 'utf-8')
+    .replace(/\r\n/g, '\n')
+    .replace(/^---\n[\s\S]*?\n---\n/, '');
   const lines = md.split('\n');
 
   const parks: Skatepark[] = [];

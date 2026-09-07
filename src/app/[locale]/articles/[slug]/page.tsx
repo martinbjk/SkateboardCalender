@@ -77,10 +77,13 @@ export async function generateMetadata({
  * ordning (t.ex. efter en redigering av artikeln).
  */
 function spliceArticleEmbed(
-  content: string,
+  rawContent: string,
   splice: { from: string; to: string },
   slug: string
 ): { before: string; after: string } {
+  // Normalisera radslut — markörerna nedan är exakta \n-strängar och en
+  // artikel kan committas med CRLF (t.ex. via GitHubs webb-editor).
+  const content = rawContent.replace(/\r\n/g, '\n');
   const start = content.indexOf(splice.from);
   const end = content.indexOf(splice.to);
   if (start === -1 || end === -1 || end <= start) {
