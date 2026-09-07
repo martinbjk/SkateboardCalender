@@ -7,6 +7,7 @@ import { formatArticleDate } from '@/lib/articles-shared';
 import { ArticleMarkdown } from '@/components/ArticleMarkdown';
 import { ShareButton } from '@/components/ShareButton';
 import { ARTICLE_EMBEDS } from '@/lib/article-embeds/registry';
+import { localeAlternates } from '@/lib/seo';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
@@ -48,7 +49,10 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: article.excerpt,
-    alternates: { canonical: pageUrl },
+    // Alla artiklar finns på samma URL i alla sju språk (engelskt
+    // innehåll som reserv där översättning saknas), så samma reciproka
+    // hreflang-kluster som eventsidorna. Se lib/seo.
+    alternates: localeAlternates(locale, `articles/${slug}/`),
     // Eventsidorna lutar sig mot fil-konventionen opengraph-image.tsx för
     // sin delningsbild. Artiklarna har istället en färdig ogImage-PNG i
     // frontmatter, så vi sätter bilden explicit här — och måste då även
