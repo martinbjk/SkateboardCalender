@@ -6,18 +6,20 @@ import { getAllArticles } from '@/lib/articles';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skate-event-calendar.vercel.app';
 
 /**
- * Språkkluster för en eventsida: samma sju språk + x-default som
- * eventsidans egen hreflang i <head> (se events/[slug]/page.tsx).
- * Next skriver ut detta som <xhtml:link rel="alternate" hreflang="…">
- * på VARJE av de sju <url>-posterna, så Google ser att de hör ihop i
- * stället för att behandla dem som orelaterade dubbletter.
+ * Språkkluster för en sida som finns på alla sju språk. `path` är
+ * sökvägen EFTER /<locale>/ med avslutande slash ('' = startsidan,
+ * 'submit/', 'articles/foo/', 'events/foo/'). Speglar sidans egen
+ * hreflang i <head> (se lib/seo.ts) — Next skriver ut det som
+ * <xhtml:link rel="alternate" hreflang="…"> på varje <url>-post, så
+ * Google ser språkversionerna som ETT kluster i stället för orelaterade
+ * dubbletter.
  */
-function eventLanguageAlternates(slug: string): { languages: Record<string, string> } {
-  const eventUrl = (l: string) => `${SITE_URL}/${l}/events/${slug}/`;
+function languageAlternates(path: string): { languages: Record<string, string> } {
+  const at = (l: string) => `${SITE_URL}/${l}/${path}`;
   return {
     languages: {
-      ...Object.fromEntries(locales.map((l) => [l, eventUrl(l)])),
-      'x-default': eventUrl('en')
+      ...Object.fromEntries(locales.map((l) => [l, at(l)])),
+      'x-default': at('en')
     }
   };
 }
@@ -37,24 +39,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${SITE_URL}/${locale}/`,
       changeFrequency: 'daily',
-      priority: 1
+      priority: 1,
+      alternates: languageAlternates('')
     });
     entries.push({
       url: `${SITE_URL}/${locale}/submit/`,
       changeFrequency: 'monthly',
-      priority: 0.4
+      priority: 0.4,
+      alternates: languageAlternates('submit/')
     });
     entries.push({
       url: `${SITE_URL}/${locale}/articles/`,
       changeFrequency: 'weekly',
-      priority: 0.5
+      priority: 0.5,
+      alternates: languageAlternates('articles/')
     });
     for (const article of getAllArticles(locale)) {
       entries.push({
         url: `${SITE_URL}/${locale}/articles/${article.slug}/`,
         lastModified: article.date,
         changeFrequency: 'monthly',
-        priority: 0.6
+        priority: 0.6,
+        alternates: languageAlternates(`articles/${article.slug}/`)
       });
     }
     for (const event of events) {
@@ -63,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: event.source?.retrievedAt,
         changeFrequency: 'weekly',
         priority: 0.7,
-        alternates: eventLanguageAlternates(event.slug)
+        alternates: languageAlternates(`events/${event.slug}/`)
       });
     }
   }
