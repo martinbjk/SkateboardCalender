@@ -4,6 +4,7 @@ import { ChevronRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { getAllArticles } from '@/lib/articles';
 import { formatArticleDate } from '@/lib/articles-shared';
+import { localeAlternates } from '@/lib/seo';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
@@ -20,7 +21,7 @@ export async function generateMetadata({
   return {
     title: t('pageTitle'),
     description: t('metaDescription'),
-    alternates: { canonical: pageUrl },
+    alternates: localeAlternates(locale, 'articles/'),
     openGraph: {
       title: t('pageTitle'),
       description: t('metaDescription'),

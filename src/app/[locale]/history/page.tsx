@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { ChevronRight } from 'lucide-react';
+import { localeAlternates } from '@/lib/seo';
 
 const BULLET_ERAS = ['era1980', 'era2000', 'era2020'] as const;
 const INTRO_BULLET_ERAS = ['era1990'] as const;
@@ -8,7 +9,11 @@ const INTRO_BULLET_ERAS = ['era1990'] as const;
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'history' });
-  return { title: t('pageTitle'), description: t('metaDescription') };
+  return {
+    title: t('pageTitle'),
+    description: t('metaDescription'),
+    alternates: localeAlternates(locale, 'history/')
+  };
 }
 
 export default async function HistoryPage({ params: { locale } }: { params: { locale: string } }) {

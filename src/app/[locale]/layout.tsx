@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { locales } from '@/i18n/config';
+import { localeAlternates } from '@/lib/seo';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -60,13 +61,9 @@ export async function generateMetadata({
       description: t('siteDescription'),
       images: ['/og-image.png']
     },
-    alternates: {
-      canonical: pageUrl,
-      languages: {
-        ...Object.fromEntries(locales.map((l) => [l, `/${l}/`])),
-        'x-default': '/en/'
-      }
-    }
+    // Startsidan ärver detta. Undersidor (/about, /events/[slug] m.fl.)
+    // sätter sin egen localeAlternates(locale, '<path>/') — se not i lib/seo.
+    alternates: localeAlternates(locale, '')
   };
 }
 

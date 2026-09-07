@@ -1,10 +1,11 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Github } from 'lucide-react';
+import { localeAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'about' });
-  return { title: t('title') };
+  return { title: t('title'), alternates: localeAlternates(locale, 'about/') };
 }
 
 const REPO_URL = 'https://github.com/martinbjk/SkateboardCalender';

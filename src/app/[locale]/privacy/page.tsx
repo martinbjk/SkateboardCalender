@@ -1,9 +1,10 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { localeAlternates } from '@/lib/seo';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'privacy' });
-  return { title: t('title') };
+  return { title: t('title'), alternates: localeAlternates(locale, 'privacy/') };
 }
 
 // Privacy Policy-innehållet skrivs direkt här (inte i messages/*.json) eftersom

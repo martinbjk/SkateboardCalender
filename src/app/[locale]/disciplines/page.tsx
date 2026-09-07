@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { ChevronRight } from 'lucide-react';
+import { localeAlternates } from '@/lib/seo';
 
 const SIMPLE_SECTIONS = ['street', 'park', 'bowl', 'freestyle'] as const;
 const SLALOM_SUB_KEYS = ['ts', 'sps', 'hs', 'gs', 'sgs'] as const;
@@ -10,7 +11,11 @@ const FIT_KEYS = ['beginner', 'bigair', 'technique', 'racing', 'compete'] as con
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'disciplines' });
-  return { title: t('pageTitle'), description: t('metaDescription') };
+  return {
+    title: t('pageTitle'),
+    description: t('metaDescription'),
+    alternates: localeAlternates(locale, 'disciplines/')
+  };
 }
 
 function CategoryLink({ category, label }: { category: string; label: string }) {
