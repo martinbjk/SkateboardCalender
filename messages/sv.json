@@ -424,5 +424,15 @@
         "event": "World Skate formaliserar Vert- och Slalom-regler"
       }
     ]
+  },
+  "articles": {
+    "navTitle": "Artiklar",
+    "pageTitle": "Artiklar",
+    "metaDescription": "Fördjupande, faktagranskade artiklar för resande skateboardåkare — utrustning, säkerhet och scenguider, med källa för varje påstående.",
+    "intro": "Längre guider och reportage för skateboardåkare på resande fot. Varje artikel är faktagranskad mot primärkällor som listas längst ner i texten.",
+    "readMore": "Läs artikeln",
+    "onlyInEnglish": "Endast engelska",
+    "onlyInEnglishNote": "Den här artikeln finns än så länge bara på engelska.",
+    "backToArticles": "Alla artiklar"
   }
 }

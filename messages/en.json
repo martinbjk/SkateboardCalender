@@ -424,5 +424,15 @@
         "event": "World Skate formalizes Vert and Slalom rules"
       }
     ]
+  },
+  "articles": {
+    "navTitle": "Articles",
+    "pageTitle": "Articles",
+    "metaDescription": "In-depth, fact-checked articles for traveling skateboarders — gear logistics, safety, and scene guides, with a source for every claim.",
+    "intro": "Long-form guides and reportage for skateboarders on the move. Every article is fact-checked against primary sources, listed at the bottom of each piece.",
+    "readMore": "Read article",
+    "onlyInEnglish": "English only",
+    "onlyInEnglishNote": "This article is only available in English for now.",
+    "backToArticles": "All articles"
   }
 }

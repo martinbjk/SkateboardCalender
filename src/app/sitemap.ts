@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { locales } from '@/i18n/config';
 import { getAllEvents } from '@/lib/events';
+import { getAllArticles } from '@/lib/articles';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skate-event-calendar.vercel.app';
 
@@ -26,6 +27,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.4
     });
+    entries.push({
+      url: `${SITE_URL}/${locale}/articles/`,
+      changeFrequency: 'weekly',
+      priority: 0.5
+    });
+    for (const article of getAllArticles(locale)) {
+      entries.push({
+        url: `${SITE_URL}/${locale}/articles/${article.slug}/`,
+        lastModified: article.date,
+        changeFrequency: 'monthly',
+        priority: 0.6
+      });
+    }
     for (const event of events) {
       entries.push({
         url: `${SITE_URL}/${locale}/events/${event.slug}/`,

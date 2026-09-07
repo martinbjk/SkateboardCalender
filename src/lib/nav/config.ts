@@ -15,9 +15,7 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  // TODO: byt till translationKey (t.ex. "articles.navTitle") den dagen
-  // /articles har en riktig, översatt sida istället för test-bilden.
-  { label: "Articles", href: "/articles" },
+  { translationKey: "articles.navTitle", href: "/articles" },
   { translationKey: "disciplines.navTitle", href: "/disciplines" },
   { translationKey: "history.navTitle", href: "/history" },
   { translationKey: "about.title", href: "/about" },

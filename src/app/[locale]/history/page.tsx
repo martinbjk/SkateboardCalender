@@ -2,8 +2,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { ChevronRight } from 'lucide-react';
 
-const BULLET_ERAS = ['era1980', 'era2000'] as const;
-const INTRO_BULLET_ERAS = ['era1990', 'era2020'] as const;
+const BULLET_ERAS = ['era1980', 'era2000', 'era2020'] as const;
+const INTRO_BULLET_ERAS = ['era1990'] as const;
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);

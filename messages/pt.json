@@ -424,5 +424,15 @@
         "event": "World Skate formaliza as regras de Vert e Slalom"
       }
     ]
+  },
+  "articles": {
+    "navTitle": "Artigos",
+    "pageTitle": "Artigos",
+    "metaDescription": "Artigos aprofundados e verificados para skatistas que viajam — equipamento, segurança e guias de cena, com uma fonte para cada afirmação.",
+    "intro": "Guias longos e reportagens para skatistas em viagem. Cada artigo é verificado com fontes primárias, listadas no fim de cada texto.",
+    "readMore": "Ler artigo",
+    "onlyInEnglish": "Apenas em inglês",
+    "onlyInEnglishNote": "Este artigo está disponível apenas em inglês por enquanto.",
+    "backToArticles": "Todos os artigos"
   }
 }

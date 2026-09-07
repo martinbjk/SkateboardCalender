@@ -424,5 +424,15 @@
         "event": "World Skate officialise les règles du vert et du slalom"
       }
     ]
+  },
+  "articles": {
+    "navTitle": "Articles",
+    "pageTitle": "Articles",
+    "metaDescription": "Des articles approfondis et vérifiés pour les skateurs qui voyagent — matériel, sécurité et guides de scène, avec une source pour chaque affirmation.",
+    "intro": "Guides détaillés et reportages pour les skateurs en déplacement. Chaque article est vérifié à partir de sources primaires, listées au bas de chaque texte.",
+    "readMore": "Lire l’article",
+    "onlyInEnglish": "En anglais uniquement",
+    "onlyInEnglishNote": "Cet article n’est disponible qu’en anglais pour le moment.",
+    "backToArticles": "Tous les articles"
   }
 }
