@@ -23,6 +23,25 @@ export async function generateMetadata({
   if (!article) return {};
 
   const pageUrl = `${SITE_URL}/${locale}/articles/${slug}/`;
+  // og:image / twitter:image MÅSTE vara en absolut URL för att sociala
+  // plattformar ska hämta bilden. Frontmatter-fältet är en rot-relativ
+  // sökväg (/images/articles/…), så vi sätter ihop den fulla URL:en
+  // explicit här — samma mönster som JSON-LD nedan och som
+  // eventsidornas JSON-LD (`${siteUrl}${...}`), i stället för att förlita
+  // oss på att metadataBase råkar absolutifiera en relativ sträng.
+  const ogImageUrl = `${SITE_URL}${article.ogImage}`;
+  // Måtten läses ur PNG-filen vid build-tid (se readPngSize i lib/articles).
+  // Med width/height + type får delningskortet samma fullständiga og:image-
+  // taggar som eventsidorna redan har — en bild utan deklarerade mått
+  // renderas ofta inte alls av Facebooks/LinkedIns crawler.
+  const ogImage = {
+    url: ogImageUrl,
+    alt: article.title,
+    type: 'image/png',
+    ...(article.ogImageWidth && article.ogImageHeight
+      ? { width: article.ogImageWidth, height: article.ogImageHeight }
+      : {})
+  };
 
   return {
     title: article.title,
@@ -38,13 +57,13 @@ export async function generateMetadata({
       description: article.excerpt,
       url: pageUrl,
       type: 'article',
-      images: [article.ogImage]
+      images: [ogImage]
     },
     twitter: {
       card: 'summary_large_image',
       title: article.title,
       description: article.excerpt,
-      images: [article.ogImage]
+      images: [ogImage]
     }
   };
 }

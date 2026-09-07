@@ -57,6 +57,36 @@ export interface Article extends ArticleFrontmatter {
    * engelska"-notisen i listnings- och artikelsidan.
    */
   isFallback: boolean;
+  /**
+   * Faktiska pixelmått för ogImage-filen, avlästa ur PNG-headern vid
+   * build-tid. Sätts som og:image:width/height i generateMetadata —
+   * en delningsbild utan deklarerade mått hoppas ofta över av sociala
+   * plattformars crawlers (särskilt Facebook). undefined om filen inte
+   * går att läsa eller inte är en PNG.
+   */
+  ogImageWidth?: number;
+  ogImageHeight?: number;
+}
+
+/**
+ * Läser bredd/höjd ur en PNG:s IHDR-chunk (byte 16–23, big-endian) utan
+ * bildbibliotek. Returnerar undefined för saknad fil eller icke-PNG.
+ */
+function readPngSize(absPath: string): { width: number; height: number } | undefined {
+  let fd: number | undefined;
+  try {
+    fd = fs.openSync(absPath, 'r');
+    const header = Buffer.alloc(24);
+    const read = fs.readSync(fd, header, 0, 24, 0);
+    if (read < 24) return undefined;
+    // PNG-signatur: 89 50 4E 47 0D 0A 1A 0A
+    if (header.readUInt32BE(0) !== 0x89504e47) return undefined;
+    return { width: header.readUInt32BE(16), height: header.readUInt32BE(20) };
+  } catch {
+    return undefined;
+  } finally {
+    if (fd !== undefined) fs.closeSync(fd);
+  }
 }
 
 function listMarkdownFiles(locale: string): string[] {
@@ -85,7 +115,16 @@ function parseArticleFile(locale: string, file: string): Article {
     );
   }
 
-  return { ...frontmatter, content, isFallback: false };
+  // ogImage är en rot-relativ sökväg (/images/…) → filen ligger i /public.
+  const ogSize = readPngSize(path.join(process.cwd(), 'public', frontmatter.ogImage));
+
+  return {
+    ...frontmatter,
+    content,
+    isFallback: false,
+    ogImageWidth: ogSize?.width,
+    ogImageHeight: ogSize?.height
+  };
 }
 
 /**
