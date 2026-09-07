@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapPin, ExternalLink, Ticket, Users } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
+import { locales } from '@/i18n/config';
 import { getAllEvents, getEventBySlug, getEventStatus } from '@/lib/events';
 import { googleMapsUrl, locationIsKnown, localizedCountryName } from '@/lib/events-shared';
 import { formatDateRange, formatTime } from '@/lib/date';
@@ -40,10 +41,21 @@ export async function generateMetadata({
   const title = `${event.name} (${dateRange})`;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
   const pageUrl = `${siteUrl}/${locale}/events/${slug}/`;
+  // hreflang: varje språkversion av EN eventsida pekar på samma event i
+  // alla sju språk + x-default (engelska). Reciprokt och självrefererande,
+  // precis som Google kräver. Måste sättas här — sidans egen `alternates`
+  // ersätter rot-layoutens `alternates` helt (Next slår inte ihop fältet),
+  // så layoutens språkkarta (som ändå bara pekar på startsidorna) når
+  // aldrig eventsidorna.
+  const eventUrl = (l: string) => `${siteUrl}/${l}/events/${slug}/`;
+  const languages: Record<string, string> = {
+    ...Object.fromEntries(locales.map((l) => [l, eventUrl(l)])),
+    'x-default': eventUrl('en')
+  };
   return {
     title,
     description,
-    alternates: { canonical: pageUrl },
+    alternates: { canonical: pageUrl, languages },
     // OG-titeln hålls ren (bara eventnamnet) — delningsbilden (se
     // opengraph-image.tsx) visar redan datum/plats visuellt, så att
     // upprepa det i textraden här är överflödigt för sociala kort.

@@ -5,6 +5,23 @@ import { getAllArticles } from '@/lib/articles';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skate-event-calendar.vercel.app';
 
+/**
+ * Språkkluster för en eventsida: samma sju språk + x-default som
+ * eventsidans egen hreflang i <head> (se events/[slug]/page.tsx).
+ * Next skriver ut detta som <xhtml:link rel="alternate" hreflang="…">
+ * på VARJE av de sju <url>-posterna, så Google ser att de hör ihop i
+ * stället för att behandla dem som orelaterade dubbletter.
+ */
+function eventLanguageAlternates(slug: string): { languages: Record<string, string> } {
+  const eventUrl = (l: string) => `${SITE_URL}/${l}/events/${slug}/`;
+  return {
+    languages: {
+      ...Object.fromEntries(locales.map((l) => [l, eventUrl(l)])),
+      'x-default': eventUrl('en')
+    }
+  };
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const events = getAllEvents();
   const entries: MetadataRoute.Sitemap = [];
@@ -45,7 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${SITE_URL}/${locale}/events/${event.slug}/`,
         lastModified: event.source?.retrievedAt,
         changeFrequency: 'weekly',
-        priority: 0.7
+        priority: 0.7,
+        alternates: eventLanguageAlternates(event.slug)
       });
     }
   }
