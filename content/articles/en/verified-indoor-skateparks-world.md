@@ -52,6 +52,11 @@ Membership-based association, open through the winter season, hosts Vert Attack.
 📍 Ystadvägen 44/46, 214 45 Malmö
 🌐 bryggeriet.org · ✉️ info@bryggeriet.org
 
+**Fryshuset Stockholm Skatepark – Stockholm, Sweden**
+Mini ramp, a large concrete bowl, 800 m² of street area, and Stockholm's only vert ramp, plus an on-site skate shop.
+📍 Mårtensdalsgatan 2-8, 120 30 Stockholm
+🌐 fryshuset.se/verksamhet/stockholm-skatepark · ✉️ StockholmSkatepark@fryshuset.se
+
 **Wallride – Växjö, Sweden**
 Street park + bowl (~600 m² street area) plus pumptrack, resi ramp, trampolines, climbing walls, café and shop.
 📍 Arabygatan 13, Växjö
@@ -376,7 +381,6 @@ Sweden runs an unusually dense network of small municipal and club-run indoor "s
 | Hall | City | Size |
 |---|---|---|
 | Karlstad skateboardklubb | Karlstad | 2,000 m² |
-| Fryshuset skatepark | Stockholm | 1,500 m² |
 | Gumpels skatehall | Bollnäs | 1,500 m² |
 | Zero One Six skatepark | Eskilstuna | 1,200 m² |
 | Slottsmöllans skatepark | Halmstad | 1,200 m² |
