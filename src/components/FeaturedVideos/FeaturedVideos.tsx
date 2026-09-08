@@ -1,96 +1,93 @@
 // src/components/FeaturedVideos/FeaturedVideos.tsx
 //
-// Usage: import and render inside your /articles page:
+// Same dark/neon visual design as before (all colors, fonts, layout
+// inside are untouched) — the only change is an outer card frame so it
+// reads as one contained box, same width as the article cards, instead
+// of breaking out to full page width.
 //
-//   import FeaturedVideos from "@/components/FeaturedVideos/FeaturedVideos";
-//   ...
-//   <ArticlesList ... />
-//   <FeaturedVideos />
+// Meant to sit INSIDE the same `mx-auto max-w-3xl` container as the
+// articles list, right after the articles div.
 //
-// No props needed — it reads everything from src/data/featured-videos.ts.
-//
-import { ShareButton } from "@/components/ShareButton";
-import { featuredVideos } from "@/data/featured-videos";
-import styles from "./FeaturedVideos.module.css";
+// Requires a `locale` prop (e.g. "en", "sv") so the section's share link
+// includes the language prefix the site's routing requires — without it,
+// the shared URL 404s.
+import { ShareButton } from '@/components/ShareButton';
+import { featuredVideos } from '@/data/featured-videos';
+import styles from './FeaturedVideos.module.css';
 
-// Uses the same env var already set in .github/workflows/pages-deploy.yml
-// for GitHub Pages deploys, with a local-dev fallback.
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://skateboardeventcalendar.com";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
 
-export default function FeaturedVideos() {
-  const sectionUrl = `${SITE_URL}/articles#featured-videos`;
+export default function FeaturedVideos({ locale }: { locale: string }) {
+  const sectionUrl = `${SITE_URL}/${locale}/articles#featured-videos`;
 
   return (
-    <section id="featured-videos" className={styles.section}>
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <div className={styles.headerRow}>
-            <h2>Featured Videos</h2>
-            {/* NOTE: ShareButton's styling assumes it sits on a theme-aware
-                background (light/dark). This section is always dark, so the
-                "dark" wrapper class below nudges Tailwind's dark: variants on —
-                only works if your Tailwind dark mode strategy is "class". If
-                the button looks wrong (e.g. invisible border) in light theme,
-                this is the line to revisit. */}
-            <span className="dark">
-              <ShareButton url={sectionUrl} title="Featured Videos – Skateboard Calendar" />
-            </span>
+    <div className="mt-10 overflow-hidden rounded-stamp border border-asphalt-700/30 shadow-card dark:border-chalk-500/15">
+      <section id="featured-videos" className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.header}>
+            <div className={styles.headerRow}>
+              <h2>Featured Videos</h2>
+              <span className="dark">
+                <ShareButton url={sectionUrl} title="Featured Videos – Skateboard Calendar" />
+              </span>
+            </div>
+            <p>A few videos worth watching</p>
           </div>
-          <p>A few videos worth watching</p>
-        </div>
 
-        <div className={styles.tagStrip} />
+          <div className={styles.tagStrip} />
 
-        <div className={styles.grid}>
-          {featuredVideos.map((video) => {
-            const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
-            return (
-              <article key={video.id} className={styles.card}>
-                <a
-                  href={videoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.thumb}
-                  aria-label={`Watch: ${video.title}`}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
-                    alt={video.title}
-                    loading="lazy"
-                  />
-                  <span className={styles.playBadge}>
-                    <svg viewBox="0 0 24 24" fill="var(--fv-neon-yellow)">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </span>
-                </a>
-
-                <div className={styles.cardContent}>
-                  <div className={styles.cardTitleRow}>
-                    <h3>{video.title}</h3>
-                    <span className="dark">
-                      <ShareButton url={videoUrl} title={video.title} text={video.intro} />
-                    </span>
-                  </div>
-                  <p className={styles.intro}>{video.intro}</p>
+          <div className={styles.grid}>
+            {featuredVideos.map((video) => {
+              const videoUrl = `https://www.youtube.com/watch?v=${video.id}`;
+              return (
+                <article key={video.id} className={styles.card}>
                   <a
                     href={videoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={styles.watchBtn}
+                    className={styles.thumb}
+                    aria-label={`Watch: ${video.title}`}
                   >
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                    Watch video
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                      alt={video.title}
+                      loading="lazy"
+                    />
+                    <span className={styles.playBadge}>
+                      <svg viewBox="0 0 24 24" fill="var(--fv-neon-yellow)">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </span>
                   </a>
-                </div>
-              </article>
-            );
-          })}
+
+                  <div className={styles.cardContent}>
+                    <div className={styles.cardTitleRow}>
+                      <h3>{video.title}</h3>
+                      <span className="dark">
+                        <ShareButton url={videoUrl} title={video.title} text={video.intro} />
+                      </span>
+                    </div>
+                    <p className={styles.intro}>{video.intro}</p>
+                    <a
+                      href={videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.watchBtn}
+                    >
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                      Watch video
+                    </a>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
