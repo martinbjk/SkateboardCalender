@@ -61,7 +61,7 @@ export const featuredVideos: FeaturedVideo[] = [
     intro: "Arisa Trew becomes Australia’s youngest Olympic gold medallist 🛹🥇 – the 14-year-old dominates Women’s Park Skateboarding at Paris 2024.",
   },
   {
-    id: "mhSRk4q0cbk ",
+    id: "mhSRk4q0cbk",
     title: "H-Street Shackle Me Not (1988)",
     intro: "H-Street Shackle Me Not (1988) – the raw, groundbreaking video that changed skate videos forever. Matt Hensley, Danny Way, Tony Mag and the crew deliver pure 80s style, innovation and attitude.",
   },
