@@ -1,6 +1,6 @@
 // AUTO-GENERERAD av scripts/extract-skateparks.ts — redigera inte för hand.
 // Källa: content/articles/en/verified-indoor-skateparks-world.md
-// Senast genererad: 2026-09-07
+// Senast genererad: 2026-09-08
 
 import type { Skatepark } from './types';
 
@@ -258,6 +258,21 @@ export const verifiedIndoorSkateparks: Skatepark[] = [
     ],
     "website": "porvoo.fi/en/culture-and-leisure/youth-porvoo/porvoo-skatehall",
     "email": "porvoonskeittihalli@gmail.com",
+    "warning": null
+  },
+  {
+    "id": "grip-skatepark",
+    "name": "GRIP SkatePark",
+    "location": "Tampere, Finland",
+    "city": "Tampere",
+    "country": "Finland",
+    "region": "Europe",
+    "description": "Allows skateboarding, scooter riding, rollerblading, and BMX (no metal pegs/pedals). Membership extends hours to 9:00–21:00.",
+    "addresses": [
+      "Viinikankatu 55, 33800 Tampere"
+    ],
+    "website": "gripskatepark.fi",
+    "email": "info@thegrip.fi",
     "warning": null
   },
   {
