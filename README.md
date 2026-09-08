@@ -165,6 +165,33 @@ personligt istället för en ren embed-lista. Se
 `src/lib/media/featured-videos.ts` och `src/lib/media/featured-images.ts`
 för exakt format.
 
+### Skatepark-finder
+
+Artikeln `verified-indoor-skateparks-world` renderar sin park-lista som en
+sök- och filtrerbar komponent i stället för ren text. Parkerna extraheras
+ur artikelns markdown (region-sektionerna Europe / North America & Mexico /
+Asia / Oceania — en post per `**Namn – Stad, Land**`-block med `📍`-adress,
+`🌐`-sajt, `✉️`-e-post och ev. `⚠️`-not) till
+`src/lib/article-embeds/skateparks/verified-indoor-skateparks-world.data.ts`.
+`## Bonus:`-parken och Sverige-tabellen lämnas medvetet utanför och
+renderas som vanlig text.
+
+- **Automatiskt vid bygge:** `npm run build` kör extraktionen som ett
+  `prebuild`-steg, så en deploy speglar alltid artikelns aktuella text.
+  Misslyckas extraktionen (t.ex. en felformaterad park-rad) **stoppas inte
+  bygget** — det loggar en varning och behåller den senast committade
+  datafilen, och finder:n visar då den datan.
+- **Manuell körning** — kör detta när du ändrat artikeln, så att
+  data-diffen syns i din PR:
+
+  ```bash
+  npx tsx scripts/extract-skateparks.ts
+  ```
+
+  Strikt läge: skriver datafilen om allt validerar (minst 50 parker, alla
+  fyra regioner, inga otolkade `**…**`-rader), annars felmeddelande och
+  exit 1. Committa den uppdaterade `…data.ts`.
+
 ⚠️ **Inte helt kopplat samman än** — se [Vad som INTE är klart](#vad-som-inte-är-klart-ännu).
 
 ## Fler språk
