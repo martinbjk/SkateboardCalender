@@ -22,11 +22,19 @@ export interface ArticleEmbed {
 }
 
 export const ARTICLE_EMBEDS: Record<string, ArticleEmbed> = {
-  'verified-indoor-skateparks-world': {
-    // Ersätter de fyra verifierade region-sektionerna (Europe … Oceania).
-    // "## Bonus:"-parken och "More Swedish indoor halls" ligger efter `to`
-    // och renderas därför kvar som vanlig text.
-    splice: { from: '\n## Europe\n', to: '\n## Bonus:' },
-    render: () => <SkateparkFinder parks={verifiedIndoorSkateparks} />
-  }
+  // Registreras BARA om det finns skatepark-data. Om extraktionen skulle
+  // misslyckas utan tidigare last-known-good (tom datafil) hoppas embed:en
+  // över helt, och artikeln renderas som ren markdown med den ursprungliga
+  // park-listan i klartext — hellre det än ingen lista alls.
+  ...(verifiedIndoorSkateparks.length > 0
+    ? {
+        'verified-indoor-skateparks-world': {
+          // Ersätter de fyra verifierade region-sektionerna (Europe … Oceania).
+          // "## Bonus:"-parken och "More Swedish indoor halls" ligger efter `to`
+          // och renderas därför kvar som vanlig text.
+          splice: { from: '\n## Europe\n', to: '\n## Bonus:' },
+          render: () => <SkateparkFinder parks={verifiedIndoorSkateparks} />
+        } satisfies ArticleEmbed
+      }
+    : {})
 };

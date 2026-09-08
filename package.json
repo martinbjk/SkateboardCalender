@@ -5,6 +5,7 @@
   "description": "Global live kalender för skateboard-tävlingar och events, byggd med Next.js.",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/extract-skateparks.ts --build",
     "build": "next build",
     "postbuild": "node scripts/fix-html-lang.mjs",
     "start": "npx serve out",

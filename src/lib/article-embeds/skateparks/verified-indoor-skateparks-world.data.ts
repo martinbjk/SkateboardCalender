@@ -1,4 +1,4 @@
-// AUTO-GENERERAD av scripts/extract-skateparks.ts — redigera inte för hand.
+// AUTO-GENERERAD av scripts/extract-skateparks.ts (körs som `prebuild`) — redigera inte för hand.
 // Källa: content/articles/en/verified-indoor-skateparks-world.md
 // Senast genererad: 2026-09-08
 
