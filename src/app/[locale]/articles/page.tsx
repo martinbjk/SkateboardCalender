@@ -85,7 +85,7 @@ export default async function ArticlesPage({
         </div>
       </div>
 
-      <FeaturedVideos />
+      <FeaturedVideos locale={locale} />
     </>
   );
 }
