@@ -9,15 +9,13 @@
 //
 // No props needed — it reads everything from src/data/featured-videos.ts.
 //
-// ASSUMPTION TO VERIFY: import path below is "@/components/ShareButton" —
-// change it if your ShareButton.tsx file lives somewhere else.
 import { ShareButton } from "@/components/ShareButton";
 import { featuredVideos } from "@/data/featured-videos";
 import styles from "./FeaturedVideos.module.css";
 
-// ASSUMPTION TO VERIFY: replace with your existing site-URL constant if you
-// already have one (e.g. from the lib you used to fix the OG absolute-URL bug).
-const SITE_URL = "https://skateboardeventcalendar.com";
+// Uses the same env var already set in .github/workflows/pages-deploy.yml
+// for GitHub Pages deploys, with a local-dev fallback.
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://skateboardeventcalendar.com";
 
 export default function FeaturedVideos() {
   const sectionUrl = `${SITE_URL}/articles#featured-videos`;
