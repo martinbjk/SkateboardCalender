@@ -112,6 +112,11 @@ Opened 2017; 1,430 m² indoors plus 620 m² outdoors at Voldsløkka.
 📍 Pajatie 6, Tarmola, Porvoo
 🌐 porvoo.fi/en/culture-and-leisure/youth-porvoo/porvoo-skatehall · ✉️ porvoonskeittihalli@gmail.com
 
+**GRIP SkatePark – Tampere, Finland**
+Allows skateboarding, scooter riding, rollerblading, and BMX (no metal pegs/pedals). Membership extends hours to 9:00–21:00.
+📍 Viinikankatu 55, 33800 Tampere
+🌐 gripskatepark.fi · ✉️ info@thegrip.fi
+
 **Kontula Luuppi – Helsinki, Finland**
 Currently Helsinki's only indoor skate hall, part of a youth center.
 📍 Emännänpolku 1, 00940 Helsinki
