@@ -18,7 +18,7 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'articles' });
   const pageUrl = `${SITE_URL}/${locale}/articles/`;
-
+    const ogImageUrl = `${SITE_URL}/images/articles/og-featured-videos.png`;
   return {
     title: t('pageTitle'),
     description: t('metaDescription'),
@@ -27,7 +27,8 @@ export async function generateMetadata({
       title: t('pageTitle'),
       description: t('metaDescription'),
       url: pageUrl,
-      type: 'website'
+      type: 'website',
+       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: t('pageTitle')}]
     }
   };
 }
