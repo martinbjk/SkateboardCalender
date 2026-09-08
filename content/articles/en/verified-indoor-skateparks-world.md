@@ -66,7 +66,6 @@ Street park + bowl (~600 m² street area) plus pumptrack, resi ramp, trampolines
 Indoor skate hall.
 📍 Rydsvägen 5B, Linköping
 🌐 hangaren.org · ✉️ info@hangaren.org
-⚠️ Site currently indicates closed for renovation — check status before visiting.
 
 **Dalbanan – Borlänge, Sweden**
 Described by its own association as Sweden's largest bowl, street, and vert ramp indoors. Membership required.
