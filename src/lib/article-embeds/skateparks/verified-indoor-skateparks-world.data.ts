@@ -123,7 +123,7 @@ export const verifiedIndoorSkateparks: Skatepark[] = [
     ],
     "website": "hangaren.org",
     "email": "info@hangaren.org",
-    "warning": "Site currently indicates closed for renovation — check status before visiting."
+    "warning": null
   },
   {
     "id": "dalbanan",
