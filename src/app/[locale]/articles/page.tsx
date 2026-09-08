@@ -54,7 +54,7 @@ export default async function ArticlesPage({
             <Link
               key={article.slug}
               href={`/articles/${article.slug}`}
-              className="group block rounded-stamp border border-asphalt-700/30 bg-white/60 p-5 shadow-card transition hover:border-spray hover:shadow-card-hover dark:border-chalk-500/15 dark:bg-asphalt-900/60 dark:shadow-/* ⚠️ CUT OFF IN SCREENSHOT — paste your original line 55 here, don't use this as-is */"
+              className="group block rounded-stamp border border-asphalt-700/30 bg-white/60 p-5 shadow-card transition hover:border-spray hover:shadow-card-hover dark:border-chalk-500/15 dark:bg-asphalt-900/60 dark:shadow-card-dark dark:hover:shadow-card-hover-dark"
             >
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500">
                 <span>{formatArticleDate(article.date, locale)}</span>
