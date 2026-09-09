@@ -31,6 +31,9 @@ export function Header() {
           <Link href="/" className="hover:text-spray">
             {t('nav.home')}
           </Link>
+          <Link href="/articles" className="hover:text-spray">
+            {t('articles.navTitle')}
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2">
