@@ -27,6 +27,11 @@ Rain, snow, or dark winter months shouldn't mean a traveling skater has to sit s
 
 ## Europe
 
+**La Fièvre (HS36) – Lausanne, Switzerland**
+2,000 m² facility for skateboarding, BMX, and rollerblading, run as an association since 1993, in partnership with the City of Lausanne.
+📍 Av. de Sévelin 36, 1004 Lausanne
+🌐 fievre.ch
+
 **Rampworx Skatepark – Aintree, Liverpool, UK**
 Over 6,500 m², one of the UK's largest indoor facilities, for skateboarding, BMX, inline skating, and scooters.
 📍 1-3 Leckwith Road, Aintree, Liverpool L30 6UE
