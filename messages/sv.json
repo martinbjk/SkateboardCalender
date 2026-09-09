@@ -10,7 +10,8 @@
     "home": "Kalender",
     "submit": "Föreslå event",
     "about": "Om sajten",
-    "submitShort": "Föreslå"
+    "submitShort": "Föreslå",
+    "info": "Info"
   },
   "hero": {
     "eyebrow": "Live · Global · Community-driven",
@@ -438,7 +439,6 @@
   "bottomNav": {
     "home": "Hem",
     "articles": "Artiklar",
-    "info": "Info",
     "menuTitle": "Meny",
     "close": "Stäng"
   }

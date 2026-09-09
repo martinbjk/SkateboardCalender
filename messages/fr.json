@@ -10,7 +10,8 @@
     "home": "Calendrier",
     "submit": "Proposer un événement",
     "about": "À propos",
-    "submitShort": "Proposer"
+    "submitShort": "Proposer",
+    "info": "Infos"
   },
   "hero": {
     "eyebrow": "En direct · Mondial · Animé par la communauté",
@@ -438,7 +439,6 @@
   "bottomNav": {
     "home": "Accueil",
     "articles": "Articles",
-    "info": "Infos",
     "menuTitle": "Menu",
     "close": "Fermer"
   }

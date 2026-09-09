@@ -72,7 +72,7 @@ export default function BottomNav() {
           expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
           icon={<Info size={20} />}
-          label={t('bottomNav.info')}
+          label={t('nav.info')}
         />
       </nav>
 

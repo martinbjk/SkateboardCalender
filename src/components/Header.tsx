@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ThemeToggle } from './ThemeToggle';
+import InfoMenu from './nav/InfoMenu';
 
 export function Header() {
   const t = useTranslations();
@@ -34,6 +35,7 @@ export function Header() {
           <Link href="/articles" className="hover:text-spray">
             {t('articles.navTitle')}
           </Link>
+          <InfoMenu />
         </nav>
 
         <div className="flex items-center gap-2">

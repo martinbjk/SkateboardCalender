@@ -10,7 +10,8 @@
     "home": "カレンダー",
     "submit": "イベントを提案",
     "about": "このサイトについて",
-    "submitShort": "提案"
+    "submitShort": "提案",
+    "info": "情報"
   },
   "hero": {
     "eyebrow": "ライブ・グローバル・コミュニティ運営",
@@ -438,7 +439,6 @@
   "bottomNav": {
     "home": "ホーム",
     "articles": "記事",
-    "info": "情報",
     "menuTitle": "メニュー",
     "close": "閉じる"
   }

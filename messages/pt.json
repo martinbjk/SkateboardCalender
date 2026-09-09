@@ -10,7 +10,8 @@
     "home": "Calendário",
     "submit": "Sugerir evento",
     "about": "Sobre",
-    "submitShort": "Sugerir"
+    "submitShort": "Sugerir",
+    "info": "Info"
   },
   "hero": {
     "eyebrow": "Ao vivo · Global · Feito pela comunidade",
@@ -438,7 +439,6 @@
   "bottomNav": {
     "home": "Início",
     "articles": "Artigos",
-    "info": "Info",
     "menuTitle": "Menu",
     "close": "Fechar"
   }

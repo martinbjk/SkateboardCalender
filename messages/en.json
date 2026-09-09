@@ -10,7 +10,8 @@
     "home": "Calendar",
     "submit": "Submit event",
     "about": "About",
-    "submitShort": "Submit"
+    "submitShort": "Submit",
+    "info": "Info"
   },
   "hero": {
     "eyebrow": "Live · Global · Community-driven",
@@ -438,7 +439,6 @@
   "bottomNav": {
     "home": "Home",
     "articles": "Articles",
-    "info": "Info",
     "menuTitle": "Menu",
     "close": "Close"
   }
