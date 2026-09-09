@@ -1,12 +1,13 @@
 /**
- * MENYINNEHÅLL — lägg till/ta bort sidor här, inget annat behöver ändras.
+ * INFO-MENYNS INNEHÅLL — sidorna i bottom-navens "Info"-sheet (samma som
+ * footern listar). Hem och Artiklar är egna flikar i BottomNav och står
+ * därför INTE här. Lägg till/ta bort sidor här, inget annat behöver ändras.
  *
  * Varje rad har ANTINGEN:
  *   - translationKey: en BEFINTLIG next-intl-nyckel (samma mönster som
  *     Footer.tsx redan använder) — visas översatt på alla 7 språk
- *   - label: en hårdkodad text — visas likadan oavsett språk. Använd
- *     bara detta tillfälligt, för sidor som ännu inte har en egen
- *     översättningsnyckel (som /articles just nu).
+ *   - label: en hårdkodad text — visas likadan oavsett språk. Använd bara
+ *     tillfälligt, för sidor utan egen översättningsnyckel.
  */
 export interface NavItem {
   href: string;
@@ -15,7 +16,6 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { translationKey: "articles.navTitle", href: "/articles" },
   { translationKey: "disciplines.navTitle", href: "/disciplines" },
   { translationKey: "history.navTitle", href: "/history" },
   { translationKey: "about.title", href: "/about" },

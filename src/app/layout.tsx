@@ -20,8 +20,9 @@ import './globals.css';
  * BottomNav ligger istället i [locale]/layout.tsx, direkt efter
  * <Footer />, där NextIntlClientProvider finns.
  *
- * pb-12 här matchar BottomNav:s höjd (h-12/48px) så att den fasta
- * raden aldrig täcker sidans eget innehåll längst ner.
+ * Botten-paddingen matchar BottomNav:s höjd (h-14 + safe-area) så att
+ * den fasta raden aldrig täcker sidans innehåll — men bara på mobil,
+ * eftersom BottomNav är `sm:hidden` (sm:pb-0 nollställer på desktop).
  */
 export default function RootLayout({ children }: { children: ReactNode }) {
   // lang="sv" är en build-tids-platshållare — scripts/fix-html-lang.mjs
@@ -36,7 +37,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           data-cf-beacon='{"token": "f96776bf6f1b40c79cb299c6ab382f34"}'
         />
       </head>
-      <body className="font-body flex min-h-screen flex-col pb-12">{children}</body>
+      <body className="font-body flex min-h-screen flex-col pb-[calc(3.5rem+env(safe-area-inset-bottom))] sm:pb-0">
+        {children}
+      </body>
     </html>
   );
 }

@@ -434,5 +434,12 @@
     "onlyInEnglish": "英語のみ",
     "onlyInEnglishNote": "この記事は現在、英語のみで提供されています。",
     "backToArticles": "すべての記事"
+  },
+  "bottomNav": {
+    "home": "ホーム",
+    "articles": "記事",
+    "info": "情報",
+    "menuTitle": "メニュー",
+    "close": "閉じる"
   }
 }

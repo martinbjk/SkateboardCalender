@@ -434,5 +434,12 @@
     "onlyInEnglish": "Nur Englisch",
     "onlyInEnglishNote": "Dieser Artikel ist derzeit nur auf Englisch verfügbar.",
     "backToArticles": "Alle Artikel"
+  },
+  "bottomNav": {
+    "home": "Start",
+    "articles": "Artikel",
+    "info": "Info",
+    "menuTitle": "Menü",
+    "close": "Schließen"
   }
 }

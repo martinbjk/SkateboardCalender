@@ -434,5 +434,12 @@
     "onlyInEnglish": "Endast engelska",
     "onlyInEnglishNote": "Den här artikeln finns än så länge bara på engelska.",
     "backToArticles": "Alla artiklar"
+  },
+  "bottomNav": {
+    "home": "Hem",
+    "articles": "Artiklar",
+    "info": "Info",
+    "menuTitle": "Meny",
+    "close": "Stäng"
   }
 }
