@@ -1,0 +1,29 @@
+{
+  "slug": "folkestone-survival-of-the-sickest-2026-park",
+  "name": "Survival of the Sickest – Folkestone",
+  "category": ["park"],
+  "level": "amateur",
+  "startDate": "2026-10-17T09:30:00+01:00",
+  "endDate": "2026-10-17T18:00:00+01:00",
+  "timezone": "Europe/London",
+  "location": {
+    "venue": "F51 Skatepark",
+    "city": "Folkestone",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "continent": "europe",
+    "lat": 51.0814,
+    "lng": 1.1828
+  },
+  "description": {
+    "sv": "Skateboard GB:s juniortävling \"Survival of the Sickest\" i Folkestone, på F51 Skatepark — park/bowl-tävling för ungdomar (Under 12 och Under 16), fokus på kul och utveckling snarare än elitnivå.",
+    "en": "Skateboard GB's junior competition series \"Survival of the Sickest\" comes to F51 Skatepark, Folkestone — a park/bowl event for youngsters (Under 12 and Under 16 age categories), focused on fun and progression rather than elite competition."
+  },
+  "officialUrl": "https://skateboardgb.org/event/folkestone-survival-of-the-sickest-2/",
+  "organizer": "Skateboard GB",
+  "source": {
+    "note": "Fetched directly from Skateboard GB's official event page. Page is tagged 'Junior Event' — level set to \"amateur\" as a best guess since I don't know your schema's exact enum values for junior/youth events; verify against src/lib/schema.ts. Coordinates are Folkestone town-level approximations, not the exact venue pin — the venue name/address should be enough for the Google Maps text-search fallback regardless.",
+    "url": "https://skateboardgb.org/event/folkestone-survival-of-the-sickest-2/",
+    "retrievedAt": "2026-09-04T00:00:00+01:00"
+  }
+}
