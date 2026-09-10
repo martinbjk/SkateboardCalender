@@ -46,9 +46,14 @@ export async function generateMetadata({
       : {})
   };
 
+  // metaDescription är en valfri frontmatter-override enbart för
+  // sökmotor-/delningsbeskrivningen. Saknas den används excerpt, som
+  // annars också är den synliga ingresstexten på sidan.
+  const metaDescription = article.metaDescription ?? article.excerpt;
+
   return {
     title: article.title,
-    description: article.excerpt,
+    description: metaDescription,
     // Alla artiklar finns på samma URL i alla sju språk (engelskt
     // innehåll som reserv där översättning saknas), så samma reciproka
     // hreflang-kluster som eventsidorna. Se lib/seo.
@@ -60,7 +65,7 @@ export async function generateMetadata({
     // annars, precis som kommentaren i events/twitter-image.tsx beskriver).
     openGraph: {
       title: article.title,
-      description: article.excerpt,
+      description: metaDescription,
       url: pageUrl,
       type: 'article',
       images: [ogImage]
@@ -68,7 +73,7 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: article.title,
-      description: article.excerpt,
+      description: metaDescription,
       images: [ogImage]
     }
   };

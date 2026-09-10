@@ -5,6 +5,7 @@ category: "reportage"
 lang: "en"
 date: "2026-09-05"
 excerpt: "A region-by-region guide to verified indoor skateparks worldwide, with addresses, contact details, and sources for every entry — for skaters planning a trip who don't want to show up at a park that's been closed for years."
+metaDescription: "68+ verified indoor skateparks worldwide — real addresses, contacts & sources so you never show up to a closed one."
 ogImage: "/images/articles/verified-indoor-skateparks-world/og-image.png"
 ---
 

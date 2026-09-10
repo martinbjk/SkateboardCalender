@@ -41,6 +41,10 @@ export const ArticleFrontmatterSchema = z.object({
   lang: z.string().refine(isLocale, 'lang måste vara en känd språkkod (se src/i18n/config.ts)'),
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'date måste vara på formen YYYY-MM-DD'),
   excerpt: z.string().min(1),
+  // Valfri: egen text enbart för <meta name="description"> + og/twitter-
+  // description. Saknas den faller artikelsidan tillbaka på excerpt, så
+  // alla andra artiklar är helt oförändrade.
+  metaDescription: z.string().min(1).optional(),
   ogImage: z
     .string()
     .regex(/^\/images\/articles\/.+/, 'ogImage måste vara en absolut /images/articles/…-sökväg')
