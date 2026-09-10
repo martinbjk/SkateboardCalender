@@ -28,7 +28,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-6 font-mono-tight text-xs uppercase tracking-wide sm:flex">
+        <nav className="hidden items-center gap-6 font-mono text-[15px] font-bold uppercase tracking-[0.05em] sm:flex">
           <Link href="/" className="hover:text-spray">
             {t('nav.home')}
           </Link>

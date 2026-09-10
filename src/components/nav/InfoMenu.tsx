@@ -97,19 +97,25 @@ export default function InfoMenu() {
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
         className={clsx(
-          'flex items-center gap-1 transition-colors hover:text-spray',
+          // Explicit typografi här (inte bara ärvd från <nav>): en <button>
+          // ärver inte text-transform tillförlitligt, så "Info" måste tvingas
+          // versal på själva knappen för att matcha CALENDAR / ARTICLES.
+          'flex items-center gap-1 font-mono text-[15px] font-bold uppercase tracking-[0.05em] transition-colors hover:text-spray',
           (open || anyActive) && 'text-spray'
         )}
       >
         {t('nav.info')}
-        <ChevronDown size={12} className={clsx('transition-transform', open && 'rotate-180')} />
+        <ChevronDown size={13} className={clsx('transition-transform', open && 'rotate-180')} />
       </button>
 
       {open && (
         <div
           role="menu"
           aria-label={t('nav.info')}
-          className="absolute left-0 top-full z-50 mt-2 w-52 overflow-hidden rounded-stamp border border-asphalt-700/20 bg-concrete-100 py-1 font-body normal-case tracking-normal shadow-lg dark:border-chalk-500/20 dark:bg-asphalt-900"
+          /* font-body/text-sm/font-normal/normal-case/tracking-normal nollställer
+             den versala, feta, glesa nav-typografin så panelen blir vanlig
+             menytext (samma som språk-dropdownen). */
+          className="absolute left-0 top-full z-50 mt-2 w-52 overflow-hidden rounded-stamp border border-asphalt-700/20 bg-concrete-100 py-1 font-body text-sm font-normal normal-case tracking-normal shadow-lg dark:border-chalk-500/20 dark:bg-asphalt-900"
         >
           {NAV_ITEMS.map((item) => {
             const active = isPathIn(pathname, item.href);
