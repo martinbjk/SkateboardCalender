@@ -1,0 +1,29 @@
+{
+  "slug": "sheffield-house-comp-2026",
+  "name": "House Comp 2026 – Sheffield",
+  "category": ["park"],
+  "level": "pro",
+  "startDate": "2026-09-12T10:00:00+01:00",
+  "endDate": "2026-09-12T18:00:00+01:00",
+  "timezone": "Europe/London",
+  "location": {
+    "venue": "The House Skatepark",
+    "city": "Sheffield",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "continent": "europe",
+    "lat": 53.3958,
+    "lng": -1.4783
+  },
+  "description": {
+    "sv": "Sheffields årliga \"House Comp\" på The House Skatepark — norra Englands mest regelbundna skatetävling, med klasser för Under 16, damer, över 16 och proffs.",
+    "en": "Sheffield's annual \"House Comp\" at The House Skatepark — the north of England's most regular skateboarding competition, with Under 16, women's, over-16 and pro categories."
+  },
+  "officialUrl": "https://skateboardgb.org/event/sheffield-house-comp-2026/",
+  "organizer": "The House Skatepark / Skateboard GB",
+  "source": {
+    "note": "Confirmed via The House Skatepark's own site (thehouseskatepark.co.uk) and the Skateboard GB events listing: Saturday 12th September 2026, 10am until 'around 6'. This is a mixed-level event (12-and-under jam through to pro/sponsored categories) — level set to \"pro\" since it includes a pro category, but it's genuinely open to multiple levels; verify against your schema if that matters for filtering. Postcode varies slightly between sources (S3 8AS on an older SBGB page vs S3 8AU on the venue's own current site) — coordinates are Sheffield-city-level approximations, not the exact venue pin.",
+    "url": "https://www.thehouseskatepark.co.uk/news/2026/8/13/house-comp-2026",
+    "retrievedAt": "2026-09-04T00:00:00+01:00"
+  }
+}
