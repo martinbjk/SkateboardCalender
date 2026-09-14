@@ -256,7 +256,7 @@ Officially opened January 1993; home of Tampa Am and Tampa Pro.
 **5050 Skatepark – Staten Island, USA**
 Privately owned, ~8,000 sq ft, opened 2012.
 📍 354 Front St, Stapleton, Staten Island, NY
-🌐 5050skatepark.com
+Phone; (347)857-6007
 
 **Vans Skate Space 198 – Brooklyn, USA**
 Free public indoor skatepark built by Vans/California Skateparks, opened 2020.
