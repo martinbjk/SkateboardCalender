@@ -1,0 +1,29 @@
+{
+  "slug": "world-skate-vert-open-2026-shenzhen",
+  "name": "World Skate Skateboarding Vert Open 2026",
+  "category": ["vert"],
+  "level": "pro",
+  "startDate": "2026-11-26T09:00:00+08:00",
+  "endDate": "2026-11-29T18:00:00+08:00",
+  "timezone": "Asia/Shanghai",
+  "location": {
+    "venue": "Shenzhen Universiade Sports Centre",
+    "city": "Shenzhen",
+    "country": "China",
+    "countryCode": "CN",
+    "continent": "asia",
+    "lat": 22.719,
+    "lng": 114.108
+  },
+  "description": {
+    "sv": "World Skates officiella Vert Open 2026 — internationell elittävling i vert-ramp på Shenzhen Universiade Sports Centre, med 30 000 USD i prispengar (Men/Women Open) samt en junior-klass (Under 16) utan prispengar. World Skate-godkänt event.",
+    "en": "World Skate's official Vert Open 2026 — an international elite vertical-ramp competition at the Shenzhen Universiade Sports Centre, with USD 30,000 in prize money (Men/Women Open) plus a Junior category (Under 16) without prize money. A World Skate approved event."
+  },
+  "officialUrl": "https://www.worldskate.org",
+  "organizer": "World Skate / Local Organizing Committee (LOC)",
+  "source": {
+    "note": "From World Skate's official Bulletin #01 (PDF, dated 18/09/2026 — note the bulletin itself has a typo, '18/09/202' with the last digit cut off, but context makes 2026 clear). Competition runs Nov 26-29 with athlete check-in required Nov 25 (not included in startDate — only the actual practice/competition days are). Exact daily schedule was NOT yet published ('detailed event schedule will be published in the second Bulletin') — 09:00-18:00 is an unconfirmed placeholder covering the whole span, not real daily times. No direct event webpage URL was given in the bulletin, so officialUrl falls back to the main worldskate.org site; contact for questions is skateboarding@worldskate.org, and for visa/accommodation: Yuna, yuanyang@sebaclub.com. Coordinates are Longgang District, Shenzhen approximations, not the exact venue pin.",
+    "url": "https://www.worldskate.org",
+    "retrievedAt": "2026-09-18T00:00:00+08:00"
+  }
+}
