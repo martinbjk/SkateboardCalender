@@ -304,6 +304,11 @@ Billed as Calgary's only indoor skatepark, 20,000 sq ft, relocated January 2024.
 📍 Carretera Cancún–Chetumal Km 72, Puerto Aventuras
 🌐 woodwardrivieramaya.com
 
+**HMI Skate Park – Hope, British Columbia, Canada**
+Rebuilt from an old hardware store into the Fraser Valley's only indoor skatepark, run by founder Mike "Hippie Mike" Faux since 2021; offers lessons, camps, drop-in sessions and a pro shop. Follow on Instagram.
+📍 840 5th Ave, Hope, BC V0X 1L4
+☎ +1 236-355-1317
+
 ## Asia
 
 **Murasaki Park Tokyo – Adachi, Tokyo, Japan**
