@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1C1C1C"/>
+      <stop offset="100%" stop-color="#101010"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A3F4D"/>
+      <stop offset="100%" stop-color="#1B2A34"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- safety yellow accent bar, top -->
+  <rect x="0" y="0" width="1200" height="10" fill="#FFD400"/>
+
+  <!-- coordinate grid, faint, chart motif -->
+  <g stroke="#33403A" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- stylised coastline / wave shape, bottom third -->
+  <path d="M0,470 C120,430 180,510 300,480 C420,450 480,520 620,485 C760,450 820,510 940,478 C1040,455 1100,495 1200,472 L1200,630 L0,630 Z" fill="url(#wave)"/>
+  <path d="M0,500 C130,470 190,530 320,505 C440,482 500,540 640,510 C770,484 830,530 950,502 C1050,482 1110,515 1200,498 L1200,630 L0,630 Z" fill="#233240" opacity="0.85"/>
+
+  <!-- spot markers on the wave line -->
+  <g fill="#FFD400">
+    <circle cx="150" cy="465" r="6"/>
+    <circle cx="430" cy="472" r="6"/>
+    <circle cx="700" cy="468" r="8"/>
+    <circle cx="960" cy="470" r="6"/>
+  </g>
+  <g font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="13" fill="#C9D3D0">
+    <text x="150" y="450" text-anchor="middle">57.09N</text>
+    <text x="430" y="457" text-anchor="middle">56.27N</text>
+    <text x="700" y="450" text-anchor="middle">57.04N</text>
+    <text x="960" y="455" text-anchor="middle">55.03N</text>
+  </g>
+
+  <!-- eyebrow -->
+  <text x="64" y="150" font-family="'IBM Plex Mono','Courier New',monospace" font-size="20" letter-spacing="2" fill="#FFD400">REPORTAGE — BOARD SPORTS</text>
+
+  <!-- headline, bold black-style using system fallback -->
+  <text x="60" y="240" font-family="'Archivo Black','Arial Black',sans-serif" font-size="76" font-weight="900" fill="#F5F3EC">COLD WATER</text>
+  <text x="60" y="320" font-family="'Archivo Black','Arial Black',sans-serif" font-size="76" font-weight="900" fill="#F5F3EC">LINES</text>
+
+  <!-- subhead -->
+  <text x="64" y="368" font-family="'IBM Plex Sans',Arial,sans-serif" font-size="24" fill="#B7C4C0">60+ surf spots, mapped and sourced — Sweden &amp; Denmark</text>
+
+  <!-- bottom-right stamp -->
+  <text x="1136" y="600" font-family="'IBM Plex Mono','Courier New',monospace" font-size="15" fill="#7C8B86" text-anchor="end">SKATEBOARDEVENTCALENDAR.COM</text>
+</svg>
