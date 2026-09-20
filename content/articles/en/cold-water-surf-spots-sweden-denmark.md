@@ -1,6 +1,7 @@
 ---
 title: "Cold Water Lines: A Surfer's Map of Sweden and Denmark"
 slug: "cold-water-surf-spots-sweden-denmark"
+lang: "en"
 date: "2026-09-20"
 category: "reportage"
 excerpt: "Long before there were skateparks, there were surf breaks — chasing a wave that might not show up for months is the same hunt as chasing a contest swell. We mapped every named surf spot we could verify along the Swedish coast and the Danish west coast, from a Kattegat harbour wall to Denmark's legendary Cold Hawaii, with sources for every one."
@@ -32,6 +33,14 @@ The southwest Kattegat coast between Gothenburg and Malmö is, by a wide margin,
 **Mellbystrand** — 56.5540, 12.8070 (approx). A long sand beach in Laholm Bay, works on west-to-northwest swell.
 
 **Skrea Strand, Falkenberg** — 56.8830, 12.4700 (approx). A popular swimming and kite beach that occasionally delivers surfable waves in the right west wind.
+
+**Östra Stranden, Halmstad** — 56.6690, 12.8850 (approx, local knowledge). The east-side beach at the mouth of the Nissan river in central Halmstad. A pure beach break — works entirely at the mercy of wind and swell direction on the day, no reef or point to shape it.
+
+**Tylösand / Tylöbukten** — 56.6250, 12.7850 (approx, local knowledge). Halmstad's best-known beach resort, just south of the city — long open sand, another wind-and-swell-dependent beach break rather than a fixed setup.
+
+**Ringenäs** — 56.6450, 12.8100 (approx, local knowledge). The headland forming the northern end of Tylöbukten. Same beach-break character as its neighbours — surfable when wind and swell line up, flat when they don't.
+
+**Haverdalsstrand / Haverdalsbukten** — 56.7500, 12.7500 (approx, local knowledge). North of Halmstad, a further stretch of open beach break with the same wind-dependent nature as the rest of this part of the coast.
 
 ## II. Skåne — reefs, harbours and Österlen
 
@@ -146,4 +155,4 @@ This map therefore consistently separates three levels of confidence: a **source
 - Naturkartan — [Surfing in Halland County](https://www.naturkartan.se/en/counties/hallands-lan/surfing)
 - South Baltic Tourist — [sbt.ug.edu.pl](https://sbt.ug.edu.pl/) (Öland, Bornholm, Malmö)
 - Kite & Windsurfing Guide — [Løkken](https://www.kite-and-windsurfing-guide.com/spots/kiteboarding-windsurfing-sup/lokken-northern-jutland-denmark.html)
-- Local knowledge: Skäret's exact coordinate, Baskemölla harbour, and the identification of the Kåseberga/Ale's Stones area were contributed directly by a reader during research for this piece.
+- Local knowledge: Skäret's exact coordinate, Baskemölla harbour, the identification of the Kåseberga/Ale's Stones area, and the Halmstad-area beach breaks (Östra Stranden, Tylösand/Tylöbukten, Ringenäs, Haverdalsstrand) were contributed directly by a reader during research for this piece.
