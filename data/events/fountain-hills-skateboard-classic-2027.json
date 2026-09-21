@@ -1,0 +1,29 @@
+{
+  "slug": "fountain-hills-skateboard-classic-2027",
+  "name": "Skateboard Classic 2027",
+  "category": ["park"],
+  "level": "amateur",
+  "startDate": "2027-01-30T14:00:00-07:00",
+  "endDate": "2027-01-30T17:30:00-07:00",
+  "timezone": "America/Phoenix",
+  "location": {
+    "venue": "Desert Vista Skate Park",
+    "city": "Fountain Hills",
+    "country": "United States",
+    "countryCode": "US",
+    "continent": "north-america",
+    "lat": 33.598,
+    "lng": -111.706
+  },
+  "description": {
+    "sv": "Årlig skateboardtävling på Desert Vista Skate Park i Fountain Hills, Arizona — öppna klasser efter ålder (under 8 upp till 18+) plus en sponsrad klass, 90 sekunders körning per åkare.",
+    "en": "Annual skateboarding competition at Desert Vista Skate Park in Fountain Hills, Arizona — open age divisions (under 8 through 18+) plus a sponsored division, 90-second runs per skater."
+  },
+  "officialUrl": "https://www.experiencefountainhills.org/events/2026/skateboard-classic-2026",
+  "organizer": "Town of Fountain Hills Parks & Recreation",
+  "source": {
+    "note": "IMPORTANT DATE DISCREPANCY on the source page: the page title and top 'Date:' field both say 2027, but the body-text paragraph says 'Saturday, January 30st, 2026' — that's internally inconsistent, since Jan 30 2026 is a Friday, not a Saturday, while Jan 30 2027 IS a Saturday. Went with 2027 as the logically-consistent date; double-check with the organizer (Sarah Lind, slind@fountainhillsaz.gov, 480-816-5130) if possible. Level is mixed (Open divisions by age plus a Sponsored/pro division) — set to \"amateur\" since that's the bulk of the event, but it's not a clean fit either way. Coordinates are Fountain Hills town-level approximations, not the exact skatepark pin.",
+    "url": "https://www.experiencefountainhills.org/events/2026/skateboard-classic-2026",
+    "retrievedAt": "2026-09-04T00:00:00-07:00"
+  }
+}

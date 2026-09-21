@@ -280,7 +280,7 @@ Officially opened January 1993; home of Tampa Am and Tampa Pro.
 **5050 Skatepark – Staten Island, USA**
 Privately owned, ~8,000 sq ft, opened 2012.
 📍 354 Front St, Stapleton, Staten Island, NY
-🌐 5050skatepark.com
+Phone; (347)857-6007
 
 **Vans Skate Space 198 – Brooklyn, USA**
 Free public indoor skatepark built by Vans/California Skateparks, opened 2020.
@@ -327,6 +327,11 @@ Billed as Calgary's only indoor skatepark, 20,000 sq ft, relocated January 2024.
 20,000–29,000 sq ft, part of the Hard Rock Hotel Riviera Maya, opened 2017.
 📍 Carretera Cancún–Chetumal Km 72, Puerto Aventuras
 🌐 woodwardrivieramaya.com
+
+**HMI Skate Park – Hope, British Columbia, Canada**
+Rebuilt from an old hardware store into the Fraser Valley's only indoor skatepark, run by founder Mike "Hippie Mike" Faux since 2021; offers lessons, camps, drop-in sessions and a pro shop. Follow on Instagram.
+📍 840 5th Ave, Hope, BC V0X 1L4
+☎ +1 236-355-1317
 
 ## Asia
 

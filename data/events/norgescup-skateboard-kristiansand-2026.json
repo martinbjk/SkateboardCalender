@@ -1,0 +1,29 @@
+{
+  "slug": "norgescup-skateboard-kristiansand-2026",
+  "name": "Norgescup Skateboard Kristiansand 2026",
+  "category": ["street", "park"],
+  "level": "pro",
+  "startDate": "2026-11-14T09:00:00+01:00",
+  "endDate": "2026-11-14T18:00:00+01:00",
+  "timezone": "Europe/Oslo",
+  "location": {
+    "venue": "Blå Kors Aktivitetspark",
+    "city": "Kristiansand",
+    "country": "Norway",
+    "countryCode": "NO",
+    "continent": "europe",
+    "lat": 58.1467,
+    "lng": 7.9956
+  },
+  "description": {
+    "sv": "Norgescup i skateboard (street & miniramp) i Kristiansand, på Blå Kors Aktivitetspark (tidigare Vision skatehall). Klasser för både junior och senior, med prispengar i seniorklasserna.",
+    "en": "Norway Cup skateboarding event (street & mini-ramp) in Kristiansand, at Blå Kors Aktivitetspark (formerly Vision skatehall). Junior and senior classes, with prize money in the senior classes."
+  },
+  "officialUrl": "https://www.brettforbundet.no/events/norgescup-skateboard-kristiansand-2026",
+  "organizer": "Kristiansand Skateboardklubb / Brettforbundet",
+  "source": {
+    "note": "Date confirmed (single day, 14 November 2026) via Brettforbundet's official event page. Exact daily start/end times were NOT published yet ('Mer info kommer nærmere konkurransen' — more info closer to the event) — 09:00-18:00 is an unconfirmed placeholder, verify closer to the date. Discipline listed on the page as 'Street & Miniramp' — mapped to [\"street\", \"park\"] since your schema's category list doesn't have a distinct 'miniramp' option; check src/lib/schema.ts if a closer match exists. Level set to \"pro\" since seniors compete for prize money, but juniors also compete — mixed-level event like a couple of the other recent additions. Coordinates are Kristiansand city-level approximations, not the exact venue pin.",
+    "url": "https://www.brettforbundet.no/events/norgescup-skateboard-kristiansand-2026",
+    "retrievedAt": "2026-09-04T00:00:00+01:00"
+  }
+}

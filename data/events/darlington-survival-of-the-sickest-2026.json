@@ -1,0 +1,29 @@
+{
+  "slug": "darlington-survival-of-the-sickest-2026",
+  "name": "Survival of the Sickest – Darlington",
+  "category": ["street"],
+  "level": "amateur",
+  "startDate": "2026-09-19T09:30:00+01:00",
+  "endDate": "2026-09-19T18:00:00+01:00",
+  "timezone": "Europe/London",
+  "location": {
+    "venue": "4 Motion Skatepark",
+    "city": "Darlington",
+    "country": "United Kingdom",
+    "countryCode": "GB",
+    "continent": "europe",
+    "lat": 54.5378,
+    "lng": -1.5589
+  },
+  "description": {
+    "sv": "Skateboard GB:s juniortävling \"Survival of the Sickest\" i Darlington, på 4 Motion Skatepark — street-tävling för ungdomar (Under 12 och Under 16), fokus på kul och utveckling.",
+    "en": "Skateboard GB's junior competition series \"Survival of the Sickest\" comes to 4 Motion Skatepark, Darlington — a street event for youngsters (Under 12 and Under 16 age categories), focused on fun and progression."
+  },
+  "officialUrl": "https://skateboardgb.org/event/darlington-survival-of-the-sickest/",
+  "organizer": "Skateboard GB",
+  "source": {
+    "note": "Date and discipline (19th September, STREET) confirmed via Skateboard GB's official Survival of the Sickest series page. I could not directly load the individual event page (blocked by my tools), so exact daily times are an ESTIMATE based on the standard SOTS pattern used at other 2026 stops (9:30am-6pm) — not confirmed for this specific date, verify before relying on it. Venue address (Faverdale Industrial Estate, Faverdale, Darlington, DL3 0PP) confirmed via 4 Motion Darlington's own site; coordinates are Darlington-town-level approximations, not the exact venue pin.",
+    "url": "https://skateboardgb.org/survival-of-the-sickest-events/",
+    "retrievedAt": "2026-09-04T00:00:00+01:00"
+  }
+}
