@@ -1,10 +1,25 @@
 // AUTO-GENERERAD av scripts/extract-skateparks.ts (körs som `prebuild`) — redigera inte för hand.
 // Källa: content/articles/en/verified-indoor-skateparks-world.md
-// Senast genererad: 2026-09-08
+// Senast genererad: 2026-09-21
 
 import type { Skatepark } from './types';
 
 export const verifiedIndoorSkateparks: Skatepark[] = [
+  {
+    "id": "la-fievre-hs36",
+    "name": "La Fièvre (HS36)",
+    "location": "Lausanne, Switzerland",
+    "city": "Lausanne",
+    "country": "Switzerland",
+    "region": "Europe",
+    "description": "2,000 m² facility for skateboarding, BMX, and rollerblading, run as an association since 1993, in partnership with the City of Lausanne.",
+    "addresses": [
+      "Av. de Sévelin 36, 1004 Lausanne"
+    ],
+    "website": "fievre.ch",
+    "email": null,
+    "warning": null
+  },
   {
     "id": "rampworx-skatepark",
     "name": "Rampworx Skatepark",
@@ -63,6 +78,96 @@ export const verifiedIndoorSkateparks: Skatepark[] = [
     ],
     "website": "gadeidraet.kk.dk/en/gadeidraet/xhall",
     "email": "gadeidraet@kk.dk",
+    "warning": null
+  },
+  {
+    "id": "hal22",
+    "name": "Hal22",
+    "location": "Grenå, Denmark",
+    "city": "Grenå",
+    "country": "Denmark",
+    "region": "Europe",
+    "description": null,
+    "addresses": [
+      "Rolshøjvej 7, 8500 Grenå"
+    ],
+    "website": "skateparks.dk/skateparks/hal22",
+    "email": null,
+    "warning": null
+  },
+  {
+    "id": "vejgaard-skatepark",
+    "name": "Vejgaard Skatepark",
+    "location": "Aalborg, Denmark",
+    "city": "Aalborg",
+    "country": "Denmark",
+    "region": "Europe",
+    "description": null,
+    "addresses": [
+      "Øster Sundby Vej 23, 9000 Aalborg"
+    ],
+    "website": "skateparks.dk/skateparks/vejgaard-skatepark",
+    "email": null,
+    "warning": null
+  },
+  {
+    "id": "game-streetmekka-viborg",
+    "name": "GAME Streetmekka Viborg",
+    "location": "Viborg, Denmark",
+    "city": "Viborg",
+    "country": "Denmark",
+    "region": "Europe",
+    "description": null,
+    "addresses": [
+      "Nellikevej 2, 8800 Viborg"
+    ],
+    "website": "skateparks.dk/skateparks/game-streetmekka-viborg",
+    "email": null,
+    "warning": null
+  },
+  {
+    "id": "sonderborg-skatepark",
+    "name": "Sønderborg Skatepark",
+    "location": "Sønderborg, Denmark",
+    "city": "Sønderborg",
+    "country": "Denmark",
+    "region": "Europe",
+    "description": null,
+    "addresses": [
+      "Kongevej 47, 6400 Sønderborg"
+    ],
+    "website": "skateparks.dk/skateparks/sonderborg-skatepark",
+    "email": null,
+    "warning": null
+  },
+  {
+    "id": "hal12",
+    "name": "Hal12",
+    "location": "Roskilde, Denmark",
+    "city": "Roskilde",
+    "country": "Denmark",
+    "region": "Europe",
+    "description": null,
+    "addresses": [
+      "Rabalderstræde 30, 4000 Roskilde"
+    ],
+    "website": "skateparks.dk/skateparks/hal12",
+    "email": null,
+    "warning": null
+  },
+  {
+    "id": "harboore-skatepark",
+    "name": "Harboøre Skatepark",
+    "location": "Harboøre, Denmark",
+    "city": "Harboøre",
+    "country": "Denmark",
+    "region": "Europe",
+    "description": null,
+    "addresses": [
+      "Lemvigvej 9, 7673 Harboøre"
+    ],
+    "website": "skateparks.dk/skateparks/harbooere-skatepark",
+    "email": null,
     "warning": null
   },
   {

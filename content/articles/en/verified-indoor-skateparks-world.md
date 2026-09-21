@@ -15,16 +15,16 @@ Rain, snow, or dark winter months shouldn't mean a traveling skater has to sit s
 
 ## Quick overview
 
-![Bar chart showing verified indoor skateparks by region: Europe 38, North America and Mexico 14, Asia 7, Oceania 9](./images/skatepark-regions-overview.png)
+![Bar chart showing verified indoor skateparks by region: Europe 47, North America and Mexico 14, Asia 6, Oceania 8](./images/skatepark-regions-overview.png)
 
 ![World map with color-coded pins showing every verified indoor skatepark location](./images/skateparks-world-map.png)
 
 | Region | Parks in this guide |
 |---|---|
-| Europe | 38 |
+| Europe | 47 |
 | North America & Mexico | 14 |
-| Asia | 7 |
-| Oceania | 9 |
+| Asia | 6 |
+| Oceania | 8 |
 
 ## Europe
 
@@ -52,6 +52,30 @@ Opened 2003 in a former tram-workshop paint shop; hosts the annual Copenhagen Pr
 Municipal facility run by the City of Copenhagen's street sports program, 450 m², three bowls (two birch, one concrete).
 📍 Hillerødgade 53x, 2000 Frederiksberg
 🌐 gadeidraet.kk.dk/en/gadeidraet/xhall · ✉️ gadeidraet@kk.dk
+
+**Hal22 – Grenå, Denmark**
+📍 Rolshøjvej 7, 8500 Grenå
+🌐 skateparks.dk/skateparks/hal22
+
+**Vejgaard Skatepark – Aalborg, Denmark**
+📍 Øster Sundby Vej 23, 9000 Aalborg
+🌐 skateparks.dk/skateparks/vejgaard-skatepark
+
+**GAME Streetmekka Viborg – Viborg, Denmark**
+📍 Nellikevej 2, 8800 Viborg
+🌐 skateparks.dk/skateparks/game-streetmekka-viborg
+
+**Sønderborg Skatepark – Sønderborg, Denmark**
+📍 Kongevej 47, 6400 Sønderborg
+🌐 skateparks.dk/skateparks/sonderborg-skatepark
+
+**Hal12 – Roskilde, Denmark**
+📍 Rabalderstræde 30, 4000 Roskilde
+🌐 skateparks.dk/skateparks/hal12
+
+**Harboøre Skatepark – Harboøre, Denmark**
+📍 Lemvigvej 9, 7673 Harboøre
+🌐 skateparks.dk/skateparks/harbooere-skatepark
 
 **Bryggeriet Malmö Skatepark – Malmö, Sweden**
 Membership-based association, open through the winter season, hosts Vert Attack.
