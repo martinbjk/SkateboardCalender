@@ -15,14 +15,14 @@ Rain, snow, or dark winter months shouldn't mean a traveling skater has to sit s
 
 ## Quick overview
 
-![Bar chart showing verified indoor skateparks by region: Europe 47, North America and Mexico 14, Asia 6, Oceania 8](./images/skatepark-regions-overview.png)
+![Bar chart showing verified indoor skateparks by region: Europe 48, North America and Mexico 15, Asia 6, Oceania 8](./images/skatepark-regions-overview.png)
 
 ![World map with color-coded pins showing every verified indoor skatepark location](./images/skateparks-world-map.png)
 
 | Region | Parks in this guide |
 |---|---|
-| Europe | 47 |
-| North America & Mexico | 14 |
+| Europe | 48 |
+| North America & Mexico | 15 |
 | Asia | 6 |
 | Oceania | 8 |
 
@@ -76,6 +76,13 @@ Municipal facility run by the City of Copenhagen's street sports program, 450 m�
 **Harboøre Skatepark – Harboøre, Denmark**
 📍 Lemvigvej 9, 7673 Harboøre
 🌐 skateparks.dk/skateparks/harbooere-skatepark
+
+### Iceland
+
+**Braggaparkið – Akureyri, Iceland**
+Winter (Sep 1–May 31): weekdays 14:00–19:00, weekends 12:00–17:00. Summer (Jun 1–Aug 31): daily 11:00–16:00. Phone 847 8598.
+📍 Laufásgata 1, 600 Akureyri
+🌐 facebook.com/braggaparkid · ✉️ braggaparkid@gmail.com
 
 **Bryggeriet Malmö Skatepark – Malmö, Sweden**
 Membership-based association, open through the winter season, hosts Vert Attack.

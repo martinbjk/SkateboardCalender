@@ -1,6 +1,6 @@
 // AUTO-GENERERAD av scripts/extract-skateparks.ts (körs som `prebuild`) — redigera inte för hand.
 // Källa: content/articles/en/verified-indoor-skateparks-world.md
-// Senast genererad: 2026-09-21
+// Senast genererad: 2026-09-23
 
 import type { Skatepark } from './types';
 
@@ -168,6 +168,21 @@ export const verifiedIndoorSkateparks: Skatepark[] = [
     ],
     "website": "skateparks.dk/skateparks/harbooere-skatepark",
     "email": null,
+    "warning": null
+  },
+  {
+    "id": "braggaparkid",
+    "name": "Braggaparkið",
+    "location": "Akureyri, Iceland",
+    "city": "Akureyri",
+    "country": "Iceland",
+    "region": "Europe",
+    "description": "Winter (Sep 1–May 31): weekdays 14:00–19:00, weekends 12:00–17:00. Summer (Jun 1–Aug 31): daily 11:00–16:00. Phone 847 8598.",
+    "addresses": [
+      "Laufásgata 1, 600 Akureyri"
+    ],
+    "website": "facebook.com/braggaparkid",
+    "email": "braggaparkid@gmail.com",
     "warning": null
   },
   {
@@ -778,11 +793,11 @@ export const verifiedIndoorSkateparks: Skatepark[] = [
     "city": "Staten Island",
     "country": "USA",
     "region": "North America & Mexico",
-    "description": "Privately owned, ~8,000 sq ft, opened 2012.",
+    "description": "Privately owned, ~8,000 sq ft, opened 2012. Phone; (347)857-6007",
     "addresses": [
       "354 Front St, Stapleton, Staten Island, NY"
     ],
-    "website": "5050skatepark.com",
+    "website": null,
     "email": null,
     "warning": null
   },
@@ -918,6 +933,21 @@ export const verifiedIndoorSkateparks: Skatepark[] = [
       "Carretera Cancún–Chetumal Km 72, Puerto Aventuras"
     ],
     "website": "woodwardrivieramaya.com",
+    "email": null,
+    "warning": null
+  },
+  {
+    "id": "hmi-skate-park",
+    "name": "HMI Skate Park",
+    "location": "Hope, British Columbia, Canada",
+    "city": "Hope",
+    "country": "Canada",
+    "region": "North America & Mexico",
+    "description": "Rebuilt from an old hardware store into the Fraser Valley's only indoor skatepark, run by founder Mike \"Hippie Mike\" Faux since 2021; offers lessons, camps, drop-in sessions and a pro shop. Follow on Instagram. ☎ +1 236-355-1317",
+    "addresses": [
+      "840 5th Ave, Hope, BC V0X 1L4"
+    ],
+    "website": null,
     "email": null,
     "warning": null
   },
