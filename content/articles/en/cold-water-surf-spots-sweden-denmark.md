@@ -16,6 +16,8 @@ If any of this sounds familiar, it should. Chasing a wave that might not show up
 
 This is an attempt to map it — name by name, source by source, with coordinates where they exist and an honest flag where they don't. Denmark, with its Cold Hawaii region, has the most developed surf culture in the Nordics and therefore the most precisely named sub-spots. Sweden is more scattered, more of a scavenger hunt — but maybe more interesting reading for it.
 
+<!-- surf-forecast-embed -->
+
 ## I. Halland — Sweden's surf capital
 
 The southwest Kattegat coast between Gothenburg and Malmö is, by a wide margin, Sweden's most developed surf stretch: sand-bottomed beach breaks, a couple of points, and a beach-town culture that's grown up around the waves over decades.
