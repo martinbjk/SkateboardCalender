@@ -1,4 +1,4 @@
-
+---
 title: "Cold Water Lines: A Surfer's Map of Sweden and Denmark"
 slug: "cold-water-surf-spots-sweden-denmark"
 lang: "en"
@@ -51,6 +51,12 @@ Where Halland is open Kattegat coast, Skåne is more layered: the Öresund side 
 **Mölle harbour** — 56.2821, 12.4933. At the tip of the Kullaberg headland, where windswell off the Kattegat bends around the point into rocky bays. The main spot is the harbour itself: jump straight off the wall and find a powerful right over a rock reef. Best with an easterly-to-southeasterly wind component, otherwise mostly mush.
 
 **Odd Persson's bay** — 56.2831, 12.4920 (approx). Mölle's sister spot, five minutes' walk away — same rock-reef bottom, same primary direction.
+
+![Mölle surf break](./molle-01.jpg)
+![Mölle surf break](./molle-02.jpg)
+![Mölle surf break](./molle-03.jpg)
+![Mölle surf break](./molle-04.jpg)
+![Mölle surf break](./molle-05.jpg)
 
 **Skäret** — 56.271077, 12.596555 (community-confirmed). A left-hand reef a German windsurf journalist once described as potentially world-famous "had it been located somewhere with regular swell" — a stone shelf sloping evenly into the sea with a couple of boulders lurking just under the surface. The exact location was long hard to pin down; the coordinate above comes from local knowledge shared during research for this piece.
 
