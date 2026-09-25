@@ -1,4 +1,4 @@
-[cold-water-surf-spots-sweden-denmark (1).md](https://github.com/user-attachments/files/32641383/cold-water-surf-spots-sweden-denmark.1.md)
+
 ---
 title: "Cold Water Lines: A Surfer's Map of Sweden and Denmark"
 slug: "cold-water-surf-spots-sweden-denmark"
