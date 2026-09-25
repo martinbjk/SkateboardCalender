@@ -94,7 +94,9 @@ The islands in the middle of the Baltic require a three-hour ferry crossing — 
 
 **Surflogiet area** — location not published, eastern Gotland. A small glamping-based surf outfit aimed at beginners and longboarders, in a sheltered, shallow bay. The exact location isn't given in the source we found.
 
-**Mörbylånga / Haga Park, Öland** — 56.5814, 16.4067. The only documented "surfing hotspot" we found on Öland — but honestly, it's a wind- and kitesurf spot rather than a wave surf spot: flat water in the Kalmar Strait, known for a reliable sea breeze around 1pm. The island's east side, facing the open Baltic directly, should in theory catch more swell — but we haven't found a single named source for that stretch. It's the clearest gap in this whole map.
+**Mörbylånga / Haga Park, Öland** — 56.5814, 16.4067. The only documented "surfing hotspot" we found on Öland — but honestly, it's a wind- and kitesurf spot rather than a wave surf spot: flat water in the Kalmar Strait, known for a reliable sea breeze around 1pm.
+
+**Ängjärnsudden, northern Öland** — 57.3103, 17.1458 (confirmed). This is the gap above, at least partly filled: an exposed beach and point break right at Öland's northeastern tip, where Bödabukten ends. It faces the open Baltic directly and picks up swell from south through east — the exposure our earlier map was missing. Best with a west (offshore) wind; autumn and spring are the reliable seasons, summer is mostly flat. It's remote — the last stretch in is a rough gravel road out to the point.
 
 ![Map of Gotland, Fårö and Öland showing Sudersand Strand, Norsta Aurer and Mörbylånga](./map-gotland.png)
 
