@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { SkateparkFinder } from '@/components/article-embeds/SkateparkFinder';
+import { SurfForecastEmbed } from '@/components/article-embeds/SurfForecastEmbed';
 import { verifiedIndoorSkateparks } from './skateparks/verified-indoor-skateparks-world.data';
 
 /**
@@ -36,5 +37,12 @@ export const ARTICLE_EMBEDS: Record<string, ArticleEmbed> = {
           render: () => <SkateparkFinder parks={verifiedIndoorSkateparks} />
         } satisfies ArticleEmbed
       }
-    : {})
+    : {}),
+
+  'cold-water-surf-spots-sweden-denmark': {
+    // Ersätter bara markörraden mellan intro-styckena och "## I. Halland"
+    // med en live-prognos-widget (KustVåg, inbäddad via iframe).
+    splice: { from: '\n<!-- surf-forecast-embed -->\n', to: '\n## I. Halland' },
+    render: () => <SurfForecastEmbed />
+  } satisfies ArticleEmbed
 };
