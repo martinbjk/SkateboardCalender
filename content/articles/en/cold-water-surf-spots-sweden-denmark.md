@@ -1,5 +1,4 @@
 
----
 title: "Cold Water Lines: A Surfer's Map of Sweden and Denmark"
 slug: "cold-water-surf-spots-sweden-denmark"
 lang: "en"
