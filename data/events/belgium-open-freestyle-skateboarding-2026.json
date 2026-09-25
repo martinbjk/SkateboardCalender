@@ -1,0 +1,29 @@
+{
+  "slug": "belgium-open-freestyle-skateboarding-2026-antwerp",
+  "name": "Belgium Open Freestyle Skateboarding 2026",
+  "category": ["freestyle"],
+  "level": "open",
+  "startDate": "2026-11-07T10:00:00+01:00",
+  "endDate": "2026-11-08T19:00:00+01:00",
+  "timezone": "Europe/Brussels",
+  "location": {
+    "venue": "Buurtsporthal Parkloods, Park Spoor Noord",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "countryCode": "BE",
+    "continent": "europe",
+    "lat": 51.2278,
+    "lng": 4.4177
+  },
+  "description": {
+    "sv": "Belgium Open Freestyle Skateboarding är tillbaka för sin andra upplaga! Freestyle-åkare från Belgien och övriga Europa möts i Antwerpen för en helg fylld av smidiga combos, tekniska tricks, kreativitet och bra stämning på SBA Antwerp. Både nybörjare som testar tävlingsgolvet för första gången och åkare som vill utmana några av de bästa i sporten är välkomna att delta.",
+    "en": "The Belgium Open Freestyle Skateboarding is back for its second edition! Freestyle skaters from Belgium and beyond will meet in Antwerp for another weekend of smooth combos, technical tricks, creativity and good vibes at SBA Antwerp. Whether you're stepping on the freestyle contest floor for the first time or you're ready to battle with some of the best riders around, everyone is welcome to join the session and show what they've got!"
+  },
+  "officialUrl": "https://www.instagram.com/belgian_open_fs/",
+  "organizer": "SBA Antwerp",
+  "source": {
+    "note": "Event details, categories, run times, entry fee, and registration link taken directly from the organizer's own event listing (WFSA - World Freestyle Skateboarding Association).",
+    "url": "https://wfsafreestyle.org/events/",
+    "retrievedAt": "2026-09-25T20:22:00+02:00"
+  }
+}
