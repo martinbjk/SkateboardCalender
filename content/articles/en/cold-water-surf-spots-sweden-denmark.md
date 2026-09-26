@@ -50,9 +50,9 @@ The southwest Kattegat coast between Gothenburg and Malmö is, by a wide margin,
 
 Where Halland is open Kattegat coast, Skåne is more layered: the Öresund side sheltered by Danish Zealand, the rocky headland of Kullaberg, and Österlen's sandy, east-facing Baltic shore. It's also the region where local knowledge contributed the most to this map.
 
-**Mölle harbour** — 56.2821, 12.4933. At the tip of the Kullaberg headland, where windswell off the Kattegat bends around the point into rocky bays. The main spot is the harbour itself: jump straight off the wall and find a powerful right over a rock reef. Best with an easterly-to-southeasterly wind component, otherwise mostly mush.
+**Mölle harbour** — 56.2821, 12.4933. At the tip of the Kullaberg headland, where windswell off the Kattegat bends around the point into rocky bays. The main spot is the harbour itself: jump straight off the wall and find a powerful right over a rock reef. Best with a west-to-northwest wind, otherwise mostly mush.
 
-**Odd Persson's bay** — 56.2831, 12.4920 (approx). Mölle's sister spot, five minutes' walk away — same rock-reef bottom, same primary direction.
+**Odd Persson's bay** — 56.2831, 12.4920 (approx). Mölle's sister spot, five minutes' walk away — same rock-reef bottom, but its own direction: best northwest to north.
 
 ![Mölle surf break](./molle-01.jpg)
 ![Mölle surf break](./molle-02.jpg)
@@ -60,7 +60,7 @@ Where Halland is open Kattegat coast, Skåne is more layered: the Öresund side 
 ![Mölle surf break](./molle-04.jpg)
 ![Mölle surf break](./molle-05.jpg)
 
-**Skäret** — 56.271077, 12.596555 (community-confirmed). A left-hand reef a German windsurf journalist once described as potentially world-famous "had it been located somewhere with regular swell" — a stone shelf sloping evenly into the sea with a couple of boulders lurking just under the surface. The exact location was long hard to pin down; the coordinate above comes from local knowledge shared during research for this piece.
+**Skäret** — 56.271077, 12.596555 (community-confirmed). A left-hand reef a German windsurf journalist once described as potentially world-famous "had it been located somewhere with regular swell" — a stone shelf sloping evenly into the sea with a couple of boulders lurking just under the surface. Best on a west wind. The exact location was long hard to pin down; the coordinate above comes from local knowledge shared during research for this piece.
 
 **Kåseberga** — 55.3810, 14.0670. Sits right next to Ale's Stones — Skåne's Bronze Age stone ship setting on the headland above the village — which is the landmark local knowledge usually points to when describing the spot. The wave breaks right over sand at the harbour wall: fat and low-power in shape, unusually beginner-friendly for a harbour break. No localism reported, and a fish shop for something warm afterward.
 
