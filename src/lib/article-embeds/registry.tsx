@@ -1,7 +1,9 @@
 import type { ReactNode } from 'react';
 import { SkateparkFinder } from '@/components/article-embeds/SkateparkFinder';
 import { SurfForecastEmbed } from '@/components/article-embeds/SurfForecastEmbed';
+import { WavePoolFinder } from '@/components/article-embeds/WavePoolFinder';
 import { verifiedIndoorSkateparks } from './skateparks/verified-indoor-skateparks-world.data';
+import { verifiedWavePools } from './wavepools/verified-wave-pools-world.data';
 
 /**
  * ARTIKEL-EMBEDS — vilka artiklar som byter ut en del av sin markdown-
@@ -44,5 +46,12 @@ export const ARTICLE_EMBEDS: Record<string, ArticleEmbed> = {
     // med en live-prognos-widget (KustVåg, inbäddad via iframe).
     splice: { from: '\n<!-- surf-forecast-embed -->\n', to: '\n## I. Halland' },
     render: () => <SurfForecastEmbed />
+  } satisfies ArticleEmbed,
+
+  'surfable-wave-pools-world': {
+    // Ersätter markörraden mellan intro-styckena och "## A note on the
+    // technology" med den sök-/filterbara wave-pool-listan.
+    splice: { from: '\n<!-- wave-pool-finder-embed -->\n', to: '\n## A note on the technology' },
+    render: () => <WavePoolFinder pools={verifiedWavePools} />
   } satisfies ArticleEmbed
 };
