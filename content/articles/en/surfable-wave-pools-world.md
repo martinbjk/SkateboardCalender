@@ -1,4 +1,3 @@
-[surfable-wave-pools-world.md](https://github.com/user-attachments/files/32695531/surfable-wave-pools-world.md)
 ---
 title: "Wave Pools of the World: Every Surfable Pool Now in Operation"
 slug: "surfable-wave-pools-world"
