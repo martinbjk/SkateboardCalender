@@ -39,6 +39,9 @@ South of Stavanger, the coast straightens into a long run of dune-backed, honey-
 
 The Stad peninsula sits fully exposed to the open Norwegian Sea — no islands or skerries breaking the swell — and is consequently the most storm-battered stretch of coast in this whole guide. It's also home to Hoddevik, the closest thing Norway has to an internationally known wave.
 
+![Aerial view of Ervik on the Stadlandet peninsula, Norway, showing a white-sand bay ringed by mountains and inland lakes](./ervik-stadlandet.jpg)
+*Ervik, Stadlandet — the exposed, mountain-framed coastline that makes this stretch both scenic and unforgiving.*
+
 **Hoddevika** — 62.1231, 5.1677 (confirmed). Cliffs over 100 metres tall frame a beach break that's mainly a left, sheltered a little from north winds, so a southeast wind is the call. Very consistent by Norwegian standards, and works at every stage of the tide. There's a dedicated surf camp (Stad Surfing) running lessons and glamping right at the beach.
 
 **Refvika** — 61.9984, 5.0899 (confirmed). A quieter beach roughly 15km south of Hoddevik, near the village of Kvalheim, known locally for its pale, fine sand. Less written about as a surf spot specifically than Hoddevik, but it's the same exposed stretch of coast and worth checking when Hoddevik is overcrowded or blown out.
