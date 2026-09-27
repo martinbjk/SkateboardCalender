@@ -62,7 +62,7 @@ export const verifiedWavePools: WavePool[] = [
     description: 'A desert resort build around a 52-module Wavegarden Cove lagoon, part of a larger residential/hospitality development east of Palm Springs.',
     website: 'dsrtsurf.com',
     bookingUrl: 'https://www.dsrtsurf.com/',
-    note: null
+    note: 'Newly opened — public sessions began September 26, 2026'
   },
   {
     id: 'palm-springs-surf-club',
