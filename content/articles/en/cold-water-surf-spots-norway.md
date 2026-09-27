@@ -44,9 +44,11 @@ The Stad peninsula sits fully exposed to the open Norwegian Sea — no islands o
 
 **Hoddevika** — 62.1231, 5.1677 (confirmed). Cliffs over 100 metres tall frame a beach break that's mainly a left, sheltered a little from north winds, so a southeast wind is the call. Very consistent by Norwegian standards, and works at every stage of the tide. There's a dedicated surf camp (Stad Surfing) running lessons and glamping right at the beach.
 
+**Ervik** — 62.1573, 5.0990 (confirmed). A separate bay a few kilometres northwest of Hoddevik, also called Ervikstranda, that picks up both southwest and northwest swell — a reliable back-up when Hoddevik itself isn't working. It's a right-and-left point/beach break over sand and rock, generally sloppier and more beginner-friendly than Hoddevika, and tends to run bigger. An old boat wreck in the bay helps shape the wave but has sharp metal exposed on its left side, so it's worth giving a wide berth. Ervik Surfshop, cited below, runs out of the village here.
+
 **Refvika** — 61.9984, 5.0899 (confirmed). A quieter beach roughly 15km south of Hoddevik, near the village of Kvalheim, known locally for its pale, fine sand. Less written about as a surf spot specifically than Hoddevik, but it's the same exposed stretch of coast and worth checking when Hoddevik is overcrowded or blown out.
 
-![Map of Stadlandet showing Hoddevika and Refvika](./map-stadlandet.png)
+![Map of Stadlandet showing Hoddevika, Ervik and Refvika](./map-stadlandet.png)
 
 ## IV. Lofoten — the Arctic wave
 
@@ -80,7 +82,8 @@ As with the Sweden/Denmark map, every coordinate here is either **confirmed** �
 - [Surf-Forecast.com — Reve Havn](https://www.surf-forecast.com/breaks/Reve-Havn), [Bore](https://www.surf-forecast.com/breaks/Bore), [Lista (Bausje)](https://www.surf-forecast.com/breaks/Lista-Bausje), [Hoddevik](https://www.surf-forecast.com/breaks/Hoddevik), [Unstad](https://www.surf-forecast.com/breaks/Unstad)
 - [Visit Sola — Surfing along the coast of Jæren](https://www.visitsola.no/en/artikler/surfing-langs-jaeren)
 - [Stad Surfing](https://www.stadsurfing.no/) and [Ervik Surfshop](https://erviksurfshop.com/)
-- [Wikipedia — Hoddevika](https://en.wikipedia.org/wiki/Hoddevika), [Refvika](https://en.wikipedia.org/wiki/Refvika), [Ramberg, Flakstad](https://en.wikipedia.org/wiki/Ramberg,_Flakstad), [Bleik](https://en.wikipedia.org/wiki/Bleik)
+- [WannaSurf — Ervik](https://www.wannasurf.com/spot/Europe/Norway/ervik/index.html), [Nordfjord.no — Surfing](https://www.nordfjord.no/en/surfing)
+- [Wikipedia — Hoddevika](https://en.wikipedia.org/wiki/Hoddevika), [Refvika](https://en.wikipedia.org/wiki/Refvika), [Ervik, Vestland](https://en.wikipedia.org/wiki/Ervik,_Vestland), [Ramberg, Flakstad](https://en.wikipedia.org/wiki/Ramberg,_Flakstad), [Bleik](https://en.wikipedia.org/wiki/Bleik)
 - [iles-lofoten.com — Les meilleurs spots de surf aux Iles Lofoten](https://iles-lofoten.com/spots-surf-iles-lofoten/)
 - [Hike Bike Travel — Ryten Hike & Kvalvika Beach](https://hikebiketravel.com/ryten-hike-kvalvika-beach-lofoten-islands/) (Innersand trailhead coordinate)
 - [Best Arctic — Top summer spots for surfing in Northern Norway](https://bestarctic.com/northern-norway-travel-blog/top-summer-spots-for-surfing-in-northern-norway/)
