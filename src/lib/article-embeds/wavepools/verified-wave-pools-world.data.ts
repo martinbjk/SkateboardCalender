@@ -207,6 +207,21 @@ export const verifiedWavePools: WavePool[] = [
     note: null
   },
   {
+    id: 'surf-abu-dhabi',
+    name: 'Surf Abu Dhabi (Kelly Slater Wave Co.)',
+    location: 'Hudayriyat Island, Abu Dhabi, UAE',
+    city: 'Abu Dhabi',
+    country: 'UAE',
+    region: 'Middle East',
+    technology: 'Kelly Slater Wave Co. (hydrofoil pulled along a rail in a freshwater lagoon)',
+    difficulty: 'Fully adjustable — same underlying tech as Surf Ranch, tuned across a range of sizes and shapes per session',
+    description:
+      "The second Kelly Slater Wave Co. lagoon, on Hudayriyat Island off Abu Dhabi — open to the public since October 2024 with a handful of waves per booked session, shared with only a few other surfers at a time. Hosted the WSL's Surf Abu Dhabi Pro before it was cancelled amid regional conflict.",
+    website: 'surfabudhabi.com',
+    bookingUrl: 'https://surfabudhabi.com/booking',
+    note: 'Premium/limited-capacity sessions — booked well in advance, not casual walk-in'
+  },
+  {
     id: 'srf-park-tlv',
     name: 'SRF Park TLV',
     location: 'Tel Aviv, Israel',
