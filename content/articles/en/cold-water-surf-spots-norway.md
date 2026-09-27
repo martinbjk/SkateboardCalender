@@ -17,6 +17,8 @@ Before the region-by-region detail, here's the whole coast at once — where eac
 
 ![Overview map of Norway's coast showing all five surf regions: I. Sørlandet, II. Jæren, III. Stadlandet, IV. Lofoten, V. Vesterålen](./map-overview.png)
 
+<!-- surf-forecast-embed-norway -->
+
 ## I. Sørlandet — the quiet south
 
 Norway's south coast faces the Skagerrak rather than the open North Sea or Atlantic, and it shows: this is the thinnest-documented stretch in this whole map. The Oslofjord itself has no documented wave-surfing spot at all as far as we could find — what turns up under "surfing" there is wake-surfing behind a boat, a different sport entirely. Further west, past Kristiansand, the coast opens up a little.
@@ -44,7 +46,7 @@ The Stad peninsula sits fully exposed to the open Norwegian Sea — no islands o
 
 **Hoddevika** — 62.1231, 5.1677 (confirmed). Cliffs over 100 metres tall frame a beach break that's mainly a left, sheltered a little from north winds, so a southeast wind is the call. Very consistent by Norwegian standards, and works at every stage of the tide. There's a dedicated surf camp (Stad Surfing) running lessons and glamping right at the beach.
 
-**Ervik** — 62.1573, 5.0990 (confirmed). A separate bay a few kilometres northwest of Hoddevik, also called Ervikstranda, that picks up both southwest and northwest swell — a reliable back-up when Hoddevik itself isn't working. It's a right-and-left point/beach break over sand and rock, generally sloppier and more beginner-friendly than Hoddevika, and tends to run bigger. An old boat wreck in the bay helps shape the wave but has sharp metal exposed on its left side, so it's worth giving a wide berth. Ervik Surfshop, cited below, runs out of the village here.
+**Ervik** — 62.1660, 5.1234 (approx — pin marks the village centre, not the beach itself). A separate bay a few kilometres northwest of Hoddevik, also called Ervikstranda, that picks up both southwest and northwest swell — a reliable back-up when Hoddevik itself isn't working. It's a right-and-left point/beach break over sand and rock, generally sloppier and more beginner-friendly than Hoddevika, and tends to run bigger. An old boat wreck in the bay helps shape the wave but has sharp metal exposed on its left side, so it's worth giving a wide berth. Ervik Surfshop, cited below, runs out of the village here.
 
 **Refvika** — 61.9984, 5.0899 (confirmed). A quieter beach roughly 15km south of Hoddevik, near the village of Kvalheim, known locally for its pale, fine sand. Less written about as a surf spot specifically than Hoddevik, but it's the same exposed stretch of coast and worth checking when Hoddevik is overcrowded or blown out.
 
@@ -74,7 +76,7 @@ Beyond Bleik — Senja, Tromsø, and all of Finnmark up to the Russian border �
 
 ## A note on the coordinates
 
-As with the Sweden/Denmark map, every coordinate here is either **confirmed** — cross-checked against Wikipedia/Wikidata infobox data, surf-forecast.com, or a similar independent source — or explicitly marked **approx**, meaning the pin marks the nearest reliably-sourced reference point (usually a trailhead or village centre) rather than the exact break. Where we found a named place but no usable coordinate or independent confirmation it's actually surfed — Skagsanden and Flakstadsanden in Lofoten, the broader Senja/Troms/Finnmark region — we said so in the text instead of guessing a pin. The maps use 1km-resolution coastline data rather than a coarser dataset, specifically because Norway's coast is fragmented enough (fjords, skerries, narrow peninsulas) that a lower-resolution land outline drops real headlands and bays entirely — the same issue we ran into and fixed on the Sweden map's Torö Stenstrand pin.
+As with the Sweden/Denmark map, every coordinate here is either **confirmed** — cross-checked against Wikipedia/Wikidata infobox data, surf-forecast.com, or a similar independent source — or explicitly marked **approx**, meaning the pin marks the nearest reliably-sourced reference point (usually a trailhead or village centre) rather than the exact break. Where we found a named place but no usable coordinate or independent confirmation it's actually surfed — Skagsanden and Flakstadsanden in Lofoten, the broader Senja/Troms/Finnmark region — we said so in the text instead of guessing a pin. The maps use 100m-resolution coastline data rather than a coarser dataset, specifically because Norway's coast is fragmented enough (fjords, skerries, narrow peninsulas) that a lower-resolution land outline drops real headlands and bays entirely — the same issue we ran into and fixed on the Sweden map's Torö Stenstrand pin.
 
 ## Sources
 
