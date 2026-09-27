@@ -5,7 +5,7 @@ category: "reportage"
 lang: "en"
 date: "2026-09-27"
 excerpt: "A verified, searchable guide to every commercial wave pool currently open for surfing — location, wave technology, difficulty levels, and where to book a session."
-metaDescription: "19 verified surfable wave pools worldwide — technology, difficulty levels and booking links for every operating surf park."
+metaDescription: "22 verified surfable wave pools worldwide — technology, difficulty levels and booking links for every operating surf park."
 ogImage: "/images/articles/surfable-wave-pools-world/og-image.png"
 ---
 
