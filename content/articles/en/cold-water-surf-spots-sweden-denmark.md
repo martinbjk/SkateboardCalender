@@ -50,9 +50,9 @@ The southwest Kattegat coast between Gothenburg and Malmö is, by a wide margin,
 
 Where Halland is open Kattegat coast, Skåne is more layered: the Öresund side sheltered by Danish Zealand, the rocky headland of Kullaberg, and Österlen's sandy, east-facing Baltic shore. It's also the region where local knowledge contributed the most to this map.
 
-**Mölle harbour** — 56.2821, 12.4933. At the tip of the Kullaberg headland, where windswell off the Kattegat bends around the point into rocky bays. The main spot is the harbour itself: jump straight off the wall and find a powerful right over a rock reef. Best with an easterly-to-southeasterly wind component, otherwise mostly mush.
+**Mölle harbour** — 56.2821, 12.4933. At the tip of the Kullaberg headland, where windswell off the Kattegat bends around the point into rocky bays. The main spot is the harbour itself: jump straight off the wall and find a powerful right over a rock reef. Best with a west-to-northwest wind, otherwise mostly mush.
 
-**Odd Persson's bay** — 56.2831, 12.4920 (approx). Mölle's sister spot, five minutes' walk away — same rock-reef bottom, same primary direction.
+**Odd Persson's bay** — 56.2831, 12.4920 (approx). Mölle's sister spot, five minutes' walk away — same rock-reef bottom, but its own direction: best northwest to north.
 
 ![Mölle surf break](./molle-01.jpg)
 ![Mölle surf break](./molle-02.jpg)
@@ -60,7 +60,7 @@ Where Halland is open Kattegat coast, Skåne is more layered: the Öresund side 
 ![Mölle surf break](./molle-04.jpg)
 ![Mölle surf break](./molle-05.jpg)
 
-**Skäret** — 56.271077, 12.596555 (community-confirmed). A left-hand reef a German windsurf journalist once described as potentially world-famous "had it been located somewhere with regular swell" — a stone shelf sloping evenly into the sea with a couple of boulders lurking just under the surface. The exact location was long hard to pin down; the coordinate above comes from local knowledge shared during research for this piece.
+**Skäret** — 56.271077, 12.596555 (community-confirmed). A left-hand reef a German windsurf journalist once described as potentially world-famous "had it been located somewhere with regular swell" — a stone shelf sloping evenly into the sea with a couple of boulders lurking just under the surface. Best on a west wind. The exact location was long hard to pin down; the coordinate above comes from local knowledge shared during research for this piece.
 
 **Kåseberga** — 55.3810, 14.0670. Sits right next to Ale's Stones — Skåne's Bronze Age stone ship setting on the headland above the village — which is the landmark local knowledge usually points to when describing the spot. The wave breaks right over sand at the harbour wall: fat and low-power in shape, unusually beginner-friendly for a harbour break. No localism reported, and a fish shop for something warm afterward.
 
@@ -71,6 +71,8 @@ Where Halland is open Kattegat coast, Skåne is more layered: the Öresund side 
 **Knäbäckshusen** — 55.6410, 14.2748 (confirmed). A long sand beach with a shallow shelf that pushes in knee-high waves most of the winter, and the occasional longboard day in summer. Rarely powerful, but the shape holds up if you bring enough volume. Known for its thatched-roof cottages along the shore, near Stenshuvud north of Simrishamn.
 
 **Torekov & Skälderviken** — 56.4278, 12.6303 / 56.3500, 12.7500. The northern end of Skälderviken, toward Torekov, has a rockier coast and is used more by wing- and wave-windsurfers than dedicated surfers — though sources describe it explicitly as "surfable" in the right southwest-to-northwest wind. The sheltered southern part of the bay is essentially beginner windsurf water rather than a wave surf spot.
+
+**Ingelstorp strand** — 56.4530, 12.6781 (local knowledge). A beach inside Bjärekustens naturreservat on the northwest tip of the Bjäre peninsula, by the small harbour at Norrebro, between Torekov and Hovs Hallar. Sand bottom, though recent visitors note it's increasingly weed-covered. Best on a west-to-northwest wind and swell. Not listed in any surf-specific database we checked — in on local knowledge alone, geographically plausible but unverified as a named break, same footing as Baskemölla & Vik above.
 
 ![Map of Skåne's surf spots from Torekov and Mölle to Kåseberga on Österlen](./map-skane.png)
 
@@ -94,7 +96,9 @@ The islands in the middle of the Baltic require a three-hour ferry crossing — 
 
 **Surflogiet area** — location not published, eastern Gotland. A small glamping-based surf outfit aimed at beginners and longboarders, in a sheltered, shallow bay. The exact location isn't given in the source we found.
 
-**Mörbylånga / Haga Park, Öland** — 56.5814, 16.4067. The only documented "surfing hotspot" we found on Öland — but honestly, it's a wind- and kitesurf spot rather than a wave surf spot: flat water in the Kalmar Strait, known for a reliable sea breeze around 1pm. The island's east side, facing the open Baltic directly, should in theory catch more swell — but we haven't found a single named source for that stretch. It's the clearest gap in this whole map.
+**Mörbylånga / Haga Park, Öland** — 56.5814, 16.4067. The only documented "surfing hotspot" we found on Öland — but honestly, it's a wind- and kitesurf spot rather than a wave surf spot: flat water in the Kalmar Strait, known for a reliable sea breeze around 1pm.
+
+**Ängjärnsudden, northern Öland** — 57.3103, 17.1458 (confirmed). This is the gap above, at least partly filled: an exposed beach and point break right at Öland's northeastern tip, where Bödabukten ends. It faces the open Baltic directly and picks up swell from south through east — the exposure our earlier map was missing. Best with a west (offshore) wind; autumn and spring are the reliable seasons, summer is mostly flat. It's remote — the last stretch in is a rough gravel road out to the point.
 
 ![Map of Gotland, Fårö and Öland showing Sudersand Strand, Norsta Aurer and Mörbylånga](./map-gotland.png)
 
