@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { NorwaySurfForecastEmbed } from '@/components/article-embeds/NorwaySurfForecastEmbed';
 import { SkateparkFinder } from '@/components/article-embeds/SkateparkFinder';
 import { SurfForecastEmbed } from '@/components/article-embeds/SurfForecastEmbed';
 import { WavePoolFinder } from '@/components/article-embeds/WavePoolFinder';
@@ -46,6 +47,14 @@ export const ARTICLE_EMBEDS: Record<string, ArticleEmbed> = {
     // med en live-prognos-widget (KustVåg, inbäddad via iframe).
     splice: { from: '\n<!-- surf-forecast-embed -->\n', to: '\n## I. Halland' },
     render: () => <SurfForecastEmbed />
+  } satisfies ArticleEmbed,
+
+  'cold-water-surf-spots-norway': {
+    // Ersätter markörraden mellan översiktskartan och "## I. Sørlandet" med
+    // en live-prognos-widget (Bølgeagenten, inbäddad via iframe) — samma
+    // mönster som KustVåg ovan.
+    splice: { from: '\n<!-- surf-forecast-embed-norway -->\n', to: '\n## I. Sørlandet' },
+    render: () => <NorwaySurfForecastEmbed />
   } satisfies ArticleEmbed,
 
   'surfable-wave-pools-world': {
