@@ -6,6 +6,7 @@ import { getAllArticles } from '@/lib/articles';
 import { formatArticleDate } from '@/lib/articles-shared';
 import { localeAlternates } from '@/lib/seo';
 import FeaturedVideos from '@/components/FeaturedVideos/FeaturedVideos';
+import { ShareButton } from '@/components/ShareButton';
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.github.io/skate-event-calendar';
@@ -18,7 +19,7 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'articles' });
   const pageUrl = `${SITE_URL}/${locale}/articles/`;
-    const ogImageUrl = `${SITE_URL}/images/articles/og-featured-videos.png`;
+  const ogImageUrl = `${SITE_URL}/images/articles/og-articles.png`;
   return {
     title: t('pageTitle'),
     description: t('metaDescription'),
@@ -49,6 +50,14 @@ export default async function ArticlesPage({
         <p className="mt-4 text-sm leading-relaxed text-asphalt-800/90 dark:text-chalk-300/90">
           {t('intro')}
         </p>
+
+        <div className="mt-5">
+          <ShareButton
+            url={`${SITE_URL}/${locale}/articles/`}
+            title={t('pageTitle')}
+            text={t('metaDescription')}
+          />
+        </div>
 
         <div className="mt-10 space-y-5">
           {articles.map((article) => (
