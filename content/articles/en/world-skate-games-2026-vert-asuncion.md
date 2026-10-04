@@ -1,4 +1,3 @@
-[world-skate-games-2026-vert-asuncion.md](https://github.com/user-attachments/files/33025021/world-skate-games-2026-vert-asuncion.md)
 ---
 title: "World Skate Games 2026: Mizuho Hasegawa and JD Sanchez Take Vert Gold in Asunción"
 slug: "world-skate-games-2026-vert-asuncion"
