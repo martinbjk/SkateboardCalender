@@ -27,7 +27,33 @@ Hasegawa, already the reigning women's park world champion, entered the vert fin
 
 ## Men's Final: Sanchez's Consistency Beats Khury's Power
 
-The men's final came down to a tight contest between Sanchez and Brazil's Gui Khury, a rider already known for pushing the upper limits of vert difficulty. Per event coverage, Khury landed several 900-degree variations during the Best Trick round — including one over an eight-foot channel gap — but Sanchez's broader range of tricks across the full session was enough to edge the win, finishing roughly nine points ahead. Australia's Hudson Walker took bronze, with Spain's Egoitz Bijueska narrowly missing the podium in fourth after a standout Switch McTwist in Best Trick. A brief weather delay during the final round of Best Trick had little effect on the minor placings further down the field.
+The men's final came down to a tight contest between Sanchez and Brazil's Gui Khury, a rider already known for pushing the upper limits of vert difficulty. Per event coverage, Khury landed several 900-degree variations during the Best Trick round — including one over an eight-foot channel gap — but Sanchez's broader range of tricks across the full session was enough to edge the win, finishing roughly nine points ahead. Australia's Hudson Walker took bronze. A brief weather delay during the final round of Best Trick had little effect on the minor placings further down the field.
+
+## Full Results
+
+**Men's Vert Final**
+
+| Place | Skater | Country |
+|---|---|---|
+| 1 | JD Sanchez | USA |
+| 2 | Gui Khury | Brazil |
+| 3 | Hudson Walker | USA |
+| 4 | CJ Hawker | USA |
+| 5 | Magnus Maglar | Germany |
+| 6 | Ao Nishikawa | Japan |
+| 7 | Egoitz Bijueska | Spain |
+| 8 | Ruku Inui | Japan |
+
+**Women's Vert Final**
+
+| Place | Skater | Country |
+|---|---|---|
+| 1 | Mizuho Hasegawa | Japan |
+| 2 | Shuka Kawai | Japan |
+| 3 | Helena Mascaro Paciello Laurino | Brazil |
+| 4–8 | *Results pending official update* | — |
+
+*Source: World Skate official results, confirmed after the finals on Saturday, October 3*
 
 ## What's Next
 
@@ -37,5 +63,5 @@ With the vert titles decided, skateboarding at the Games moves on to park compet
 ## Sources
 - ABC Color (Paraguay) — event coverage, October 2026
 - Olympics.com — "World Skate Games 2026 in Asunción" preview and schedule
-- World Skate — official 2026 Games event calendar
+- World Skate — official 2026 Games event calendar and full results
 - Event reporting from Asunción (detailed round-by-round results)
