@@ -35,8 +35,9 @@ This report is built from World Skate's own event reports, which were sent as ne
 | 1 | Mizuho Hasegawa | Japan | 91.00 |
 | 2 | Sky Brown | Great Britain | 89.50 |
 | 3 | Kokona Hiraki | Japan | 88.50 |
+| 5 | Naia Laso | Spain | 78.83 |
 
-These scores come from the wire report by the Spanish news agency EFE, as carried by Infobae and ABC Color. World Skate's own finals report, which we read in full, does not publish scores. It does name the gold medallists, describes Schaar taking second place on his third run ahead of Khury, and says Hasegawa and Brown were the two skaters fighting for first. If you need an official scoresheet, World Skate's results pages are the place to check.
+The podium scores come from the wire report by the Spanish news agency EFE, as carried by Infobae and ABC Color, and the same figures appear in Diario Euskadi's report. Laso's fifth place and 78.83 come from Diario Euskadi and Shredder News. The fourth place in the women's final, and places five to eight in the men's final, are not in the sources we could read, so we leave them out rather than guess. World Skate's own finals report, which we read in full, does not publish scores. It does name the gold medallists, describes Schaar taking second place on his third run ahead of Khury, and says Hasegawa and Brown were the two skaters fighting for first. If you need an official scoresheet, World Skate's results pages are the place to check.
 
 ## Two days of weather
 
@@ -88,7 +89,7 @@ Tom Schaar took second place with a brave opening line of a Fakie Frontside Olli
 
 But the day belonged to Egoitz Bijueska, who led from the start. He used the Switch McTwist he had premiered at the Best Trick contest in vert earlier in the Games as his run-ender in park. World Skate's writer called it the greatest display Churchill had seen on the Tour, and wrote that Bijueska "has no weaknesses in his game whatsoever".
 
-His 94.50 would have beaten the 93.11 that won Keegan Palmer the Olympic gold in Paris in 2024, as Vozpópuli pointed out. Bijueska is, in World Skate's words, a back-to-back World Champion and the World Skateboarding Ranking leader "by a country mile", and 15 years old.
+His 94.50 would have beaten the 93.11 that won Keegan Palmer the Olympic gold in Paris in 2024, as Vozpópuli pointed out. Bijueska is, in World Skate's words, a back-to-back World Champion and the World Skateboarding Ranking leader "by a country mile", and 15 years old. Diario Euskadi, from Bijueska's home region, reports that he topped both the quarterfinals (94.33) and the semifinals (94.60) before the final, and that he said any of the eight finalists could have won. Shredder News adds that he plans to go back to California to train for the 2028 Olympics. Those details come from one outlet each.
 
 ## One thing the sources disagree on
 
@@ -102,7 +103,7 @@ The semifinal scores were remarkable too: World Skate wondered aloud whether the
 
 ## What comes next
 
-As of World Skate's week-one wrap-up, skateboarding street was due to arrive in Asunción in week two, with skateboard slalom closing the Games after inline. Another source puts the end of the Games at 18 October. Watch it live at worldskate.tv or on the official World Skate YouTube channel.
+World Skate's event page lists the Street Skateboarding World Championship in Asunción for 11 to 18 October 2026, so street is under way as this is written, and we found no published results yet. Skateboard slalom was due to follow inline at the end of week two. Watch it live at worldskate.tv or on the official World Skate YouTube channel.
 
 ## Sources
 
@@ -114,4 +115,7 @@ As of World Skate's week-one wrap-up, skateboarding street was due to arrive in 
 - ABC Color / EFE: https://www.abc.com.py/deportes/polideportivo/2026/10/10/el-espanol-bijueska-y-la-japonesa-hasegawa-campeones-de-park-en-el-mundial-de-patinaje/
 - Vozpópuli: Los Ángeles esperan a Egoitz Bijueska: https://www.vozpopuli.com/deportes/los-angeles-esperan-a-egoitz-bijueska-revalida-su-corona-mundial-de-skate-con-otra-exhibicion-de-oro.html
 - Wyldata: Sanchez and Hasegawa Rule the Vert (World Skate Games Asunción 2026 vert results): https://www.wyldata.com/insights/world-skate-games-asuncion-2026-vert-results
+- Diario Euskadi: Egoitz Bijueska, World Skate Champion Again: https://diarioeuskadi.eus/en/busturialdea/general/egoitz-bijueska-revalidates-world-championship-title-in-asuncion
+- Shredder News: 15-Year-Old Egoitz Bijueska Wins Men’s Park at World Skate Games Asunción 2026: https://shredder.news/egoitz-bijueska-wins-world-skate-games-2026/
+- World Skate event page, WSG Street Skateboarding World Championship 2026: https://www.worldskate.org/scootering/events-scootering/competitions/event/489.html
 - Wikipedia: Egoitz Bijueska (https://en.wikipedia.org/wiki/Egoitz_Bijueska) and Mizuho Hasegawa (https://en.wikipedia.org/wiki/Mizuho_Hasegawa), for birth dates
