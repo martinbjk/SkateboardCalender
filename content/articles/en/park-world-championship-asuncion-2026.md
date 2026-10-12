@@ -1,4 +1,3 @@
-[park-world-championship-asuncion-2026.md](https://github.com/user-attachments/files/33343844/park-world-championship-asuncion-2026.md)
 ---
 title: "Rain, Nerves and Two 15-Year-Olds: The Park World Championship in Asunción"
 slug: "park-world-championship-asuncion-2026"
