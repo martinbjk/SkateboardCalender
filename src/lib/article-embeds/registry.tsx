@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { NorwaySurfForecastEmbed } from '@/components/article-embeds/NorwaySurfForecastEmbed';
 import { SkateparkFinder } from '@/components/article-embeds/SkateparkFinder';
 import { SurfForecastEmbed } from '@/components/article-embeds/SurfForecastEmbed';
+import { SurfToolsEmbed } from '@/components/article-embeds/SurfToolsEmbed';
 import { WavePoolFinder } from '@/components/article-embeds/WavePoolFinder';
 import { verifiedIndoorSkateparks } from './skateparks/verified-indoor-skateparks-world.data';
 import { verifiedWavePools } from './wavepools/verified-wave-pools-world.data';
@@ -55,6 +56,13 @@ export const ARTICLE_EMBEDS: Record<string, ArticleEmbed> = {
     // mönster som KustVåg ovan.
     splice: { from: '\n<!-- surf-forecast-embed-norway -->\n', to: '\n## I. Sørlandet' },
     render: () => <NorwaySurfForecastEmbed />
+  } satisfies ArticleEmbed,
+
+  'surf-forecast-sites-and-buoys-guide': {
+    // Ersätter markörraden i slutet av regionsektionen (före "## Webcams")
+    // med kustväljaren och dyningskalkylatorn.
+    splice: { from: '\n<!-- surf-tools-embed -->\n', to: '\n## Webcams' },
+    render: () => <SurfToolsEmbed />
   } satisfies ArticleEmbed,
 
   'surfable-wave-pools-world': {
