@@ -1,339 +1,243 @@
-'use client';
-
-import { useMemo, useState } from 'react';
-import { Calculator, Clock, ExternalLink, MapPin, Waves } from 'lucide-react';
-import clsx from 'clsx';
-import { useLocale } from 'next-intl';
-import { COASTS, type CoastEntry, type ToolLink } from '@/lib/article-embeds/surf-tools/coast-data';
-import { tr, UI, type EmbedLocale, type EmbedUi } from '@/lib/article-embeds/surf-tools/translations';
-
 /**
- * Två små verktyg för artikeln "surf-forecast-sites-and-buoys-guide":
- *  1. Kustväljare — välj kust, få rätt prognossajt, bojkälla och webbkamera.
- *  2. Dyningskalkylator — period + avstånd till en boj => ankomsttid.
- *
- * Båda arbetar enbart på data/regler som står i artikeln (inga live-anrop),
- * så de kan inte visa föråldrade bojvärden. Regeln: grupphastighet i knop =
- * 1,5 × period i sekunder (djupvatten), 1 knop = 1,852 km/h.
- *
- * UI-texten följer sidans locale: svenska för 'sv', annars engelska.
+ * Svenska texter för SurfToolsEmbed. Nyckeln är den engelska originaltexten i
+ * coast-data.ts; saknas en nyckel visas engelskan (fallback), så inget kan
+ * gå sönder om en text läggs till i coast-data.ts utan översättning.
+ * Egennamn (Surfline, Windguru, CDIP ...) och länkar är oförändrade.
  */
 
-const GROUPS: CoastEntry['group'][] = ['Americas', 'Europe', 'Asia-Pacific and Africa', 'Elsewhere'];
+export type EmbedLocale = 'sv' | 'en';
 
-const NM_PER_KM = 1 / 1.852;
-const NM_PER_MILE = 0.868976;
+export const SV_TEXT: Record<string, string> = {
+  // Grupper
+  Americas: 'Amerika',
+  Europe: 'Europa',
+  'Asia-Pacific and Africa': 'Asien-Stillahavsregionen och Afrika',
+  Elsewhere: 'Övriga världen',
 
-type Unit = 'nm' | 'km' | 'mi';
+  // Kustnamn
+  'US West Coast': 'USA:s västkust',
+  'US East Coast and Gulf': 'USA:s ostkust och Mexikanska golfen',
+  Hawaii: 'Hawaii',
+  'United Kingdom': 'Storbritannien',
+  Ireland: 'Irland',
+  France: 'Frankrike',
+  Spain: 'Spanien',
+  Portugal: 'Portugal',
+  Sweden: 'Sverige',
+  Norway: 'Norge',
+  Australia: 'Australien',
+  'South Africa': 'Sydafrika',
+  'New Zealand': 'Nya Zeeland',
+  'Everywhere else (tropics, Indonesia, Brazil, Japan)': 'Överallt annars (tropikerna, Indonesien, Brasilien, Japan)',
 
-function toNm(value: number, unit: Unit): number {
-  if (unit === 'km') return value * NM_PER_KM;
-  if (unit === 'mi') return value * NM_PER_MILE;
-  return value;
+  // Sammanfattningar
+  'CDIP buoys were built for directional height, period and direction. Pair them with a forecast site that has a human forecaster.':
+    'CDIP:s bojar byggdes för riktningsmätning av höjd, period och riktning. Para ihop dem med en prognossajt som har en mänsklig prognosmakare.',
+  'NDBC has the broadest buoy network. We found no source ranking one forecast site over another here.':
+    'NDBC har det bredaste bojnätverket. Vi hittade ingen källa som rankar en prognossajt över en annan här.',
+  'A well-documented case of buoy-driven forecasting: NOAA buoys far to the northwest and northeast give early warning, and a University of Hawaii buoy off Waimea Bay shows what is about to arrive.':
+    'Ett väldokumenterat fall av bojdriven prognosmakning: NOAA:s bojar långt i nordväst och nordost ger tidig varning, och en boj från University of Hawaii utanför Waimea Bay visar vad som är på väg in.',
+  'Cefas WaveNet is a good free source of real-time wave data around the UK.':
+    'Cefas WaveNet är en bra gratiskälla för vågdata i realtid runt Storbritannien.',
+  'The public buoy data covers only two sites (Galway Bay and off Belmullet), so lean more on forecast models and local cams.':
+    'De offentliga bojdatan täcker bara två platser (Galway Bay och utanför Belmullet), så förlita dig mer på prognosmodeller och lokala kameror.',
+  'Candhis publishes wave data from about 99 measurement campaigns under an open licence. Two lighthouse buoys probably underestimate wave height.':
+    'Candhis publicerar vågdata från ungefär 99 mätkampanjer under öppen licens. Två fyrbojar underskattar sannolikt våghöjden.',
+  'Puertos del Estado runs 15 outer and 12 coastal buoys. Compare them with the forecast on Windguru or Surf-Forecast.':
+    'Puertos del Estado driver 15 bojar utomskärs och 12 kustbojar. Jämför dem med prognosen på Windguru eller Surf-Forecast.',
+  'The Hydrographic Institute runs two buoys at Nazaré, one oceanic and one coastal, and publicises their maintenance ahead of the big-wave season.':
+    'Hydrografiska institutet driver två bojar vid Nazaré, en oceanisk och en kustnära, och kungör deras underhåll inför storvågssäsongen.',
+  'SMHI buoys at Väderöarna and Brofjorden are in the Skagerrak. None of the five SMHI positions we could read is in the Kattegat, so for Kattegat surf rely on models and the nearest Skagerrak buoys.':
+    'SMHI:s bojar vid Väderöarna och Brofjorden ligger i Skagerrak. Ingen av de fem SMHI-positioner vi kunde läsa ligger i Kattegatt, så för surf i Kattegatt får du förlita dig på modeller och de närmaste bojarna i Skagerrak.',
+  'MET Norway publishes model wave forecasts, including a high-resolution coastal model (WAM-800m). We did not find a public Norwegian buoy network to pair it with.':
+    'MET Norway publicerar vågprognoser från modeller, bland annat en högupplöst kustmodell (WAM-800m). Vi hittade inget offentligt norskt bojnätverk att para ihop den med.',
+  'Swellnet is a local specialist with forecaster notes, and buoy data from several agencies is published through the Australian Ocean Data Network.':
+    'Swellnet är en lokal specialist med anteckningar från prognosmakare, och bojdata från flera myndigheter publiceras via Australian Ocean Data Network.',
+  'Thin evidence. Stormsurf lists the Wavescape surf report and a NOAA Wavewatch III bulletin for the Agulhas area, but that list is old and some links may not be current.':
+    'Tunt underlag. Stormsurf listar surfrapporten från Wavescape och ett NOAA Wavewatch III-bulletin för Agulhas-området, men listan är gammal och vissa länkar kan vara inaktuella.',
+  'Thin evidence. MetService has surf location pages, but we could not read their content and did not confirm a buoy source.':
+    'Tunt underlag. MetService har sidor för surfplatser, men vi kunde inte läsa deras innehåll och bekräftade ingen bojkälla.',
+  'We found no source on public buoy coverage here. You are mostly reading models, so check whether a Sofar Spotter buoy happens to be nearby.':
+    'Vi hittade ingen källa om offentlig bojtäckning här. Du läser mest modeller, så kolla om det råkar finnas en Sofar Spotter-boj i närheten.',
+
+  // Länknamn som bör översättas
+  'Surfline cams': 'Surflines kameror',
+  'Surf-Forecast cam pages': 'Surf-Forecasts kamerasidor',
+  'Windy webcams map': 'Windys kamerakarta',
+  'Windfinder webcams': 'Windfinders webbkameror',
+  'NWS Honolulu surf forecast': 'NWS Honolulu, surfprognos',
+  'Hawaii Magazine webcam list': 'Hawaii Magazines kameralista',
+  'Marine Institute wave buoy network': 'Marine Institutes vågbojsnätverk',
+  'Windfinder, Conil de la Frontera': 'Windfinder, Conil de la Frontera',
+  'SMHI wave buoys': 'SMHI:s vågbojar',
+  'MET Norway ocean forecasts': 'MET Norways havsprognoser',
+  'Australian Ocean Data Network wave buoys': 'Australian Ocean Data Networks vågbojar',
+  'Swellnet Pro cams': 'Swellnet Pro-kameror',
+  'Stormsurf South Africa links': 'Stormsurf, länkar för Sydafrika',
+  'MetService surf pages': 'MetServices surfsidor',
+  'Sofar Spotter archive': 'Sofar Spotter-arkivet',
+
+  // Länkanteckningar
+  'Human forecasters; Premium $119.99/yr on renewal': 'Mänskliga prognosmakare; Premium 119,99 USD/år vid förnyelse',
+  '100+ Premium-only cams; rewind and Multi-Cam on Premium': '100+ kameror bara för Premium; rewind och Multi-Cam i Premium',
+  '7,000+ breaks; free tier, Premium $4.99/mo in US App Store': 'Över 7 000 breaks; gratisnivå, Premium 4,99 USD/mån i amerikanska App Store',
+  'Links to cams owned by locals, nearby cams by distance': 'Länkar till lokalt ägda kameror, närliggande efter avstånd',
+  'Free plus PRO; many models': 'Gratis plus PRO; många modeller',
+  'Free maps; free, ad-free webcams map': 'Gratis kartor; gratis och reklamfri kamerakarta',
+  'Free and ad-free': 'Gratis och reklamfri',
+  'Image pages with a last-update time': 'Bildsidor med tid för senaste uppdatering',
+  'About 90 buoys plus coastal stations; free': 'Ungefär 90 bojar plus kuststationer; gratis',
+  'Free basic; Lite AUD 49.80/yr; Pro AUD 87.95/yr': 'Gratis basnivå; Lite 49,80 AUD/år; Pro 87,95 AUD/år',
+  'Since 1975; directional buoys': 'Sedan 1975; bojar med riktningsmätning',
+  'Buoys 51001, 51000 and 51100 watch for northern swell': 'Bojarna 51001, 51000 och 51100 bevakar nordlig dyning',
+  'Text forecast product (example issue)': 'Textprognos (exempelutgåva)',
+  'Includes a Banzai Pipeline cam': 'Inkluderar en kamera vid Banzai Pipeline',
+  'Since 2002; directional Waverider buoys; free to view': 'Sedan 2002; Waverider-bojar med riktningsmätning; gratis att se',
+  'Two test sites; data from 2008': 'Två teststationer; data från 2008',
+  'Open licence; 30 min to 3 h intervals': 'Öppen licens; intervall från 30 min till 3 h',
+  'French surf site with webcam content; coverage not verified': 'Fransk surfsajt med kamerainnehåll; täckning ej verifierad',
+  '15 outer buoys plus 12 coastal buoys': '15 bojar utomskärs plus 12 kustbojar',
+  'Example of Windfinder webcam pages in Spain': 'Exempel på Windfinders kamerasidor i Spanien',
+  'Two buoys; waves, currents, temperature': 'Två bojar; vågor, strömmar, temperatur',
+  'Cams listed on Surf-Forecast near Lisbon': 'Kameror listade på Surf-Forecast nära Lissabon',
+  'Cams near Lisbon and Ericeira': 'Kameror nära Lissabon och Ericeira',
+  'Väderöarna, Brofjorden, Knolls grund, Finngrundet, Huvudskär Ost': 'Väderöarna, Brofjorden, Knolls grund, Finngrundet, Huvudskär Ost',
+  'Models only: WAM-800m, Nordic Seas WaveWatch III': 'Bara modeller: WAM-800m, WaveWatch III för Nordiska havet',
+  'Manly Hydraulics Lab, BoM, state agencies; mostly hourly': 'Manly Hydraulics Lab, BoM, delstatliga myndigheter; mest timdata',
+  'No-timeout cams, replays, ad-free': 'Kameror utan tidsgräns, återspelning, reklamfritt',
+  'Local surf report and forecast, per Stormsurf list': 'Lokal surfrapport och prognos, enligt Stormsurfs lista',
+  'Wavewatch III bulletin for the Agulhas area; list is old': 'Wavewatch III-bulletin för Agulhas-området; listan är gammal',
+  'Example surf location page; content not verified': 'Exempel på surfplatssida; innehåll ej verifierat',
+  'Network of about 400-500 buoys; free archive 2019 to March 2022': 'Nätverk på ungefär 400–500 bojar; gratis arkiv 2019 till mars 2022'
+};
+
+export function tr(text: string, locale: EmbedLocale): string {
+  return locale === 'sv' ? SV_TEXT[text] ?? text : text;
 }
 
-function formatDuration(hours: number, ui: EmbedUi): string {
-  const totalMin = Math.round(hours * 60);
-  const h = Math.floor(totalMin / 60);
-  const m = totalMin % 60;
-  if (h === 0) return `${m} ${ui.minute}`;
-  if (m === 0) return `${h} ${ui.hour}`;
-  return `${h} ${ui.hour} ${m} ${ui.minute}`;
+export interface EmbedUi {
+  sectionLabel: string;
+  tryIt: string;
+  intro: string;
+  findTitle: string;
+  findIntro: string;
+  chooseCoastSr: string;
+  chooseCoast: string;
+  thin: string;
+  forecasts: string;
+  buoys: string;
+  webcams: string;
+  none: string;
+  calcTitle: string;
+  calcIntro: string;
+  presets: [string, string, string];
+  period: string;
+  distance: string;
+  unit: string;
+  unitNm: string;
+  unitKm: string;
+  unitMi: string;
+  readingTime: string;
+  about: string;
+  speed: string;
+  knots: string;
+  over: string;
+  nauticalMiles: string;
+  eta: string;
+  sameDay: string;
+  nextDay: string;
+  plusDays: (n: number) => string;
+  invalid: string;
+  otherPeriods: string;
+  longerFirst: string;
+  rule: string;
+  hour: string;
+  minute: string;
 }
 
-/** Tal med en decimal; svenskt decimalkomma för 'sv'. */
-function num(value: number, digits: number, locale: EmbedLocale): string {
-  const t = value.toFixed(digits);
-  return locale === 'sv' ? t.replace('.', ',') : t;
-}
-
-function LinkList({
-  label,
-  items,
-  locale,
-  ui
-}: {
-  label: string;
-  items: ToolLink[];
-  locale: EmbedLocale;
-  ui: EmbedUi;
-}) {
-  return (
-    <div>
-      <h4 className="font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500">{label}</h4>
-      {items.length === 0 ? (
-        <p className="mt-1 text-sm text-chalk-500">{ui.none}</p>
-      ) : (
-        <ul className="mt-1 space-y-1.5">
-          {items.map((item) => (
-            <li key={`${item.name}-${item.url}`} className="text-sm">
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="inline-flex items-center gap-1 font-semibold text-spray underline decoration-spray/40 underline-offset-2 hover:decoration-spray"
-              >
-                {tr(item.name, locale)}
-                <ExternalLink size={12} aria-hidden />
-              </a>
-              <span className="text-asphalt-800/80 dark:text-chalk-300/80"> — {tr(item.note, locale)}</span>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-}
-
-function CoastFinder({ locale, ui }: { locale: EmbedLocale; ui: EmbedUi }) {
-  const [coastId, setCoastId] = useState<string>('');
-  const coast = useMemo(() => COASTS.find((c) => c.id === coastId), [coastId]);
-
-  return (
-    <div className="rounded-stamp border border-asphalt-700/20 bg-white/50 p-4 dark:border-chalk-500/15 dark:bg-asphalt-900/40">
-      <h3 className="font-display flex items-center gap-2 text-xl tracking-tight text-asphalt-900 dark:text-chalk-100">
-        <MapPin size={18} className="text-spray" aria-hidden />
-        {ui.findTitle}
-      </h3>
-      <p className="mt-1 text-sm text-asphalt-800/90 dark:text-chalk-300/90">
-        {ui.findIntro}
-      </p>
-
-      <label htmlFor="surf-coast" className="sr-only">
-        {ui.chooseCoastSr}
-      </label>
-      <select
-        id="surf-coast"
-        value={coastId}
-        onChange={(e) => setCoastId(e.target.value)}
-        className="mt-3 w-full rounded-stamp border border-asphalt-700/30 bg-white/70 px-3 py-2.5 text-sm outline-none focus:border-spray dark:border-chalk-500/20 dark:bg-asphalt-900/70"
-      >
-        <option value="">{ui.chooseCoast}</option>
-        {GROUPS.map((g) => (
-          <optgroup key={g} label={tr(g, locale)}>
-            {COASTS.filter((c) => c.group === g).map((c) => (
-              <option key={c.id} value={c.id}>
-                {tr(c.name, locale)}
-              </option>
-            ))}
-          </optgroup>
-        ))}
-      </select>
-
-      {coast && (
-        <div className="mt-4 space-y-4">
-          <p className="text-sm leading-relaxed text-asphalt-800/90 dark:text-chalk-300/90">
-            {tr(coast.summary, locale)}
-          </p>
-          {coast.evidence === 'thin' && (
-            <p className="rounded-stamp border border-spray/40 bg-spray/5 px-3 py-2 text-xs text-asphalt-800 dark:text-chalk-300">
-              {ui.thin}
-            </p>
-          )}
-          <LinkList label={ui.forecasts} items={coast.forecasts} locale={locale} ui={ui} />
-          <LinkList label={ui.buoys} items={coast.buoys} locale={locale} ui={ui} />
-          <LinkList label={ui.webcams} items={coast.cams} locale={locale} ui={ui} />
-        </div>
-      )}
-    </div>
-  );
-}
-
-const PRESET_VALUES: { period: number; distance: number; unit: Unit }[] = [
-  { period: 17, distance: 400, unit: 'km' },
-  { period: 20, distance: 400, unit: 'km' },
-  { period: 12, distance: 400, unit: 'nm' }
-];
-
-function SwellCalculator({ locale, ui }: { locale: EmbedLocale; ui: EmbedUi }) {
-  const [period, setPeriod] = useState<number>(15);
-  const [distance, setDistance] = useState<number>(400);
-  const [unit, setUnit] = useState<Unit>('nm');
-  const [readingTime, setReadingTime] = useState<string>('');
-
-  const valid = period > 0 && distance > 0 && Number.isFinite(period) && Number.isFinite(distance);
-  const speedKn = 1.5 * period;
-  const distNm = toNm(distance, unit);
-  const hours = valid ? distNm / speedKn : 0;
-
-  const eta = useMemo(() => {
-    if (!valid || !readingTime) return null;
-    const parts = readingTime.split(':').map(Number);
-    const hh = parts[0];
-    const mm = parts[1];
-    if (hh === undefined || mm === undefined || Number.isNaN(hh) || Number.isNaN(mm)) return null;
-    const base = new Date();
-    base.setHours(hh, mm, 0, 0);
-    const arrival = new Date(base.getTime() + hours * 3600 * 1000);
-    const startOfDay = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
-    const dayDiff = Math.round((startOfDay(arrival) - startOfDay(base)) / 86400000);
-    const dayLabel = dayDiff === 0 ? ui.sameDay : dayDiff === 1 ? ui.nextDay : ui.plusDays(dayDiff);
-    const time = arrival.toLocaleTimeString(locale === 'sv' ? 'sv-SE' : [], { hour: '2-digit', minute: '2-digit' });
-    return `${time} (${dayLabel})`;
-  }, [valid, readingTime, hours, locale, ui]);
-
-  const byPeriod = useMemo(() => {
-    if (!(distance > 0)) return [];
-    return [8, 10, 12, 14, 16, 18, 20].map((p) => ({
-      p,
-      kn: 1.5 * p,
-      h: toNm(distance, unit) / (1.5 * p)
-    }));
-  }, [distance, unit]);
-
-  return (
-    <div className="rounded-stamp border border-asphalt-700/20 bg-white/50 p-4 dark:border-chalk-500/15 dark:bg-asphalt-900/40">
-      <h3 className="font-display flex items-center gap-2 text-xl tracking-tight text-asphalt-900 dark:text-chalk-100">
-        <Calculator size={18} className="text-spray" aria-hidden />
-        {ui.calcTitle}
-      </h3>
-      <p className="mt-1 text-sm text-asphalt-800/90 dark:text-chalk-300/90">
-        {ui.calcIntro}
-      </p>
-
-      <div className="mt-3 flex flex-wrap gap-1.5">
-        {PRESET_VALUES.map((pr, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => {
-              setPeriod(pr.period);
-              setDistance(pr.distance);
-              setUnit(pr.unit);
-            }}
-            className="rounded-stamp border border-asphalt-700/25 px-3 py-1.5 font-mono-tight text-xs uppercase tracking-wide text-chalk-500 transition hover:border-spray/50 hover:text-spray dark:border-chalk-500/20"
-          >
-            {ui.presets[i]}
-          </button>
-        ))}
-      </div>
-
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <label className="block text-sm">
-          <span className="font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500">
-            {ui.period}
-          </span>
-          <input
-            type="number"
-            inputMode="decimal"
-            min={4}
-            max={30}
-            step={0.5}
-            value={Number.isNaN(period) ? '' : period}
-            onChange={(e) => setPeriod(parseFloat(e.target.value))}
-            className="mt-1 w-full rounded-stamp border border-asphalt-700/30 bg-white/70 px-3 py-2 outline-none focus:border-spray dark:border-chalk-500/20 dark:bg-asphalt-900/70"
-          />
-        </label>
-        <label className="block text-sm">
-          <span className="font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500">
-            {ui.distance}
-          </span>
-          <input
-            type="number"
-            inputMode="decimal"
-            min={1}
-            step={10}
-            value={Number.isNaN(distance) ? '' : distance}
-            onChange={(e) => setDistance(parseFloat(e.target.value))}
-            className="mt-1 w-full rounded-stamp border border-asphalt-700/30 bg-white/70 px-3 py-2 outline-none focus:border-spray dark:border-chalk-500/20 dark:bg-asphalt-900/70"
-          />
-        </label>
-        <label className="block text-sm">
-          <span className="font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500">
-            {ui.unit}
-          </span>
-          <select
-            value={unit}
-            onChange={(e) => setUnit(e.target.value as Unit)}
-            className="mt-1 w-full rounded-stamp border border-asphalt-700/30 bg-white/70 px-3 py-2 outline-none focus:border-spray dark:border-chalk-500/20 dark:bg-asphalt-900/70"
-          >
-            <option value="nm">{ui.unitNm}</option>
-            <option value="km">{ui.unitKm}</option>
-            <option value="mi">{ui.unitMi}</option>
-          </select>
-        </label>
-      </div>
-
-      <label className="mt-3 block text-sm sm:max-w-[16rem]">
-        <span className="font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500">
-          {ui.readingTime}
-        </span>
-        <input
-          type="time"
-          value={readingTime}
-          onChange={(e) => setReadingTime(e.target.value)}
-          className="mt-1 w-full rounded-stamp border border-asphalt-700/30 bg-white/70 px-3 py-2 outline-none focus:border-spray dark:border-chalk-500/20 dark:bg-asphalt-900/70"
-        />
-      </label>
-
-      <div
-        className={clsx(
-          'mt-4 rounded-stamp border px-4 py-3',
-          valid ? 'border-spray/50 bg-spray/5' : 'border-asphalt-700/20'
-        )}
-        aria-live="polite"
-      >
-        {valid ? (
-          <>
-            <p className="flex items-center gap-2 font-display text-2xl tracking-tight text-spray">
-              <Clock size={20} aria-hidden />
-              {ui.about} {formatDuration(hours, ui)}
-            </p>
-            <p className="mt-1 text-sm text-asphalt-800/90 dark:text-chalk-300/90">
-              {ui.speed} {num(speedKn, 1, locale)} {ui.knots} ({num(speedKn * 1.852, 0, locale)} km/h){' '}
-              {ui.over} {num(distNm, 0, locale)} {ui.nauticalMiles}.
-              {eta ? ` ${ui.eta}: ${eta}.` : ''}
-            </p>
-          </>
-        ) : (
-          <p className="text-sm text-chalk-500">{ui.invalid}</p>
-        )}
-      </div>
-
-      {byPeriod.length > 0 && (
-        <div className="mt-4">
-          <h4 className="font-mono-tight text-[11px] uppercase tracking-wide text-chalk-500">
-            {ui.otherPeriods}
-          </h4>
-          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1 text-sm sm:grid-cols-4">
-            {byPeriod.map(({ p, kn, h }) => (
-              <li key={p} className="flex justify-between gap-2 border-b border-asphalt-700/10 py-1 dark:border-chalk-500/10">
-                <span className="font-semibold">{p} s</span>
-                <span className="text-asphalt-800/80 dark:text-chalk-300/80">
-                  {formatDuration(h, ui)} · {num(kn, 0, locale)} kn
-                </span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-2 text-xs text-chalk-500">
-            {ui.longerFirst}
-          </p>
-        </div>
-      )}
-
-      <p className="mt-3 text-xs leading-relaxed text-chalk-500">
-        {ui.rule}
-      </p>
-    </div>
-  );
-}
-
-export function SurfToolsEmbed() {
-  const locale: EmbedLocale = useLocale() === 'sv' ? 'sv' : 'en';
-  const ui = UI[locale];
-  return (
-    <section className="mt-10" aria-label={ui.sectionLabel}>
-      <h2 className="font-display flex items-center gap-2 text-2xl tracking-tight text-spray">
-        <Waves size={20} className="shrink-0" aria-hidden />
-        {ui.tryIt}
-      </h2>
-      <p className="mt-2 text-sm leading-relaxed text-asphalt-800/90 dark:text-chalk-300/90">
-        {ui.intro}
-      </p>
-      <div className="mt-5 space-y-6">
-        <CoastFinder locale={locale} ui={ui} />
-        <SwellCalculator locale={locale} ui={ui} />
-      </div>
-    </section>
-  );
-}
+export const UI: Record<EmbedLocale, EmbedUi> = {
+  en: {
+    sectionLabel: 'Surf forecast tools',
+    tryIt: 'Try it',
+    intro:
+      'Two small tools built from the data in this article. They do not fetch live buoy readings, so they cannot show out-of-date numbers.',
+    findTitle: 'Find your tools',
+    findIntro: 'Pick your coast and get a forecast site, a buoy source and a webcam source from this article.',
+    chooseCoastSr: 'Choose a coast',
+    chooseCoast: 'Choose a coast…',
+    thin: 'Thinner evidence: treat this as a starting point, not a recommendation we tested.',
+    forecasts: 'Forecast sites',
+    buoys: 'Buoy data',
+    webcams: 'Webcams',
+    none: 'None confirmed.',
+    calcTitle: 'When does the swell arrive?',
+    calcIntro:
+      'Enter the swell period on an upstream buoy and the distance from that buoy to your coast. Group speed is 1.5 × period, in knots (deep water).',
+    presets: ['Hawaii: NOAA 51001, 17 s', 'Hawaii: NOAA 51001, 20 s', '400 nm out, 12 s'],
+    period: 'Swell period (s)',
+    distance: 'Distance to coast',
+    unit: 'Unit',
+    unitNm: 'nautical miles',
+    unitKm: 'kilometres',
+    unitMi: 'miles',
+    readingTime: 'Buoy reading time (optional, your local time)',
+    about: 'About',
+    speed: 'Speed',
+    knots: 'knots',
+    over: 'over',
+    nauticalMiles: 'nautical miles',
+    eta: 'Estimated arrival',
+    sameDay: 'same day',
+    nextDay: 'next day',
+    plusDays: (n) => `+${n} days`,
+    invalid: 'Enter a period and a distance above zero.',
+    otherPeriods: 'Same distance, other periods',
+    longerFirst:
+      'Longer periods arrive first, so the longest-period energy shows up on your coast before the rest of the swell.',
+    rule: 'Rule of thumb for deep water (SurferToday, Wikipedia). Real arrival depends on swell direction, shelter and where the buoy sits.',
+    hour: 'h',
+    minute: 'min'
+  },
+  sv: {
+    sectionLabel: 'Verktyg för surfprognoser',
+    tryIt: 'Testa själv',
+    intro:
+      'Två små verktyg byggda på uppgifterna i den här artikeln. De hämtar inga bojavläsningar i realtid, så de kan inte visa inaktuella siffror.',
+    findTitle: 'Hitta dina verktyg',
+    findIntro: 'Välj din kust och få en prognossajt, en bojkälla och en kamerakälla från den här artikeln.',
+    chooseCoastSr: 'Välj en kust',
+    chooseCoast: 'Välj en kust…',
+    thin: 'Tunnare underlag: se det som en startpunkt, inte en rekommendation vi har testat.',
+    forecasts: 'Prognossajter',
+    buoys: 'Bojdata',
+    webcams: 'Webbkameror',
+    none: 'Inget bekräftat.',
+    calcTitle: 'När kommer dyningen?',
+    calcIntro:
+      'Ange dyningens period på en uppströmsboj och avståndet från den bojen till din kust. Gruppens hastighet är 1,5 × period, i knop (djupt vatten).',
+    presets: ['Hawaii: NOAA 51001, 17 s', 'Hawaii: NOAA 51001, 20 s', '400 nm ut, 12 s'],
+    period: 'Dyningsperiod (s)',
+    distance: 'Avstånd till kusten',
+    unit: 'Enhet',
+    unitNm: 'nautiska mil',
+    unitKm: 'kilometer',
+    unitMi: 'engelska mil',
+    readingTime: 'Tid för bojavläsningen (valfritt, din lokala tid)',
+    about: 'Ungefär',
+    speed: 'Hastighet',
+    knots: 'knop',
+    over: 'över',
+    nauticalMiles: 'nautiska mil',
+    eta: 'Beräknad ankomst',
+    sameDay: 'samma dag',
+    nextDay: 'nästa dag',
+    plusDays: (n) => `+${n} dygn`,
+    invalid: 'Ange en period och ett avstånd över noll.',
+    otherPeriods: 'Samma avstånd, andra perioder',
+    longerFirst:
+      'Längre perioder kommer först, så energin med längst period dyker upp på din kust före resten av dyningen.',
+    rule: 'Tumregel för djupt vatten (SurferToday, Wikipedia). Verklig ankomst beror på dyningens riktning, skydd och var bojen ligger.',
+    hour: 'h',
+    minute: 'min'
+  }
+};
