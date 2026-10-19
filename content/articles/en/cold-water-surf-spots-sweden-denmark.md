@@ -6,7 +6,7 @@ date: "2026-09-20"
 category: "reportage"
 excerpt: "Long before there were skateparks, there were surf breaks — chasing a wave that might not show up for months is the same hunt as chasing a contest swell. We mapped every named surf spot we could verify along the Swedish coast and the Danish west coast, from a Kattegat harbour wall to Denmark's legendary Cold Hawaii, with sources for every one."
 metaDescription: "60+ verified surf spots in Sweden and Denmark, mapped with coordinates, break type and sources — from Cold Hawaii to a hidden Skåne reef."
-ogImage: "/images/articles/cold-water-surf-spots-sweden-denmark/og-cold-water.svg"
+ogImage: "/images/articles/cold-water-surf-spots-sweden-denmark/og-cold-water.png"
 tags: ["surfing", "scandinavia", "denmark", "sweden", "board-sports"]
 ---
 
