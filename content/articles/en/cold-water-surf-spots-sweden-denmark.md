@@ -62,6 +62,13 @@ Where Halland is open Kattegat coast, Skåne is more layered: the Öresund side 
 
 **Skäret** — 56.271077, 12.596555 (community-confirmed). A left-hand reef a German windsurf journalist once described as potentially world-famous "had it been located somewhere with regular swell" — a stone shelf sloping evenly into the sea with a couple of boulders lurking just under the surface. Best on a west wind. The exact location was long hard to pin down; the coordinate above comes from local knowledge shared during research for this piece.
 
+![Skäret, Skåne: a wave breaking with a surfer on it and two more paddling out (photo: Martin Björck)](./skaret-01.jpg)
+![Skäret, Skåne: an empty wave peeling along the rocky shoreline (photo: Martin Björck)](./skaret-02.jpg)
+![Skäret, Skåne: a surfer in a hooded wetsuit carrying a board over the rocks (photo: Martin Björck)](./skaret-03.jpg)
+![Skäret, Skåne: a surfer in the air above the wave (photo: Martin Björck)](./skaret-04.jpg)
+
+*Skäret, Skåne. Photos: Martin Björck.*
+
 **Kåseberga** — 55.3810, 14.0670. Sits right next to Ale's Stones — Skåne's Bronze Age stone ship setting on the headland above the village — which is the landmark local knowledge usually points to when describing the spot. The wave breaks right over sand at the harbour wall: fat and low-power in shape, unusually beginner-friendly for a harbour break. No localism reported, and a fish shop for something warm afterward.
 
 **Brantevik** — 55.5153, 14.3436 (Wikipedia-confirmed). A right point over sand mixed with rock on Österlen, best accessed from shore when the wind sits south-southeast to east-northeast.
