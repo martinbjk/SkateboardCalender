@@ -9,6 +9,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Varje natt kl. 04:17 (svensk vintertid 05:17): bygg om så att nya
+  # skateevent från elementaction.com kommer med, se steget nedan.
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
   contents: read
@@ -24,6 +28,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # SKATEEVENTEN HÄMTAS FRÅN ELEMENTACTION
+      # Kalendern underhålls på ett ställe: data/events/skateboard/ i
+      # martinbjk/elementaction. Här ersätts data/events/ med de filerna
+      # före varje bygge, så att båda sajterna alltid visar samma event.
+      # Lägg alltså in nya event i elementaction, inte här.
+      - name: Hämta skateevent från Elementaction
+        run: |
+          git clone --depth 1 https://github.com/martinbjk/elementaction.git /tmp/elementaction
+          rm -f data/events/*.json
+          cp /tmp/elementaction/data/events/skateboard/*.json data/events/
+          echo "Hämtade $(ls data/events/*.json | wc -l) event från Elementaction"
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -39,6 +54,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # SKATEEVENTEN HÄMTAS FRÅN ELEMENTACTION
+      # Kalendern underhålls på ett ställe: data/events/skateboard/ i
+      # martinbjk/elementaction. Här ersätts data/events/ med de filerna
+      # före varje bygge, så att båda sajterna alltid visar samma event.
+      # Lägg alltså in nya event i elementaction, inte här.
+      - name: Hämta skateevent från Elementaction
+        run: |
+          git clone --depth 1 https://github.com/martinbjk/elementaction.git /tmp/elementaction
+          rm -f data/events/*.json
+          cp /tmp/elementaction/data/events/skateboard/*.json data/events/
+          echo "Hämtade $(ls data/events/*.json | wc -l) event från Elementaction"
 
       - uses: actions/setup-node@v4
         with:
