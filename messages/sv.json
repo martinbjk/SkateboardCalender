@@ -103,6 +103,8 @@
     "guidelines": "Se till att datum, tidszon och länkar stämmer — vi dubbelkollar innan publicering."
   },
   "footer": {
+    "sister": "Surf, skate och snowboard: kalendrar, artiklar och design på vår systersajt",
+    "sisterCta": "Besök Elementaction.com",
     "tagline": "Byggd av skateboardåkare, för skateboardåkare. Öppen källkod.",
     "github": "GitHub",
     "submitEvent": "Föreslå event",

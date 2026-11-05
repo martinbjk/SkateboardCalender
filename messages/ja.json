@@ -103,6 +103,8 @@
     "guidelines": "日付・タイムゾーン・リンクが正確であることをご確認ください — 公開前に確認いたします。"
   },
   "footer": {
+    "sister": "サーフィン、スケート、スノーボード：姉妹サイトでカレンダー、記事、デザインを",
+    "sisterCta": "Elementaction.com へ",
     "tagline": "スケーターによる、スケーターのためのサイト。オープンソース。",
     "github": "GitHub",
     "submitEvent": "イベントを提案",

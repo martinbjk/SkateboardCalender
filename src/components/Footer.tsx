@@ -1,9 +1,10 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Github, Instagram, Youtube } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 
 export function Footer() {
   const t = useTranslations();
+  const locale = useLocale();
   return (
     <footer className="mt-24 border-t border-asphalt-700/20 dark:border-chalk-500/15">
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
@@ -42,6 +43,16 @@ export function Footer() {
               <Youtube size={18} />
             </a>
           </div>
+        </div>
+
+        <div className="mt-8 rounded-xl border border-asphalt-700/20 p-4 text-sm sm:flex sm:items-center sm:justify-between sm:gap-4 dark:border-chalk-500/15">
+          <p className="text-chalk-500">{t('footer.sister')}</p>
+          <a
+            href={`https://elementaction.com/${locale}/`}
+            className="mt-2 inline-block font-semibold text-spray hover:underline sm:mt-0 sm:shrink-0"
+          >
+            {t('footer.sisterCta')} →
+          </a>
         </div>
 
         <div className="mt-8 flex flex-col gap-4 border-t border-asphalt-700/15 pt-6 text-xs text-chalk-500 sm:flex-row sm:items-center sm:justify-between dark:border-chalk-500/10">

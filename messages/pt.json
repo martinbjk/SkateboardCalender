@@ -103,6 +103,8 @@
     "guidelines": "Confira se as datas, o fuso horário e os links estão corretos — nós verificamos tudo antes de publicar."
   },
   "footer": {
+    "sister": "Surf, skate e snowboard: calendários, artigos e design no nosso site irmão",
+    "sisterCta": "Visite Elementaction.com",
     "tagline": "Feito por skatistas, para skatistas. Código aberto.",
     "github": "GitHub",
     "submitEvent": "Sugerir evento",
