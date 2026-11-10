@@ -108,7 +108,6 @@ Indoor skate hall.
 Described by its own association as Sweden's largest bowl, street, and vert ramp indoors. Membership required.
 📍 Hantverkargatan 22, Borlänge
 🌐 dalbanan.se
-⚠️ Official hours table currently shows summer closure — check current status.
 
 **Aktivitetshuset Jutan Skatepark – Helsingborg, Sweden**
 1,100 m², free entry, municipally run.
